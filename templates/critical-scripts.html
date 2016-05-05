@@ -1,0 +1,26 @@
+{% macro options() %}
+
+{# Font Import #}
+<script type="text/javascript" src="http://fast.fonts.net/jsapi/36928795-ccf8-4973-bff4-04ec7226ff04.js"></script>
+
+{# Footer Height #}
+<script type="text/javascript">
+  var domReady = function(callback) {
+    document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
+  };
+
+  domReady(function() {
+
+    window.onresize = function() {
+      var footerElement = document.querySelector('footer');
+      var footerHeight = window.getComputedStyle(footerElement).height;
+
+      document.body.style.marginBottom = footerHeight;
+    };
+
+    window.onresize();
+
+  });
+</script>
+
+{% endmacro %}
