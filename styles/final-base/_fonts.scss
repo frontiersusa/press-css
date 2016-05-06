@@ -118,7 +118,7 @@ $serif-default: "Times New Roman", Times, serif;
 }
 @mixin serif-medium-italic {
   font-family: "Mercury Display A", "Mercury Display B";
-  font-style: normal;
+  font-style: italic;
   font-weight: 600;
 }
 @mixin serif-bold {
