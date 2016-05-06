@@ -1,5 +1,6 @@
 // Defaults
 $sans-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$serif-default: "Times New Roman", Times, serif;
 
 // Sans
 @font-face {
@@ -13,7 +14,7 @@ $sans-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen"
   font-weight: 100;
   font-style: normal;
 }
-@font-face{
+@font-face {
   font-family:"Avenir Light Italic";
   src:url("Fonts/6500273c-8e8b-48d2-b0c0-dcae293c0120.eot?#iefix");
   src:url("Fonts/6500273c-8e8b-48d2-b0c0-dcae293c0120.eot?#iefix") format("eot"),
@@ -24,7 +25,7 @@ $sans-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen"
   font-weight: 100;
   font-style: oblique;
 }
-@font-face{
+@font-face {
   font-family:"Avenir Medium";
   src:url("Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix");
   src:url("Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("eot"),
@@ -35,7 +36,7 @@ $sans-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen"
   font-weight: 400;
   font-style: normal;
 }
-@font-face{
+@font-face {
   font-family:"Avenir Medium Italic";
   src:url("Fonts/8f21e618-9282-4df1-b556-73ee82bdd673.eot?#iefix");
   src:url("Fonts/8f21e618-9282-4df1-b556-73ee82bdd673.eot?#iefix") format("eot"),
@@ -46,7 +47,7 @@ $sans-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen"
   font-weight: 400;
   font-style: oblique;
 }
-@font-face{
+@font-face {
   font-family:"Avenir Bold";
   src:url("Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix");
   src:url("Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("eot"),
@@ -57,7 +58,7 @@ $sans-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen"
   font-weight: 700;
   font-style: normal;
 }
-@font-face{
+@font-face {
   font-family:"Avenir Bold Italic";
   src:url("Fonts/fbf3e69b-73b2-406d-84bc-feda30a0a563.eot?#iefix");
   src:url("Fonts/fbf3e69b-73b2-406d-84bc-feda30a0a563.eot?#iefix") format("eot"),
@@ -68,14 +69,6 @@ $sans-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen"
   font-weight: 700;
   font-style: oblique;
 }
-
-// // Mercury (Serif)
-// @include font-face(Mercury-Roman, MercuryDisplay-Roman);
-// @include font-face(Mercury-Italic, MercuryDisplay-Italic, 400, italic);
-// @include font-face(Mercury-SemiBold, MercuryDisplay-Semibold, 500);
-// @include font-face(Mercury-SemiboldItalic, MercuryDisplay-SemIta, 500, italic);
-// @include font-face(Mercury-Bold, MercuryDisplay-Bold, 700);
-// @include font-face(Mercury-BoldItalic, MercuryDisplay-BolIta, 700, italic);
 
 @mixin sans-light {
   font-family: "Avenir Light", #{$sans-default};
@@ -106,4 +99,35 @@ $sans-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen"
   font-family: "Avenir Bold Italic", #{$sans-default};
   font-weight: 700;
   font-style: oblique;;
+}
+
+@mixin serif-light {
+  font-family: "Mercury Display A", "Mercury Display B";
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin serif-light-italic {
+  font-family: "Mercury Display A", "Mercury Display B";
+  font-style: italic;
+  font-weight: 400;
+}
+@mixin serif-medium {
+  font-family: "Mercury Display A", "Mercury Display B";
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin serif-medium-italic {
+  font-family: "Mercury Display A", "Mercury Display B";
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin serif-bold {
+  font-family: "Mercury Display A", "Mercury Display B";
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin serif-bold-italic {
+  font-family: "Mercury Display A", "Mercury Display B";
+  font-style: italic;
+  font-weight: 700;
 }
