@@ -1,3 +1,4 @@
+// Variables
 $pewter-light: #B2C8C1 !default;
 $pewter: #91B1A7 !default;
 $pewter-dark: #829E95 !default;
@@ -17,3 +18,35 @@ $baltic-dark: #313132 !default;
 $seashell-light: #F0F0F0 !default;
 $seashell: #E6E6E6 !default;
 $seashell-dark: #CECECE !default;
+
+// Text colors
+.baltic-light {
+  color: $baltic-light;
+}
+.baltic {
+  color: $baltic;
+}
+.baltic-dark {
+  color: $baltic-dark;
+}
+
+// Background colors
+.bg-whale-light {
+  background-color: $whale-light;
+}
+.bg-whale {
+  background-color: $whale;
+}
+.bg-whale-dark {
+  background-color: $whale-dark;
+}
+
+.bg-baltic-light {
+  background-color: $baltic-light;
+}
+.bg-baltic {
+  background-color: $baltic;
+}
+.bg-baltic-dark {
+  background-color: $baltic-dark;
+}
