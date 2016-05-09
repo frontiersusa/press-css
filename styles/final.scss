@@ -1,2 +1,9 @@
-@import "final-base/fonts";
-@import "final-base/colors";
+// Config
+@import "config";
+
+// Helpers
+@import "final-helpers/fonts";
+
+// Utilities
+@import "final-utilities/colors";
+@import "final-utilities/font-families";
