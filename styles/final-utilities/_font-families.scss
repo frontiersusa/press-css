@@ -1,12 +1,37 @@
-.sans-light {
+.sans-lt {
   @include sans-light;
 }
-.sans-light-italic {
+.sans-lt-i {
   @include sans-light-italic;
 }
-.sans-medium {
+.sans-med {
   @include sans-medium;
 }
-.sans-medium-italic {
+.sans-med-i {
   @include sans-medium-italic;
+}
+.sans-bold {
+  @include sans-bold;
+}
+.sans-bold-i {
+  @include sans-bold-italic;
+}
+
+.serif-lt {
+  @include serif-light;
+}
+.serif-lt-i {
+  @include serif-light-italic;
+}
+.serif-md {
+  @include serif-medium;
+}
+.serif-md-i {
+  @include serif-medium-italic;
+}
+.serif-bold {
+  @include serif-bold;
+}
+.serif-bold-i {
+  @include serif-bold-italic;
 }
