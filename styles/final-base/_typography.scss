@@ -1,3 +1,12 @@
-body {
+.sans-light {
   @include sans-light;
+}
+.sans-light-italic {
+  @include sans-light-italic;
+}
+.sans-medium {
+  @include sans-medium;
+}
+.sans-medium-italic {
+  @include sans-medium-italic;
 }
