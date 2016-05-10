@@ -1,3 +1,4 @@
+// Variables
 $button-colors: (
   pewter: $pewter,
   whale: $whale,
@@ -5,32 +6,35 @@ $button-colors: (
   sunglow: $sunglow
 )!default;
 
+// Mixin
 @mixin make-buttons {
   @each $color in $button-colors {
-    .btn {
-      border-radius: $border-radius;
-    }
     .btn--#{nth($color, 1)} {
       color: white;
       background-color: nth($color, 2);
     }
-    .btn--#{nth($color, 1)}:hover {
-      box-shadow: inset 0 0 0 20rem $darken-1;
-    }
-    .btn--#{nth($color, 1)}:active {
-      box-shadow: inset 0 0 0 20rem $darken-2,
-        inset 0 3px 4px 0 $darken-3,
-        0 0 1px $darken-2;
-    }
-    .btn--#{nth($color, 1)}.is-disabled,
-    .btn--#{nth($color, 1)}.is-disabled:hover,
-    .btn--#{nth($color, 1)}.is-disabled:focus,
-    .btn--#{nth($color, 1)}.is-disabled:active {
-      opacity: .5;
-      box-shadow: inset 0 0 0 0 $darken-1 !important;
-      cursor: not-allowed;
-    }
+
   }
 }
 
+// Styles
+.btn {
+  border-radius: $border-radius;
+}
+.btn:hover {
+  box-shadow: inset 0 0 0 20rem $darken-1;
+}
+.btn:active {
+  box-shadow: inset 0 0 0 20rem $darken-2,
+    inset 0 3px 4px 0 $darken-3,
+    0 0 1px $darken-2;
+}
+.btn.is-disabled,
+.btn.is-disabled:hover,
+.btn.is-disabled:focus,
+.btn.is-disabled:active {
+  opacity: .5;
+  box-shadow: inset 0 0 0 0 $darken-1 !important;
+  cursor: not-allowed;
+}
 @include make-buttons();
