@@ -3,34 +3,27 @@
 // ======================
 
 var gulp = require('gulp'),
-  jshint = require('gulp-jshint'),
-  stylish = require('jshint-stylish'),
-  uglify = require('gulp-uglify'),
-  minifycss = require('gulp-minify-css'),
   sass = require('gulp-ruby-sass'),
   sourcemaps = require('gulp-sourcemaps'),
-  autoprefixer = require('gulp-autoprefixer'),
   rename = require('gulp-rename'),
   concat = require('gulp-concat'),
   notify = require('gulp-notify'),
   watch = require('gulp-watch'),
-  csscomb = require('gulp-csscomb'),
   gutil = require('gulp-util'),
   plumber = require('gulp-plumber'),
   browserSync = require('browser-sync'),
-  uncss = require('gulp-uncss')
-  merge = require('merge2'),
-  imagemin = require('gulp-imagemin'),
+  nunjucksRender = require('gulp-nunjucks-render'),
   prettify = require('gulp-prettify'),
   runSequence = require('run-sequence').use(gulp),
-  surge = require('gulp-surge'),
-  fs = require('fs');
-
-// ======================
-// IMPORT CONFIG.JSON
-// ======================
-
-var config = JSON.parse(fs.readFileSync('./config.json'))
+  symdiff = require('gulp-symdiff'),
+  symdiffhtml = require('symdiff-html'),
+  symdiffcss = require('symdiff-css'),
+  fs = require('fs'),
+  del = require('del'),
+  postcss = require('gulp-postcss'),
+  autoprefixer = require('autoprefixer'),
+  cssnano = require('cssnano'),
+  pxtorem = require('postcss-pxtorem');
 
 // ======================
 // AUTOMATION
@@ -51,7 +44,7 @@ var reload = browserSync.reload;
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-      baseDir: "./test/"
+      baseDir: "./test"
     }
   });
 });
@@ -59,120 +52,103 @@ gulp.task('browser-sync', function() {
 gulp.task('bs-reload', function() { browserSync.reload(); });
 
 gulp.task('watch', ['browser-sync'], function() {
+  // HTML Files
+  gulp.watch('./test/**/*.html'), ['bs-reload'];
   // Project Styles
-  gulp.watch('styles/**/*.scss', ['styles-dev'])
-  // Project Scripts
-  gulp.watch('scripts/**/*.js', ['scripts-dev'])
+  gulp.watch('styles/**/*.scss', ['test'])
 });
 
 // ======================
 // STYLES
 // ======================
 
-// Uncss Ignore
-var uncssIgnore = [
-  // Required
-  /(#|\.)header-nav(\-[a-zA-Z]+)?/,
-  /(#|\.)dropdown--transition(\-[a-zA-Z]+)?/,
-  /(#|\.)tabs--active(\-[a-zA-Z]+)?/,
-  /(#|\.)nav-open(\-[a-zA-Z]+)?/
-]
-
-// Styles Development
-gulp.task('styles', function() {
-  return sass('./src/styles/final.scss', {})
+// Dev Styles
+gulp.task('styles-dev', function() {
+  return sass('styles/final-test.scss', {style:'nested'})
     .pipe(plumber({ errorHandler: onError }))
+    .pipe(postcss([
+      autoprefixer({browsers: ['last 2 version']}),
+      pxtorem({
+        rootValue: 16,
+        replace: true,
+        propWhiteList: [],
+        mediaQuery: false
+      })
+    ]))
     .pipe(sourcemaps.init())
-    .pipe(autoprefixer(
-      'last 2 version',
-      'safari 5',
-      'firefox 15',
-      'ie 9',
-      'opera 12.1',
-      'ios 6',
-      'android 4'
-    ))
-    .pipe(concat('main.css'))
-    .pipe(gulp.dest('./dist/styles'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/styles'))
+    .pipe(concat('main.dev.css'))
+    .pipe(gulp.dest('./test/styles'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(notify({ message: 'DEVELOPMENT STYLES task complete' }));
 });
 
+// Styles Production
+gulp.task('styles-prod', function() {
+  return sass('styles/final-test.scss', { style: 'nested' })
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(postcss([
+      autoprefixer({browsers: ['last 2 version']}),
+      pxtorem({
+        rootValue: 16,
+        replace: true,
+        propWhiteList: [],
+        mediaQuery: false
+      })
+    ]))
+    .pipe(postcss([cssnano({discardComments: {removeAll: true}})]))
+    .pipe(concat('main.min.css'))
+    .pipe(gulp.dest('./test/styles'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(notify({ message: 'PRODUCTION STYLES task complete' }));
+});
+
 // IE Styles
 gulp.task('styles-ie', function() {
-  return sass(['./src/styles/final-ie.scss'], { style: 'nested' })
+  return sass(['styles/bolt-ie.scss'], { style: 'nested' })
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(autoprefixer(
+    .pipe(postcss([autoprefixer({browsers: [
       'last 2 version',
       'ie 7',
       'ie 8',
       'ie 9'
-    ))
-    .pipe(concat('ie.css'))
-    .pipe(gulp.dest('./dist/styles'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(minifycss())
-    .pipe(gulp.dest('./dist/styles'))
+    ]})]))
+    .pipe(concat('ie.main.css'))
+    .pipe(gulp.dest('./test/styles'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(notify({ message: 'IE STYLES task complete' }));
-});
-
-// ======================
-// SCRIPTS
-// ======================
-
-// Development Scripts
-gulp.task('scripts', function() {
-  return gulp.src(config.projectScripts)
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('dist/scripts/'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('dist/scripts/'))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(notify({ message: 'PRODUCTION SCRIPTS task complete' }));
-});
-
-// IE Scripts
-gulp.task('scripts-ie', function() {
-  return gulp.src(config.projectScriptsIE)
-    .pipe(concat('ie.js'))
-    .pipe(gulp.dest('dist/scripts/'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify({ outSourceMap: true }))
-    .pipe(gulp.dest('dist/scripts/'))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(notify({ message: 'IE SCRIPTS task complete' }));
 });
 
 // ======================
 // IMAGES
 // ======================
 
-gulp.task('images', function() {
+gulp.task('images', ['clean:images'], function() {
   return gulp.src([
     './bower_components/final/images/**/*',
     './src/images/**/*'
   ])
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('./dist/images'))
+    .pipe(gulp.dest('./test/images'))
 });
 
 // ======================
-// BUILD & DEPLOY
+// CLEAN
+// ======================
+
+// Clean Styles
+gulp.task('clean:styles', function () {
+  return del('test/styles/**/*');
+});
+
+// ======================
+// BUILD
 // ======================
 
 gulp.task('test', function(callback) {
   runSequence(
-    'nunjucks',
-    'styles',
-    'scripts',
-    'styles-ie',
-    'scripts-ie',
-    'images',
-    callback);
+    'clean:styles',
+    'styles-dev',
+    'styles-prod',
+    callback
+  );
 });
