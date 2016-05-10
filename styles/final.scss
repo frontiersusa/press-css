@@ -4,9 +4,15 @@
 // Helpers
 @import "final-helpers/fonts";
 
-// Components
-@import "final-components/forms";
-
 // Utilities
 @import "final-utilities/colors";
 @import "final-utilities/font-families";
+
+// Base
+@import "final-base/typography";
+
+// Components
+@import "final-components/forms";
+
+// Theme
+@import "theme";
