@@ -32,3 +32,5 @@ $button-colors: (
     }
   }
 }
+
+@include make-buttons();
