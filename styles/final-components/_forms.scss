@@ -8,9 +8,6 @@
   }
 }
 
-.label {
-  @include sans-bold;
-}
 .input {
   @include input-reset;
   border-radius: $base-border-radius;
