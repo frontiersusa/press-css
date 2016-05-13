@@ -20,3 +20,13 @@ $baltic-dark: #313132 !default;
 $seashell-light: #F0F0F0 !default;
 $seashell: #E6E6E6 !default;
 $seashell-dark: #CECECE !default;
+
+// ======================
+// Buttons
+// ======================
+$button-colors: (
+  pewter: $pewter,
+  whale: $whale,
+  baltic: $baltic,
+  sunglow: $sunglow
+)!default;
