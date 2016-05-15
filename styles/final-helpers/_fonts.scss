@@ -80,12 +80,12 @@ $serif-default: "Times New Roman", Times, serif;
   font-weight: 100;
   font-style: oblique;;
 }
-@mixin sans-medium {
+@mixin sans-med {
   font-family: "Avenir Medium", #{$sans-default};
   font-weight: 400;
   font-style: normal;
 }
-@mixin sans-medium-italic {
+@mixin sans-med-italic {
   font-family: "Avenir Medium Italic", #{$sans-default};
   font-weight: 400;
   font-style: oblique;
@@ -111,12 +111,12 @@ $serif-default: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 400;
 }
-@mixin serif-medium {
+@mixin serif-med {
   font-family: "Mercury Display A", "Mercury Display B";
   font-style: normal;
   font-weight: 600;
 }
-@mixin serif-medium-italic {
+@mixin serif-med-italic {
   font-family: "Mercury Display A", "Mercury Display B";
   font-style: italic;
   font-weight: 600;

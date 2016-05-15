@@ -4117,12 +4117,12 @@ html {
 .border-seashell-dark {
   border-color: #CECECE; }
 
-.sans-lt {
+.sans-light {
   font-family: "Avenir Light", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 100;
   font-style: normal; }
 
-.sans-lt-i {
+.sans-light-italic {
   font-family: "Avenir Light Italic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 100;
   font-style: oblique; }
@@ -4132,7 +4132,7 @@ html {
   font-weight: 400;
   font-style: normal; }
 
-.sans-med-i {
+.sans-med-italic {
   font-family: "Avenir Medium Italic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   font-style: oblique; }
@@ -4142,17 +4142,17 @@ html {
   font-weight: 700;
   font-style: normal; }
 
-.sans-bold-i {
+.sans-bold-italic {
   font-family: "Avenir Bold Italic", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 700;
   font-style: oblique; }
 
-.serif-lt {
+.serif-light {
   font-family: "Mercury Display A", "Mercury Display B";
   font-style: normal;
   font-weight: 400; }
 
-.serif-lt-i {
+.serif-light-italic {
   font-family: "Mercury Display A", "Mercury Display B";
   font-style: italic;
   font-weight: 400; }
@@ -4162,7 +4162,7 @@ html {
   font-style: normal;
   font-weight: 600; }
 
-.serif-med-i {
+.serif-med-italic {
   font-family: "Mercury Display A", "Mercury Display B";
   font-style: italic;
   font-weight: 600; }
@@ -4172,7 +4172,7 @@ html {
   font-style: normal;
   font-weight: 700; }
 
-.serif-bold-i {
+.serif-bold-italic {
   font-family: "Mercury Display A", "Mercury Display B";
   font-style: italic;
   font-weight: 700; }

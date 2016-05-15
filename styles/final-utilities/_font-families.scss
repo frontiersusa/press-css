@@ -1,37 +1,37 @@
-.sans-lt {
+.sans-light {
   @include sans-light;
 }
-.sans-lt-i {
+.sans-light-italic {
   @include sans-light-italic;
 }
 .sans-med {
-  @include sans-medium;
+  @include sans-med;
 }
-.sans-med-i {
-  @include sans-medium-italic;
+.sans-med-italic {
+  @include sans-med-italic;
 }
 .sans-bold {
   @include sans-bold;
 }
-.sans-bold-i {
+.sans-bold-italic {
   @include sans-bold-italic;
 }
 
-.serif-lt {
+.serif-light {
   @include serif-light;
 }
-.serif-lt-i {
+.serif-light-italic {
   @include serif-light-italic;
 }
 .serif-med {
-  @include serif-medium;
+  @include serif-med;
 }
-.serif-med-i {
-  @include serif-medium-italic;
+.serif-med-italic {
+  @include serif-med-italic;
 }
 .serif-bold {
   @include serif-bold;
 }
-.serif-bold-i {
+.serif-bold-italic {
   @include serif-bold-italic;
 }
