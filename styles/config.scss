@@ -1,6 +1,7 @@
 // ======================
 // Colors
 // ======================
+
 $pewter-light: #B2C8C1 !default;
 $pewter: #91B1A7 !default;
 $pewter-dark: #829E95 !default;
@@ -21,12 +22,20 @@ $seashell-light: #F0F0F0 !default;
 $seashell: #E6E6E6 !default;
 $seashell-dark: #CECECE !default;
 
+$base-font-color: $baltic;
+$base-border-color: $baltic;
+
 // ======================
 // Buttons
 // ======================
+
 $button-colors: (
   pewter: $pewter,
   whale: $whale,
   baltic: $baltic,
   sunglow: $sunglow
 )!default;
+
+// ======================
+// Typography
+// ======================
