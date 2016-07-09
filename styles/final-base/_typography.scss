@@ -1,4 +1,4 @@
-.header-underline-pewter {
+.header-underline-pewter:after {
   display: block;
   margin-top: 20px;
   margin-bottom: 25px;;
@@ -6,7 +6,7 @@
   border-bottom: 5px solid $pewter;
   content: "";
 }
-.header-underline-baltic {
+.header-underline-baltic:after  {
   display: block;
   margin-top: 20px;
   margin-bottom: 25px;;
@@ -14,7 +14,7 @@
   border-bottom: 5px solid $baltic;
   content: "";
 }
-.header-underline-seashell {
+.header-underline-seashell:after  {
   display: block;
   margin-top: 20px;
   margin-bottom: 25px;;
@@ -22,7 +22,7 @@
   border-bottom: 5px solid $seashell;
   content: "";
 }
-.header-underline-white {
+.header-underline-white:after  {
   display: block;
   margin-top: 20px;
   margin-bottom: 25px;;
