@@ -1,8 +1,32 @@
-// .h1,
-// .h2,
-// .h3,
-// .h4,
-// .h5,
-// .h6 {
-//   @include sans-bold;
-// }
+.header-underline-pewter {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 25px;;
+  width: 100px;
+  border-bottom: 5px solid $pewter;
+  content: "";
+}
+.header-underline-baltic {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 25px;;
+  width: 100px;
+  border-bottom: 5px solid $baltic;
+  content: "";
+}
+.header-underline-seashell {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 25px;;
+  width: 100px;
+  border-bottom: 5px solid $seashell;
+  content: "";
+}
+.header-underline-white {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 25px;;
+  width: 100px;
+  border-bottom: 5px solid white;
+  content: "";
+}
