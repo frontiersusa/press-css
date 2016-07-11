@@ -1,7 +1,7 @@
 // Mixins
 @mixin make-base-color-buttons {
   @each $color in $button-colors {
-    .btn--#{nth($color, 1)} {
+    .btn-#{nth($color, 1)} {
       color: white;
       background-color: nth($color, 2);
     }
