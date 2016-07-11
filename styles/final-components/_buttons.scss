@@ -7,6 +7,14 @@
 //     }
 //   }
 // }
+.btn-white {
+  color: $balic;
+  background-color: white;
+  border: $border-radius solid $seashell;
+  &:hover {
+    background-color: $seashell-light;
+  }
+}
 .btn-pewter {
   color: white;
   background-color: $pewter;
