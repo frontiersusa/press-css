@@ -10,7 +10,7 @@
 .btn-white {
   color: $balic;
   background-color: white;
-  border: $border-radius solid $seashell;
+  border: 2px solid $seashell;
   &:hover {
     background-color: $seashell-light;
   }
