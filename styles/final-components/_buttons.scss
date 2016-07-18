@@ -1,65 +1,115 @@
-// Mixins
-// @mixin make-base-color-buttons {
-//   @each $color in $button-colors {
-//     .btn-#{nth($color, 1)} {
-//       color: white;
-//       background-color: nth($color, 2);
-//     }
-//   }
-// }
-.btn-white {
-  color: $baltic;
-  background-color: white;
-  border: 2px solid $seashell;
-  &:hover {
-    background-color: whitesmoke;
-  }
-}
+// Solid Colors
 .btn-pewter {
-  color: white;
   background-color: $pewter;
   &:hover {
-    background-color: $pewter-light;
+    background-color: darken($pewter, 10%);
+  }
+  &:disabled,
+  &.btn-disabled {
+    background-color: lighten((desaturate($pewter, 2%)), 20%);
   }
 }
 .btn-seashell {
-  color: $baltic;
   background-color: $seashell;
+  color: $baltic;
   &:hover {
-    background-color: $pewter-light;
+    background-color: darken($seashell, 10%);
+  }
+  &:disabled,
+  &.btn-disabled {
+    color: $seashell-light;
+    background-color: darken($seashell, 15%);
+  }
+}
+.btn-baltic {
+  background-color: $baltic;
+  &:hover {
+    background-color: lighten($baltic, 10%);
+  }
+  &:disabled,
+  &.btn-disabled {
+    background-color: lighten((desaturate($baltic, 50%)), 50%);
+  }
+}
+.btn-whale {
+  background-color: $whale;
+  &:hover {
+    background-color: lighten($whale, 10%);
+  }
+  &:disabled,
+  &.btn-disabled {
+    background-color: lighten((desaturate($whale, 50%)), 50%);
+  }
+}
+.btn-sunglow {
+  background-color: $sunglow;
+  &:hover {
+    background-color: darken($sunglow, 10%);
+  }
+  &:disabled,
+  &.btn-disabled {
+    background-color: lighten((desaturate($sunglow, 50%)), 25%);
   }
 }
 
-// Outline
-.btn--outline {
-  border-radius: $base-border-radius;
-  box-shadow: inset 0 0 0 $base-border-width $seashell;
-  border-color: $base-border-color;
-  color: $base-font-color;
+// Outlined
+.btn-outlined-pewter {
+  border-color: $pewter;
+  color: $pewter;
+  &:hover {
+    border-color: darken($pewter, 20%);
+    color: darken($pewter, 20%);
+  }
+  &:disabled,
+  &.btn-disabled {
+    border-color: $pewter-light;
+    color: $pewter-light;
+  }
 }
-.btn--outline:hover {
-  background-color: rgba(black, 0.05);
+.btn-outlined-baltic {
+  border-color: $baltic;
+  color: $baltic;
+  &:hover {
+    border-color: lighten($baltic, 30%);
+    color: lighten($baltic, 30%);
+  }
+  &:disabled,
+  &.btn-disabled  {
+    border-color: $baltic-light;
+    color: $baltic-light;
+  }
 }
-.btn--outline:focus {
-  box-shadow: inset 0 0 0 $base-border-width $seashell-dark;
+.btn-outlined-whale {
+  border-color: $whale-light;
+  color: $whale-light;
+  &:hover {
+    border-color: lighten($whale, 30%);
+    color: lighten($whale, 30%);
+  }
+  &:disabled,
+  &.btn-disabled  {
+    border-color: $whale-light;
+    color: $whale-light;
+  }
+}
+.btn-outlined-sunglow {
+  border-color: $sunglow;
+  color: $sunglow;
+  &:hover {
+    border-color: darken($sunglow, 15%);
+    color: darken($sunglow, 15%);
+  }
+  &:disabled,
+  &.btn-disabled  {
+    border-color: $sunglow-light;
+    color: $sunglow-light;
+  }
 }
 
 // With icon
-.btn--icon object[type='image/svg+xml'] {
+.btn-icon object[type='image/svg+xml'] {
   vertical-align: middle;
   width: 100%;
   max-width: 25px;
   margin-right: 10px;
 }
-
-// Disabled
-.btn.is-disabled,
-.btn.is-disabled:hover,
-.btn.is-disabled:focus,
-.btn.is-disabled:active {
-  opacity: .5;
-  cursor: not-allowed;
-}
-
-// Make buttons
-// @include make-base-color-buttons();
