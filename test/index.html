@@ -9,41 +9,97 @@
     <!--[if lte IE 9]>
     	<link rel="stylesheet" href="/styles/ie.min.css" media="screen" title="no title" charset="utf-8">
     <![endif]-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.5.0/styles/github.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   </head>
   <body class="sans-med">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h1 class="h1 caps">Header 1 title</h1>
+          <h1 class="h1 bb bw2">Bolt examples</h1>
         </div>
       </div>
+      <!-- Text Inputs -->
       <div class="row">
-        <div class="col-xs-12 col-md-6 br-md">
-          <div class="pr-md-3">
-            <h2 class="h2">Left</h2>
-            <p>Ipsum ipsum <span class="bold">mollit</span> irure sit laboris commodo esse sint excepteur proident. Occaecat sint veniam cupidatat duis labore nulla laborum. Quis ut officia nisi esse ipsum consequat laborum aliqua aute excepteur dolor commodo. Aute voluptate sit voluptate fugiat nostrud dolore deserunt reprehenderit esse quis mollit labore fugiat pariatur. Incididunt esse dolor non eu quis proident nostrud ut enim ad velit cillum. Voluptate voluptate reprehenderit excepteur labore incididunt minim esse enim aliqua do occaecat sint ipsum minim est occaecat veniam. Aliqua cillum voluptate anim nulla eiusmod consequat culpa aute commodo nostrud. Voluptate deserunt irure tempor dolor pariatur mollit mollit id pariatur incididunt elit proident consectetur nisi non.</p>
-          </div>
+        <div class="col-xs-12 col-md-6">
+          <h2 class="h2 bb bw2">Text Inputs</h2>
+          <form>
+            <fieldset>
+              <div class="form-group">
+                <label for='normal'>Normal input</label>
+                <input type='text' id="normal" placeholder='Normal input' class='input-text full-width'>
+                <label for='red'>Red/error input</label>
+                <input type='text' placeholder='Red/error input' class='input-text input-text-red full-width'>
+                <label for='red'>Green/success input</label>
+                <input type='text' placeholder='Green/success input' class='input-text input-text-green full-width'>
+              </div>
+            </fieldset>
+          </form>
         </div>
         <div class="col-xs-12 col-md-6">
-          <div class="pl-md-3">
-            <h2 class="h2">Right</h2>
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-            <form>
-              <fieldset>
-                <div class="form-element">
-                  <label for='username'>Username</label>
-                  <input type='text' id='username' placeholder='Your username' class='form-input'>
-                </div>
-                <div class='form-element'>
-                  <label for='comment'>Write a comment</label>
-                  <textarea id='comment' class='form-input' placeholder='This is a sample message'></textarea>
-                </div>
-                <button type='submit' class='btn btn-pewter'>Send</button>
-              </fieldset>
-            </form>
-          </div>
+          <h2 class="h2 bb bw2">Code</h2>
+          <pre>
+            <code class="html escape">
+<form>
+  <fieldset>
+    <div class="form-group">
+      <label for='normal'>Normal input</label>
+      <input type='text' id="normal" placeholder='Normal input' class='input-text full-width'>
+      <label for='red'>Red/error input</label>
+      <input type='text' placeholder='Red/error input' class='input-text input-text-red full-width'>
+      <label for='red'>Green/success input</label>
+      <input type='text' placeholder='Green/success input' class='input-text input-text-green full-width'>
+    </div>
+  </fieldset>
+</form>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h2 class="h2 bb bw2">Buttons</h2>
+          <button class="btn btn-1" type="button">Large Button</button>
+          <button class="btn" type="button">Normal Button</button>
+          <button class="btn btn-3" type="button">Small Button</button>
+          <button class="btn btn-red" type="button">Red/Error Button</button>
+          <button class="btn btn-green" type="button">Green/Success Button</button>
+          <button class="btn btn-outlined" type="button" >Outlined Button</button>
+          <button class="btn btn-outlined-red" type="button">Red Outlined Button</button>
+          <button class="btn btn-outlined-green" type="button">Green Outlined Button</button>
+          <button class="btn btn-disabled" type="button" disabled="disabled">Disabled Button</button>
+          <button class="btn btn-outlined btn-disabled" type="button" disabled="disabled">Outlined Disabled</button>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2 class="h2 bb bw2">Code</h2>
+          <pre>
+            <code class="html escape">
+<button class="btn btn-1" type="button">Large Button</button>
+<button class="btn" type="button">Normal Button</button>
+<button class="btn btn-3" type="button">Small Button</button>
+<button class="btn btn-red" type="button">Red/Error Button</button>
+<button class="btn btn-green" type="button">Green/Success Button</button>
+<button class="btn btn-outlined" type="button" >Outlined Button</button>
+<button class="btn btn-outlined-red" type="button">Red Outlined Button</button>
+<button class="btn btn-outlined-green" type="button">Green Outlined Button</button>
+<button class="btn btn-disabled" type="button" disabled="disabled">Disabled Button</button>
+<button class="btn btn-outlined btn-disabled" type="button" disabled="disabled">Outlined Disabled</button>
+            </code>
+          </pre>
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+      function renderCode(){
+        $(".escape").each(function() {
+          $(this).text($(this).html().replace(/&gt;/g, ">").replace(/&lt;/g, "<"));
+        });
+      }
+      renderCode();
+    </script>
   </body>
 </html>
