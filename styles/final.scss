@@ -1,19 +1,10 @@
-// Config
 @import "config";
-
-// Helpers
-@import "final-helpers/fonts";
-
-// Utilities
-@import "final-utilities/colors";
-@import "final-utilities/borders";
-@import "final-utilities/box-shadow";
-@import "final-utilities/font-families";
-
-// Base
-@import "final-base/typography";
-
-// Components
-@import "final-components/buttons";
-@import "final-components/separators";
-@import "final-components/forms";
+@import "colors";
+@import "fonts";
+@import "font-families";
+@import "typography";
+@import "box-shadow";
+@import "borders";
+@import "buttons";
+@import "separators";
+@import "forms";

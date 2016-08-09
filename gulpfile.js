@@ -64,7 +64,7 @@ gulp.task('watch', ['browser-sync'], function() {
 
 // Dev Styles
 gulp.task('styles-dev', function() {
-  return sass('styles/final-test.scss', {style:'nested'})
+  return sass('test/styles/test.scss', {style:'nested'})
     .pipe(plumber({ errorHandler: onError }))
     .pipe(postcss([
       autoprefixer({browsers: ['last 2 version']}),
@@ -84,7 +84,7 @@ gulp.task('styles-dev', function() {
 
 // Styles Production
 gulp.task('styles-prod', function() {
-  return sass('styles/final-test.scss', { style: 'nested' })
+  return sass('styles/test.scss', { style: 'nested' })
     .pipe(plumber({ errorHandler: onError }))
     .pipe(postcss([
       autoprefixer({browsers: ['last 2 version']}),
@@ -104,7 +104,7 @@ gulp.task('styles-prod', function() {
 
 // IE Styles
 gulp.task('styles-ie', function() {
-  return sass(['styles/bolt-ie.scss'], { style: 'nested' })
+  return sass(['styles/manifest-ie.scss'], { style: 'nested' })
     .pipe(plumber({ errorHandler: onError }))
     .pipe(postcss([autoprefixer({browsers: [
       'last 2 version',

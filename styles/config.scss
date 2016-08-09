@@ -26,16 +26,8 @@ $base-font-color: $baltic;
 $base-border-color: $baltic;
 
 // ======================
-// Buttons
+// Form
 // ======================
 
-$button-colors: (
-  pewter: $pewter,
-  whale: $whale,
-  baltic: $baltic,
-  sunglow: $sunglow
-)!default;
-
-// ======================
-// Typography
-// ======================
+$form-border-color-focus: $pewter !important;
+$form-background-color-focus: lighten($form-border-color-focus, 50%) !important;
