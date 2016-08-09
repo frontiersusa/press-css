@@ -2,9 +2,14 @@
 // Imports
 // ======================
 
-@import "../bower_components/bolt/styles/manifest-all";
-@import "manifest-all.scss";
+// Load config files
+@import "../../bower_components/bolt/styles/bolt-config";
+@import "../../styles/final-config";
+
+// Load cores
+@import "../../bower_components/bolt/styles/bolt";
+@import "../../styles/final";
 
 // ======================
-// Custom code just for test
+// Custom code just for testq
 // ======================
