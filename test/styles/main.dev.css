@@ -14,6 +14,16 @@ Table of Contents:
 - Buttons
 
 */
+/*
+
+Instructions:
+This file directly overrides Bolt's config file. Override or set new variables here.
+
+Table of Contents:
+- Colors
+- Forms
+
+*/
 .ma-auto {
   margin: auto !important; }
 
