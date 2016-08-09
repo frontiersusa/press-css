@@ -1,18 +1,8 @@
-@mixin input-reset {
-  box-shadow: none;
-  appearance: none;
-  border: 0;
-  outline: none;
-  &:focus {
-    outline: none;
-  }
+.label {
+  @include sans-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
-
-// .input {
-//   @include input-reset;
-//   border-radius: $base-border-radius;
-//   box-shadow: inset 0 0 0 2px $seashell;
-//   &:focus {
-//     box-shadow: inset 0 0 0 2px $pewter-light;
-//   }
-// }
+.input-text {
+  @include sans-med;
+}

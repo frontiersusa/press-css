@@ -4459,26 +4459,26 @@ body {
     cursor: not-allowed; }
 
 .btn-1 {
-  padding-right: 1.875rem;
-  padding-left: 1.875rem;
-  font-size: 1.375rem; }
-  .btn-1:not([class*='btn-outlined']) {
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem; }
-  .btn-1[class*='btn-outlined'] {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
-
-.btn-3 {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   font-size: 0.750em; }
-  .btn-3:not([class*='btn-outlined']) {
+  .btn-1:not([class*='btn-outlined']) {
     padding-top: 0.563rem;
     padding-bottom: 0.563rem; }
-  .btn-3[class*='btn-outlined'] {
+  .btn-1[class*='btn-outlined'] {
     padding-top: 0.438rem;
     padding-bottom: 0.438rem; }
+
+.btn-3 {
+  padding-right: 1.875rem;
+  padding-left: 1.875rem;
+  font-size: 1.375rem; }
+  .btn-3:not([class*='btn-outlined']) {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem; }
+  .btn-3[class*='btn-outlined'] {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
 
 .btn-red {
   background-color: #e80044; }
@@ -4605,14 +4605,14 @@ label {
     background-color: #ebf8f0; }
 
 .input-text-1 {
+  padding: 0 0.625rem;
+  height: 2.25rem;
+  font-size: 0.875rem; }
+
+.input-text-1 {
   padding: 0 0.9375rem;
   height: 3.3125rem;
   font-size: 1.125rem; }
-
-.input-text-3 {
-  padding: 0 0.625rem;
-  height: 2.25rem;
-  font-size: 1rem; }
 
 .whale {
   color: #083549; }
@@ -4921,3 +4921,15 @@ label {
 .sep-pewter-1 {
   width: 6.25rem;
   border-bottom: 0.3125rem solid #E6E6E6; }
+
+.label {
+  font-family: "Avenir Bold", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem; }
+
+.input-text {
+  font-family: "Avenir Medium", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  font-style: normal; }
