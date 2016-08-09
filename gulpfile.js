@@ -94,7 +94,7 @@ gulp.task('watch', ['browser-sync'], function() {
 gulp.task('styles-dev', function() {
   sass('test/styles/test.scss')
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(findConfig())
+    // .pipe(findConfig())
     .pipe(postcss([
       autoprefixer({browsers: ['last 2 version']}),
       pxtorem({
