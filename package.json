@@ -1,7 +1,11 @@
 {
   "name": "final",
   "version": "2.0.0",
-  "description": "",
+  "description": "Final is a font-end codebase for Frontiers properties.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natedunn/final"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
