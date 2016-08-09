@@ -8,6 +8,9 @@
   },
   "author": "Nate Dunn",
   "license": "ISC",
+  "dependencies": {
+    "bolt": "git+ssh://git@github.com/natedunn/bolt.git#master"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "browser-sync": "^2.11.1",

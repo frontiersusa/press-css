@@ -3,11 +3,11 @@
 // ======================
 
 // Load config files
-@import "../../bower_components/bolt/styles/bolt-config";
+@import "../../node_modules/bolt/styles/bolt-config";
 @import "../../styles/final-config";
 
 // Load cores
-@import "../../bower_components/bolt/styles/bolt";
+@import "../../node_modules/bolt/styles/bolt";
 @import "../../styles/final";
 
 // ======================
