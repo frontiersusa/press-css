@@ -1,8 +1,12 @@
 .label {
-  @include sans-bold;
+  font-family: "Avenir Bold", #{$sans-default};
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
 }
 .input-text {
-  @include sans-med;
+  font-family: "Avenir Medium", #{$sans-default};
+  font-weight: 400;
+  font-style: normal;
 }
