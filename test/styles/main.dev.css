@@ -3409,7 +3409,7 @@ html {
 
 body {
   position: relative;
-  min-height: 100%;
+  height: 100%;
   width: 100%; }
 
 p {
@@ -3756,6 +3756,33 @@ body {
   background-color: #83e1ff;
   color: white; }
 
+a,
+.link {
+  color: #00B0E9; }
+  a:hover,
+  .link:hover {
+    color: #0089b6; }
+  a:focus,
+  .link:focus {
+    outline: 1;
+    color: #00769d; }
+
+.link-red {
+  color: #e80044; }
+  .link-red:hover {
+    color: #b50035; }
+  .link-red:focus {
+    outline: 1;
+    color: #9c002e; }
+
+.link-green {
+  color: #43bb6e; }
+  .link-green:hover {
+    color: #369558; }
+  .link-green:focus {
+    outline: 1;
+    color: #2f834d; }
+
 .white {
   color: #fff; }
 
@@ -3767,6 +3794,9 @@ body {
 
 .bg-black {
   background-color: #111; }
+
+.bg-whitesmoke {
+  background-color: whitesmoke; }
 
 /*
    Legend:
@@ -4614,6 +4644,9 @@ fieldset {
 .bg-whitesmoke {
   background-color: whitesmoke; }
 
+.bg-whitesmoke-light {
+  background-color: #F9F9F9; }
+
 @font-face {
   font-family: "Avenir Light";
   src: url("../fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
@@ -4742,6 +4775,41 @@ fieldset {
   border-bottom: 0.3125rem solid white;
   content: ""; }
 
+a,
+.link-baltic {
+  color: #3E3E3F; }
+  a:hover,
+  .link-baltic:hover {
+    color: #979799; }
+  a:focus,
+  .link-baltic:focus {
+    outline: 1;
+    color: #7d7d7f; }
+
+.link-pewter {
+  color: #91B1A7; }
+  .link-pewter:hover {
+    color: #517267; }
+  .link-pewter:focus {
+    outline: 1;
+    color: #3c544c; }
+
+.link-whale {
+  color: #083549; }
+  .link-whale:hover {
+    color: #1da8e6; }
+  .link-whale:focus {
+    outline: 1;
+    color: #1588bc; }
+
+.link-baltic-light {
+  color: #8B8B8C; }
+  .link-baltic-light:hover {
+    color: #4b4b4c; }
+  .link-baltic-light:focus {
+    outline: 1;
+    color: #323232; }
+
 .box-shadow-3 {
   box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.07); }
 
@@ -4861,3 +4929,14 @@ fieldset {
   font-family: "Avenir Medium", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   font-style: normal; }
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  background-color: whitesmoke !important;
+  border-radius: 0.188rem !important;
+  font-size: 0.875rem;
+  padding: 0 1.875rem !important;
+  margin: 0; }
+
+.btn {
+  margin: 0.3125rem; }

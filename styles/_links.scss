@@ -1,0 +1,36 @@
+a,
+.link-baltic {
+  color: $baltic;
+  &:hover { color: lighten($baltic, 35%); }
+  &:focus {
+    outline: 1;
+    color: lighten($baltic, 25%);
+  }
+}
+
+.link-pewter {
+  color: $pewter;
+  &:hover { color: darken($pewter, 25%); }
+  &:focus {
+    outline: 1;
+    color: darken($pewter, 35%);
+  }
+}
+
+.link-whale {
+  color: $whale;
+  &:hover { color: lighten($whale, 35%); }
+  &:focus {
+    outline: 1;
+    color: lighten($whale, 25%);
+  }
+}
+
+.link-baltic-light {
+  color: $baltic-light;
+  &:hover { color: darken($baltic-light, 25%); }
+  &:focus {
+    outline: 1;
+    color: darken($baltic-light, 35%);
+  }
+}
