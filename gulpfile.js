@@ -23,11 +23,7 @@ var gulp = require('gulp'),
   postcss = require('gulp-postcss'),
   autoprefixer = require('autoprefixer'),
   cssnano = require('cssnano'),
-  pxtorem = require('postcss-pxtorem'),
-  lazypipe = require('lazypipe'),
-  fileExists = require('file-exists'),
-  gulpif = require('gulp-if'),
-  jsonToSass = require('gulp-json-to-sass');
+  pxtorem = require('postcss-pxtorem');
 
 // ======================
 // AUTOMATION
@@ -59,42 +55,17 @@ gulp.task('watch', ['browser-sync'], function() {
   // HTML Files
   gulp.watch('./test/**/*.html'), ['bs-reload'];
   // Project Styles
-  gulp.watch('styles/**/*.scss', ['test'])
+  gulp.watch('./**/*.scss', ['build'])
 });
 
 // ======================
 // STYLES
 // ======================
 
-// // Find Config.json file
-// var boltConfig = "./bower_components/bolt/styles/config.json";
-// var localConfig = "./styles/config.json";
-//
-// if(fileExists(localConfig)) {
-//   var foundLocal = true;
-// } else {
-//   var foundLocal = false;
-// }
-//
-// var findConfig = lazypipe()
-// .pipe(function () {
-//   return gulpif(foundLocal,
-//     jsonToSass({
-//       jsonPath: localConfig,
-//       scssPath: 'styles/test-config.scss'
-//     }),
-//     jsonToSass({
-//       jsonPath: boltConfig,
-//       scssPath: 'styles/test-config.scss'
-//     })
-//   )
-// })
-
 // Dev Styles
 gulp.task('styles-dev', function() {
   sass('test/styles/test.scss')
     .pipe(plumber({ errorHandler: onError }))
-    // .pipe(findConfig())
     .pipe(postcss([
       autoprefixer({browsers: ['last 2 version']}),
       pxtorem({
@@ -105,12 +76,12 @@ gulp.task('styles-dev', function() {
       })
     ]))
     .pipe(sourcemaps.init())
-    .pipe(concat('main.dev.css'))
+    .pipe(concat('final.css'))
     .pipe(gulp.dest('./test/styles'))
+    .pipe(gulp.dest('./css'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(notify({ message: 'DEVELOPMENT STYLES task complete'}))
 });
-
 
 // Styles Production
 gulp.task('styles-prod', function() {
@@ -123,30 +94,34 @@ gulp.task('styles-prod', function() {
         replace: true,
         propWhiteList: [],
         mediaQuery: false
+      }),
+      cssnano({
+        discardComments: {removeAll: true}
       })
     ]))
-    .pipe(postcss([cssnano({discardComments: {removeAll: true}})]))
-    .pipe(concat('main.min.css'))
+    .pipe(concat('final.min.css'))
     .pipe(gulp.dest('./test/styles'))
+    .pipe(gulp.dest('./css'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(notify({ message: 'PRODUCTION STYLES task complete' }));
 });
 
 // IE Styles
-// gulp.task('styles-ie', function() {
-//   return sass(['styles/ie.scss'], { style: 'nested' })
-//     .pipe(plumber({ errorHandler: onError }))
-//     .pipe(postcss([autoprefixer({browsers: [
-//       'last 2 version',
-//       'ie 7',
-//       'ie 8',
-//       'ie 9'
-//     ]})]))
-//     .pipe(concat('ie.main.css'))
-//     .pipe(gulp.dest('./test/styles'))
-//     .pipe(browserSync.reload({ stream: true }))
-//     .pipe(notify({ message: 'IE STYLES task complete' }));
-// });
+gulp.task('styles-ie', function() {
+  return sass(['styles/manifest-ie.scss'], { style: 'nested' })
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(postcss([autoprefixer({browsers: [
+      'last 2 version',
+      'ie 7',
+      'ie 8',
+      'ie 9'
+    ]})]))
+    .pipe(concat('ie.main.css'))
+    .pipe(gulp.dest('./test/styles'))
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(notify({ message: 'IE STYLES task complete' }));
+});
 
 // ======================
 // IMAGES
@@ -167,14 +142,15 @@ gulp.task('images', ['clean:images'], function() {
 
 // Clean Styles
 gulp.task('clean:styles', function () {
-  return del('test/styles/**/*.css');
+  return del('./test/styles/**/*.css');
+  return del('./css/**/*.css');
 });
 
 // ======================
 // BUILD
 // ======================
 
-gulp.task('test', function(callback) {
+gulp.task('build', function(callback) {
   runSequence(
     'clean:styles',
     'styles-dev',
