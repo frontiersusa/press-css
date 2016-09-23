@@ -1,0 +1,20 @@
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+::-moz-selection {
+  background-color: $base-selection-color;
+  color: white;
+}
+::selection {
+  background-color: $base-selection-color;
+  color: white;
+}

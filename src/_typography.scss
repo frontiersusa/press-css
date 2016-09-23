@@ -1,0 +1,40 @@
+body {
+  font-family: #{$base-font-family};
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-color;
+  text-rendering: optimizeSpeed
+}
+
+// .header-underline-pewter:after {
+//   display: block;
+//   margin-top: 20px;
+//   margin-bottom: 25px;;
+//   width: 100px;
+//   border-bottom: 5px solid $pewter;
+//   content: "";
+// }
+// .header-underline-baltic:after  {
+//   display: block;
+//   margin-top: 20px;
+//   margin-bottom: 25px;;
+//   width: 100px;
+//   border-bottom: 5px solid $baltic;
+//   content: "";
+// }
+// .header-underline-seashell:after  {
+//   display: block;
+//   margin-top: 20px;
+//   margin-bottom: 25px;;
+//   width: 100px;
+//   border-bottom: 5px solid $seashell;
+//   content: "";
+// }
+// .header-underline-white:after  {
+//   display: block;
+//   margin-top: 20px;
+//   margin-bottom: 25px;;
+//   width: 100px;
+//   border-bottom: 5px solid white;
+//   content: "";
+// }
