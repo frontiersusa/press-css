@@ -1,12 +1,16 @@
+// ======================
+// Button Bases
+// ======================
+
 .btn,
 a.btn {
   display: inline-block;
   padding-right: $button-x-2;
   padding-left: $button-x-2;
   border: $button-border-width;
-  border-radius: $button-border-radius;
-  background-color: $button-bg-color;
-  color: $button-font-color;
+  border-radius: 3px;
+  background-color: lighten($whale, 10%);
+  color: white;
   text-align: center;
   text-decoration: none;
   font-weight: $button-font-weight;
@@ -22,18 +26,57 @@ a.btn {
     padding-top: $button-y-2;
     padding-bottom: $button-y-2;
   }
-  &:hover {
-    background-color: darken($button-bg-color, 10%);
-  }
-  &:focus {
-    background-color: darken($button-bg-color, 20%);
-  }
+  &:hover,
+  &:focus,
+  &:active { background-color: lighten($whale, 20%); }
   &:disabled,
   &.btn-disabled {
     background-color: lighten($button-bg-color, 40%);
     cursor: not-allowed;
   }
 }
+
+*[class*='btn-outline'],
+a*[class*='btn-outline'] {
+  background-color: transparent;
+  border-width: $button-border-width;
+  border-style: solid;
+  padding-top: ($button-y-2 - 0.125rem);
+  padding-bottom: ($button-y-2 - 0.125rem);
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+  &:disabled,
+  &.btn-disabled {
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+.btn-outlined,
+a.btn-outlined {
+  border-color: $blue;
+  color: $blue;
+  &:hover,
+  &:focus,
+  &:active  {
+    border-color: darken($blue, 20%);
+    color: darken($blue, 20%);
+  }
+  &:disabled,
+  &.btn-disabled {
+    border-color: lighten($blue, 20%);
+    color: lighten($blue, 20%);
+    background-color: transparent;
+  }
+}
+
+// ======================
+// Button Sizes
+// ======================
 
 .btn-1,
 a.btn-1 {
@@ -64,92 +107,42 @@ a.btn-3 {
   }
 }
 
-// Basic solid colors
-.btn-red,
-a.btn-red {
+// ======================
+// Button States
+// ======================
+
+.btn-error,
+a.btn-error {
   background-color: $error;
-  &:hover {
-    background-color: darken($error, 10%);
-  }
-  &:focus {
-    background-color: darken($error, 20%);
-  }
+  &:hover { background-color: darken($error, 10%); }
+  &:focus { background-color: darken($error, 20%); }
   &:disabled,
   &.btn-disabled {
     background-color: lighten($error, 30%);
   }
 }
-.btn-green,
-a.btn-green {
+.btn-success,
+a.btn-success {
   background-color: $success;
-  &:hover {
-    background-color: darken($success, 10%);
-  }
-  &:focus {
-    background-color: darken($success, 20%);
-  }
+  &:hover { background-color: darken($success, 10%); }
+  &:focus { background-color: darken($success, 15%); }
   &:disabled,
   &.btn-disabled {
     background-color: lighten($success, 30%);
   }
 }
-// .btn-gray,
-// a.btn-gray {
-//   background-color: $gray-lighter;
-//   color: $gray-darker;
-//   &:hover {
-//     background-color: darken($gray-lighter, 10%);
-//   }
-//   &:focus {
-//     color: white;
-//     background-color: darken($gray-lighter, 20%);
-//   }
-//   &:disabled,
-//   &.btn-disabled {
-//     background-color: $gray-lighter;
-//     color: $gray-light;
-//   }
-// }
-
-// Button outlines
-*[class*='btn-outline'],
-a*[class*='btn-outline'] {
-  background-color: transparent;
-  border-width: $button-border-width;
-  border-style: solid;
-  padding-top: ($button-y-2 - 0.125rem);
-  padding-bottom: ($button-y-2 - 0.125rem);
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration: underline;
-    background-color: transparent;
-  }
+.btn-warn,
+a.btn-warn {
+  background-color: $warn;
+  &:hover { background-color: darken($warn, 10%); }
+  &:focus { background-color: darken($warn, 15%); }
   &:disabled,
   &.btn-disabled {
-    text-decoration: none;
-    background-color: transparent;
+    background-color: lighten($warn, 20%);
   }
 }
-// .btn-outlined,
-// a.btn-outlined {
-//   border-color: $blue;
-//   color: $blue;
-//   &:hover,
-//   &:focus,
-//   &:active  {
-//     border-color: darken($blue, 20%);
-//     color: darken($blue, 20%);
-//   }
-//   &:disabled,
-//   &.btn-disabled {
-//     border-color: $blue-light;
-//     color: $blue-light;
-//     background-color: transparent;
-//   }
-// }
-.btn-outlined-red,
-a.btn-outlined-red {
+.btn-outlined-error,
+a.btn-outlined-error {
   border-color: $error;
   color: $error;
   &:hover,
@@ -164,15 +157,15 @@ a.btn-outlined-red {
     color: lighten($error, 30%);
   }
 }
-.btn-outlined-green,
-a.btn-outlined-green {
+.btn-outlined-success,
+a.btn-outlined-success {
   border-color: $success;
   color: $success;
   &:hover,
   &:focus,
   &:active  {
-    border-color: darken($success, 20%);
-    color: darken($success, 20%);
+    border-color: darken($success, 30%);
+    color: darken($success, 30%);
   }
   &:disabled,
   &.btn-disabled  {
@@ -180,78 +173,77 @@ a.btn-outlined-green {
     color: lighten($success, 30%);
   }
 }
-// .btn-outlined-gray,
-// a.btn-outlined-gray {
-//   border-color: $gray-light;
-//   color: $gray;
-//   &:hover,
-//   &:focus,
-//   &:active  {
-//     border-color: $gray;
-//     color: $gray-dark;
-//   }
-//   &:disabled,
-//   &.btn-disabled  {
-//     border-color: $gray-lighter;
-//     color: lighten($gray-light, 20%);
-//   }
-// }
-
-.btn-pewter {
-  background-color: $pewter;
-  &:hover {
-    background-color: darken($pewter, 10%);
+.btn-outlined-warn,
+a.btn-outlined-warn {
+  border-color: $warn;
+  color: $warn;
+  &:hover,
+  &:focus,
+  &:active  {
+    border-color: darken($warn, 30%);
+    color: darken($warn, 30%);
   }
   &:disabled,
-  &.btn-disabled {
-    background-color: lighten((desaturate($pewter, 2%)), 20%);
+  &.btn-disabled  {
+    border-color: lighten($warn, 20%);
+    color: lighten($warn, 20%);
   }
 }
-.btn-seashell {
+
+// Brand colors
+.btn-pewter,
+a.btn-pewter {
+  background-color: $pewter;
+  &:hover,
+  &:focus,
+  &:active { background-color: darken($pewter, 10%); }
+  &:disabled,
+  &.btn-disabled { background-color: lighten((desaturate($pewter, 2%)), 20%); }
+}
+// Not needed since .btn contains these styles by default
+// .btn-whale,
+// a.btn-whale {
+//   background-color: lighten($whale, 10%);
+//   &:hover,
+//   &:focus,
+//   &:active { background-color: lighten($whale, 20%); }
+//   &:disabled,
+//   &.btn-disabled { background-color: lighten((desaturate($whale, 50%)), 50%); }
+// }
+.btn-sunglow,
+a.btn-sunglow {
+  background-color: $sunglow;
+  &:hover,
+  &:focus,
+  &:active { background-color: darken($sunglow, 15%); }
+  &:disabled,
+  &.btn-disabled { background-color: lighten((desaturate($sunglow, 50%)), 25%); }
+}
+.btn-baltic,
+a.btn-baltic {
+  background-color: $baltic;
+  &:hover,
+  &:focus,
+  &:active { background-color: lighten($baltic, 15%); }
+  &:disabled,
+  &.btn-disabled { background-color: lighten((desaturate($baltic, 50%)), 50%); }
+}
+.btn-seashell,
+a.btn-seashell {
   background-color: $seashell;
   color: $baltic;
-  &:hover {
-    background-color: darken($seashell, 10%);
-  }
+  &:hover,
+  &:focus,
+  &:active { background-color: darken($seashell, 10%); }
   &:disabled,
   &.btn-disabled {
     color: $seashell-light;
     background-color: darken($seashell, 15%);
   }
 }
-.btn-baltic {
-  background-color: $baltic;
-  &:hover {
-    background-color: lighten($baltic, 10%);
-  }
-  &:disabled,
-  &.btn-disabled {
-    background-color: lighten((desaturate($baltic, 50%)), 50%);
-  }
-}
-.btn-whale {
-  background-color: $whale;
-  &:hover {
-    background-color: lighten($whale, 10%);
-  }
-  &:disabled,
-  &.btn-disabled {
-    background-color: lighten((desaturate($whale, 50%)), 50%);
-  }
-}
-.btn-sunglow {
-  background-color: $sunglow;
-  &:hover {
-    background-color: darken($sunglow, 10%);
-  }
-  &:disabled,
-  &.btn-disabled {
-    background-color: lighten((desaturate($sunglow, 50%)), 25%);
-  }
-}
 
-// Outlined
-.btn-outlined-pewter {
+.btn-outlined-pewter,
+a.btn-outlined-pewter {
   border-color: $pewter;
   color: $pewter;
   &:hover {
@@ -264,20 +256,8 @@ a.btn-outlined-green {
     color: $pewter-light;
   }
 }
-.btn-outlined-baltic {
-  border-color: $baltic;
-  color: $baltic;
-  &:hover {
-    border-color: lighten($baltic, 30%);
-    color: lighten($baltic, 30%);
-  }
-  &:disabled,
-  &.btn-disabled  {
-    border-color: $baltic-light;
-    color: $baltic-light;
-  }
-}
-.btn-outlined-whale {
+.btn-outlined-whale,
+a.btn-outlined-whale {
   border-color: $whale-light;
   color: $whale-light;
   &:hover {
@@ -290,7 +270,8 @@ a.btn-outlined-green {
     color: $whale-light;
   }
 }
-.btn-outlined-sunglow {
+.btn-outlined-sunglow,
+a.btn-outlined-sunglow {
   border-color: $sunglow;
   color: $sunglow;
   &:hover {
@@ -301,6 +282,20 @@ a.btn-outlined-green {
   &.btn-disabled  {
     border-color: $sunglow-light;
     color: $sunglow-light;
+  }
+}
+.btn-outlined-baltic,
+a.btn-outlined-baltic {
+  border-color: $baltic;
+  color: $baltic;
+  &:hover {
+    border-color: lighten($baltic, 30%);
+    color: lighten($baltic, 30%);
+  }
+  &:disabled,
+  &.btn-disabled  {
+    border-color: $baltic-light;
+    color: $baltic-light;
   }
 }
 
