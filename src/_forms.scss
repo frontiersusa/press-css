@@ -1,16 +1,3 @@
-.label {
-  font-family: "Avenir Bold", #{$sans-default};
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-}
-.input-text {
-  font-family: "Avenir Medium", #{$sans-default};
-  font-weight: 400;
-  font-style: normal;
-}
-
 // Resets
 .input-reset {
   -webkit-appearance: none;
@@ -22,53 +9,68 @@ fieldset {
   padding: 0;
 }
 
-// Base
-.label {
-  font-size: 13px;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
-}
+// Bases
 .input-text {
+  font-family: "Avenir Medium", #{$sans-default};
+  font-weight: 400;
+  font-style: normal;
   padding: 0 12px;
   height: 2.75rem;
   border-width: 0.125rem;
-  border-color: $form-border-color;
+  border-color: $baltic-light;
   border-radius: 0.188rem;
   border-style: solid;
   appearance: none;
   margin-bottom: 10px;
   &:focus {
     outline: 0;
-    border-color: $form-border-color-focus;
-    background-color: $form-background-color-focus;
+    border-color: darken($baltic-light, 20%);
+    background-color: lighten($baltic, 71%);
   }
+}
+.label {
+  font-family: "Avenir Bold", #{$sans-default};
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
 }
 
 // Input States
-.input-text-red {
+.input-text-error {
   border-color: lighten($error, 10%);
   &:focus {
     border-color: $error;
-    background-color: lighten($error, 30%);
+    background-color: lighten($error, 40%);
   }
 }
-.input-text-green {
+.input-text-success {
   border-color: lighten($success, 10%);
   &:focus {
     border-color: $success;
-    background-color: lighten($success, 30%);
+    background-color: lighten($success, 35%);
+  }
+}
+.input-text-warn {
+  border-color: lighten($warn, 10%);
+  &:focus {
+    border-color: $warn;
+    background-color: lighten($warn, 30%);
   }
 }
 
-// Text Inputs Sizes
+// Text Input Sizes
 .input-text-1 {
-  padding: 0 10px;
-  height: $form-height-1;
-  font-size: $form-font-1;
+  padding: 0 0.625rem;
+  height: 2.25rem;
+  font-size: 0.875rem;
 }
-.input-text-1 {
-  padding: 0 15px;
-  height: $form-height-3;
-  font-size: $form-font-3;
+.input-text-3 {
+  padding: 0 0.938rem;
+  height: 3.313rem;
+  font-size: 1.25rem;
 }
