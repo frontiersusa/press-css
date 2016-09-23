@@ -67,49 +67,49 @@ a.btn-3 {
 // Basic solid colors
 .btn-red,
 a.btn-red {
-  background-color: $red;
+  background-color: $error;
   &:hover {
-    background-color: darken($red, 10%);
+    background-color: darken($error, 10%);
   }
   &:focus {
-    background-color: darken($red, 20%);
+    background-color: darken($error, 20%);
   }
   &:disabled,
   &.btn-disabled {
-    background-color: lighten($red, 40%);
+    background-color: lighten($error, 30%);
   }
 }
 .btn-green,
 a.btn-green {
-  background-color: $green;
+  background-color: $success;
   &:hover {
-    background-color: darken($green, 10%);
+    background-color: darken($success, 10%);
   }
   &:focus {
-    background-color: darken($green, 20%);
+    background-color: darken($success, 20%);
   }
   &:disabled,
   &.btn-disabled {
-    background-color: $green-light;
+    background-color: lighten($success, 30%);
   }
 }
-.btn-gray,
-a.btn-gray {
-  background-color: $gray-lighter;
-  color: $gray-darker;
-  &:hover {
-    background-color: darken($gray-lighter, 10%);
-  }
-  &:focus {
-    color: white;
-    background-color: darken($gray-lighter, 20%);
-  }
-  &:disabled,
-  &.btn-disabled {
-    background-color: $gray-lighter;
-    color: $gray-light;
-  }
-}
+// .btn-gray,
+// a.btn-gray {
+//   background-color: $gray-lighter;
+//   color: $gray-darker;
+//   &:hover {
+//     background-color: darken($gray-lighter, 10%);
+//   }
+//   &:focus {
+//     color: white;
+//     background-color: darken($gray-lighter, 20%);
+//   }
+//   &:disabled,
+//   &.btn-disabled {
+//     background-color: $gray-lighter;
+//     color: $gray-light;
+//   }
+// }
 
 // Button outlines
 *[class*='btn-outline'],
@@ -131,71 +131,71 @@ a*[class*='btn-outline'] {
     background-color: transparent;
   }
 }
-.btn-outlined,
-a.btn-outlined {
-  border-color: $blue;
-  color: $blue;
-  &:hover,
-  &:focus,
-  &:active  {
-    border-color: darken($blue, 20%);
-    color: darken($blue, 20%);
-  }
-  &:disabled,
-  &.btn-disabled {
-    border-color: $blue-light;
-    color: $blue-light;
-    background-color: transparent;
-  }
-}
+// .btn-outlined,
+// a.btn-outlined {
+//   border-color: $blue;
+//   color: $blue;
+//   &:hover,
+//   &:focus,
+//   &:active  {
+//     border-color: darken($blue, 20%);
+//     color: darken($blue, 20%);
+//   }
+//   &:disabled,
+//   &.btn-disabled {
+//     border-color: $blue-light;
+//     color: $blue-light;
+//     background-color: transparent;
+//   }
+// }
 .btn-outlined-red,
 a.btn-outlined-red {
-  border-color: $red;
-  color: $red;
+  border-color: $error;
+  color: $error;
   &:hover,
   &:focus,
   &:active  {
-    border-color: darken($red, 20%);
-    color: darken($red, 20%);
+    border-color: darken($error, 20%);
+    color: darken($error, 20%);
   }
   &:disabled,
   &.btn-disabled  {
-    border-color: $red-light;
-    color: $red-light;
+    border-color: lighten($error, 30%);
+    color: lighten($error, 30%);
   }
 }
 .btn-outlined-green,
 a.btn-outlined-green {
-  border-color: $green;
-  color: $green;
+  border-color: $success;
+  color: $success;
   &:hover,
   &:focus,
   &:active  {
-    border-color: darken($green, 20%);
-    color: darken($green, 20%);
+    border-color: darken($success, 20%);
+    color: darken($success, 20%);
   }
   &:disabled,
   &.btn-disabled  {
-    border-color: $green-light;
-    color: $green-light;
+    border-color: lighten($success, 30%);
+    color: lighten($success, 30%);
   }
 }
-.btn-outlined-gray,
-a.btn-outlined-gray {
-  border-color: $gray-light;
-  color: $gray;
-  &:hover,
-  &:focus,
-  &:active  {
-    border-color: $gray;
-    color: $gray-dark;
-  }
-  &:disabled,
-  &.btn-disabled  {
-    border-color: $gray-lighter;
-    color: lighten($gray-light, 20%);
-  }
-}
+// .btn-outlined-gray,
+// a.btn-outlined-gray {
+//   border-color: $gray-light;
+//   color: $gray;
+//   &:hover,
+//   &:focus,
+//   &:active  {
+//     border-color: $gray;
+//     color: $gray-dark;
+//   }
+//   &:disabled,
+//   &.btn-disabled  {
+//     border-color: $gray-lighter;
+//     color: lighten($gray-light, 20%);
+//   }
+// }
 
 .btn-pewter {
   background-color: $pewter;

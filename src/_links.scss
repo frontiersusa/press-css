@@ -1,34 +1,22 @@
-a,
-.link {
-  color: $link-base-color;
-  &:hover {
-    color: darken($link-base-color, 10%);
-  }
-  &:focus {
-    outline: 1;
-    color: darken($link-base-color, 15%);
-  }
-}
-
 .link-red {
-  color: $red;
+  color: $error;
   &:hover {
-    color: darken($red, 10%);
+    color: darken($error, 10%);
   }
   &:focus {
     outline: 1;
-    color: darken($red, 15%);
+    color: darken($error, 15%);
   }
 }
 
 .link-green {
-  color: $green;
+  color: $success;
   &:hover {
-    color: darken($green, 10%);
+    color: darken($success, 10%);
   }
   &:focus {
     outline: 1;
-    color: darken($green, 15%);
+    color: darken($success, 15%);
   }
 }
 

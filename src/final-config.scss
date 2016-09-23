@@ -2,6 +2,8 @@
 // Colors
 // ======================
 
+$blue: #00B0E9 !default;
+
 $pewter: #91B1A7 !default;
 $pewter-light: #B2C8C1 !default;
 $pewter-dark: #829E95 !default;
@@ -25,9 +27,11 @@ $seashell-dark: #CECECE !default;
 $whitesmoke: whitesmoke;
 $whitesmoke-light: #F9F9F9;
 
+
+
 $error: #E2363F !default;
 $warn: #EDB95E !default;
-$sucess: #99D161 !default;
+$success: #99D161 !default;
 
 // ======================
 // Typography
@@ -45,6 +49,24 @@ $font-directory: "../fonts/";
 // Form
 // ======================
 
+// ======================
+// Forms
+// ======================
+
+$form-height-1: 36px !default;
+$form-height-2: 44px !default;
+$form-height-3: 53px !default;
+
+$form-font-1: 14px !default;
+$form-font-2: 16px !default;
+$form-font-3: 18px !default;
+
+$form-border-width: 2px !default;
+$form-border-color-focus: $blue !default;
+$form-background-color-focus: lighten($form-border-color-focus, 50%) !default;
+$form-radius: 3px !default;
+
+$form-border-color: $whale;
 $form-border-color-focus: $whale-light;
 $form-background-color-focus: lighten($form-border-color-focus, 55%);
 
@@ -53,7 +75,7 @@ $form-background-color-focus: lighten($form-border-color-focus, 55%);
 // ======================
 
 $button-border-width: 0.125rem !default;
-$button-border-radius: $base-border-radius !default;
+$button-border-radius: 0.25rem !default;
 $button-font-family: inherit !default;
 $button-font-size: 16px !default;
 $button-font-weight: normal !default;
