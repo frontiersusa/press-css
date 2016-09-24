@@ -22,37 +22,55 @@
       </div>
       <!-- Typography -->
       <div class="row">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-6 typography-container">
           <h2 class="h2 bb bw2 sans-bold">Typography</h2>
-          <h1>Header 1</h1>
-          <h2>Header 2</h2>
-          <h3>Header 3</h3>
-          <h4>Header 4</h4>
-          <h5>Header 5</h5>
-          <h6>Header 6</h6>
+          <h3 class="sans-bold">Headers</h3>
+          <div class="bg-whitesmoke pt1 pr3 pb1 pl3 mt2">
+            <h1>Header 1</h1>
+            <h2>Header 2</h2>
+            <h3>Header 3</h3>
+            <h4>Header 4</h4>
+            <h5>Header 5</h5>
+            <h6>Header 6</h6>
+          </div>
+          <h3 class="sans-bold">Paragraph</h3>
           <p class="bg-whitesmoke pa2 mt2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.
           </p>
-          <a href="#">Default link</a>
-          <a class="link link-whale" href="#">Red link</a>
-          <a class="link link-pewter" href="#">Green link</a>
+          <h3 class="sans-bold">Links</h3>
+          <a class="link" href="#">Default link</a>
+          <a class="link link-baltic" href="#">Baltic link</a>
+          <a class="link link-pewter" href="#">Pewter link</a>
+          <a class="link link-danger" href="#">Danger link</a>
+          <a class="link link-success" href="#">Success link</a>
+          <a class="link link-warn" href="#">Warn link</a>
         </div>
         <div class="col-xs-12 col-md-6">
           <h2 class="h2 bb bw2 sans-bold">Code</h2>
           <pre>
             <code class="html escape">
-<h1>Header 1</h1>
-<h2>Header 2</h2>
-<h3>Header 3</h3>
-<h4>Header 4</h4>
-<h5>Header 5</h5>
-<h6>Header 6</h6>
+<!-- Headers -->
+<div class="bg-whitesmoke pt1 pr3 pb1 pl3 mt2">
+  <h1>Header 1</h1>
+  <h2>Header 2</h2>
+  <h3>Header 3</h3>
+  <h4>Header 4</h4>
+  <h5>Header 5</h5>
+  <h6>Header 6</h6>
+</div>
+
+<!-- Paragraph -->
 <p class="bg-whitesmoke pa2 mt2">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.
 </p>
-<a href="#">Default link</a>
-<a class="link link-red" href="#">Red link</a>
-<a class="link link-green" href="#">Green link</a>
+
+<!-- Links -->
+<a class="link" href="#">Default link</a>
+<a class="link link-baltic" href="#">Baltic link</a>
+<a class="link link-pewter" href="#">Pewter link</a>
+<a class="link link-danger" href="#">Danger link</a>
+<a class="link link-success" href="#">Success link</a>
+<a class="link link-warn" href="#">Warn link</a>
             </code>
           </pre>
         </div>
@@ -62,14 +80,28 @@
         <div class="col-xs-12 col-md-6">
           <h2 class="h2 bb bw2 sans-bold">Text Inputs</h2>
           <form>
+            <h3 class="sans-bold">Input Sizes</h3>
+            <fieldset>
+              <div class="form-group">
+                <label for='normal'>Small input size</label>
+                <input type='text' id="normal" placeholder='Small input size' class='input-text input-text-1 w100'>
+                <label for='normal'>Normal input size</label>
+                <input type='text' id="normal" placeholder='Normal input size' class='input-text w100'>
+                <label for='normal'>Large input size</label>
+                <input type='text' id="normal" placeholder='Large input size' class=' input-text input-text-3 w100'>
+              </div>
+            </fieldset>
+            <h3 class="sans-bold">Input States</h3>
             <fieldset>
               <div class="form-group">
                 <label for='normal'>Normal input</label>
                 <input type='text' id="normal" placeholder='Normal input' class='r4 input-text w100'>
                 <label for='red'>Red/error input</label>
-                <input type='text' placeholder='Red/error input' class='input-text input-text-red w100'>
+                <input type='text' placeholder='Red/error input' class='input-text input-text-error w100'>
                 <label for='red'>Green/success input</label>
-                <input type='text' placeholder='Green/success input' class='input-text input-text-green w100'>
+                <input type='text' placeholder='Green/success input' class='input-text input-text-success w100'>
+                <label for='red'>Yellow/warn input</label>
+                <input type='text' placeholder='Yellow/warn input' class='input-text input-text-warn w100'>
               </div>
             </fieldset>
           </form>
@@ -78,18 +110,31 @@
           <h2 class="h2 bb bw2 sans-bold">Code</h2>
           <pre>
             <code class="html escape">
-<form>
-  <fieldset>
-    <div class="form-group">
-      <label for='normal'>Normal input</label>
-      <input type='text' id="normal" placeholder='Normal input' class='input-text w100'>
-      <label for='red'>Red/error input</label>
-      <input type='text' placeholder='Red/error input' class='input-text input-text-red w100'>
-      <label for='red'>Green/success input</label>
-      <input type='text' placeholder='Green/success input' class='input-text input-text-green w100'>
-    </div>
-  </fieldset>
-</form>
+<!-- Input Sizes -->
+<fieldset>
+  <div class="form-group">
+    <label for='normal'>Small input size</label>
+    <input type='text' id="normal" placeholder='Small input size' class='input-text input-text-1 w100'>
+    <label for='normal'>Normal input size</label>
+    <input type='text' id="normal" placeholder='Normal input size' class='input-text w100'>
+    <label for='normal'>Large input size</label>
+    <input type='text' id="normal" placeholder='Large input size' class=' input-text input-text-3 w100'>
+  </div>
+</fieldset>
+
+<!-- Input States -->
+<fieldset>
+  <div class="form-group">
+    <label for='normal'>Normal input</label>
+    <input type='text' id="normal" placeholder='Normal input' class='r4 input-text w100'>
+    <label for='red'>Red/error input</label>
+    <input type='text' placeholder='Red/error input' class='input-text input-text-error w100'>
+    <label for='red'>Green/success input</label>
+    <input type='text' placeholder='Green/success input' class='input-text input-text-success w100'>
+    <label for='red'>Yellow/warn input</label>
+    <input type='text' placeholder='Yellow/warn input' class='input-text input-text-warn w100'>
+  </div>
+</fieldset>
             </code>
           </pre>
         </div>
@@ -97,32 +142,71 @@
       <!-- Buttons -->
       <div class="row">
         <div class="col-xs-12 col-md-6">
-          <h2 class="h2 bb bw2 sans-bold">Buttons</h2>
+          <h2 class="bb bw2 sans-bold">Buttons</h2>
+          <h3 class="sans-bold">Variations</h3>
           <button class="btn btn-1" type="button">Small Button</button>
           <button class="btn" type="button">Normal Button</button>
           <button class="btn btn-3" type="button">Large Button</button>
-          <button class="btn btn-red" type="button">Red/Error Button</button>
-          <button class="btn btn-green" type="button">Green/Success Button</button>
+          <br>
+          <button class="btn btn-error" type="button">Red/Error Button</button>
+          <button class="btn btn-success" type="button">Green/Success Button</button>
+          <button class="btn btn-warn" type="button">Yellow/Warn Button</button>
+          <br>
           <button class="btn btn-outlined" type="button" >Outlined Button</button>
-          <button class="btn btn-outlined-red" type="button">Red Outlined Button</button>
-          <button class="btn btn-outlined-green" type="button">Green Outlined Button</button>
-          <button class="btn btn-disabled" type="button" disabled="disabled">Disabled Button</button>
-          <button class="btn btn-outlined btn-disabled" type="button" disabled="disabled">Outlined Disabled</button>
+          <button class="btn btn-outlined-error" type="button">Red Outlined Button</button>
+          <button class="btn btn-outlined-success" type="button">Green Outlined Button</button>
+          <br>
+          <button class="btn btn-disabled" type="button" disabled>Disabled Button</button>
+          <button class="btn btn-outlined btn-disabled" type="button" disabled>Outlined Disabled</button>
+          <br>
+          <a class="btn" href="#">Link Button</a>
+          <h3 class="sans-bold">Brand Colors</h3>
+          <button class="btn btn-pewter" type="button">Button Pewter</button>
+          <button class="btn btn-whale" type="button">Button Whale</button>
+          <button class="btn btn-sunglow" type="button">Button Sunglow</button>
+          <button class="btn btn-baltic" type="button">Button Baltic</button>
+          <button class="btn btn-seashell" type="button">Button Seashell</button>
+          <br>
+          <button class="btn btn-pewter btn-disabled" type="button" disabled>Pewter Disabled</button>
+          <button class="btn btn-whale btn-disabled" type="button" disabled>Whale Disabled</button>
+          <button class="btn btn-sunglow btn-disabled" type="button" disabled>Sunglow Disabled</button>
+          <button class="btn btn-baltic btn-disabled" type="button" disabled>Button Baltic</button>
+          <button class="btn btn-seashell btn-disabled" type="button" disabled>Seashell Disabled</button>
         </div>
         <div class="col-xs-12 col-md-6">
           <h2 class="h2 bb bw2 sans-bold">Code</h2>
           <pre>
             <code class="html escape">
+<!-- Variations -->
 <button class="btn btn-1" type="button">Small Button</button>
 <button class="btn" type="button">Normal Button</button>
 <button class="btn btn-3" type="button">Large Button</button>
-<button class="btn btn-red" type="button">Red/Error Button</button>
-<button class="btn btn-green" type="button">Green/Success Button</button>
+<br>
+<button class="btn btn-error" type="button">Red/Error Button</button>
+<button class="btn btn-success" type="button">Green/Success Button</button>
+<button class="btn btn-warn" type="button">Yellow/Warn Button</button>
+<br>
 <button class="btn btn-outlined" type="button" >Outlined Button</button>
-<button class="btn btn-outlined-red" type="button">Red Outlined Button</button>
-<button class="btn btn-outlined-green" type="button">Green Outlined Button</button>
-<button class="btn btn-disabled" type="button" disabled="disabled">Disabled Button</button>
-<button class="btn btn-outlined btn-disabled" type="button" disabled="disabled">Outlined Disabled</button>
+<button class="btn btn-outlined-error" type="button">Red Outlined Button</button>
+<button class="btn btn-outlined-success" type="button">Green Outlined Button</button>
+<br>
+<button class="btn btn-disabled" type="button" disabled>Disabled Button</button>
+<button class="btn btn-outlined btn-disabled" type="button" disabled>Outlined Disabled</button>
+<br>
+<a class="btn" href="#">Link Button</a>
+
+<!-- Brand Colors -->
+<button class="btn btn-pewter" type="button">Button Pewter</button>
+<button class="btn btn-whale" type="button">Button Whale</button>
+<button class="btn btn-sunglow" type="button">Button Sunglow</button>
+<button class="btn btn-baltic" type="button">Button Baltic</button>
+<button class="btn btn-seashell" type="button">Button Seashell</button>
+<br>
+<button class="btn btn-pewter btn-disabled" type="button" disabled>Pewter Disabled</button>
+<button class="btn btn-whale btn-disabled" type="button" disabled>Whale Disabled</button>
+<button class="btn btn-sunglow btn-disabled" type="button" disabled>Sunglow Disabled</button>
+<button class="btn btn-baltic btn-disabled" type="button" disabled>Button Baltic</button>
+<button class="btn btn-seashell btn-disabled" type="button" disabled>Seashell Disabled</button>
             </code>
           </pre>
         </div>
@@ -132,6 +216,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript">
+      // Preserve HTML code
       function renderCode(){
         $(".escape").each(function() {
           $(this).text($(this).html().replace(/&gt;/g, ">").replace(/&lt;/g, "<"));
