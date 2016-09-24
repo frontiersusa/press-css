@@ -1,27 +1,12 @@
-.link-red {
-  color: $error;
-  &:hover {
-    color: darken($error, 10%);
-  }
+.link {
+  color: $whale;
+  &:hover { color: lighten($whale, 35%); }
   &:focus {
     outline: 1;
-    color: darken($error, 15%);
+    color: lighten($whale, 25%);
   }
 }
 
-.link-green {
-  color: $success;
-  &:hover {
-    color: darken($success, 10%);
-  }
-  &:focus {
-    outline: 1;
-    color: darken($success, 15%);
-  }
-}
-
-
-a,
 .link-baltic {
   color: $baltic;
   &:hover { color: lighten($baltic, 35%); }
@@ -39,21 +24,40 @@ a,
     color: darken($pewter, 35%);
   }
 }
-
-.link-whale {
-  color: $whale;
-  &:hover { color: lighten($whale, 35%); }
-  &:focus {
-    outline: 1;
-    color: lighten($whale, 25%);
-  }
-}
-
 .link-baltic-light {
   color: $baltic-light;
   &:hover { color: darken($baltic-light, 25%); }
   &:focus {
     outline: 1;
     color: darken($baltic-light, 35%);
+  }
+}
+
+// ======================
+// Link States
+// ======================
+
+.link-danger {
+  color: $error;
+  &:hover { color: darken($error, 25%); }
+  &:focus {
+    outline: 1;
+    color: darken($error, 35%);
+  }
+}
+.link-success {
+  color: $success;
+  &:hover { color: darken($success, 25%); }
+  &:focus {
+    outline: 1;
+    color: darken($success, 35%);
+  }
+}
+.link-warn {
+  color: $warn;
+  &:hover { color: darken($warn, 25%); }
+  &:focus {
+    outline: 1;
+    color: darken($warn, 35%);
   }
 }
