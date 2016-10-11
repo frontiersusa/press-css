@@ -312,6 +312,20 @@ a.btn-outlined-baltic {
     color: $baltic-light;
   }
 }
+.btn-outlined-seashell,
+a.btn-outlined-seashell {
+  border-color: $seashell;
+  color: $baltic;
+  &:hover {
+    border-color: darken($seashell, 20%);
+    color: $baltic-dark;
+  }
+  &:disabled,
+  &.btn-disabled  {
+    border-color: $baltic-light;
+    color: $baltic-light;
+  }
+}
 
 // With icon
 .btn-icon object[type='image/svg+xml'] {
