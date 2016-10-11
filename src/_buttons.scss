@@ -241,6 +241,20 @@ a.btn-seashell {
     background-color: darken($seashell, 15%);
   }
 }
+.btn-white,
+a.btn-seashell {
+  background-color: white;
+  color: $baltic;
+  border: 2px solid $seashell;
+  &:hover,
+  &:focus,
+  &:active { background-color: $seashell-light; }
+  &:disabled,
+  &.btn-disabled {
+    color: $seashell;
+    background-color: $baltic;
+  }
+}
 
 .btn-outlined-pewter,
 a.btn-outlined-pewter {

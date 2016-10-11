@@ -227,6 +227,14 @@ p {
     outline: 1;
     color: #3c544c; }
 
+.link-whale {
+  color: #083549; }
+  .link-whale:hover {
+    color: #10678e; }
+  .link-whale:focus {
+    outline: 1;
+    color: #1588bc; }
+
 .link-baltic-light {
   color: #8B8B8C; }
   .link-baltic-light:hover {
@@ -531,6 +539,22 @@ a.btn-seashell {
   a.btn-seashell.btn-disabled {
     color: #F0F0F0;
     background-color: silver; }
+
+.btn-white,
+a.btn-seashell {
+  background-color: white;
+  color: #3E3E3F;
+  border: 0.125rem solid #E6E6E6; }
+  .btn-white:hover, .btn-white:focus, .btn-white:active,
+  a.btn-seashell:hover,
+  a.btn-seashell:focus,
+  a.btn-seashell:active {
+    background-color: #F0F0F0; }
+  .btn-white:disabled, .btn-white.btn-disabled,
+  a.btn-seashell:disabled,
+  a.btn-seashell.btn-disabled {
+    color: #E6E6E6;
+    background-color: #3E3E3F; }
 
 .btn-outlined-pewter,
 a.btn-outlined-pewter {
