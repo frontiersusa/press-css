@@ -53,7 +53,7 @@ gulp.task('bs-reload', function() { browserSync.reload(); });
 
 gulp.task('watch', ['browser-sync'], function() {
   // HTML Files
-  gulp.watch('./**/*.html'), ['bs-reload'];
+  gulp.watch('index.html'), ['build'];
   // Project Styles
   gulp.watch('./**/*.scss', ['build'])
 });

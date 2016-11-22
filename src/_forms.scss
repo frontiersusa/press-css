@@ -1,27 +1,31 @@
-// Resets
+// =====================================
+// Form Resets
+// =====================================
 .input-reset {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
 }
 fieldset {
-  border: 0;
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
-// Bases
-.input-text {
-  font-family: "Avenir Medium", #{$sans-default};
-  font-weight: 400;
-  font-style: normal;
+// =====================================
+// Input bases
+// =====================================
+.input {
+  margin-bottom: 10px;
   padding: 0 12px;
   height: 2.75rem;
   border-width: 0.125rem;
+  border-style: solid;
   border-color: $baltic-light;
   border-radius: 0.188rem;
-  border-style: solid;
+  background-color: white;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Avenir Medium", #{$sans-default};
   appearance: none;
-  margin-bottom: 10px;
   &:focus {
     outline: 0;
     border-color: darken($baltic-light, 20%);
@@ -29,48 +33,104 @@ fieldset {
   }
 }
 .label {
-  font-family: "Avenir Bold", #{$sans-default};
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  font-size: 13px;
-  font-weight: bold;
   display: block;
   margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 13px;
+  font-family: "Avenir Bold", #{$sans-default};
+}
+select.input::-ms-expand {
+  display: none;
+}
+select.input {
+  padding-right: 2.5rem;
+  background-color: white;
+  background-image:
+    linear-gradient(45deg, transparent 50%, $baltic-light 50%),
+    linear-gradient(135deg, $baltic-light 50%, transparent 50%),
+    linear-gradient(to right, $seashell, $seashell);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  -moz-transform: rotate(0.0001deg); // Hack/fix for pixel rendering issues in Firefox
 }
 
+// =====================================
+// Input Sizes
+// =====================================
+.input-1 {
+  padding: 0 0.625rem;
+  height: 2.25rem;
+  font-size: 0.875rem;
+}
+select.input-1 {
+  padding-right: 2rem;
+  background-position:
+    calc(100% - 15px) calc(1em + 1px),
+    calc(100% - 10px) calc(1em + 1px),
+    calc(100% - 2.25em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    .0625rem 1.5em;
+}
+.input-3 {
+  padding: 0 0.938rem;
+  height: 3.313rem;
+  font-size: 1.25rem;
+}
+select.input-3 {
+  padding-right: 2.75rem;
+  background-position:
+    calc(100% - 22px) calc(1em + 1px),
+    calc(100% - 16.5px) calc(1em + 1px),
+    calc(100% - 2.2em) 0.5em;
+  background-size:
+    6px 8px,
+    6px 8px,
+    1px 1.5em;
+}
+
+// =====================================
 // Input States
-.input-text-error {
+// =====================================
+.input.input-error {
   border-color: lighten($error, 10%);
   &:focus {
     border-color: $error;
     background-color: lighten($error, 40%);
   }
 }
-.input-text-success {
+select.input-error {
+  background-color: lighten($error, 40%);
+}
+.input.input-success {
   border-color: lighten($success, 10%);
   &:focus {
     border-color: $success;
     background-color: lighten($success, 35%);
   }
 }
-.input-text-warn {
+select.input-success {
+  background-color: lighten($success, 35%);
+}
+.input.input-warn {
   border-color: lighten($warn, 10%);
   &:focus {
     border-color: $warn;
     background-color: lighten($warn, 30%);
   }
 }
-
-// Text Input Sizes
-.input-text-1 {
-  padding: 0 0.625rem;
-  height: 2.25rem;
-  font-size: 0.875rem;
-}
-.input-text-3 {
-  padding: 0 0.938rem;
-  height: 3.313rem;
-  font-size: 1.25rem;
+select.input-warn {
+  background-color: lighten($warn, 30%);
 }

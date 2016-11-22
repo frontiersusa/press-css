@@ -541,18 +541,18 @@ a.btn-seashell {
     background-color: silver; }
 
 .btn-white,
-a.btn-seashell {
+a.btn-white {
   background-color: white;
   color: #3E3E3F;
   border: 0.125rem solid #E6E6E6; }
   .btn-white:hover, .btn-white:focus, .btn-white:active,
-  a.btn-seashell:hover,
-  a.btn-seashell:focus,
-  a.btn-seashell:active {
+  a.btn-white:hover,
+  a.btn-white:focus,
+  a.btn-white:active {
     background-color: #F0F0F0; }
   .btn-white:disabled, .btn-white.btn-disabled,
-  a.btn-seashell:disabled,
-  a.btn-seashell.btn-disabled {
+  a.btn-white:disabled,
+  a.btn-white.btn-disabled {
     color: #E6E6E6;
     background-color: #3E3E3F; }
 
@@ -612,6 +612,20 @@ a.btn-outlined-baltic {
     border-color: #8B8B8C;
     color: #8B8B8C; }
 
+.btn-outlined-seashell,
+a.btn-outlined-seashell {
+  border-color: #E6E6E6;
+  color: #3E3E3F; }
+  .btn-outlined-seashell:hover,
+  a.btn-outlined-seashell:hover {
+    border-color: #b3b3b3;
+    color: #313132; }
+  .btn-outlined-seashell:disabled, .btn-outlined-seashell.btn-disabled,
+  a.btn-outlined-seashell:disabled,
+  a.btn-outlined-seashell.btn-disabled {
+    border-color: #8B8B8C;
+    color: #8B8B8C; }
+
 .btn-icon object[type='image/svg+xml'] {
   vertical-align: middle;
   width: 100%;
@@ -620,70 +634,103 @@ a.btn-outlined-baltic {
 
 .input-reset {
   -webkit-appearance: none;
-  -moz-appearance: none; }
+     -moz-appearance: none;
+          appearance: none; }
 
 fieldset {
-  border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 0; }
 
-.input-text {
-  font-family: "Avenir Medium", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.input {
+  margin-bottom: 0.625rem;
   padding: 0 0.75rem;
   height: 2.75rem;
   border-width: 0.125rem;
+  border-style: solid;
   border-color: #8B8B8C;
   border-radius: 0.188rem;
-  border-style: solid;
+  background-color: white;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Avenir Medium", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none;
-  margin-bottom: 0.625rem; }
-  .input-text:focus {
+          appearance: none; }
+  .input:focus {
     outline: 0;
     border-color: #585859;
     background-color: #f3f3f4; }
 
 .label {
-  font-family: "Avenir Bold", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  display: block;
+  margin-bottom: 0.3125rem;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  font-size: 0.8125rem;
+  font-weight: 700;
   font-weight: bold;
-  display: block;
-  margin-bottom: 0.3125rem; }
+  font-style: normal;
+  font-size: 0.8125rem;
+  font-family: "Avenir Bold", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; }
 
-.input-text-error {
-  border-color: #e8636a; }
-  .input-text-error:focus {
-    border-color: #E2363F;
-    background-color: #fce8e9; }
+select.input::-ms-expand {
+  display: none; }
 
-.input-text-success {
-  border-color: #b3dd89; }
-  .input-text-success:focus {
-    border-color: #99D161;
-    background-color: #f2f9eb; }
+select.input {
+  padding-right: 2.5rem;
+  background-color: white;
+  background-image: linear-gradient(45deg, transparent 50%, #8B8B8C 50%), linear-gradient(135deg, #8B8B8C 50%, transparent 50%), linear-gradient(to right, #E6E6E6, #E6E6E6);
+  background-position: calc(100% - 1.25rem) calc(1em + 0.125rem), calc(100% - 0.9375rem) calc(1em + 0.125rem), calc(100% - 2.5em) 0.5em;
+  background-size: 0.3125rem 0.3125rem, 0.3125rem 0.3125rem, 0.0625rem 1.5em;
+  background-repeat: no-repeat;
+  -moz-transform: rotate(0.0001deg); }
 
-.input-text-warn {
-  border-color: #f2cd8c; }
-  .input-text-warn:focus {
-    border-color: #EDB95E;
-    background-color: #fcf5e8; }
-
-.input-text-1 {
+.input-1 {
   padding: 0 0.625rem;
   height: 2.25rem;
   font-size: 0.875rem; }
 
-.input-text-3 {
+select.input-1 {
+  padding-right: 2rem;
+  background-position: calc(100% - 0.9375rem) calc(1em + 0.0625rem), calc(100% - 0.625rem) calc(1em + 0.0625rem), calc(100% - 2.25em) 0.5em;
+  background-size: 0.3125rem 0.3125rem, 0.3125rem 0.3125rem, .0625rem 1.5em; }
+
+.input-3 {
   padding: 0 0.938rem;
   height: 3.313rem;
   font-size: 1.25rem; }
+
+select.input-3 {
+  padding-right: 2.75rem;
+  background-position: calc(100% - 1.375rem) calc(1em + 0.0625rem), calc(100% - 1.03125rem) calc(1em + 0.0625rem), calc(100% - 2.2em) 0.5em;
+  background-size: 0.375rem 0.5rem, 0.375rem 0.5rem, 0.0625rem 1.5em; }
+
+.input.input-error {
+  border-color: #e8636a; }
+  .input.input-error:focus {
+    border-color: #E2363F;
+    background-color: #fce8e9; }
+
+select.input-error {
+  background-color: #fce8e9; }
+
+.input.input-success {
+  border-color: #b3dd89; }
+  .input.input-success:focus {
+    border-color: #99D161;
+    background-color: #f2f9eb; }
+
+select.input-success {
+  background-color: #f2f9eb; }
+
+.input.input-warn {
+  border-color: #f2cd8c; }
+  .input.input-warn:focus {
+    border-color: #EDB95E;
+    background-color: #fcf5e8; }
+
+select.input-warn {
+  background-color: #fcf5e8; }
 
 ::-moz-selection {
   background-color: #B2C8C1;

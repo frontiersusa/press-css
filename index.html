@@ -21,7 +21,7 @@
         </div>
       </div>
       <!-- Typography -->
-      <div class="row">
+      <div class="row mb6">
         <div class="col-xs-12 col-md-6 typography-container">
           <h2 class="h2 bb bw2 sans-bold">Typography</h2>
           <h3 class="sans-bold">Headers</h3>
@@ -76,7 +76,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget 
         </div>
       </div>
       <!-- Text Inputs -->
-      <div class="row">
+      <div class="row mb6">
         <div class="col-xs-12 col-md-6">
           <h2 class="h2 bb bw2 sans-bold">Text Inputs</h2>
           <form>
@@ -84,24 +84,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget 
             <fieldset>
               <div class="form-group">
                 <label for='normal'>Small input size</label>
-                <input type='text' id="normal" placeholder='Small input size' class='input-text input-text-1 w100'>
+                <input type='text' id="normal" placeholder='Small input size' class='input input-1 input-text w100'>
                 <label for='normal'>Normal input size</label>
-                <input type='text' id="normal" placeholder='Normal input size' class='input-text w100'>
+                <input type='text' id="normal" placeholder='Normal input size' class='input input-text w100'>
                 <label for='normal'>Large input size</label>
-                <input type='text' id="normal" placeholder='Large input size' class=' input-text input-text-3 w100'>
+                <input type='text' id="normal" placeholder='Large input size' class=' input input-3 input-text w100'>
               </div>
             </fieldset>
             <h3 class="sans-bold">Input States</h3>
             <fieldset>
               <div class="form-group">
                 <label for='normal'>Normal input</label>
-                <input type='text' id="normal" placeholder='Normal input' class='r4 input-text w100'>
+                <input type='text' id="normal" placeholder='Normal input' class='input input-text w100'>
                 <label for='red'>Red/error input</label>
-                <input type='text' placeholder='Red/error input' class='input-text input-text-error w100'>
+                <input type='text' placeholder='Red/error input' class='input input-text input-error w100'>
                 <label for='red'>Green/success input</label>
-                <input type='text' placeholder='Green/success input' class='input-text input-text-success w100'>
+                <input type='text' placeholder='Green/success input' class='input input-text input-success w100'>
                 <label for='red'>Yellow/warn input</label>
-                <input type='text' placeholder='Yellow/warn input' class='input-text input-text-warn w100'>
+                <input type='text' placeholder='Yellow/warn input' class='input input-text input-warn w100'>
               </div>
             </fieldset>
           </form>
@@ -110,7 +110,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget 
           <h2 class="h2 bb bw2 sans-bold">Code</h2>
           <pre>
             <code class="html escape">
-<!-- Input Sizes -->
+<!-- Text Input Sizes -->
 <fieldset>
   <div class="form-group">
     <label for='normal'>Small input size</label>
@@ -122,7 +122,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget 
   </div>
 </fieldset>
 
-<!-- Input States -->
+<!-- Text Input States -->
 <fieldset>
   <div class="form-group">
     <label for='normal'>Normal input</label>
@@ -139,8 +139,128 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget 
           </pre>
         </div>
       </div>
+      <!-- Select Inputs -->
+      <div class="row mb6">
+        <div class="col-xs-12 col-md-6">
+          <h2 class="bb bw2 sans-bold">Select Inputs</h2>
+          <form>
+            <fieldset>
+              <div class="form-group">
+                <label>
+                  <select class="input input-1 w100">
+                    <option value="small">Small Select</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </label>
+                <label>
+                  <select class="input w100">
+                    <option value="normal">Normal Select</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </label>
+                <label>
+                  <select class="input input-3 w100">
+                    <option value="large">Large Select</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </label>
+                <label>
+                  <select class="input input-error w100">
+                    <option value="error">Error Select</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </label>
+                <label>
+                  <select class="input input-success w100">
+                    <option value="success">Success Select</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </label>
+                <label>
+                  <select class="input input-warn w100">
+                    <option value="warn">Warn Select</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2 class="bb bw2 sans-bold">Code</h2>
+          <pre>
+            <code class="html escape">
+<!-- Select Inputs -->
+<fieldset>
+  <div class="form-group">
+    <label>
+      <select class="input input-1 w100">
+        <option value="small">Small Select</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </label>
+    <label>
+      <select class="input w100">
+        <option value="normal">Normal Select</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </label>
+    <label>
+      <select class="input input-3 w100">
+        <option value="large">Large Select</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </label>
+    <label>
+      <select class="input input-error w100">
+        <option value="error">Error Select</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </label>
+    <label>
+      <select class="input input-success w100">
+        <option value="success">Success Select</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </label>
+    <label>
+      <select class="input input-warn w100">
+        <option value="warn">Warn Select</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </label>
+  </div>
+</fieldset>
+            </code>
+          </pre>
+        </div>
+      </div>
       <!-- Buttons -->
-      <div class="row">
+      <div class="row mb6">
         <div class="col-xs-12 col-md-6">
           <h2 class="bb bw2 sans-bold">Buttons</h2>
           <h3 class="sans-bold">Variations</h3>
