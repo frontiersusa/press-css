@@ -19,7 +19,7 @@ fieldset {
   height: 2.75rem;
   border-width: 0.125rem;
   border-style: solid;
-  border-color: $seashell-dark;
+  border-color: $baltic-light;
   border-radius: 0.188rem;
   background-color: white;
   font-weight: 400;
@@ -28,8 +28,8 @@ fieldset {
   appearance: none;
   &:focus {
     outline: 0;
-    border-color: darken($baltic-light, 10%);
-    background-color: lighten($baltic, 71%);
+    border-color: darken($pewter-light, 20%);
+    background-color: lighten($pewter, 34%);
   }
 }
 .label {
