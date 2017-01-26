@@ -320,7 +320,7 @@ a.btn {
   cursor: pointer;
   transition-delay: 0;
   transition-timing-function: ease-in;
-  transition-duration: 0.15s;
+  transition-duration: 0.2s;
   transition-property: background border-color color;
   -webkit-user-select: none;
      -moz-user-select: none;
