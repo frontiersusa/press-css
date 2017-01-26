@@ -267,8 +267,20 @@ p {
     outline: 1;
     color: #895d0f; }
 
-.box-shadow-3 {
-  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.07); }
+.bs-1 {
+  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.1); }
+
+.bs-2 {
+  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.2); }
+
+.bs-3 {
+  box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, 0.2); }
+
+.bs-4 {
+  box-shadow: 0 0.1875rem 0.9375rem 0 rgba(0, 0, 0, 0.2); }
+
+.bs-5 {
+  box-shadow: 0 0.1875rem 1.5rem 0 rgba(0, 0, 0, 0.3); }
 
 .bc-baltic {
   border-color: #3E3E3F; }
@@ -648,7 +660,7 @@ fieldset {
   height: 2.75rem;
   border-width: 0.125rem;
   border-style: solid;
-  border-color: #8B8B8C;
+  border-color: #CECECE;
   border-radius: 0.188rem;
   background-color: white;
   font-weight: 400;
@@ -659,7 +671,7 @@ fieldset {
           appearance: none; }
   .input:focus {
     outline: 0;
-    border-color: #585859;
+    border-color: #727272;
     background-color: #f3f3f4; }
 
 .label {
