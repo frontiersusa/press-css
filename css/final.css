@@ -125,8 +125,11 @@ p {
 .bc-baltic {
   border-color: #3E3E3F; }
 
-.bc-blue {
-  border-color: #00B0E9; }
+.bc-pewter {
+  border-color: #91B1A7; }
+
+.bc-whale {
+  border-color: #083549; }
 
 .whale {
   color: #083549; }
@@ -282,24 +285,6 @@ p {
 .bs-5 {
   box-shadow: 0 0.1875rem 1.5rem 0 rgba(0, 0, 0, 0.3); }
 
-.bc-baltic {
-  border-color: #3E3E3F; }
-
-.bc-pewter {
-  border-color: #91B1A7; }
-
-.bc-whale {
-  border-color: #083549; }
-
-.bc-seashell {
-  border-color: #E6E6E6; }
-
-.bc-seashell-light {
-  border-color: #F0F0F0; }
-
-.bc-seashell-dark {
-  border-color: #CECECE; }
-
 .sep-pewter-1 {
   width: 6.25rem;
   border-bottom: 0.3125rem solid #E6E6E6; }
@@ -318,10 +303,10 @@ a.btn {
   font-weight: normal;
   font-size: 1rem;
   cursor: pointer;
-  transition-delay: 0;
-  transition-timing-function: ease-in;
+  transition-property: background, background-color, border, border-color, box-shadow !important;
   transition-duration: 0.2s;
-  transition-property: background border-color color;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -753,17 +738,23 @@ select.input-warn {
   color: white; }
 
 .hover-bs-1 {
-  transition: box-shadow 0.2s ease-in-out; }
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out; }
   .hover-bs-1:hover {
     box-shadow: 0 0.0625rem 0.625rem 0 rgba(0, 0, 0, 0.3); }
 
 .hover-bs-2 {
-  transition: box-shadow 0.2s ease-in-out; }
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out; }
   .hover-bs-2:hover {
     box-shadow: 0 0.1875rem 0.625rem 0 rgba(0, 0, 0, 0.3); }
 
 .hover-bs-3 {
-  transition: box-shadow 0.2s ease-in-out; }
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out; }
   .hover-bs-3:hover {
     box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.3); }
 
