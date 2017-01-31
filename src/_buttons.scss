@@ -16,10 +16,10 @@ a.btn {
   font-weight: $button-font-weight;
   font-size: $button-font-size;
   cursor: pointer;
+  transition-property: background, background-color, border, border-color, box-shadow !important;
+  transition-duration: $default-transition-duration;
+  transition-timing-function: ease-in-out;
   transition-delay: 0;
-  transition-timing-function: ease-in;
-  transition-duration: $button-transition-duration;
-  transition-property: background border-color color;
   user-select: none;
   appearance: none;
   &:not([class*='btn-outlined']) {
