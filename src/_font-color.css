@@ -1,0 +1,20 @@
+/*
+  FONT COLOR
+
+*/
+
+.whale { color: var(--color-whale); }
+.whale-light { color: var(--color-whale-light); }
+.whale-dark { color: var(--color-whale-dark); }
+
+.seashell { color: var(--color-seashell); }
+.seashell-light { color: var(--color-seashell-light); }
+.seashell-dark { color: var(--color-seashell-dark); }
+
+.pewter { color: var(--color-pewter); }
+.pewter-light { color: var(--color-pewter-light); }
+.pewter-dark { color: var(--color-pewter-dark); }
+
+.baltic { color: var(--color-baltic); }
+.baltic-light { color: var(--color-baltic-light); }
+.baltic-dark { color: var(--color-baltic-dark); }

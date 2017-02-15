@@ -1,0 +1,117 @@
+/*
+  FORMS
+
+*/
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 0 12px;
+  height: 2.75rem;
+  border-width: 0.125rem;
+  border-style: solid;
+  border-color: var(--color-baltic-light);
+  border-radius: 0.188rem;
+  background-color: white;
+  font-weight: 400;
+  font-style: normal;
+}
+.input:focus {
+  outline: 0;
+  border-color: var(--color-pewter-dark);
+  background-color: color(var(--color-pewter-light) lightness(98%));
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 13px;
+  font-family: "Avenir Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+select.input::-ms-expand {
+  display: none;
+}
+select.input {
+  padding-right: 2.5rem;
+  background-color: white;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-baltic-light) 50%),
+    linear-gradient(135deg, var(--color-baltic-light) 50%, transparent 50%),
+    linear-gradient(to right, var(--color-seashell), var(--color-seashell));
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  -moz-transform: rotate(0.0001deg); /* Hack/fix for pixel rendering issues in Firefox */
+  -webkit-appearance: none;
+  -moz-appearance: value;
+  appearance: value;
+}
+
+/* Input Sizes */
+.input-1 {
+  padding: 0 0.625rem;
+  height: 2.25rem;
+  font-size: 0.875rem;
+}
+select.input-1 {
+  padding-right: 2rem;
+  background-position:
+    calc(100% - 15px) calc(1em + 1px),
+    calc(100% - 10px) calc(1em + 1px),
+    calc(100% - 2.25em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    .0625rem 1.5em;
+}
+.input-3 {
+  padding: 0 0.938rem;
+  height: 3.313rem;
+  font-size: 1.25rem;
+}
+select.input-3 {
+  padding-right: 2.75rem;
+  background-position:
+    calc(100% - 22px) calc(1em + 1px),
+    calc(100% - 16.5px) calc(1em + 1px),
+    calc(100% - 2.2em) 0.5em;
+  background-size:
+    6px 8px,
+    6px 8px,
+    1px 1.5em;
+}
+
+/* Input States */
+.input.input-error { border-color: color(var(--color-error) lightness(70%)); }
+.input.input-error:focus {
+  border-color: var(--color-error);
+  background-color: color(var(--color-error) lightness(99%));
+}
+
+.input.input-success { border-color: color(var(--color-success) lightness(60%)); }
+.input.input-success:focus {
+  border-color: var(--color-success);
+  background-color: color(var(--color-success) lightness(98%));
+}
+
+.input.input-warn { border-color: color(var(--color-warn) lightness(70%)); }
+.input.input-warn:focus {
+  border-color: var(--color-warn);
+  background-color: color(var(--color-warn) lightness(98%));
+}

@@ -1,0 +1,9 @@
+/*
+  BORDER COLORS
+
+*/
+
+.bc--seashell { border-color: var(--color-seashell);}
+.bc--baltic { border-color: var(--color-baltic); }
+.bc--pewter { border-color: var(--color-pewter); }
+.bc--whale { border-color: var(--color-whale); }

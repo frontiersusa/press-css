@@ -1,0 +1,8 @@
+::-moz-selection {
+  background-color: var(--color-pewter-light);
+  color: white;
+}
+::selection {
+  background-color: var(--color-pewter-light);
+  color: white;
+}

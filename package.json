@@ -1,7 +1,7 @@
 {
   "name": "final",
-  "version": "2.0.4",
-  "description": "Final is a font-end codebase for Frontiers properties.",
+  "version": "3.0.0",
+  "description": "Final is a collection of utility styles for Frontiers properties",
   "repository": {
     "type": "git",
     "url": "https://github.com/natedunn/final"
@@ -10,41 +10,29 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nate Dunn",
+  "author": "@natedunn",
   "license": "ISC",
   "dependencies": {
     "bolt": "git+ssh://git@github.com/natedunn/bolt.git#master"
   },
+  "scripts": {
+    "watch": "onchange 'src/*.css' -- npm run build:dev",
+    "minify": "postcss -u cssnano dist/bolt.css -o dist/bolt.min.css",
+    "build:css": "postcss -c postcss.config.json",
+    "build:dev": "npm run build:css",
+    "build": "npm run build:css && npm run minify"
+  },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "browser-sync": "^2.11.1",
-    "cssnano": "^3.5.2",
-    "del": "^2.2.0",
-    "file-exists": "^2.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-csscomb": "^3.0.6",
-    "gulp-if": "^2.0.1",
-    "gulp-json-to-sass": "0.0.4",
-    "gulp-minify-css": "^1.2.3",
-    "gulp-notify": "^2.2.0",
-    "gulp-nunjucks-render": "^2.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^6.1.1",
-    "gulp-prettify": "^0.4.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.0.6",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-symdiff": "^0.0.5",
-    "gulp-uncss": "^1.0.4",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.5",
-    "lazypipe": "^1.0.1",
-    "merge2": "^1.0.1",
-    "postcss-pxtorem": "^3.3.1",
-    "run-sequence": "^1.1.5",
-    "symdiff-css": "^0.0.3",
-    "symdiff-html": "0.0.2"
+    "cssnano": "^3.7.1",
+    "del-cli": "^0.2.0",
+    "onchange": "^2.5.0",
+    "postcss-cli": "^2.5.2",
+    "postcss-cssnext": "^2.6.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-easy-import": "^2.0.0",
+    "postcss-import": "^8.1.2",
+    "postcss-map": "^0.8.0",
+    "postcss-pxtorem": "^4.0.0",
+    "postcss-simple-vars": "^2.0.0"
   }
 }
