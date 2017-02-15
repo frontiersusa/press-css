@@ -1,3 +1,3 @@
 # Final
 
-Final is a the official CSS framework for all Frontiers USA properties. 
+Final is a collection of utility styles for Frontiers properties.
