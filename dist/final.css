@@ -1,0 +1,810 @@
+/*
+  FINAL IMPORT LIST
+
+*/
+
+/*
+  BACKGROUND COLOR
+
+*/
+
+.bg-whale-light { background-color: #52717F; }
+
+.bg-whale { background-color: #083549; }
+
+.bg-whale-dark { background-color: #032636; }
+
+.bg-baltic-light { background-color: #8B8B8C; }
+
+.bg-baltic { background-color: #3E3E3F; }
+
+.bg-baltic-dark { background-color: #313132; }
+
+.bg-seashell-light { background-color: #F0F0F0; }
+
+.bg-seashell { background-color: #E6E6E6; }
+
+.bg-seashell-dark { background-color: #CECECE; }
+
+.bg-pewter-light { background-color: #B2C8C1; }
+
+.bg-pewter { background-color: #91B1A7; }
+
+.bg-pewter-dark { background-color: #829E95; }
+
+.bg-whitesmoke { background-color: whitesmoke; }
+
+.bg-whitesmoke-light { background-color: #F9F9F9; }
+
+html { height: 100%; }
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/*
+  BORDER COLORS
+
+*/
+
+.bc--seashell { border-color: #E6E6E6;}
+
+.bc--baltic { border-color: #3E3E3F; }
+
+.bc--pewter { border-color: #91B1A7; }
+
+.bc--whale { border-color: #083549; }
+
+/*
+  BOX SHADOW
+
+*/
+
+.shadow-1 { box-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, .1); }
+
+.shadow-2 { box-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, .2); }
+
+.shadow-3 { box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, .2); }
+
+.shadow-4 { box-shadow: 0 0.1875rem 0.9375rem 0 rgba(0, 0, 0, .2); }
+
+.shadow-5 { box-shadow: 0 0.1875rem 1.5rem 0 rgba(0, 0, 0, .3); }
+
+/*
+  BUTTONS
+
+*/
+
+.btn,
+a.btn {
+  display: inline-block;
+  padding-right: 0.938rem;
+  padding-left: 0.938rem;
+  border: 0.125rem;
+  border-radius: 0.1875rem;
+  background-color: rgb(13, 84, 115);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-property: background, background-color, border, border-color, box-shadow !important;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none
+
+}
+
+.btn:not([class*='btn-outlined']), a.btn:not([class*='btn-outlined']) { padding-top: 0.625rem; padding-bottom: 0.625rem; }
+
+.btn:hover,
+  .btn:focus,
+  .btn:active,
+  a.btn:hover,
+  a.btn:focus,
+  a.btn:active { background-color: rgb(18, 118, 161); }
+
+.btn:disabled,
+  .btn.btn-disabled,
+  a.btn:disabled,
+  a.btn.btn-disabled { color: #CECECE; background-color: #F0F0F0; cursor: not-allowed; }
+
+.btn:disabled:hover,
+    .btn:disabled:focus,
+    .btn:disabled:active,
+    .btn.btn-disabled:hover,
+    .btn.btn-disabled:focus,
+    .btn.btn-disabled:active,
+    a.btn:disabled:hover,
+    a.btn:disabled:focus,
+    a.btn:disabled:active,
+    a.btn.btn-disabled:hover,
+    a.btn.btn-disabled:focus,
+    a.btn.btn-disabled:active { background-color: #F0F0F0; }
+
+*[class*='btn-outlined'],
+a*[class*='btn-outlined'] {
+  /*&:disabled,
+  &.btn-disabled {
+    text-decoration: none;
+    background-color: transparent;
+  }*/
+}
+
+*[class*='btn-outlined']:hover,
+  *[class*='btn-outlined']:focus,
+  *[class*='btn-outlined']:active,
+  a*[class*='btn-outlined']:hover,
+  a*[class*='btn-outlined']:focus,
+  a*[class*='btn-outlined']:active {}
+
+.btn-outlined,
+a.btn-outlined {
+  border-color: #083549;
+  color: #083549;
+  background-color: transparent;
+  border-width: 0.125rem;
+  border-style: solid;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
+}
+
+.btn-outlined:hover,
+  .btn-outlined:focus,
+  .btn-outlined:active,
+  a.btn-outlined:hover,
+  a.btn-outlined:focus,
+  a.btn-outlined:active { text-decoration: underline; background-color: transparent; border-color: rgb(18, 118, 161); color: rgb(18, 118, 161); }
+
+.btn-outlined:disabled,
+  .btn-outlined.btn-disabled,
+  a.btn-outlined:disabled,
+  a.btn-outlined.btn-disabled { color: #CECECE; background-color: #F0F0F0; cursor: not-allowed; border-color: transparent; }
+
+.btn-outlined:disabled:hover,
+    .btn-outlined:disabled:focus,
+    .btn-outlined:disabled:active,
+    .btn-outlined.btn-disabled:hover,
+    .btn-outlined.btn-disabled:focus,
+    .btn-outlined.btn-disabled:active,
+    a.btn-outlined:disabled:hover,
+    a.btn-outlined:disabled:focus,
+    a.btn-outlined:disabled:active,
+    a.btn-outlined.btn-disabled:hover,
+    a.btn-outlined.btn-disabled:focus,
+    a.btn-outlined.btn-disabled:active { text-decoration: none; background-color: #F0F0F0; border-color: transparent; }
+
+/* Button Sizes */
+
+.btn-1,
+a.btn-1 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  font-size: 0.750em
+}
+
+.btn-1:not([class*='btn-outlined']), a.btn-1:not([class*='btn-outlined']) { padding-top: 0.563rem; padding-bottom: 0.563rem; }
+
+.btn-1[class*='btn-outlined'], a.btn-1[class*='btn-outlined'] { padding-top: (0.563rem - 0.125rem); padding-bottom: (0.563rem - 0.125rem); }
+
+.btn-3,
+a.btn-3 {
+  padding-right: 1.875rem;
+  padding-left: 1.875rem;
+  font-size: 1.375rem
+}
+
+.btn-3:not([class*='btn-outlined']), a.btn-3:not([class*='btn-outlined']) { padding-top: 0.625rem; padding-bottom: 0.625rem; }
+
+.btn-3[class*='btn-outlined'], a.btn-3[class*='btn-outlined'] { padding-top: (0.625rem - 0.125rem); padding-bottom: (0.625rem - 0.125rem); }
+
+/* Button Brand Colors */
+
+.btn-pewter,
+a.btn-pewter {
+  background-color: #91B1A7
+}
+
+.btn-pewter:hover,
+  .btn-pewter:focus,
+  .btn-pewter:active,
+  a.btn-pewter:hover,
+  a.btn-pewter:focus,
+  a.btn-pewter:active { background-color: #829E95; }
+
+.btn-baltic,
+a.btn-baltic {
+  background-color: #3E3E3F
+}
+
+.btn-baltic:hover,
+  .btn-baltic:focus,
+  .btn-baltic:active,
+  a.btn-baltic:hover,
+  a.btn-baltic:focus,
+  a.btn-baltic:active { background-color: #8B8B8C; }
+
+.btn-sunglow,
+a.btn-sunglow {
+  background-color: #FDD230;
+  color: #3E3E3F
+}
+
+.btn-sunglow:hover,
+  .btn-sunglow:focus,
+  .btn-sunglow:active,
+  a.btn-sunglow:hover,
+  a.btn-sunglow:focus,
+  a.btn-sunglow:active { background-color: #E3BC2B; }
+
+.btn-seashell,
+a.btn-seashell {
+  background-color: #E6E6E6;
+  color: #3E3E3F
+}
+
+.btn-seashell:hover,
+  .btn-seashell:focus,
+  .btn-seashell:active,
+  a.btn-seashell:hover,
+  a.btn-seashell:focus,
+  a.btn-seashell:active { background-color: #CECECE; }
+
+.btn-white,
+a.btn-white {
+  background-color: white;
+  color: #3E3E3F;
+  border: 0.125rem solid #E6E6E6
+}
+
+.btn-white:hover,
+  .btn-white:focus,
+  .btn-white:active,
+  a.btn-white:hover,
+  a.btn-white:focus,
+  a.btn-white:active { background-color: #F0F0F0; }
+
+/* Not needed since .btn contains these styles by default
+.btn-whale,
+a.btn-whale {
+  background-color: lighten($whale, 10%);
+  &:hover,
+  &:focus,
+  &:active { background-color: lighten($whale, 20%); }
+  &:disabled,
+  &.btn-disabled { background-color: lighten((desaturate($whale, 50%)), 50%); }
+} */
+
+/* Removed for now
+
+.btn-outlined-pewter,
+a.btn-outlined-pewter {
+  border-color: $pewter;
+  color: $pewter;
+  &:hover {
+    border-color: darken($pewter, 20%);
+    color: darken($pewter, 20%);
+  }
+}
+.btn-outlined-sunglow,
+a.btn-outlined-sunglow {
+  border-color: $sunglow;
+  color: $sunglow;
+  &:hover {
+    border-color: darken($sunglow, 15%);
+    color: darken($sunglow, 15%);
+  }
+}
+.btn-outlined-baltic,
+a.btn-outlined-baltic {
+  border-color: $baltic;
+  color: $baltic;
+  &:hover {
+    border-color: lighten($baltic, 30%);
+    color: lighten($baltic, 30%);
+  }
+}
+.btn-outlined-seashell,
+a.btn-outlined-seashell {
+  border-color: $seashell;
+  color: $baltic;
+  &:hover {
+    border-color: darken($seashell, 20%);
+    color: $baltic-dark;
+  }
+}*/
+
+/* Not needed since .btn-outlined contains these styles by default
+
+.btn-outlined-whale,
+a.btn-outlined-whale {
+  border-color: $whale-light;
+  color: $whale-light;
+  &:hover {
+    border-color: lighten($whale, 30%);
+    color: lighten($whale, 30%);
+  }
+}*/
+
+/* Button with icon */
+
+.btn-icon object[type='image/svg+xml'] {
+  vertical-align: middle;
+  width: 100%;
+  max-width: 1.5625rem;
+  margin-right: 0.625rem;
+}
+
+/* Button States */
+
+.btn-error,
+a.btn-error {
+  background-color: #E2363F
+}
+
+.btn-error:hover, a.btn-error:hover { background-color: rgb(179, 25, 33); }
+
+.btn-error:focus, a.btn-error:focus { background-color: rgb(179, 25, 33); }
+
+.btn-error:disabled,
+  .btn-error.btn-disabled,
+  a.btn-error:disabled,
+  a.btn-error.btn-disabled { background-color: rgb(236, 121, 127); }
+
+.btn-success,
+a.btn-success {
+  background-color: #99D161
+}
+
+.btn-success:hover, a.btn-success:hover { background-color: rgb(102, 158, 46); }
+
+.btn-success:focus, a.btn-success:focus { background-color: rgb(102, 158, 46); }
+
+.btn-success:disabled,
+  .btn-success.btn-disabled,
+  a.btn-success:disabled,
+  a.btn-success.btn-disabled { background-color: rgb(204, 232, 176); }
+
+.btn-warn,
+a.btn-warn {
+  background-color: #EDB95E
+}
+
+.btn-warn:hover, a.btn-warn:hover { background-color: rgb(184, 124, 20); }
+
+.btn-warn:focus, a.btn-warn:focus { background-color: rgb(184, 124, 20); }
+
+.btn-warn:disabled,
+  .btn-warn.btn-disabled,
+  a.btn-warn:disabled,
+  a.btn-warn.btn-disabled { background-color: rgb(245, 215, 163); }
+
+/*
+  COLORS
+
+*/
+
+/*
+  DEPRECATIONS
+
+*/
+
+/* Border Color */
+
+.bc-seashell { border-color: #E6E6E6;}
+
+.bc-baltic { border-color: #3E3E3F; }
+
+.bc-pewter { border-color: #91B1A7; }
+
+.bc-whale { border-color: #083549; }
+
+/* Box Shadow */
+
+.bs-1 { box-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, .1); }
+
+.bs-2 { box-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, .2); }
+
+.bs-3 { box-shadow: 0 0.125rem 0.625rem 0 rgba(0, 0, 0, .2); }
+
+.bs-4 { box-shadow: 0 0.1875rem 0.9375rem 0 rgba(0, 0, 0, .2); }
+
+.bs-5 { box-shadow: 0 0.1875rem 1.5rem 0 rgba(0, 0, 0, .3); }
+
+/*
+  FONT FAMILIES
+
+*/
+
+.sans-light {
+  font-weight: 100;
+  font-style: normal;
+  font-family: 'Avenir Light', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.sans-med {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Avenir Medium', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.sans-bold {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Avenir Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.serif-light {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Mercury Light", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+}
+
+.serif-med {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Mercury Medium", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+}
+
+.serif-bold {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Mercury Bold", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+}
+
+.serif-med-italic {
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Mercury Medium Italic", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+}
+
+.serif-bold-italic {
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Mercury Bold Italic", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+}
+
+/*
+  FONT FAMILIES
+
+*/
+
+/* Avenir */
+
+@font-face {
+  font-family:"Avenir Light";
+  src:url("../fonts/Avenir-Light.eot?#iefix");
+  src:url("../fonts/Avenir-Light.eot?#iefix") format("eot"),
+  url("../fonts/Avenir-Light.woff2") format("woff2"),
+  url("../fonts/Avenir-Light.woff") format("woff"),
+  url("../fonts/Avenir-Light.ttf") format("truetype"),
+  url("../fonts/Avenir-Light.svg") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Avenir Medium";
+  src:url("../fonts/Avenir-Medium.eot?#iefix");
+  src:url("../fonts/Avenir-Medium.eot?#iefix") format("eot"),
+  url("../fonts/Avenir-Medium.woff2") format("woff2"),
+  url("../fonts/Avenir-Medium.woff") format("woff"),
+  url("../fonts/Avenir-Medium.ttf") format("truetype"),
+  url("../fonts/Avenir-Medium.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Avenir Bold";
+  src:url("../fonts/Avenir-Black.eot?#iefix");
+  src:url("../fonts/Avenir-Black.eot?#iefix") format("eot"),
+  url("../fonts/Avenir-Black.woff2") format("woff2"),
+  url("../fonts/Avenir-Black.woff") format("woff"),
+  url("../fonts/Avenir-Black.ttf") format("truetype"),
+  url("../fonts/Avenir-Black.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Mercury */
+
+@font-face {
+  font-family:"Mercury Light";
+  src:url("../fonts/MercuryDisplay-Roman.eot?#iefix");
+  src:url("../fonts/MercuryDisplay-Roman.eot?#iefix") format("eot"),
+  url("../fonts/MercuryDisplay-Roman.woff2") format("woff2"),
+  url("../fonts/MercuryDisplay-Roman.woff") format("woff"),
+  url("../fonts/MercuryDisplay-Roman.ttf") format("truetype"),
+  url("../fonts/MercuryDisplay-Roman.svg") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Mercury Medium";
+  src:url("../fonts/MercuryDisplay-Semibold.eot?#iefix");
+  src:url("../fonts/MercuryDisplay-Semibold.eot?#iefix") format("eot"),
+  url("../fonts/MercuryDisplay-Semibold.woff2") format("woff2"),
+  url("../fonts/MercuryDisplay-Semibold.woff") format("woff"),
+  url("../fonts/MercuryDisplay-Semibold.ttf") format("truetype"),
+  url("../fonts/MercuryDisplay-Semibold.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Mercury Bold";
+  src:url("../fonts/MercuryDisplay-Bold.eot?#iefix");
+  src:url("../fonts/MercuryDisplay-Bold.eot?#iefix") format("eot"),
+  url("../fonts/MercuryDisplay-Bold.woff2") format("woff2"),
+  url("../fonts/MercuryDisplay-Bold.woff") format("woff"),
+  url("../fonts/MercuryDisplay-Bold.ttf") format("truetype"),
+  url("../fonts/MercuryDisplay-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Mercury Medium Italic";
+  src:url("../fonts/MercuryDisplay-SemIta.eot?#iefix");
+  src:url("../fonts/MercuryDisplay-SemIta.eot?#iefix") format("eot"),
+  url("../fonts/MercuryDisplay-SemIta.woff2") format("woff2"),
+  url("../fonts/MercuryDisplay-SemIta.woff") format("woff"),
+  url("../fonts/MercuryDisplay-SemIta.ttf") format("truetype"),
+  url("../fonts/MercuryDisplay-SemIta.svg") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Mercury Bold Italic";
+  src:url("../fonts/MercuryDisplay-BolIta.eot?#iefix");
+  src:url("../fonts/MercuryDisplay-BolIta.eot?#iefix") format("eot"),
+  url("../fonts/MercuryDisplay-BolIta.woff2") format("woff2"),
+  url("../fonts/MercuryDisplay-BolIta.woff") format("woff"),
+  url("../fonts/MercuryDisplay-BolIta.ttf") format("truetype"),
+  url("../fonts/MercuryDisplay-BolIta.svg") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*
+  FORMS
+
+*/
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.input {
+  margin-bottom: 0.625rem;
+  padding: 0 0.75rem;
+  height: 2.75rem;
+  border-width: 0.125rem;
+  border-style: solid;
+  border-color: #8B8B8C;
+  border-radius: 0.188rem;
+  background-color: white;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.input:focus {
+  outline: 0;
+  border-color: #829E95;
+  background-color: rgb(249, 251, 250);
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.3125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 0.8125rem;
+  font-family: "Avenir Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+select.input::-ms-expand {
+  display: none;
+}
+
+select.input {
+  padding-right: 2.5rem;
+  background-color: white;
+  background-image: linear-gradient(45deg, transparent 50%, #8B8B8C 50%),
+    linear-gradient(135deg, #8B8B8C 50%, transparent 50%),
+    linear-gradient(to right, #E6E6E6, #E6E6E6);
+  background-position:
+    calc(100% - 1.25rem) calc(1em + 0.125rem),     calc(100% - 0.9375rem) calc(1em + 0.125rem),     calc(100% - 2.5em) 0.5em;
+  background-size:
+    0.3125rem 0.3125rem,
+    0.3125rem 0.3125rem,
+    0.0625rem 1.5em;
+  background-repeat: no-repeat;
+  -moz-transform: rotate(0.0001deg); /* Hack/fix for pixel rendering issues in Firefox */
+  -webkit-appearance: none;
+  -moz-appearance: value;
+  appearance: value;
+}
+
+/* Input Sizes */
+
+.input-1 {
+  padding: 0 0.625rem;
+  height: 2.25rem;
+  font-size: 0.875rem;
+}
+
+select.input-1 {
+  padding-right: 2rem;
+  background-position:
+    calc(100% - 0.9375rem) calc(1em + 0.0625rem),     calc(100% - 0.625rem) calc(1em + 0.0625rem),     calc(100% - 2.25em) 0.5em;
+  background-size:
+    0.3125rem 0.3125rem,
+    0.3125rem 0.3125rem,
+    .0625rem 1.5em;
+}
+
+.input-3 {
+  padding: 0 0.938rem;
+  height: 3.313rem;
+  font-size: 1.25rem;
+}
+
+select.input-3 {
+  padding-right: 2.75rem;
+  background-position:
+    calc(100% - 1.375rem) calc(1em + 0.0625rem),     calc(100% - 1.03125rem) calc(1em + 0.0625rem),     calc(100% - 2.2em) 0.5em;
+  background-size:
+    0.375rem 0.5rem,
+    0.375rem 0.5rem,
+    0.0625rem 1.5em;
+}
+
+/* Input States */
+
+.input.input-error { border-color: rgb(236, 121, 127); }
+
+.input.input-error:focus {
+  border-color: #E2363F;
+  background-color: rgb(254, 251, 251);
+}
+
+.input.input-success { border-color: rgb(153, 209, 97); }
+
+.input.input-success:focus {
+  border-color: #99D161;
+  background-color: rgb(250, 253, 247);
+}
+
+.input.input-warn { border-color: rgb(240, 195, 117); }
+
+.input.input-warn:focus {
+  border-color: #EDB95E;
+  background-color: rgb(254, 251, 246);
+}
+
+/*
+  HOVERS
+
+*/
+
+.hover-bs-1 {
+  transition-property: box-shadow;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out
+}
+
+.hover-bs-1:hover { box-shadow: 0 0.0625rem 0.625rem 0 rgba(0, 0, 0, .3); }
+
+.hover-bs-2 {
+  transition-property: box-shadow;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out
+}
+
+.hover-bs-2:hover { box-shadow: 0 0.1875rem 0.625rem 0 rgba(0, 0, 0, .3); }
+
+.hover-bs-3 {
+  transition-property: box-shadow;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out
+}
+
+.hover-bs-3:hover { box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, .3); }
+
+/*
+  LINKS
+
+*/
+
+.link {
+  color: rgb(13, 84, 115)
+}
+
+.link:hover,
+  .link:focus { color: rgb(48, 177, 232); }
+
+.link:focus { outline: 1; }
+
+.link-baltic {
+  color: #3E3E3F
+}
+
+.link-baltic:hover { color: rgb(165, 165, 167); }
+
+.link-baltic:focus { outline: 1; }
+
+.link-pewter {
+  color: #91B1A7
+}
+
+.link-pewter:hover { color: rgb(85, 119, 108); }
+
+.link-pewter:focus { outline: 1; }
+
+.link-danger {
+  color: #E2363F
+}
+
+.link-danger:hover { color: rgb(179, 25, 33); }
+
+.link-danger:focus { outline: 1; }
+
+.link-success {
+  color: #99D161
+}
+
+.link-success:hover { color: rgb(102, 158, 46); }
+
+.link-success:focus { outline: 1; }
+
+.link-warn {
+  color: #EDB95E
+}
+
+.link-warn:hover { color: rgb(184, 124, 20); }
+
+.link-warn:focus { outline: 1; }
+
+::-moz-selection {
+  background-color: #B2C8C1;
+  color: white;
+}
+
+::selection {
+  background-color: #B2C8C1;
+  color: white;
+}
+
+body {
+  font-family: 'Avenir Light', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #3E3E3F;
+  text-rendering: optimizeSpeed;
+}
+
+/* Paragraph */
+
+.p {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+}
