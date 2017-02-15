@@ -1,28 +1,24 @@
 {
   "name": "final",
   "version": "3.0.0",
-  "description": "Final is a collection of utility styles for Frontiers properties",
+  "description": "Final is a collection of utility styles for Frontiers properties.",
   "repository": {
     "type": "git",
     "url": "https://github.com/natedunn/final"
   },
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "@natedunn",
   "license": "ISC",
-  "dependencies": {
-    "bolt": "git+ssh://git@github.com/natedunn/bolt.git#master"
-  },
   "scripts": {
     "watch": "onchange 'src/*.css' -- npm run build:dev",
-    "minify": "postcss -u cssnano dist/bolt.css -o dist/bolt.min.css",
+    "serve": "browser-sync start --server --files 'dist/*.css, dist/*.js, index.html' --browser 'google chrome' --port '3000'",
+    "minify": "postcss -u cssnano dist/final.css -o dist/final.min.css",
     "build:css": "postcss -c postcss.config.json",
     "build:dev": "npm run build:css",
     "build": "npm run build:css && npm run minify"
   },
   "devDependencies": {
+    "bolt": "git+ssh://git@github.com/natedunn/bolt.git#master",
+    "browser-sync": "^2.18.8",
     "cssnano": "^3.7.1",
     "del-cli": "^0.2.0",
     "onchange": "^2.5.0",

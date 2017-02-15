@@ -1,0 +1,41 @@
+{
+  "use": [
+    "postcss-easy-import",
+    "postcss-map",
+    "postcss-simple-vars",
+    "postcss-custom-media",
+    "postcss-cssnext",
+    "postcss-pxtorem"
+  ],
+  "input": "src/final.css",
+  "output": "dist/final.css",
+  "local-plugins": "true",
+  "postcss-cssnext": {
+    "browsers": [
+      "last 3 versions",
+      "last 5 Safari versions",
+      "last 10 Chrome versions",
+      "last 3 IE versions",
+      "last 10 Firefox versions",
+      "last 3 Edge versions",
+      "last 10 Opera versions",
+      "last 3 iOS versions",
+      "last 3 Android versions",
+      "last 3 ChromeAndroid versions"
+    ],
+    "verbose":  true
+  },
+  "postcss-pxtorem": {
+    "rootValue": 16,
+    "propList": ["*"],
+    "replace": true,
+    "mediaQuery": false
+  },
+  "postcss-easy-import": {
+    "prefix": "_",
+    "extensions": ".css"
+  },
+  "postcss-simple-vars" : {
+    "silent": true
+  }
+}
