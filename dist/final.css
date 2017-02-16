@@ -422,6 +422,35 @@ a.btn-warn {
 .bs-5 { box-shadow: 0 0.1875rem 1.5rem 0 rgba(0, 0, 0, .3); }
 
 /*
+  FONT COLOR
+
+*/
+
+.whale { color: #083549; }
+
+.whale-light { color: #52717F; }
+
+.whale-dark { color: #032636; }
+
+.seashell { color: #E6E6E6; }
+
+.seashell-light { color: #F0F0F0; }
+
+.seashell-dark { color: #CECECE; }
+
+.pewter { color: #91B1A7; }
+
+.pewter-light { color: #B2C8C1; }
+
+.pewter-dark { color: #829E95; }
+
+.baltic { color: #3E3E3F; }
+
+.baltic-light { color: #8B8B8C; }
+
+.baltic-dark { color: #313132; }
+
+/*
   FONT FAMILIES
 
 */
