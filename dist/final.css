@@ -735,14 +735,17 @@ select.input-3 {
 
 */
 
+a,
 .link {
   color: rgb(13, 84, 115)
 }
 
-.link:hover,
+a:hover,
+  a:focus,
+  .link:hover,
   .link:focus { color: rgb(48, 177, 232); }
 
-.link:focus { outline: 1; }
+a:focus, .link:focus { outline: 1; }
 
 .link-baltic {
   color: #3E3E3F

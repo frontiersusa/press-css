@@ -3,6 +3,7 @@
 
 */
 
+a,
 .link {
   color: color(var(--color-whale) lightness(25%));
   &:hover,
