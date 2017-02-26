@@ -3,6 +3,8 @@
 
 */
 
+.bg-transparent { background-color: transparent; }
+
 .bg-whale-light { background-color: var(--color-whale-light); }
 .bg-whale { background-color: var(--color-whale); }
 .bg-whale-dark { background-color: var(--color-whale-dark); }
