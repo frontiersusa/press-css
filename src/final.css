@@ -4,6 +4,7 @@
 */
 
 @import "background-color";
+@import "gradients";
 @import "base";
 @import "border-color";
 @import "box-shadow";
