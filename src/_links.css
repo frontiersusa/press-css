@@ -3,7 +3,8 @@
 
 */
 
-.link {
+.link,
+.link-whale {
   color: color(var(--color-whale) lightness(25%));
   &:hover,
   &:focus { color: color(var(--color-whale) lightness(55%)); }
