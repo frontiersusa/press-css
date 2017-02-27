@@ -16,7 +16,7 @@
 
 .bg-whale-dark { background-color: #032636; }
 
-.bg-baltic-light { background-color: #8B8B8C; }
+.bg-baltic-light { background-color: #616161; }
 
 .bg-baltic { background-color: #3E3E3F; }
 
@@ -278,7 +278,7 @@ a.btn-baltic {
   .btn-baltic:active,
   a.btn-baltic:hover,
   a.btn-baltic:focus,
-  a.btn-baltic:active { background-color: #8B8B8C; }
+  a.btn-baltic:active { background-color: #616161; }
 
 .btn-sunglow,
 a.btn-sunglow {
@@ -492,7 +492,7 @@ a.btn-warn {
 
 .baltic { color: #3E3E3F; }
 
-.baltic-light { color: #8B8B8C; }
+.baltic-light { color: #616161; }
 
 .baltic-dark { color: #313132; }
 
@@ -671,7 +671,7 @@ fieldset {
   height: 2.75rem;
   border-width: 0.125rem;
   border-style: solid;
-  border-color: #8B8B8C;
+  border-color: #616161;
   border-radius: 0.188rem;
   background-color: white;
   font-weight: 400;
@@ -703,8 +703,8 @@ select.input::-ms-expand {
 select.input {
   padding-right: 2.5rem;
   background-color: white;
-  background-image: linear-gradient(45deg, transparent 50%, #8B8B8C 50%),
-    linear-gradient(135deg, #8B8B8C 50%, transparent 50%),
+  background-image: linear-gradient(45deg, transparent 50%, #616161 50%),
+    linear-gradient(135deg, #616161 50%, transparent 50%),
     linear-gradient(to right, #E6E6E6, #E6E6E6);
   background-position:
     calc(100% - 1.25rem) calc(1em + 0.125rem),     calc(100% - 0.9375rem) calc(1em + 0.125rem),     calc(100% - 2.5em) 0.5em;
