@@ -6,7 +6,7 @@
 
 /* Avenir */
 @font-face {
-  font-family:"Avenir Light";
+  font-family:"Avenir";
   src:url("../fonts/Avenir-Light.eot?#iefix");
   src:url("../fonts/Avenir-Light.eot?#iefix") format("eot"),
   url("../fonts/Avenir-Light.woff2") format("woff2"),
@@ -17,7 +17,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family:"Avenir Medium";
+  font-family:"Avenir";
   src:url("../fonts/Avenir-Medium.eot?#iefix");
   src:url("../fonts/Avenir-Medium.eot?#iefix") format("eot"),
   url("../fonts/Avenir-Medium.woff2") format("woff2"),
@@ -28,7 +28,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family:"Avenir Bold";
+  font-family:"Avenir";
   src:url("../fonts/Avenir-Black.eot?#iefix");
   src:url("../fonts/Avenir-Black.eot?#iefix") format("eot"),
   url("../fonts/Avenir-Black.woff2") format("woff2"),
@@ -41,7 +41,7 @@
 
 /* Mercury */
 @font-face {
-  font-family:"Mercury Light";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-Roman.eot?#iefix");
   src:url("../fonts/MercuryDisplay-Roman.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-Roman.woff2") format("woff2"),
@@ -52,7 +52,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family:"Mercury Medium";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-Semibold.eot?#iefix");
   src:url("../fonts/MercuryDisplay-Semibold.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-Semibold.woff2") format("woff2"),
@@ -63,7 +63,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family:"Mercury Bold";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-Bold.eot?#iefix");
   src:url("../fonts/MercuryDisplay-Bold.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-Bold.woff2") format("woff2"),
@@ -74,7 +74,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family:"Mercury Medium Italic";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-SemIta.eot?#iefix");
   src:url("../fonts/MercuryDisplay-SemIta.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-SemIta.woff2") format("woff2"),
@@ -85,7 +85,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family:"Mercury Bold Italic";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-BolIta.eot?#iefix");
   src:url("../fonts/MercuryDisplay-BolIta.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-BolIta.woff2") format("woff2"),

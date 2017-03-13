@@ -6,41 +6,41 @@
 .sans-light {
   font-weight: 100;
   font-style: normal;
-  font-family: 'Avenir Light', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .sans-med {
   font-weight: 400;
   font-style: normal;
-  font-family: 'Avenir Medium', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .sans-bold {
   font-weight: 700;
   font-style: normal;
-  font-family: 'Avenir Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .serif-light {
   font-weight: 400;
   font-style: normal;
-  font-family: "Mercury Light", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 .serif-med {
   font-weight: 600;
   font-style: normal;
-  font-family: "Mercury Medium", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 .serif-bold {
   font-weight: 700;
   font-style: normal;
-  font-family: "Mercury Bold", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 .serif-med-italic {
   font-weight: 600;
   font-style: italic;
-  font-family: "Mercury Medium Italic", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 .serif-bold-italic {
   font-weight: 700;
   font-style: italic;
-  font-family: "Mercury Bold Italic", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }

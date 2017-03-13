@@ -504,49 +504,49 @@ a.btn-warn {
 .sans-light {
   font-weight: 100;
   font-style: normal;
-  font-family: 'Avenir Light', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .sans-med {
   font-weight: 400;
   font-style: normal;
-  font-family: 'Avenir Medium', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .sans-bold {
   font-weight: 700;
   font-style: normal;
-  font-family: 'Avenir Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .serif-light {
   font-weight: 400;
   font-style: normal;
-  font-family: "Mercury Light", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 
 .serif-med {
   font-weight: 600;
   font-style: normal;
-  font-family: "Mercury Medium", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 
 .serif-bold {
   font-weight: 700;
   font-style: normal;
-  font-family: "Mercury Bold", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 
 .serif-med-italic {
   font-weight: 600;
   font-style: italic;
-  font-family: "Mercury Medium Italic", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 
 .serif-bold-italic {
   font-weight: 700;
   font-style: italic;
-  font-family: "Mercury Bold Italic", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
+  font-family: "Mercury", "Georgia", "Lucida Bright", "Times New Roman", Times, serif;
 }
 
 /*
@@ -557,7 +557,7 @@ a.btn-warn {
 /* Avenir */
 
 @font-face {
-  font-family:"Avenir Light";
+  font-family:"Avenir";
   src:url("../fonts/Avenir-Light.eot?#iefix");
   src:url("../fonts/Avenir-Light.eot?#iefix") format("eot"),
   url("../fonts/Avenir-Light.woff2") format("woff2"),
@@ -569,7 +569,7 @@ a.btn-warn {
 }
 
 @font-face {
-  font-family:"Avenir Medium";
+  font-family:"Avenir";
   src:url("../fonts/Avenir-Medium.eot?#iefix");
   src:url("../fonts/Avenir-Medium.eot?#iefix") format("eot"),
   url("../fonts/Avenir-Medium.woff2") format("woff2"),
@@ -581,7 +581,7 @@ a.btn-warn {
 }
 
 @font-face {
-  font-family:"Avenir Bold";
+  font-family:"Avenir";
   src:url("../fonts/Avenir-Black.eot?#iefix");
   src:url("../fonts/Avenir-Black.eot?#iefix") format("eot"),
   url("../fonts/Avenir-Black.woff2") format("woff2"),
@@ -595,7 +595,7 @@ a.btn-warn {
 /* Mercury */
 
 @font-face {
-  font-family:"Mercury Light";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-Roman.eot?#iefix");
   src:url("../fonts/MercuryDisplay-Roman.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-Roman.woff2") format("woff2"),
@@ -607,7 +607,7 @@ a.btn-warn {
 }
 
 @font-face {
-  font-family:"Mercury Medium";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-Semibold.eot?#iefix");
   src:url("../fonts/MercuryDisplay-Semibold.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-Semibold.woff2") format("woff2"),
@@ -619,7 +619,7 @@ a.btn-warn {
 }
 
 @font-face {
-  font-family:"Mercury Bold";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-Bold.eot?#iefix");
   src:url("../fonts/MercuryDisplay-Bold.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-Bold.woff2") format("woff2"),
@@ -631,7 +631,7 @@ a.btn-warn {
 }
 
 @font-face {
-  font-family:"Mercury Medium Italic";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-SemIta.eot?#iefix");
   src:url("../fonts/MercuryDisplay-SemIta.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-SemIta.woff2") format("woff2"),
@@ -643,7 +643,7 @@ a.btn-warn {
 }
 
 @font-face {
-  font-family:"Mercury Bold Italic";
+  font-family:"Mercury";
   src:url("../fonts/MercuryDisplay-BolIta.eot?#iefix");
   src:url("../fonts/MercuryDisplay-BolIta.eot?#iefix") format("eot"),
   url("../fonts/MercuryDisplay-BolIta.woff2") format("woff2"),
