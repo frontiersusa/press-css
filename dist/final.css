@@ -638,8 +638,8 @@ a.btn-warn {
   url("../fonts/MercuryDisplay-SemIta.woff") format("woff"),
   url("../fonts/MercuryDisplay-SemIta.ttf") format("truetype"),
   url("../fonts/MercuryDisplay-SemIta.svg") format("svg");
-  font-weight: 100;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
@@ -650,8 +650,8 @@ a.btn-warn {
   url("../fonts/MercuryDisplay-BolIta.woff") format("woff"),
   url("../fonts/MercuryDisplay-BolIta.ttf") format("truetype"),
   url("../fonts/MercuryDisplay-BolIta.svg") format("svg");
-  font-weight: 100;
-  font-style: normal;
+  font-weight: 700;
+  font-style: italic;
 }
 
 /*
