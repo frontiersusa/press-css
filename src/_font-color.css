@@ -1,5 +1,5 @@
 /*
-  FONT COLOR
+  Font Color
 
 */
 
@@ -18,3 +18,28 @@
 .baltic { color: var(--color-baltic); }
 .baltic-light { color: var(--color-baltic-light); }
 .baltic-dark { color: var(--color-baltic-dark); }
+
+.white { color: white; }
+.black { color: black; }
+.gray { color: var(--gray); }
+
+@media (--breakpoint-sm) {
+  .white-sm { color: white; }
+  .black-sm { color: black; }
+  .gray-sm { color: var(--gray); }
+}
+@media (--breakpoint-md) {
+  .white-md { color: white; }
+  .black-md { color: black; }
+  .gray-md { color: var(--gray); }
+}
+@media (--breakpoint-lg) {
+  .white-lg { color: white; }
+  .black-lg { color: black; }
+  .gray-lg { color: var(--gray); }
+}
+@media (--breakpoint-xl) {
+  .white-xl { color: white; }
+  .black-xl { color: black; }
+  .gray-xl { color: var(--gray); }
+}
