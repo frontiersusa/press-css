@@ -1,7 +1,11 @@
 /*
-  BORDER COLORS
+  Border Color
 
 */
+
+.b--black { border-color: black; }
+.b--white { border-color: white; }
+.b--gray { border-color: gray; }
 
 .b--seashell { border-color: var(--color-seashell);}
 .b--baltic { border-color: var(--color-baltic); }
