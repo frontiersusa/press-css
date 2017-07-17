@@ -10,7 +10,7 @@ a.btn {
   padding-left: 0.938rem;
   border: 0.125rem;
   border-radius: 3px;
-  background-color: color(var(--color-whale) lightness(25%));
+  background-color: var(--color-navy);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -18,7 +18,7 @@ a.btn {
   font-size: 1rem;
   cursor: pointer;
   transition-property: background, background-color, border, border-color, box-shadow !important;
-  transition-duration: var(--default-transition-duration);
+  transition-duration: .2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0;
   user-select: none;
@@ -31,7 +31,7 @@ a.btn {
 
   &:hover,
   &:focus,
-  &:active { background-color: color(var(--color-whale) lightness(35%)); }
+  &:active { background-color: #5f7f9c; }
 
   &:disabled,
   &.btn-disabled {
@@ -140,7 +140,7 @@ a.btn-baltic {
   background-color: var(--color-baltic);
   &:hover,
   &:focus,
-  &:active { background-color: var(--color-baltic-light); }
+  &:active { background-color: #7d7d7d; }
 }
 .btn-sunglow,
 a.btn-sunglow {
@@ -148,7 +148,7 @@ a.btn-sunglow {
   color: var(--color-baltic);
   &:hover,
   &:focus,
-  &:active { background-color: var(--color-sunglow-dark); }
+  &:active { background-color: ; }
 }
 .btn-seashell,
 a.btn-seashell {
@@ -162,71 +162,26 @@ a.btn-seashell {
 a.btn-white {
   background-color: white;
   color: var(--color-baltic);
-  border: 2px solid var(--color-seashell);
   &:hover,
   &:focus,
   &:active { background-color: var(--color-seashell-light); }
 }
-/* Not needed since .btn contains these styles by default
-.btn-whale,
-a.btn-whale {
-  background-color: lighten($whale, 10%);
+
+.btn-teal,
+a.btn-teal {
+  background-color: var(--color-teal);
   &:hover,
   &:focus,
-  &:active { background-color: lighten($whale, 20%); }
-  &:disabled,
-  &.btn-disabled { background-color: lighten((desaturate($whale, 50%)), 50%); }
-} */
-
-/* Removed for now
-
-.btn-outlined-pewter,
-a.btn-outlined-pewter {
-  border-color: $pewter;
-  color: $pewter;
-  &:hover {
-    border-color: darken($pewter, 20%);
-    color: darken($pewter, 20%);
-  }
+  &:active { background-color: #4d736f; }
 }
-.btn-outlined-sunglow,
-a.btn-outlined-sunglow {
-  border-color: $sunglow;
-  color: $sunglow;
-  &:hover {
-    border-color: darken($sunglow, 15%);
-    color: darken($sunglow, 15%);
-  }
+.btn-gold,
+a.btn-gold {
+  color: var(--color-baltic);
+  background-color: var(--color-gold);
+  &:hover,
+  &:focus,
+  &:active { background-color: #ffe08a; }
 }
-.btn-outlined-baltic,
-a.btn-outlined-baltic {
-  border-color: $baltic;
-  color: $baltic;
-  &:hover {
-    border-color: lighten($baltic, 30%);
-    color: lighten($baltic, 30%);
-  }
-}
-.btn-outlined-seashell,
-a.btn-outlined-seashell {
-  border-color: $seashell;
-  color: $baltic;
-  &:hover {
-    border-color: darken($seashell, 20%);
-    color: $baltic-dark;
-  }
-}*/
-/* Not needed since .btn-outlined contains these styles by default
-
-.btn-outlined-whale,
-a.btn-outlined-whale {
-  border-color: $whale-light;
-  color: $whale-light;
-  &:hover {
-    border-color: lighten($whale, 30%);
-    color: lighten($whale, 30%);
-  }
-}*/
 
 /* Button with icon */
 .btn-icon object[type='image/svg+xml'] {
