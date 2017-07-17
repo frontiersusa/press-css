@@ -1,9 +1,14 @@
 /*
-  BACKGROUND COLOR
+  Background Color
 
 */
 
+.bg-white { background-color: white; }
+.bg-black { background-color: black; }
+.bg-gray { background-color: lightGray; }
 .bg-transparent { background-color: transparent; }
+
+/* v3.0.8 and earlier */
 
 .bg-whale-light { background-color: var(--color-whale-light); }
 .bg-whale { background-color: var(--color-whale); }
@@ -21,5 +26,15 @@
 .bg-pewter { background-color: var(--color-pewter); }
 .bg-pewter-dark { background-color: var(--color-pewter-dark); }
 
+.bg-sunglow-light { background-color: var(--color-sunglow-light); }
+.bg-sunglow { background-color: var(--color-sunglow); }
+.bg-sunglow-dark { background-color: var(--color-sunglow-dark); }
+
 .bg-whitesmoke { background-color: var(--color-whitesmoke); }
 .bg-whitesmoke-light { background-color: var(--color-whitesmoke-light); }
+
+/* v4.0 and later */
+
+.bg-gold { background-color: var(--color-gold); }
+.bg-navy { background-color: var(--color-navy); }
+.bg-teal { background-color: var(--color-teal); }
