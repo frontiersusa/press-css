@@ -3,28 +3,40 @@
 
 */
 
+/*
+   LINKS
+*/
+
+.link,
+.link:link,
+.link:visited,
+.link:hover,
+.link:active,
+.link:focus { transition: color .1s ease-in; }
+.link:focus { outline: 1px dotted currentColor }
+
 .link,
 .link-whale {
-  color: color(var(--color-whale) lightness(25%));
+  color: var(--color-navy);
   &:hover,
-  &:focus { color: color(var(--color-whale) lightness(55%)); }
+  &:focus { color: #54B3E9; }
   &:focus { outline: 1; }
 }
 
 .link-baltic {
   color: var(--color-baltic);
-  &:hover { color: color(var(--color-baltic) lightness(65%)); }
+  &:hover { color: #A5A5A7; }
   &:focus { outline: 1; }
 }
 .link-pewter {
   color: var(--color-pewter);
-  &:hover { color: color(var(--color-pewter) lightness(40%)); }
+  &:hover { color: #4c6f64; }
   &:focus { outline: 1; }
 }
 
 .link-danger {
   color: var(--color-error);
-  &:hover { color: color(var(--color-error) lightness(40%)); }
+  &:hover { color: #73171B; }
   &:focus { outline: 1; }
 }
 .link-success {
