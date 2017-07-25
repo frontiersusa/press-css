@@ -20,6 +20,25 @@
 @import "background-size";
 @import "lists";
 @import "height";
+@import "background-position";
+@import "coordinates";
+@import "clearfix";
+@import "cursor";
+@import "float";
+@import "font-style";
+@import "font-weight";
+@import "images";
+@import "max-width";
+@import "overflow";
+@import "text-align";
+@import "text-decoration";
+@import "text-transform";
+@import "rotations";
+@import "letter-spacing";
+@import "line-height";
+@import "vertical-align";
+@import "visibility";
+@import "z-index";
 
 /* v3.0.8 and earlier */
 @import "background-color";
