@@ -5606,18 +5606,15 @@ select.input-3 {
 .link:focus { outline: 0.0625rem dotted currentColor }
 
 .link,
-.link-whale {
+.link-navy {
   color: #103656
 }
 
-.link:hover,
-  .link:focus,
-  .link-whale:hover,
-  .link-whale:focus {
+.link:hover, .link-navy:hover {
   color: #54B3E9;
 }
 
-.link:focus, .link-whale:focus {
+.link:focus, .link-navy:focus {
   outline: 1;
 }
 
@@ -5633,15 +5630,27 @@ select.input-3 {
   outline: 1;
 }
 
-.link-pewter {
-  color: #91B1A7
+.link-teal {
+  color: #639e98
 }
 
-.link-pewter:hover {
-  color: #4c6f64;
+.link-teal:hover {
+  color: #2a403d;
 }
 
-.link-pewter:focus {
+.link-teal:focus {
+  outline: 1;
+}
+
+.link-gold {
+  color: #fbd057
+}
+
+.link-gold:hover {
+  color: #907833;
+}
+
+.link-gold:focus {
   outline: 1;
 }
 
@@ -5678,6 +5687,33 @@ select.input-3 {
 }
 
 .link-warn:focus {
+  outline: 1;
+}
+
+/* v3.0.8 and older */
+
+.link-whale {
+  color: #103656
+}
+
+.link-whale:hover,
+  .link-whale:focus {
+  color: #54B3E9;
+}
+
+.link-whale:focus {
+  outline: 1;
+}
+
+.link-pewter {
+  color: #91B1A7
+}
+
+.link-pewter:hover {
+  color: #4c6f64;
+}
+
+.link-pewter:focus {
   outline: 1;
 }
 
