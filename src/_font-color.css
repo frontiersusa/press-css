@@ -11,13 +11,17 @@
 .seashell-light { color: var(--color-seashell-light); }
 .seashell-dark { color: var(--color-seashell-dark); }
 
-.pewter { color: var(--color-pewter); }
-.pewter-light { color: var(--color-pewter-light); }
-.pewter-dark { color: var(--color-pewter-dark); }
-
 .baltic { color: var(--color-baltic); }
 .baltic-light { color: var(--color-baltic-light); }
 .baltic-dark { color: var(--color-baltic-dark); }
+
+.teal { color: var(--color-teal); }
+.gold { color: var(--color-gold); }
+.navy { color: var(--color-navy); }
+
+.pewter { color: var(--color-pewter); }
+.pewter-light { color: var(--color-pewter-light); }
+.pewter-dark { color: var(--color-pewter-dark); }
 
 .white { color: white; }
 .black { color: black; }

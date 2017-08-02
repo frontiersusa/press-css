@@ -5211,17 +5211,23 @@ a.btn-warn {
 
 .seashell-dark { color: #CECECE; }
 
-.pewter { color: #91B1A7; }
-
-.pewter-light { color: #B2C8C1; }
-
-.pewter-dark { color: #829E95; }
-
 .baltic { color: #3E3E3F; }
 
 .baltic-light { color: #616161; }
 
 .baltic-dark { color: #313132; }
+
+.teal { color: #639e98; }
+
+.gold { color: #fbd057; }
+
+.navy { color: #103656; }
+
+.pewter { color: #91B1A7; }
+
+.pewter-light { color: #B2C8C1; }
+
+.pewter-dark { color: #829E95; }
 
 .white { color: white; }
 
