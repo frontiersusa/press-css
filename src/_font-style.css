@@ -3,5 +3,5 @@
 
 */
 
-.i { font-style: italic; }
-.normal { font-style: normal; }
+.i { font-style: italic !important; }
+.normal { font-style: normal !important; }
