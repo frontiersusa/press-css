@@ -89,6 +89,38 @@
   list-style: none;
 }
 
+/* Buttons */
+.btn-pewter,
+a.btn-pewter {
+  background-color: var(--color-pewter);
+  &:hover,
+  &:focus,
+  &:active { background-color: var(--color-pewter-dark); }
+}
+.btn-baltic,
+a.btn-baltic {
+  background-color: var(--color-baltic);
+  &:hover,
+  &:focus,
+  &:active { background-color: #7d7d7d; }
+}
+.btn-sunglow,
+a.btn-sunglow {
+  background-color: var(--color-sunglow);
+  color: var(--color-baltic);
+  &:hover,
+  &:focus,
+  &:active { background-color: ; }
+}
+.btn-seashell,
+a.btn-seashell {
+  background-color: var(--color-seashell);
+  color: var(--color-baltic);
+  &:hover,
+  &:focus,
+  &:active { background-color: var(--color-seashell-dark); }
+}
+
 /* Gradient Overlays */
 .gradient-pewter:after,
 .gradient-pewter .fl-row-content-wrap:after {

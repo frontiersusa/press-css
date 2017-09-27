@@ -4767,7 +4767,7 @@ a.btn {
   padding-left: 0.938rem;
   border: 0.125rem;
   border-radius: 0.1875rem;
-  background-color: #0C4360;
+  background-color: #00BB92;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -4785,7 +4785,6 @@ a.btn {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none
-
 }
 
 .btn:not([class*='btn-outlined']), a.btn:not([class*='btn-outlined']) {
@@ -4799,15 +4798,15 @@ a.btn {
   a.btn:hover,
   a.btn:focus,
   a.btn:active {
-  background-color: #5f7f9c;
+  background-color: rgb(0, 150, 117);
 }
 
 .btn:disabled,
   .btn.btn-disabled,
   a.btn:disabled,
   a.btn.btn-disabled {
-  color: #CECECE;
-  background-color: #F0F0F0;
+  color: #F6F9FC;
+  background-color: #adadad;
   cursor: not-allowed;
 }
 
@@ -4823,73 +4822,15 @@ a.btn {
     a.btn.btn-disabled:hover,
     a.btn.btn-disabled:focus,
     a.btn.btn-disabled:active {
-  background-color: #F0F0F0;
+  background-color: #adadad;
 }
 
-*[class*='btn-outlined'],
-a*[class*='btn-outlined'] {
-  /*&:disabled,
-  &.btn-disabled {
-    text-decoration: none;
-    background-color: transparent;
-  }*/
-}
-
-*[class*='btn-outlined']:hover,
-  *[class*='btn-outlined']:focus,
-  *[class*='btn-outlined']:active,
-  a*[class*='btn-outlined']:hover,
-  a*[class*='btn-outlined']:focus,
-  a*[class*='btn-outlined']:active {}
-
-.btn-outlined,
-a.btn-outlined {
-  border-color: #083549;
-  color: #083549;
-  background-color: transparent;
-  border-width: 0.125rem;
-  border-style: solid;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem
-}
-
-.btn-outlined:hover,
-  .btn-outlined:focus,
-  .btn-outlined:active,
-  a.btn-outlined:hover,
-  a.btn-outlined:focus,
-  a.btn-outlined:active {
-  text-decoration: underline;
-  background-color: transparent;
-  border-color: rgb(18, 118, 161);
-  color: rgb(18, 118, 161);
-}
-
-.btn-outlined:disabled,
-  .btn-outlined.btn-disabled,
-  a.btn-outlined:disabled,
-  a.btn-outlined.btn-disabled {
-  color: #CECECE;
-  background-color: #F0F0F0;
-  cursor: not-allowed;
-  border-color: transparent;
-}
-
-.btn-outlined:disabled:hover,
-    .btn-outlined:disabled:focus,
-    .btn-outlined:disabled:active,
-    .btn-outlined.btn-disabled:hover,
-    .btn-outlined.btn-disabled:focus,
-    .btn-outlined.btn-disabled:active,
-    a.btn-outlined:disabled:hover,
-    a.btn-outlined:disabled:focus,
-    a.btn-outlined:disabled:active,
-    a.btn-outlined.btn-disabled:hover,
-    a.btn-outlined.btn-disabled:focus,
-    a.btn-outlined.btn-disabled:active {
-  text-decoration: none;
-  background-color: #F0F0F0;
-  border-color: transparent;
+.btn svg, a.btn svg {
+  fill: white;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 1.0625rem;
+  margin-right: 0.625rem;
 }
 
 /* Button Sizes */
@@ -4928,81 +4869,6 @@ a.btn-3 {
   padding-bottom: (0.625rem - 0.125rem);
 }
 
-/* Button Brand Colors */
-
-.btn-pewter,
-a.btn-pewter {
-  background-color: #91B1A7
-}
-
-.btn-pewter:hover,
-  .btn-pewter:focus,
-  .btn-pewter:active,
-  a.btn-pewter:hover,
-  a.btn-pewter:focus,
-  a.btn-pewter:active {
-  background-color: #829E95;
-}
-
-.btn-baltic,
-a.btn-baltic {
-  background-color: #3E3E3F
-}
-
-.btn-baltic:hover,
-  .btn-baltic:focus,
-  .btn-baltic:active,
-  a.btn-baltic:hover,
-  a.btn-baltic:focus,
-  a.btn-baltic:active {
-  background-color: #7d7d7d;
-}
-
-.btn-sunglow,
-a.btn-sunglow {
-  background-color: #FDD230;
-  color: #3E3E3F
-}
-
-.btn-sunglow:hover,
-  .btn-sunglow:focus,
-  .btn-sunglow:active,
-  a.btn-sunglow:hover,
-  a.btn-sunglow:focus,
-  a.btn-sunglow:active {
-  background-color: ;
-}
-
-.btn-seashell,
-a.btn-seashell {
-  background-color: #E6E6E6;
-  color: #3E3E3F
-}
-
-.btn-seashell:hover,
-  .btn-seashell:focus,
-  .btn-seashell:active,
-  a.btn-seashell:hover,
-  a.btn-seashell:focus,
-  a.btn-seashell:active {
-  background-color: #CECECE;
-}
-
-.btn-white,
-a.btn-white {
-  background-color: white;
-  color: #3E3E3F
-}
-
-.btn-white:hover,
-  .btn-white:focus,
-  .btn-white:active,
-  a.btn-white:hover,
-  a.btn-white:focus,
-  a.btn-white:active {
-  background-color: #F0F0F0;
-}
-
 .btn-teal,
 a.btn-teal {
   background-color: #00BB92
@@ -5014,12 +4880,54 @@ a.btn-teal {
   a.btn-teal:hover,
   a.btn-teal:focus,
   a.btn-teal:active {
-  background-color: #4d736f;
+  background-color: rgb(0, 150, 117);
+}
+
+.btn-navy,
+a.btn-navy {
+  background-color: #0C4360
+}
+
+.btn-navy:hover,
+  .btn-navy:focus,
+  .btn-navy:active,
+  a.btn-navy:hover,
+  a.btn-navy:focus,
+  a.btn-navy:active {
+  background-color: #176A95;
+}
+
+.btn-jet,
+a.btn-jet {
+  background-color: #1B2B34
+}
+
+.btn-jet:hover,
+  .btn-jet:focus,
+  .btn-jet:active,
+  a.btn-jet:hover,
+  a.btn-jet:focus,
+  a.btn-jet:active {
+  background-color: rgb(107, 117, 123);
+}
+
+.btn-sea,
+a.btn-sea {
+  background-color: #176A95
+}
+
+.btn-sea:hover,
+  .btn-sea:focus,
+  .btn-sea:active,
+  a.btn-sea:hover,
+  a.btn-sea:focus,
+  a.btn-sea:active {
+  background-color: rgb(28, 127, 176);
 }
 
 .btn-gold,
 a.btn-gold {
-  color: #3E3E3F;
+  color: #1B2B34;
   background-color: #FBD05C
 }
 
@@ -5029,16 +4937,22 @@ a.btn-gold {
   a.btn-gold:hover,
   a.btn-gold:focus,
   a.btn-gold:active {
-  background-color: #ffe08a;
+  background-color: rgb(253, 227, 157);
 }
 
-/* Button with icon */
+.btn-white,
+a.btn-white {
+  background-color: white;
+  color: #1B2B34
+}
 
-.btn-icon object[type='image/svg+xml'] {
-  vertical-align: middle;
-  width: 100%;
-  max-width: 1.5625rem;
-  margin-right: 0.625rem;
+.btn-white:hover,
+  .btn-white:focus,
+  .btn-white:active,
+  a.btn-white:hover,
+  a.btn-white:focus,
+  a.btn-white:active {
+  background-color: rgb(221, 224, 227);
 }
 
 /* Button States */
@@ -5226,6 +5140,66 @@ a.btn-warn {
 .list-reset {
   padding-left: 0;
   list-style: none;
+}
+
+/* Buttons */
+
+.btn-pewter,
+a.btn-pewter {
+  background-color: #91B1A7
+}
+
+.btn-pewter:hover,
+  .btn-pewter:focus,
+  .btn-pewter:active,
+  a.btn-pewter:hover,
+  a.btn-pewter:focus,
+  a.btn-pewter:active {
+  background-color: #829E95;
+}
+
+.btn-baltic,
+a.btn-baltic {
+  background-color: #3E3E3F
+}
+
+.btn-baltic:hover,
+  .btn-baltic:focus,
+  .btn-baltic:active,
+  a.btn-baltic:hover,
+  a.btn-baltic:focus,
+  a.btn-baltic:active {
+  background-color: #7d7d7d;
+}
+
+.btn-sunglow,
+a.btn-sunglow {
+  background-color: #FDD230;
+  color: #3E3E3F
+}
+
+.btn-sunglow:hover,
+  .btn-sunglow:focus,
+  .btn-sunglow:active,
+  a.btn-sunglow:hover,
+  a.btn-sunglow:focus,
+  a.btn-sunglow:active {
+  background-color: ;
+}
+
+.btn-seashell,
+a.btn-seashell {
+  background-color: #E6E6E6;
+  color: #3E3E3F
+}
+
+.btn-seashell:hover,
+  .btn-seashell:focus,
+  .btn-seashell:active,
+  a.btn-seashell:hover,
+  a.btn-seashell:focus,
+  a.btn-seashell:active {
+  background-color: #CECECE;
 }
 
 /* Gradient Overlays */

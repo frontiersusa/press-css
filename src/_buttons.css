@@ -10,7 +10,7 @@ a.btn {
   padding-left: 0.938rem;
   border: 0.125rem;
   border-radius: 3px;
-  background-color: var(--color-navy);
+  background-color: var(--color-teal);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -23,78 +23,32 @@ a.btn {
   transition-delay: 0;
   user-select: none;
   appearance: none;
-
   &:not([class*='btn-outlined']) {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
   }
-
   &:hover,
   &:focus,
-  &:active { background-color: #5f7f9c; }
-
+  &:active { background-color: color(var(--color-teal) shade(20%)); }
   &:disabled,
   &.btn-disabled {
-    color: var(--color-seashell-dark);
-    background-color: var(--color-seashell-light);
+    color: var(--color-ghost);
+    background-color: var(--color-gray);
     cursor: not-allowed;
     &:hover,
     &:focus,
     &:active {
-      background-color: var(--color-seashell-light);
+      background-color: var(--color-gray);
     }
   }
-
-}
-
-*[class*='btn-outlined'],
-a*[class*='btn-outlined'] {
-
-  &:hover,
-  &:focus,
-  &:active {
-
-  }
-  /*&:disabled,
-  &.btn-disabled {
-    text-decoration: none;
-    background-color: transparent;
-  }*/
-}
-
-.btn-outlined,
-a.btn-outlined {
-  border-color: var(--color-whale);
-  color: var(--color-whale);
-  background-color: transparent;
-  border-width: 0.125rem;
-  border-style: solid;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  &:hover,
-  &:focus,
-  &:active  {
-    text-decoration: underline;
-    background-color: transparent;
-    border-color: color(var(--color-whale) lightness(35%));
-    color: color(var(--color-whale) lightness(35%));
-  }
-  &:disabled,
-  &.btn-disabled {
-    color: var(--color-seashell-dark);
-    background-color: var(--color-seashell-light);
-    cursor: not-allowed;
-    border-color: transparent;
-    &:hover,
-    &:focus,
-    &:active {
-      text-decoration: none;
-      background-color: var(--color-seashell-light);
-      border-color: transparent;
-    }
+  & svg {
+    fill: white;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 17px;
+    margin-right: 10px;
   }
 }
-
 
 /* Button Sizes */
 .btn-1,
@@ -126,72 +80,51 @@ a.btn-3 {
   }
 }
 
-
-/* Button Brand Colors */
-.btn-pewter,
-a.btn-pewter {
-  background-color: var(--color-pewter);
-  &:hover,
-  &:focus,
-  &:active { background-color: var(--color-pewter-dark); }
-}
-.btn-baltic,
-a.btn-baltic {
-  background-color: var(--color-baltic);
-  &:hover,
-  &:focus,
-  &:active { background-color: #7d7d7d; }
-}
-.btn-sunglow,
-a.btn-sunglow {
-  background-color: var(--color-sunglow);
-  color: var(--color-baltic);
-  &:hover,
-  &:focus,
-  &:active { background-color: ; }
-}
-.btn-seashell,
-a.btn-seashell {
-  background-color: var(--color-seashell);
-  color: var(--color-baltic);
-  &:hover,
-  &:focus,
-  &:active { background-color: var(--color-seashell-dark); }
-}
-.btn-white,
-a.btn-white {
-  background-color: white;
-  color: var(--color-baltic);
-  &:hover,
-  &:focus,
-  &:active { background-color: var(--color-seashell-light); }
-}
-
 .btn-teal,
 a.btn-teal {
   background-color: var(--color-teal);
   &:hover,
   &:focus,
-  &:active { background-color: #4d736f; }
+  &:active { background-color: color(var(--color-teal) shade(20%)); }
+}
+.btn-navy,
+a.btn-navy {
+  background-color: var(--color-navy);
+  &:hover,
+  &:focus,
+  &:active { background-color: var(--color-sea); }
+}
+.btn-sea,
+a.btn-sea {
+  background-color: var(--color-sea);
+  &:hover,
+  &:focus,
+  &:active { background-color: color(var(--color-sea) lightness(40%)); }
 }
 .btn-gold,
 a.btn-gold {
-  color: var(--color-baltic);
+  color: var(--color-jet);
   background-color: var(--color-gold);
   &:hover,
   &:focus,
-  &:active { background-color: #ffe08a; }
+  &:active { background-color: color(var(--color-gold) tint(40%)); }
+}
+.btn-jet,
+a.btn-jet {
+  background-color: var(--color-jet);
+  &:hover,
+  &:focus,
+  &:active { background-color: color(var(--color-jet) tint(35%)); }
+}
+.btn-white,
+a.btn-white {
+  background-color: white;
+  color: var(--color-jet);
+  &:hover,
+  &:focus,
+  &:active { background-color: color(var(--color-ghost) shade(10%)); }
 }
 
-/* Button with icon */
-.btn-icon object[type='image/svg+xml'] {
-  vertical-align: middle;
-  width: 100%;
-  max-width: 25px;
-  margin-right: 10px;
-}
-
-/* Button States */
 .btn-error,
 a.btn-error {
   background-color: var(--color-error);
