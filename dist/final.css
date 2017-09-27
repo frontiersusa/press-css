@@ -4897,20 +4897,6 @@ a.btn-navy {
   background-color: #176A95;
 }
 
-.btn-jet,
-a.btn-jet {
-  background-color: #1B2B34
-}
-
-.btn-jet:hover,
-  .btn-jet:focus,
-  .btn-jet:active,
-  a.btn-jet:hover,
-  a.btn-jet:focus,
-  a.btn-jet:active {
-  background-color: rgb(107, 117, 123);
-}
-
 .btn-sea,
 a.btn-sea {
   background-color: #176A95
@@ -4940,6 +4926,20 @@ a.btn-gold {
   background-color: rgb(253, 227, 157);
 }
 
+.btn-jet,
+a.btn-jet {
+  background-color: #1B2B34
+}
+
+.btn-jet:hover,
+  .btn-jet:focus,
+  .btn-jet:active,
+  a.btn-jet:hover,
+  a.btn-jet:focus,
+  a.btn-jet:active {
+  background-color: rgb(107, 117, 123);
+}
+
 .btn-white,
 a.btn-white {
   background-color: white;
@@ -4954,8 +4954,6 @@ a.btn-white {
   a.btn-white:active {
   background-color: rgb(221, 224, 227);
 }
-
-/* Button States */
 
 .btn-error,
 a.btn-error {
