@@ -2052,7 +2052,7 @@ template {
 
 .fsi { font-size: inherit; }
 
-.fs-lead { font-size: 1.063rem; }
+.fs-lead { font-size: 1.125rem; }
 
 .fs1 { font-size: 0.64rem; }
 
@@ -2076,7 +2076,7 @@ template {
 
 @media (min-width: 34rem) {
   .fsi-sm { font-size: inherit; }
-  .fs-lead-sm { font-size: 1.063rem; }
+  .fs-lead-sm { font-size: 1.125rem; }
   .fs1-sm { font-size: 0.64rem; }
   .fs2-sm { font-size: 0.8rem; }
   .fs3-sm { font-size: 1rem; }
@@ -2089,7 +2089,7 @@ template {
 
 @media (min-width: 48rem) {
   .fsi-md { font-size: inherit; }
-  .fs-lead-md { font-size: 1.063rem; }
+  .fs-lead-md { font-size: 1.125rem; }
   .fs1-md { font-size: 0.64rem; }
   .fs2-md { font-size: 0.8rem; }
   .fs3-md { font-size: 1rem; }
@@ -2102,7 +2102,7 @@ template {
 
 @media (min-width: 62rem) {
   .fsi-lg { font-size: inherit; }
-  .fs-lead-lg { font-size: 1.063rem; }
+  .fs-lead-lg { font-size: 1.125rem; }
   .fs1-lg { font-size: 0.64rem; }
   .fs2-lg { font-size: 0.8rem; }
   .fs3-lg { font-size: 1rem;}
@@ -2115,7 +2115,7 @@ template {
 
 @media (min-width: 75rem) {
   .fsi-xl { font-size: inherit; }
-  .fs-lead-xl { font-size: 1.063rem; }
+  .fs-lead-xl { font-size: 1.125rem; }
   .fs1-xl { font-size: 0.64rem; }
   .fs2-xl { font-size: 0.8rem; }
   .fs3-xl { font-size: 1rem;}
@@ -5525,8 +5525,9 @@ fieldset {
   padding: 0 0.75rem;
   height: 2.75rem;
   border-width: 0.125rem;
+  font-size: 1rem;
   border-style: solid;
-  border-color: #616161;
+  border-color: #1B2B34;
   border-radius: 0.188rem;
   background-color: white;
   font-weight: 400;
@@ -5535,8 +5536,8 @@ fieldset {
 
 .input:focus {
   outline: 0;
-  border-color: #829E95;
-  background-color: rgb(249, 251, 250);
+  border-color: #00BB92;
+  background-color: rgba(0, 187, 146, 0.05);
 }
 
 .label {
@@ -5579,7 +5580,7 @@ select.input {
 .input-1 {
   padding: 0 0.625rem;
   height: 2.25rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 select.input-1 {
