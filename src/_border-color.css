@@ -3,11 +3,13 @@
 
 */
 
-.b--black { border-color: black; }
-.b--white { border-color: white; }
-.b--gray { border-color: gray; }
+.b--teal { border-color: var(--color-teal); }
+.b--navy { border-color: var(--color-navy); }
+.b--sea { border-color: var(--color-sea); }
+.b--gold { border-color: var(--color-gold); }
+.b--jet { border-color: var(--color-jet); }
+.b--ghost { border-color: var(--color-ghost); }
 
-.b--seashell { border-color: var(--color-seashell);}
-.b--baltic { border-color: var(--color-baltic); }
-.b--pewter { border-color: var(--color-pewter); }
-.b--whale { border-color: var(--color-whale); }
+.b--black { border-color: black; }
+.b--gray { border-color: var(--color-gray); }
+.b--white { border-color: white; }
