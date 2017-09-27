@@ -57,9 +57,9 @@ select.input {
   padding-right: 2.5rem;
   background-color: white;
   background-image:
-    linear-gradient(45deg, transparent 50%, var(--color-baltic-light) 50%),
-    linear-gradient(135deg, var(--color-baltic-light) 50%, transparent 50%),
-    linear-gradient(to right, var(--color-seashell), var(--color-seashell));
+    linear-gradient(45deg, transparent 50%, var(--color-jet) 50%),
+    linear-gradient(135deg, var(--color-jet) 50%, transparent 50%),
+    linear-gradient(to right, var(--color-gray), var(--color-gray));
   background-position:
     calc(100% - 20px) calc(1em + 2px),
     calc(100% - 15px) calc(1em + 2px),

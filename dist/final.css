@@ -5559,9 +5559,9 @@ select.input::-ms-expand {
 select.input {
   padding-right: 2.5rem;
   background-color: white;
-  background-image: linear-gradient(45deg, transparent 50%, #616161 50%),
-    linear-gradient(135deg, #616161 50%, transparent 50%),
-    linear-gradient(to right, #E6E6E6, #E6E6E6);
+  background-image: linear-gradient(45deg, transparent 50%, #1B2B34 50%),
+    linear-gradient(135deg, #1B2B34 50%, transparent 50%),
+    linear-gradient(to right, #adadad, #adadad);
   background-position:
     calc(100% - 1.25rem) calc(1em + 0.125rem),     calc(100% - 0.9375rem) calc(1em + 0.125rem),     calc(100% - 2.5em) 0.5em;
   background-size:
