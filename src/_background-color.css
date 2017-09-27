@@ -12,15 +12,15 @@
 
 .bg-transparent { background-color: transparent; }
 .bg-black { background-color: black; }
-.bg-black-10 { background-color: var(--black-10) }
-.bg-black-25 { background-color: var(--black-25) }
-.bg-black-50 { background-color: var(--black-50) }
-.bg-black-75 { background-color: var(--black-75) }
-.bg-black-90 { background-color: var(--black-90) }
+.bg-black-10 { background-color: var(--color-black-10) }
+.bg-black-25 { background-color: var(--color-black-25) }
+.bg-black-50 { background-color: var(--color-black-50) }
+.bg-black-75 { background-color: var(--color-black-75) }
+.bg-black-90 { background-color: var(--color-black-90) }
 .bg-gray { background-color: lightGray; }
 .bg-white { background-color: white; }
-.bg-white-10 { background-color: var(--white-10) }
-.bg-white-25 { background-color: var(--white-25) }
-.bg-white-50 { background-color: var(--white-50) }
-.bg-white-75 { background-color: var(--white-75) }
-.bg-white-90 { background-color: var(--white-90) }
+.bg-white-10 { background-color: var(--color-white-10) }
+.bg-white-25 { background-color: var(--color-white-25) }
+.bg-white-50 { background-color: var(--color-white-50) }
+.bg-white-75 { background-color: var(--color-white-75) }
+.bg-white-90 { background-color: var(--color-white-90) }

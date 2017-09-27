@@ -12,7 +12,7 @@
 
 .black { color: black; }
 .white { color: white; }
-.gray { color: var(--gray); }
+.gray { color: var(--color-gray); }
 
 @media (--breakpoint-sm) {
   .teal-sm { color: var(--color-teal); }
@@ -24,7 +24,7 @@
 
   .white-sm { color: white; }
   .black-sm { color: black; }
-  .gray-sm { color: var(--gray); }
+  .gray-sm { color: var(--color-gray); }
 }
 @media (--breakpoint-md) {
   .teal-md { color: var(--color-teal); }
@@ -36,7 +36,7 @@
 
   .white-md { color: white; }
   .black-md { color: black; }
-  .gray-md { color: var(--gray); }
+  .gray-md { color: var(--color-gray); }
 }
 @media (--breakpoint-lg) {
   .teal-lg { color: var(--color-teal); }
@@ -48,7 +48,7 @@
 
   .white-lg { color: white; }
   .black-lg { color: black; }
-  .gray-lg { color: var(--gray); }
+  .gray-lg { color: var(--color-gray); }
 }
 @media (--breakpoint-xl) {
   .teal-xl { color: var(--color-teal); }
@@ -60,5 +60,5 @@
 
   .white-xl { color: white; }
   .black-xl { color: black; }
-  .gray-xl { color: var(--gray); }
+  .gray-xl { color: var(--color-gray); }
 }
