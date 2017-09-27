@@ -3,8 +3,6 @@
 
 */
 
-/* v4.0 */
-
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -4608,8 +4606,6 @@ img { max-width: 100%; }
   .z-unset-xl { z-index: unset; }
 }
 
-/* v3.0.8 and earlier */
-
 /*
   Background Color
 
@@ -5861,3 +5857,20 @@ h6 { text-transform: uppercase; }
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
+
+/*
+  Headings
+
+*/
+
+h1 { font-size: 2.441rem; }
+
+h2 { font-size: 1.953rem; }
+
+h3 { font-size: 1.563rem; }
+
+h4 { font-size: 1.25rem; }
+
+h5 { font-size: 1rem; }
+
+h6 { font-size: 0.8rem; }

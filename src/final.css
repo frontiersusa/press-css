@@ -3,7 +3,6 @@
 
 */
 
-/* v4.0 */
 @import "normalize";
 @import "media-queries";
 @import "flexbox";
@@ -39,8 +38,6 @@
 @import "vertical-align";
 @import "visibility";
 @import "z-index";
-
-/* v3.0.8 and earlier */
 @import "background-color";
 @import "gradients";
 @import "base";
@@ -58,3 +55,4 @@
 @import "selection";
 @import "transitions";
 @import "typography";
+@import "headings";
