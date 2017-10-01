@@ -10,6 +10,13 @@
 .bg-jet { background-color: var(--color-jet); }
 .bg-ghost { background-color: var(--color-ghost); }
 
+.fill-teal { fill: var(--color-teal); }
+.fill-navy { fill: var(--color-navy); }
+.fill-sea { fill: var(--color-sea); }
+.fill-gold { fill: var(--color-gold); }
+.fill-jet { fill: var(--color-jet); }
+.fill-ghost { fill: var(--color-ghost); }
+
 .bg-transparent { background-color: transparent; }
 .bg-black { background-color: black; }
 .bg-black-10 { background-color: var(--color-black-10) }
