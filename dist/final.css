@@ -4623,6 +4623,18 @@ img { max-width: 100%; }
 
 .bg-ghost { background-color: #F6F9FC; }
 
+.fill-teal { fill: #00BB92; }
+
+.fill-navy { fill: #0C4360; }
+
+.fill-sea { fill: #176A95; }
+
+.fill-gold { fill: #FBD05C; }
+
+.fill-jet { fill: #1B2B34; }
+
+.fill-ghost { fill: #F6F9FC; }
+
 .bg-transparent { background-color: transparent; }
 
 .bg-black { background-color: black; }
@@ -4788,8 +4800,8 @@ a.btn {
 }
 
 .btn:not([class*='btn-outlined']), a.btn:not([class*='btn-outlined']) {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .btn:hover,
@@ -4843,19 +4855,18 @@ a.btn-1 {
 }
 
 .btn-1:not([class*='btn-outlined']), a.btn-1:not([class*='btn-outlined']) {
-  padding-top: 0.563rem;
-  padding-bottom: 0.563rem;
+  padding-top: 0.4375rem;
+  padding-bottom: 0.4375rem;
 }
 
-.btn-1[class*='btn-outlined'], a.btn-1[class*='btn-outlined'] {
-  padding-top: (0.563rem - 0.125rem);
-  padding-bottom: (0.563rem - 0.125rem);
+.btn-1[class*='btn-outlined'], a.btn-1[class*='btn-outlined'] {/*padding-top: (0.563rem - 0.125rem);
+    padding-bottom: (0.563rem - 0.125rem);*/
 }
 
 .btn-3,
 a.btn-3 {
-  padding-right: 1.875rem;
-  padding-left: 1.875rem;
+  padding-right: 1.125rem;
+  padding-left: 1.125rem;
   font-size: 1.375rem
 }
 
@@ -4864,9 +4875,8 @@ a.btn-3 {
   padding-bottom: 0.625rem;
 }
 
-.btn-3[class*='btn-outlined'], a.btn-3[class*='btn-outlined'] {
-  padding-top: (0.625rem - 0.125rem);
-  padding-bottom: (0.625rem - 0.125rem);
+.btn-3[class*='btn-outlined'], a.btn-3[class*='btn-outlined'] {/*padding-top: (0.625rem - 0.125rem);
+    padding-bottom: (0.625rem - 0.125rem);*/
 }
 
 .btn-teal,
