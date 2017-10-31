@@ -1,4 +1,4 @@
-<img src="http://frontiersusa.github.io/final/assets/final-logo.svg"/>
+<img src="http://frontiersusa.github.io/final/assets/img/final-logo.svg"/>
 
 _More coming soon._
 
