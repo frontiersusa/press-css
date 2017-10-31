@@ -10,7 +10,7 @@
   "license": "ISC",
   "scripts": {
     "watch": "onchange 'src/*.css' -- npm run build",
-    "serve": "browser-sync start --server 'docs/' --files 'dist/*.css, dist/*.js, index.html' --browser 'google chrome' --port '3000'",
+    "serve": "browser-sync start --server --files 'dist/*.css, dist/*.js, index.html' --browser 'google chrome' --port '3000'",
     "minify": "postcss -u cssnano dist/final.css -o dist/final.min.css",
     "build:css": "postcss -c postcss.config.json",
     "build": "npm run build:css && npm run minify"
