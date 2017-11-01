@@ -4849,7 +4849,7 @@ a.btn {
   a.btn:disabled,
   a.btn.btn-disabled {
   color: #fff;
-  background-color: #91B1A7;
+  background-color: #adadad;
   cursor: not-allowed;
 }
 
@@ -4878,182 +4878,131 @@ a.btn {
 
 /* Button Sizes */
 
-.btn-1,
-a.btn-1 {
+.btn.is-small {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  font-size: 0.750em
+  font-size: 0.750em;
 }
 
-.btn-1:not([class*='btn-outlined']), a.btn-1:not([class*='btn-outlined']) {
-  padding-top: 0.4375rem;
-  padding-bottom: 0.4375rem;
-}
-
-.btn-1[class*='btn-outlined'], a.btn-1[class*='btn-outlined'] {/*padding-top: (0.563rem - 0.125rem);
-    padding-bottom: (0.563rem - 0.125rem);*/
-}
-
-.btn-3,
-a.btn-3 {
+.btn.is-large {
   padding-right: 1.125rem;
   padding-left: 1.125rem;
-  font-size: 1.375rem
+  font-size: 1.375rem;
 }
 
-.btn-3:not([class*='btn-outlined']), a.btn-3:not([class*='btn-outlined']) {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
+/* Colors */
 
-.btn-3[class*='btn-outlined'], a.btn-3[class*='btn-outlined'] {/*padding-top: (0.625rem - 0.125rem);
-    padding-bottom: (0.625rem - 0.125rem);*/
-}
-
-.btn-whale,
-a.btn-whale {
+.btn.is-whale {
   background-color: #083549
 }
 
-.btn-whale:hover,
-  .btn-whale:focus,
-  .btn-whale:active,
-  a.btn-whale:hover,
-  a.btn-whale:focus,
-  a.btn-whale:active {
-  background-color: #032636;
+.btn.is-whale:hover,
+  .btn.is-whale:focus,
+  .btn.is-whale:active {
+  background-color: #52717F;
 }
 
-.btn-pewter,
-a.btn-pewter {
+.btn.is-pewter {
   background-color: #91B1A7
 }
 
-.btn-pewter:hover,
-  .btn-pewter:focus,
-  .btn-pewter:active,
-  a.btn-pewter:hover,
-  a.btn-pewter:focus,
-  a.btn-pewter:active {
+.btn.is-pewter:hover,
+  .btn.is-pewter:focus,
+  .btn.is-pewter:active {
   background-color: #829E95;
 }
 
-.btn-baltic,
-a.btn-baltic {
+.btn.is-baltic {
   background-color: #3E3E3F
 }
 
-.btn-baltic:hover,
-  .btn-baltic:focus,
-  .btn-baltic:active,
-  a.btn-baltic:hover,
-  a.btn-baltic:focus,
-  a.btn-baltic:active {
+.btn.is-baltic:hover,
+  .btn.is-baltic:focus,
+  .btn.is-baltic:active {
   background-color: #7d7d7d;
 }
 
-.btn-sunglow,
-a.btn-sunglow {
+.btn.is-sunglow {
   background-color: #FDD230;
   color: #3E3E3F
 }
 
-.btn-sunglow:hover,
-  .btn-sunglow:focus,
-  .btn-sunglow:active,
-  a.btn-sunglow:hover,
-  a.btn-sunglow:focus,
-  a.btn-sunglow:active {
-  background-color: ;
+.btn.is-sunglow:hover,
+  .btn.is-sunglow:focus,
+  .btn.is-sunglow:active {
+  background-color: #FDDF6E;
 }
 
-.btn-seashell,
-a.btn-seashell {
+.btn.is-seashell {
   background-color: #E6E6E6;
   color: #3E3E3F
 }
 
-.btn-seashell:hover,
-  .btn-seashell:focus,
-  .btn-seashell:active,
-  a.btn-seashell:hover,
-  a.btn-seashell:focus,
-  a.btn-seashell:active {
+.btn.is-seashell:hover,
+  .btn.is-seashell:focus,
+  .btn.is-seashell:active {
   background-color: #CECECE;
 }
 
-.btn-white,
-a.btn-white {
+.btn.is-white {
   background-color: white;
   color: #3E3E3F
 }
 
-.btn-white:hover,
-  .btn-white:focus,
-  .btn-white:active,
-  a.btn-white:hover,
-  a.btn-white:focus,
-  a.btn-white:active {
+.btn.is-white:hover,
+  .btn.is-white:focus,
+  .btn.is-white:active {
   background-color: #adadad;
 }
 
-.btn-error,
-a.btn-error {
+.btn.is-error {
   background-color: #E2363F
 }
 
-.btn-error:hover, a.btn-error:hover {
+.btn.is-error:hover {
   background-color: rgb(179, 25, 33);
 }
 
-.btn-error:focus, a.btn-error:focus {
+.btn.is-error:focus {
   background-color: rgb(179, 25, 33);
 }
 
-.btn-error:disabled,
-  .btn-error.btn-disabled,
-  a.btn-error:disabled,
-  a.btn-error.btn-disabled {
+.btn.is-error:disabled,
+  .btn.is-error.btn-disabled {
   background-color: rgb(236, 121, 127);
 }
 
-.btn-success,
-a.btn-success {
+.btn.is-success {
   background-color: #99D161
 }
 
-.btn-success:hover, a.btn-success:hover {
+.btn.is-success:hover {
   background-color: rgb(102, 158, 46);
 }
 
-.btn-success:focus, a.btn-success:focus {
+.btn.is-success:focus {
   background-color: rgb(102, 158, 46);
 }
 
-.btn-success:disabled,
-  .btn-success.btn-disabled,
-  a.btn-success:disabled,
-  a.btn-success.btn-disabled {
+.btn.is-success:disabled,
+  .btn.is-success.btn-disabled {
   background-color: rgb(204, 232, 176);
 }
 
-.btn-warn,
-a.btn-warn {
+.btn.is-warn {
   background-color: #EDB95E
 }
 
-.btn-warn:hover, a.btn-warn:hover {
+.btn.is-warn:hover {
   background-color: rgb(184, 124, 20);
 }
 
-.btn-warn:focus, a.btn-warn:focus {
+.btn.is-warn:focus {
   background-color: rgb(184, 124, 20);
 }
 
-.btn-warn:disabled,
-  .btn-warn.btn-disabled,
-  a.btn-warn:disabled,
-  a.btn-warn.btn-disabled {
+.btn.is-warn:disabled,
+  .btn.is-warn.btn-disabled {
   background-color: rgb(245, 215, 163);
 }
 
