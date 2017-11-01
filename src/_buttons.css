@@ -29,11 +29,11 @@ a.btn {
   }
   &:hover,
   &:focus,
-  &:active { background-color: color(var(--color-teal) shade(20%)); }
+  &:active { background-color: color(var(--color-pewter) shade(30%)); }
   &:disabled,
   &.btn-disabled {
-    color: var(--color-ghost);
-    background-color: var(--color-gray);
+    color: var(--color-white);
+    background-color: var(--color-pewter);
     cursor: not-allowed;
     &:hover,
     &:focus,
@@ -80,49 +80,43 @@ a.btn-3 {
   }
 }
 
-.btn-teal,
-a.btn-teal {
-  background-color: var(--color-teal);
+.btn-pewter,
+a.btn-pewter {
+  background-color: var(--color-pewter);
   &:hover,
   &:focus,
-  &:active { background-color: color(var(--color-teal) shade(20%)); }
+  &:active { background-color: var(--color-pewter-dark); }
 }
-.btn-navy,
-a.btn-navy {
-  background-color: var(--color-navy);
+.btn-baltic,
+a.btn-baltic {
+  background-color: var(--color-baltic);
   &:hover,
   &:focus,
-  &:active { background-color: var(--color-sea); }
+  &:active { background-color: #7d7d7d; }
 }
-.btn-sea,
-a.btn-sea {
-  background-color: var(--color-sea);
+.btn-sunglow,
+a.btn-sunglow {
+  background-color: var(--color-sunglow);
+  color: var(--color-baltic);
   &:hover,
   &:focus,
-  &:active { background-color: color(var(--color-sea) lightness(40%)); }
+  &:active { background-color: ; }
 }
-.btn-gold,
-a.btn-gold {
-  color: var(--color-jet);
-  background-color: var(--color-gold);
+.btn-seashell,
+a.btn-seashell {
+  background-color: var(--color-seashell);
+  color: var(--color-baltic);
   &:hover,
   &:focus,
-  &:active { background-color: color(var(--color-gold) tint(40%)); }
-}
-.btn-jet,
-a.btn-jet {
-  background-color: var(--color-jet);
-  &:hover,
-  &:focus,
-  &:active { background-color: color(var(--color-jet) tint(35%)); }
+  &:active { background-color: var(--color-seashell-dark); }
 }
 .btn-white,
 a.btn-white {
   background-color: white;
-  color: var(--color-jet);
+  color: var(--color-baltic);
   &:hover,
   &:focus,
-  &:active { background-color: color(var(--color-ghost) shade(10%)); }
+  &:active { background-color: var(--color-gray); }
 }
 
 .btn-error,
