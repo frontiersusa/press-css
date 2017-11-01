@@ -3,61 +3,39 @@
 
 */
 
-.teal { color: var(--color-teal); }
-.navy { color: var(--color-navy); }
-.sea { color: var(--color-sea); }
-.gold { color: var(--color-gold); }
-.jet { color: var(--color-jet); }
-.ghost { color: var(--color-ghost); }
+.pewter { color: var(--color-pewter); }
+.pewter-light { color: var(--color-pewter-light); }
+.pewter-dark { color: var(--color-pewter-dark); }
+.whale { color: var(--color-whale); }
+.whale-light { color: var(--color-whale-light); }
+.whale-dark { color: var(--color-whale-dark); }
+.seashell { color: var(--color-seashell); }
+.seashell-light { color: var(--color-seashell-light); }
+.seashell-dark { color: var(--color-seashell-dark); }
+.baltic { color: var(--color-baltic); }
+.baltic-light { color: var(--color-baltic-light); }
+.baltic-dark { color: var(--color-baltic-dark); }
 
 .black { color: black; }
 .white { color: white; }
 .gray { color: var(--color-gray); }
 
 @media (--breakpoint-sm) {
-  .teal-sm { color: var(--color-teal); }
-  .navy-sm { color: var(--color-navy); }
-  .sea-sm { color: var(--color-sea); }
-  .gold-sm { color: var(--color-gold); }
-  .jet-sm { color: var(--color-jet); }
-  .ghost-sm { color: var(--color-ghost); }
-
   .white-sm { color: white; }
   .black-sm { color: black; }
   .gray-sm { color: var(--color-gray); }
 }
 @media (--breakpoint-md) {
-  .teal-md { color: var(--color-teal); }
-  .navy-md { color: var(--color-navy); }
-  .sea-md { color: var(--color-sea); }
-  .gold-md { color: var(--color-gold); }
-  .jet-md { color: var(--color-jet); }
-  .ghost-md { color: var(--color-ghost); }
-
   .white-md { color: white; }
   .black-md { color: black; }
   .gray-md { color: var(--color-gray); }
 }
 @media (--breakpoint-lg) {
-  .teal-lg { color: var(--color-teal); }
-  .navy-lg { color: var(--color-navy); }
-  .sea-lg { color: var(--color-sea); }
-  .gold-lg { color: var(--color-gold); }
-  .jet-lg { color: var(--color-jet); }
-  .ghost-lg { color: var(--color-ghost); }
-
   .white-lg { color: white; }
   .black-lg { color: black; }
   .gray-lg { color: var(--color-gray); }
 }
 @media (--breakpoint-xl) {
-  .teal-xl { color: var(--color-teal); }
-  .navy-xl { color: var(--color-navy); }
-  .sea-xl { color: var(--color-sea); }
-  .gold-xl { color: var(--color-gold); }
-  .jet-xl { color: var(--color-jet); }
-  .ghost-xl { color: var(--color-ghost); }
-
   .white-xl { color: white; }
   .black-xl { color: black; }
   .gray-xl { color: var(--color-gray); }

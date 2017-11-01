@@ -7,6 +7,7 @@
    LINKS
 */
 
+
 .link,
 .link:link,
 .link:visited,
@@ -16,9 +17,10 @@
 .link:focus { outline: 1px dotted currentColor }
 
 .link,
-.link-navy {
-  color: var(--color-navy);
-  &:hover { color: #54B3E9; }
+.link-whale {
+  color: var(--color-whale);
+  &:hover,
+  &:focus { color: #54B3E9; }
   &:focus { outline: 1; }
 }
 .link-baltic {
@@ -26,14 +28,9 @@
   &:hover { color: #A5A5A7; }
   &:focus { outline: 1; }
 }
-.link-teal {
-  color: var(--color-teal);
-  &:hover { color: #2a403d; }
-  &:focus { outline: 1; }
-}
-.link-gold {
-  color: var(--color-gold);
-  &:hover { color: #907833; }
+.link-pewter {
+  color: var(--color-pewter);
+  &:hover { color: #4c6f64; }
   &:focus { outline: 1; }
 }
 
@@ -50,20 +47,5 @@
 .link-warn {
   color: var(--color-warn);
   &:hover { color: color(var(--color-warn) lightness(40%)); }
-  &:focus { outline: 1; }
-}
-
-
-/* v3.0.8 and older */
-
-.link-whale {
-  color: var(--color-navy);
-  &:hover,
-  &:focus { color: #54B3E9; }
-  &:focus { outline: 1; }
-}
-.link-pewter {
-  color: var(--color-pewter);
-  &:hover { color: #4c6f64; }
   &:focus { outline: 1; }
 }

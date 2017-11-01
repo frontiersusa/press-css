@@ -3,19 +3,30 @@
 
 */
 
-.bg-teal { background-color: var(--color-teal); }
-.bg-navy { background-color: var(--color-navy); }
-.bg-sea { background-color: var(--color-sea); }
-.bg-gold { background-color: var(--color-gold); }
-.bg-jet { background-color: var(--color-jet); }
-.bg-ghost { background-color: var(--color-ghost); }
+.bg-whale-light { background-color: var(--color-whale-light); }
+.bg-whale { background-color: var(--color-whale); }
+.bg-whale-dark { background-color: var(--color-whale-dark); }
+.bg-baltic-light { background-color: var(--color-baltic-light); }
+.bg-baltic { background-color: var(--color-baltic); }
+.bg-baltic-dark { background-color: var(--color-baltic-dark); }
+.bg-seashell-light { background-color: var(--color-seashell-light); }
+.bg-seashell { background-color: var(--color-seashell); }
+.bg-seashell-dark { background-color: var(--color-seashell-dark); }
+.bg-pewter-light { background-color: var(--color-pewter-light); }
+.bg-pewter { background-color: var(--color-pewter); }
+.bg-pewter-dark { background-color: var(--color-pewter-dark); }
+.bg-sunglow-light { background-color: var(--color-sunglow-light); }
+.bg-sunglow { background-color: var(--color-sunglow); }
+.bg-sunglow-dark { background-color: var(--color-sunglow-dark); }
+.bg-whitesmoke { background-color: var(--color-whitesmoke); }
+.bg-whitesmoke-light { background-color: var(--color-whitesmoke-light); }
 
-.fill-teal { fill: var(--color-teal); }
+/*.fill-teal { fill: var(--color-teal); }
 .fill-navy { fill: var(--color-navy); }
 .fill-sea { fill: var(--color-sea); }
 .fill-gold { fill: var(--color-gold); }
 .fill-jet { fill: var(--color-jet); }
-.fill-ghost { fill: var(--color-ghost); }
+.fill-ghost { fill: var(--color-ghost); }*/
 
 .bg-transparent { background-color: transparent; }
 .bg-black { background-color: black; }

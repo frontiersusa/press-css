@@ -27,7 +27,7 @@ fieldset {
   border-width: 0.125rem;
   font-size: 1rem;
   border-style: solid;
-  border-color: var(--color-jet);
+  border-color: var(--color-baltic);
   border-radius: 0.188rem;
   background-color: white;
   font-weight: 400;
@@ -35,8 +35,8 @@ fieldset {
 }
 .input:focus {
   outline: 0;
-  border-color: var(--color-teal);
-  background-color: color(var(--color-teal) alpha(5%));
+  border-color: var(--color-pewter);
+  background-color: color(var(--color-pewter) alpha(5%));
 }
 
 .label {
@@ -57,8 +57,8 @@ select.input {
   padding-right: 2.5rem;
   background-color: white;
   background-image:
-    linear-gradient(45deg, transparent 50%, var(--color-jet) 50%),
-    linear-gradient(135deg, var(--color-jet) 50%, transparent 50%),
+    linear-gradient(45deg, transparent 50%, var(--color-baltic) 50%),
+    linear-gradient(135deg, var(--color-baltic) 50%, transparent 50%),
     linear-gradient(to right, var(--color-gray), var(--color-gray));
   background-position:
     calc(100% - 20px) calc(1em + 2px),
