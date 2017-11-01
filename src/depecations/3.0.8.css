@@ -1,0 +1,92 @@
+/* Button Sizes */
+.btn-1,
+a.btn-1 {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  font-size: 0.750em;
+  &:not([class*='btn-outlined']) {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+.btn-3,
+a.btn-3 {
+  padding-right: 18px;
+  padding-left: 18px;
+  font-size: 1.375rem;
+  &:not([class*='btn-outlined']) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* Button Colors & States */
+.btn-whale,
+a.btn-whale {
+  background-color: var(--color-whale);
+  &:hover,
+  &:focus,
+  &:active { background-color: var(--color-light-dark); }
+}
+.btn-pewter,
+a.btn-pewter {
+  background-color: var(--color-pewter);
+  &:hover,
+  &:focus,
+  &:active { background-color: var(--color-pewter-dark); }
+}
+.btn-baltic,
+a.btn-baltic {
+  background-color: var(--color-baltic);
+  &:hover,
+  &:focus,
+  &:active { background-color: #7d7d7d; }
+}
+.btn-sunglow,
+a.btn-sunglow {
+  background-color: var(--color-sunglow);
+  color: var(--color-baltic);
+  &:hover,
+  &:focus,
+  &:active { background-color: ; }
+}
+.btn-seashell,
+a.btn-seashell {
+  background-color: var(--color-seashell);
+  color: var(--color-baltic);
+  &:hover,
+  &:focus,
+  &:active { background-color: var(--color-seashell-dark); }
+}
+.btn-white,
+a.btn-white {
+  background-color: white;
+  color: var(--color-baltic);
+  &:hover,
+  &:focus,
+  &:active { background-color: var(--color-gray); }
+}
+.btn-error,
+a.btn-error {
+  background-color: var(--color-error);
+  &:hover { background-color: color(var(--color-error) lightness(40%)); }
+  &:focus { background-color: color(var(--color-error) lightness(40%)); }
+  &:disabled,
+  &.btn-disabled { background-color: color(var(--color-error) lightness(70%)); }
+}
+.btn-success,
+a.btn-success {
+  background-color: var(--color-success);
+  &:hover { background-color: color(var(--color-success) lightness(40%)); }
+  &:focus { background-color: color(var(--color-success) lightness(40%)); }
+  &:disabled,
+  &.btn-disabled { background-color: color(var(--color-success) lightness(80%)); }
+}
+.btn-warn,
+a.btn-warn {
+  background-color: var(--color-warn);
+  &:hover { background-color: color(var(--color-warn) lightness(40%)); }
+  &:focus { background-color: color(var(--color-warn) lightness(40%)); }
+  &:disabled,
+  &.btn-disabled { background-color: color(var(--color-warn) lightness(80%)); }
+}
