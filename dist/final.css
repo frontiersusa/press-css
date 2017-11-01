@@ -2277,7 +2277,7 @@ template {
 
 .w30 { width:  30%; }
 
-.w33 { width:  33%; }
+.w33 { width:  33.33333%; }
 
 .w34 { width:  34%; }
 
@@ -2286,6 +2286,8 @@ template {
 .w50 { width:  50%; }
 
 .w60 { width:  60%; }
+
+.w66 { width:  66.66666%; }
 
 .w70 { width:  70%; }
 
@@ -2310,11 +2312,12 @@ template {
   .w20-sm { width:  20%; }
   .w25-sm { width:  25%; }
   .w30-sm { width:  30%; }
-  .w33-sm { width:  33%; }
+  .w33-sm { width:  33.33333%; }
   .w34-sm { width:  34%; }
   .w40-sm { width:  40%; }
   .w50-sm { width:  50%; }
   .w60-sm { width:  60%; }
+  .w66-sm { width:  66.66666%; }
   .w70-sm { width:  70%; }
   .w75-sm { width:  75%; }
   .w80-sm { width:  80%; }
@@ -2335,11 +2338,12 @@ template {
   .w20-md { width:  20%; }
   .w25-md { width:  25%; }
   .w30-md { width:  30%; }
-  .w33-md { width:  33%; }
+  .w33-md { width:  33.33333%; }
   .w34-md { width:  34%; }
   .w40-md { width:  40%; }
   .w50-md { width:  50%; }
   .w60-md { width:  60%; }
+  .w66-md { width:  66.66666%; }
   .w70-md { width:  70%; }
   .w75-md { width:  75%; }
   .w80-md { width:  80%; }
@@ -2360,11 +2364,12 @@ template {
   .w20-lg { width:  20%; }
   .w25-lg { width:  25%; }
   .w30-lg { width:  30%; }
-  .w33-lg { width:  33%; }
+  .w33-lg { width:  33.33333%; }
   .w34-lg { width:  34%; }
   .w40-lg { width:  40%; }
   .w50-lg { width:  50%; }
   .w60-lg { width:  60%; }
+  .w66-lg { width:  66.66666%; }
   .w70-lg { width:  70%; }
   .w75-lg { width:  75%; }
   .w80-lg { width:  80%; }
@@ -2385,11 +2390,12 @@ template {
   .w20-xl { width:  20%; }
   .w25-xl { width:  25%; }
   .w30-xl { width:  30%; }
-  .w33-xl { width:  33%; }
+  .w33-xl { width:  33.33333%; }
   .w34-xl { width:  34%; }
   .w40-xl { width:  40%; }
   .w50-xl { width:  50%; }
   .w60-xl { width:  60%; }
+  .w66-xl { width:  66.66666%; }
   .w70-xl { width:  70%; }
   .w75-xl { width:  75%; }
   .w80-xl { width:  80%; }
@@ -4761,6 +4767,8 @@ body {
 
 .b--whale { border-color: #083549; }
 
+.b--sunglow { border-color: #FDD230; }
+
 .bc-seashell { border-color: #E6E6E6;}
 
 .bc-baltic { border-color: #3E3E3F; }
@@ -4900,6 +4908,20 @@ a.btn-3 {
 
 .btn-3[class*='btn-outlined'], a.btn-3[class*='btn-outlined'] {/*padding-top: (0.625rem - 0.125rem);
     padding-bottom: (0.625rem - 0.125rem);*/
+}
+
+.btn-whale,
+a.btn-whale {
+  background-color: #083549
+}
+
+.btn-whale:hover,
+  .btn-whale:focus,
+  .btn-whale:active,
+  a.btn-whale:hover,
+  a.btn-whale:focus,
+  a.btn-whale:active {
+  background-color: #032636;
 }
 
 .btn-pewter,
