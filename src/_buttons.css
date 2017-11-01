@@ -80,6 +80,13 @@ a.btn-3 {
   }
 }
 
+.btn-whale,
+a.btn-whale {
+  background-color: var(--color-whale);
+  &:hover,
+  &:focus,
+  &:active { background-color: var(--color-whale-dark); }
+}
 .btn-pewter,
 a.btn-pewter {
   background-color: var(--color-pewter);
