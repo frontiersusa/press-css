@@ -13,7 +13,10 @@
   --max-width-7: 48rem;
   --max-width-8: 64rem;
   --max-width-9: 96rem;
+  --max-width-wrap: 75rem;
 }
+
+.mw-wrap { max-width: var(--max-width-wrap); }
 
 .mw-100  { max-width: 100%; }
 .mw-none { max-width: none; }
