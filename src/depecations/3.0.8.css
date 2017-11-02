@@ -90,3 +90,80 @@ a.btn-warn {
   &:disabled,
   &.btn-disabled { background-color: color(var(--color-warn) lightness(80%)); }
 }
+
+/* Input Sizes */
+.input-1 {
+  padding: 0 0.625rem;
+  height: 2.25rem;
+  font-size: var(--type-scale-2);
+}
+select.input-1 {
+  padding-right: 2rem;
+  background-position:
+    calc(100% - 15px) calc(1em + 1px),
+    calc(100% - 10px) calc(1em + 1px),
+    calc(100% - 2.25em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    .0625rem 1.5em;
+}
+.input-3 {
+  padding: 0 0.938rem;
+  height: 3.313rem;
+  font-size: var(--type-scale-4);
+}
+select.input-3 {
+  padding-right: 2.75rem;
+  background-position:
+    calc(100% - 22px) calc(1em + 1px),
+    calc(100% - 16.5px) calc(1em + 1px),
+    calc(100% - 2.2em) 0.5em;
+  background-size:
+    6px 8px,
+    6px 8px,
+    1px 1.5em;
+}
+
+/* Link colors */
+.link,
+.link:link,
+.link:visited,
+.link:hover,
+.link:active,
+.link:focus { transition: color .1s ease-in; }
+.link:focus { outline: 1px dotted currentColor }
+
+.link,
+.link-whale {
+  color: var(--color-whale);
+  &:hover,
+  &:focus { color: #54B3E9; }
+  &:focus { outline: 1; }
+}
+.link-baltic {
+  color: var(--color-baltic);
+  &:hover { color: #A5A5A7; }
+  &:focus { outline: 1; }
+}
+.link-pewter {
+  color: var(--color-pewter);
+  &:hover { color: #4c6f64; }
+  &:focus { outline: 1; }
+}
+
+.link-danger {
+  color: var(--color-error);
+  &:hover { color: #73171B; }
+  &:focus { outline: 1; }
+}
+.link-success {
+  color: var(--color-success);
+  &:hover { color: color(var(--color-success) lightness(40%)); }
+  &:focus { outline: 1; }
+}
+.link-warn {
+  color: var(--color-warn);
+  &:hover { color: color(var(--color-warn) lightness(40%)); }
+  &:focus { outline: 1; }
+}
