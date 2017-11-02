@@ -1,12 +1,6 @@
 /*
-  LINKS
-
-*/
-
-/*
    LINKS
 */
-
 
 .link,
 .link:link,
@@ -16,35 +10,37 @@
 .link:focus { transition: color .1s ease-in; }
 .link:focus { outline: 1px dotted currentColor }
 
+/* Colors */
 .link,
-.link-whale {
+.link.is-whale {
   color: var(--color-whale);
   &:hover,
   &:focus { color: #54B3E9; }
   &:focus { outline: 1; }
 }
-.link-baltic {
+.link.is-baltic {
   color: var(--color-baltic);
   &:hover { color: #A5A5A7; }
   &:focus { outline: 1; }
 }
-.link-pewter {
+.link.is-pewter {
   color: var(--color-pewter);
   &:hover { color: #4c6f64; }
   &:focus { outline: 1; }
 }
 
-.link-danger {
+/* States */
+.link.is-danger {
   color: var(--color-error);
   &:hover { color: #73171B; }
   &:focus { outline: 1; }
 }
-.link-success {
+.link.is-success {
   color: var(--color-success);
   &:hover { color: color(var(--color-success) lightness(40%)); }
   &:focus { outline: 1; }
 }
-.link-warn {
+.link.is-warn {
   color: var(--color-warn);
   &:hover { color: color(var(--color-warn) lightness(40%)); }
   &:focus { outline: 1; }

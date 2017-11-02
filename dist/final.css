@@ -5518,13 +5518,14 @@ select.input {
 
 /* Input Sizes */
 
-.input-1 {
+input.is-small,
+select.is-small {
   padding: 0 0.625rem;
   height: 2.25rem;
   font-size: 0.8rem;
 }
 
-select.input-1 {
+select.is-small {
   padding-right: 2rem;
   background-position:
     calc(100% - 0.9375rem) calc(1em + 0.0625rem),     calc(100% - 0.625rem) calc(1em + 0.0625rem),     calc(100% - 2.25em) 0.5em;
@@ -5534,13 +5535,14 @@ select.input-1 {
     .0625rem 1.5em;
 }
 
-.input-3 {
+input.is-large,
+select.is-large {
   padding: 0 0.938rem;
   height: 3.313rem;
   font-size: 1.25rem;
 }
 
-select.input-3 {
+select.is-large {
   padding-right: 2.75rem;
   background-position:
     calc(100% - 1.375rem) calc(1em + 0.0625rem),     calc(100% - 1.03125rem) calc(1em + 0.0625rem),     calc(100% - 2.2em) 0.5em;
@@ -5552,23 +5554,23 @@ select.input-3 {
 
 /* Input States */
 
-.input.input-error { border-color: rgb(236, 121, 127); }
+.input.is-error { border-color: rgb(236, 121, 127); }
 
-.input.input-error:focus {
+.input.is-error:focus {
   border-color: #E2363F;
   background-color: rgb(254, 251, 251);
 }
 
-.input.input-success { border-color: rgb(153, 209, 97); }
+.input.is-success { border-color: rgb(153, 209, 97); }
 
-.input.input-success:focus {
+.input.is-success:focus {
   border-color: #99D161;
   background-color: rgb(250, 253, 247);
 }
 
-.input.input-warn { border-color: rgb(240, 195, 117); }
+.input.is-warn { border-color: rgb(240, 195, 117); }
 
-.input.input-warn:focus {
+.input.is-warn:focus {
   border-color: #EDB95E;
   background-color: rgb(254, 251, 246);
 }
@@ -5609,11 +5611,6 @@ select.input-3 {
 }
 
 /*
-  LINKS
-
-*/
-
-/*
    LINKS
 */
 
@@ -5626,79 +5623,83 @@ select.input-3 {
 
 .link:focus { outline: 0.0625rem dotted currentColor }
 
+/* Colors */
+
 .link,
-.link-whale {
+.link.is-whale {
   color: #083549
 }
 
 .link:hover,
   .link:focus,
-  .link-whale:hover,
-  .link-whale:focus {
+  .link.is-whale:hover,
+  .link.is-whale:focus {
   color: #54B3E9;
 }
 
-.link:focus, .link-whale:focus {
+.link:focus, .link.is-whale:focus {
   outline: 1;
 }
 
-.link-baltic {
+.link.is-baltic {
   color: #3E3E3F
 }
 
-.link-baltic:hover {
+.link.is-baltic:hover {
   color: #A5A5A7;
 }
 
-.link-baltic:focus {
+.link.is-baltic:focus {
   outline: 1;
 }
 
-.link-pewter {
+.link.is-pewter {
   color: #91B1A7
 }
 
-.link-pewter:hover {
+.link.is-pewter:hover {
   color: #4c6f64;
 }
 
-.link-pewter:focus {
+.link.is-pewter:focus {
   outline: 1;
 }
 
-.link-danger {
+/* States */
+
+.link.is-danger {
   color: #E2363F
 }
 
-.link-danger:hover {
+.link.is-danger:hover {
   color: #73171B;
 }
 
-.link-danger:focus {
+.link.is-danger:focus {
   outline: 1;
 }
 
-.link-success {
+.link.is-success {
   color: #99D161
 }
 
-.link-success:hover {
+.link.is-success:hover {
   color: rgb(102, 158, 46);
 }
 
-.link-success:focus {
+.link.is-success:focus {
   outline: 1;
 }
 
-.link-warn {
+.link.is-warn {
   color: #EDB95E
 }
 
-.link-warn:hover {
+.link.is-warn:hover {
   color: rgb(184, 124, 20);
 }
 
-.link-warn:focus {
+.link.is-warn:focus {
   outline: 1;
 }
 

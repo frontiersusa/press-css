@@ -76,12 +76,13 @@ select.input {
 }
 
 /* Input Sizes */
-.input-1 {
+input.is-small,
+select.is-small {
   padding: 0 0.625rem;
   height: 2.25rem;
   font-size: var(--type-scale-2);
 }
-select.input-1 {
+select.is-small {
   padding-right: 2rem;
   background-position:
     calc(100% - 15px) calc(1em + 1px),
@@ -92,12 +93,14 @@ select.input-1 {
     5px 5px,
     .0625rem 1.5em;
 }
-.input-3 {
+
+input.is-large,
+select.is-large {
   padding: 0 0.938rem;
   height: 3.313rem;
   font-size: var(--type-scale-4);
 }
-select.input-3 {
+select.is-large {
   padding-right: 2.75rem;
   background-position:
     calc(100% - 22px) calc(1em + 1px),
@@ -109,21 +112,20 @@ select.input-3 {
     1px 1.5em;
 }
 
+
 /* Input States */
-.input.input-error { border-color: color(var(--color-error) lightness(70%)); }
-.input.input-error:focus {
+.input.is-error { border-color: color(var(--color-error) lightness(70%)); }
+.input.is-error:focus {
   border-color: var(--color-error);
   background-color: color(var(--color-error) lightness(99%));
 }
-
-.input.input-success { border-color: color(var(--color-success) lightness(60%)); }
-.input.input-success:focus {
+.input.is-success { border-color: color(var(--color-success) lightness(60%)); }
+.input.is-success:focus {
   border-color: var(--color-success);
   background-color: color(var(--color-success) lightness(98%));
 }
-
-.input.input-warn { border-color: color(var(--color-warn) lightness(70%)); }
-.input.input-warn:focus {
+.input.is-warn { border-color: color(var(--color-warn) lightness(70%)); }
+.input.is-warn:focus {
   border-color: var(--color-warn);
   background-color: color(var(--color-warn) lightness(98%));
 }
