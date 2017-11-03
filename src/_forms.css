@@ -71,8 +71,8 @@ select.input {
   background-repeat: no-repeat;
   -moz-transform: rotate(0.0001deg); /* Hack/fix for pixel rendering issues in Firefox */
   -webkit-appearance: none;
-  -moz-appearance: value;
-  appearance: value;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* Input Sizes */
