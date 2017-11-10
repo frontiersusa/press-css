@@ -7,26 +7,67 @@
 
     <!-- Bleeding Edge of v3.1 -->
   	<link rel="stylesheet" href="https://rawgit.com/frontiersusa/final/v3.1/dist/final.min.css">
+    
+    <style media="screen">
+      .npm:before {
+        content: "$ ";
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    </style>
 
   </head>
   <body>
-    <main>
-      <div class="flex flex-column justify-center items-center vh-50 bg-whitesmoke">
-        <h1><img class="mb3 mr3" src="assets/images/final-logo.svg" alt="Final"></h1>
-        <a class="btn btn-pewter" href="docs/v3/">Continue to the docs →</a>
+    <header>
+      <nav class="bg-baltic dib w100">
+        <ul class="list-reset tar mw9">
+          <li class="dib"><a class="link is-pewter pa2" href="/">Getting Started</a></li>
+          <li class="dib"><a class="link is-pewter pa2" href="#">Guidelines</a></li>
+          <li class="dib"><a class="link is-pewter pa2" href="#">Utilities</a></li>
+          <li class="dib"><a class="link is-pewter pa2" href="#">Elements</a></li>
+          <li class="dib"><a class="link is-pewter pa2" href="#">Components</a></li>
+          <li class="dib"><a class="link is-pewter pa2" href="#">Icons</a></li>
+        </ul>
+      </nav>
+      <div class="flex flex-column justify-center items-start pt6 pb6 bg-whitesmoke">
+        <div class="w100 mw-wrap pl2 pr2 mr-auto ml-auto">  
+          <h1><img class="mb2 mr3" src="assets/images/final-logo.svg" alt="Final"></h1>
+          <div class="ml5 mw6">
+            <h2 class="sans-med fs5 mb2">Final is a collection of utility styles for Frontiers properties.</h2>
+            <span class="dib mb3 gray">Current version: v3.1.0</span>
+          </div>
+          
+        </div>
+        
       </div>
-      <div class="flex mw9 mt4 mr-auto mb4 ml-auto">
-        <div class="flex-auto tac">
-          <h2>Installation</h2>
-          <p>Coming soon.</p>
+    </header>
+    <main>
+      
+      <div class="mw-wrap pl2 pr2 mt4 mr-auto mb4 ml-auto">
+        <div class="mb5">
+          <h2># CDN</h2>
+          <p>Get started with Final by including the following code in the head of your HTML file.</p>
+          <pre class="dib bg-whitesmoke pa2"><!--  
+          --><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/final@3.1.0/dist/final.min.css&quot;/&gt;</code><!--  
+          --></pre>
         </div>
-        <div class="flex-auto tac">
-          <h2>CDN</h2>
-          <p>Coming soon.</p>
+        <div class="mb5">
+          <h2># Installation</h2>
+          <p>Install/download using NPM.</p>
+          <pre class="dib bg-whitesmoke pa2"><!--  
+          --><code class="npm">npm install final-css</code><!--  
+          --></pre>
+          <p>Or you can download a .zip of the latest version.</p>
+          <a class="btn btn-pewter" href="#">Download v3.0.1</a>
         </div>
-        <div class="flex-auto tac">
-          <h2>Other resources</h2>
-          <p>Coming soon.</p>
+        <div class="mb5">
+          <h2># Other resources</h2>
+          <div class="mt2 mb2">
+            <a class="btn btn-pewter btn-disabled" disabled="">Download Assets</a>
+            <a class="btn btn-pewter btn-disabled" disabled="">Wordpress Theme</a>
+          </div>
         </div>
       </div>
     </main>
