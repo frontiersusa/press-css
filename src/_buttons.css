@@ -23,10 +23,8 @@ a.btn {
   transition-delay: 0;
   user-select: none;
   appearance: none;
-  &:not([class*='btn-outlined']) {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
+  padding-top: 8px;
+  padding-bottom: 8px;
   &:hover,
   &:focus,
   &:active { background-color: color(var(--color-pewter) shade(30%)); }
