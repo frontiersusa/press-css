@@ -3,6 +3,19 @@
 
 */
 
+
+.dim {
+  opacity: 1;
+  transition: opacity .1s ease-in;
+}
+.dim:hover {
+  opacity: .6;
+  transition: opacity .1s ease-in;
+}
+.dim:active {
+  opacity: .8; transition: opacity .1s ease-out;
+}
+
 .hover-bs-1 {
   transition-property: box-shadow;
   transition-duration: var(--default-transition-duration);
