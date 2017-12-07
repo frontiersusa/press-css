@@ -6,4 +6,4 @@
 
 a,
 .link.whale { color: var(--color-whale-light); }
-a:focus { outline: thin dotted currentColor;
+a:focus { outline: thin dotted currentColor; }
