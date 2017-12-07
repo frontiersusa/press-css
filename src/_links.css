@@ -2,9 +2,8 @@
    LINKS
 */
 
-a:focus {
-  outline: thin dotted;
-  outline-color: black;
 }
+
 a,
 .link.whale { color: var(--color-whale-light); }
+a:focus { outline: thin dotted currentColor;
