@@ -21,12 +21,9 @@
 .bg-whitesmoke { background-color: var(--color-whitesmoke); }
 .bg-whitesmoke-light { background-color: var(--color-whitesmoke-light); }
 
-/*.fill-teal { fill: var(--color-teal); }
-.fill-navy { fill: var(--color-navy); }
-.fill-sea { fill: var(--color-sea); }
-.fill-gold { fill: var(--color-gold); }
-.fill-jet { fill: var(--color-jet); }
-.fill-ghost { fill: var(--color-ghost); }*/
+.bg-error { background-color: var(--color-error;)}
+.bg-warn { background-color: var(--color-warn;)}
+.bg-success { background-color: var(--color-success;)}
 
 .bg-transparent { background-color: transparent; }
 .bg-black { background-color: black; }
