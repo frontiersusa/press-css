@@ -4,128 +4,30 @@
 */
 
 .input-reset {
+  box-shadow: inset 0 0 0 2px gray;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-
-.button-reset::-moz-focus-inner,
-.input-reset::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-.input {
-  margin-bottom: 10px;
-  padding: 0 12px;
-  height: 2.75rem;
-  border-width: 0.125rem;
-  font-size: 1rem;
-  border-style: solid;
-  border-color: var(--color-baltic);
-  border-radius: 0.188rem;
-  background-color: white;
-  font-weight: 400;
-  font-style: normal;
-}
-.input:focus {
-  outline: 0;
-  border-color: var(--color-pewter);
-  background-color: color(var(--color-pewter) alpha(5%));
-}
-
-.label {
-  display: block;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 13px;
-  font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-select.input::-ms-expand {
-  display: none;
-}
-select.input {
-  padding-right: 2.5rem;
-  background-color: white;
-  background-image:
-    linear-gradient(45deg, transparent 50%, var(--color-baltic) 50%),
-    linear-gradient(135deg, var(--color-baltic) 50%, transparent 50%),
-    linear-gradient(to right, var(--color-gray), var(--color-gray));
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
-  background-repeat: no-repeat;
-  -moz-transform: rotate(0.0001deg); /* Hack/fix for pixel rendering issues in Firefox */
+input[type="text"].input-reset {
+  box-shadow: inset 0 0 0 2px gray;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
 }
+select.input-reset::-ms-expand { display: none; }
 
-/* Input Sizes */
-input.is-small,
-select.is-small {
-  padding: 0 0.625rem;
-  height: 2.25rem;
-  font-size: var(--type-scale-2);
-}
-select.is-small {
-  padding-right: 2rem;
-  background-position:
-    calc(100% - 15px) calc(1em + 1px),
-    calc(100% - 10px) calc(1em + 1px),
-    calc(100% - 2.25em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    .0625rem 1.5em;
-}
-
-input.is-large,
-select.is-large {
-  padding: 0 0.938rem;
-  height: 3.313rem;
-  font-size: var(--type-scale-4);
-}
-select.is-large {
-  padding-right: 2.75rem;
-  background-position:
-    calc(100% - 22px) calc(1em + 1px),
-    calc(100% - 16.5px) calc(1em + 1px),
-    calc(100% - 2.2em) 0.5em;
-  background-size:
-    6px 8px,
-    6px 8px,
-    1px 1.5em;
-}
-
-
-/* Input States */
-.input.is-error { border-color: color(var(--color-error) lightness(70%)); }
-.input.is-error:focus {
-  border-color: var(--color-error);
-  background-color: color(var(--color-error) lightness(99%));
-}
-.input.is-success { border-color: color(var(--color-success) lightness(60%)); }
-.input.is-success:focus {
-  border-color: var(--color-success);
-  background-color: color(var(--color-success) lightness(98%));
-}
-.input.is-warn { border-color: color(var(--color-warn) lightness(70%)); }
-.input.is-warn:focus {
-  border-color: var(--color-warn);
-  background-color: color(var(--color-warn) lightness(98%));
+/* Special class for select fields */
+.select:after {
+  top: 41%;
+  right: 13px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #000000;
+  border-width: 5px;
+  margin-top: -2px;
+  z-index: 100;
 }
