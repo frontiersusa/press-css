@@ -45,7 +45,6 @@
 @import "box-shadow";
 @import "buttons";
 @import "colors";
-@import "deprecations";
 @import "font-color";
 @import "font-families";
 @import "fonts";
@@ -56,3 +55,5 @@
 @import "transitions";
 @import "typography";
 @import "headings";
+
+/*@import "deprecations";*/
