@@ -1,4 +1,55 @@
-/* Button Sizes */
+:root {
+  --spacing-8: 32rem;
+  --spacing-9: 11rem;
+  --spacing-10: 16rem;
+}
+
+
+/* Buttons */
+.btn,
+a.btn {
+  display: inline-block;
+  padding-right: 0.938rem;
+  padding-left: 0.938rem;
+  border: 0.125rem;
+  border-radius: 3px;
+  background-color: var(--color-pewter);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-property: background, background-color, border, border-color, box-shadow !important;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
+  user-select: none;
+  appearance: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  &:hover,
+  &:focus,
+  &:active { background-color: color(var(--color-pewter) shade(30%)); }
+  &:disabled,
+  &.btn-disabled {
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    cursor: not-allowed;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--color-gray);
+    }
+  }
+  & svg {
+    fill: white;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 17px;
+    margin-right: 10px;
+  }
+}
 .btn-1,
 a.btn-1 {
   padding-right: 0.625rem;
@@ -19,8 +70,6 @@ a.btn-3 {
     padding-bottom: 10px;
   }
 }
-
-/* Button Colors & States */
 .btn-whale,
 a.btn-whale {
   background-color: var(--color-whale);
@@ -91,7 +140,7 @@ a.btn-warn {
   &.btn-disabled { background-color: color(var(--color-warn) lightness(80%)); }
 }
 
-/* Input Sizes */
+/* Forms / Inputs */
 .input-1 {
   padding: 0 0.625rem;
   height: 2.25rem;
@@ -125,7 +174,7 @@ select.input-3 {
     1px 1.5em;
 }
 
-/* Link colors */
+/* Links */
 .link,
 .link:link,
 .link:visited,
@@ -151,7 +200,6 @@ select.input-3 {
   &:hover { color: #4c6f64; }
   &:focus { outline: 1; }
 }
-
 .link-danger {
   color: var(--color-error);
   &:hover { color: #73171B; }
