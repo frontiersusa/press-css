@@ -2,8 +2,5 @@
    LINKS
 */
 
-}
-
-a,
-.link.whale { color: var(--color-whale-light); }
+a { color: var(--color-whale-light); }
 a:focus { outline: thin dotted currentColor; }
