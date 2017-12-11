@@ -9,10 +9,10 @@
   --type-scale-3: 1.13rem; /* 18px */
   --type-scale-4: 1.25rem; /* 20px */
   --type-scale-5: 1.5rem; /* 24px */
-  --type-scale-6: 2.25rem; /* 36px */
-  --type-scale-7: 3rem; /* 48px */
-  --type-scale-8: 5rem; /* 80px */
-  --type-scale-9: 6rem; /* 96px */
+  --type-scale-6: 1.750rem; /* 28px */
+  --type-scale-7: 2rem; /* 32px */
+  --type-scale-8: 2.813rem; /* 45px */
+  --type-scale-9: 4rem; /* 64px */
 }
 
 .fsi { font-size: inherit; }

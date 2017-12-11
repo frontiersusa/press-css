@@ -2048,7 +2048,7 @@ template {
 
 */
 
-:root { /* 14px */ /* 16px */ /* 18px */ /* 20px */ /* 24px */ /* 36px */ /* 48px */ /* 80px */ /* 96px */
+:root { /* 14px */ /* 16px */ /* 18px */ /* 20px */ /* 24px */ /* 28px */ /* 32px */ /* 45px */ /* 64px */
 }
 
 .fsi { font-size: inherit; }
@@ -2064,15 +2064,15 @@ template {
 
 .fs5 { font-size: 1.5rem; }
 
-.fs6 { font-size: 2.25rem; }
+.fs6 { font-size: 1.750rem; }
 
-.fs7 { font-size: 3rem; }
+.fs7 { font-size: 2rem; }
 
 .fs-subhead,
-.fs8 { font-size: 5rem; }
+.fs8 { font-size: 2.813rem; }
 
 .fs-head,
-.fs9 { font-size: 6rem; }
+.fs9 { font-size: 4rem; }
 
 @media (min-width: 34rem) {
   .fsi-sm { font-size: inherit; }
@@ -2082,12 +2082,12 @@ template {
   .fs3-sm { font-size: 1.13rem; }
   .fs4-sm { font-size: 1.25rem; }
   .fs5-sm { font-size: 1.5rem; }
-  .fs6-sm { font-size: 2.25rem; }
-  .fs7-sm { font-size: 3rem; }
+  .fs6-sm { font-size: 1.750rem; }
+  .fs7-sm { font-size: 2rem; }
   .fs-subhead-sm,
-  .fs8-sm { font-size: 5rem; }
+  .fs8-sm { font-size: 2.813rem; }
   .fs-head-sm,
-  .fs9-sm { font-size: 6rem; }
+  .fs9-sm { font-size: 4rem; }
 }
 
 @media (min-width: 48rem) {
@@ -2098,12 +2098,12 @@ template {
   .fs3-md { font-size: 1.13rem; }
   .fs4-md { font-size: 1.25rem; }
   .fs5-md { font-size: 1.5rem; }
-  .fs6-md { font-size: 2.25rem; }
-  .fs7-md { font-size: 3rem; }
+  .fs6-md { font-size: 1.750rem; }
+  .fs7-md { font-size: 2rem; }
   .fs-subhead-md,
-  .fs8-md { font-size: 5rem; }
+  .fs8-md { font-size: 2.813rem; }
   .fs-head-md,
-  .fs9-md { font-size: 6rem; }
+  .fs9-md { font-size: 4rem; }
 }
 
 @media (min-width: 62rem) {
@@ -2114,12 +2114,12 @@ template {
   .fs3-lg { font-size: 1.13rem; }
   .fs4-lg { font-size: 1.25rem; }
   .fs5-lg { font-size: 1.5rem; }
-  .fs6-lg { font-size: 2.25rem; }
-  .fs7-lg { font-size: 3rem; }
+  .fs6-lg { font-size: 1.750rem; }
+  .fs7-lg { font-size: 2rem; }
   .fs-subhead-lg,
-  .fs8-lg { font-size: 5rem; }
+  .fs8-lg { font-size: 2.813rem; }
   .fs-head-lg,
-  .fs9-lg { font-size: 6rem; }
+  .fs9-lg { font-size: 4rem; }
 }
 
 @media (min-width: 75rem) {
@@ -2130,12 +2130,12 @@ template {
   .fs3-xl { font-size: 1.13rem; }
   .fs4-xl { font-size: 1.25rem; }
   .fs5-xl { font-size: 1.5rem; }
-  .fs6-xl { font-size: 2.25rem; }
-  .fs7-xl { font-size: 3rem; }
+  .fs6-xl { font-size: 1.750rem; }
+  .fs7-xl { font-size: 2rem; }
   .fs-subhead-xl,
-  .fs8-xl { font-size: 5rem; }
+  .fs8-xl { font-size: 2.813rem; }
   .fs-head-xl,
-  .fs9-xl { font-size: 6rem; }
+  .fs9-xl { font-size: 4rem; }
 }
 
 /*
@@ -5237,9 +5237,9 @@ h6 { text-transform: uppercase; }
 
 */
 
-h1 { font-size: 3rem; }
+h1 { font-size: 2rem; }
 
-h2 { font-size: 2.25rem; }
+h2 { font-size: 1.750rem; }
 
 h3 { font-size: 1.5rem; }
 
