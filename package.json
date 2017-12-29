@@ -1,17 +1,17 @@
 {
-  "name": "final",
+  "name": "Press",
   "version": "4.0.0",
-  "description": "Final is a collection of utility styles for Frontiers properties.",
+  "description": "Press is a collection of utility styles for Frontiers properties.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/natedunn/final"
+    "url": "https://github.com/natedunn/press"
   },
   "author": "@natedunn",
   "license": "ISC",
   "scripts": {
     "watch": "onchange 'src/*.css' -- npm run build",
     "serve": "browser-sync start --server --files 'dist/*.css, dist/*.js, index.html' --port '3000'",
-    "minify": "postcss -u cssnano dist/final.css -o dist/final.min.css",
+    "minify": "postcss -u cssnano dist/press.css -o dist/press.min.css",
     "build:css": "postcss -c postcss.config.json",
     "build": "npm run build:css && npm run minify"
   },
