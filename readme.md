@@ -1,3 +1,5 @@
-<img src="http://frontiersusa.github.io/final/assets/img/final-logo.svg" width="150px"/>
+# PRESS
 
-_More coming soon._
+A collection of utility styles for Frontiers properties.
+
+[More information and documentation.](http://frontiersdesign.org/)
