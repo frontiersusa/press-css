@@ -7,8 +7,8 @@
     "postcss-cssnext",
     "postcss-pxtorem"
   ],
-  "input": "src/press.css",
-  "output": "dist/press.css",
+  "input": "src/final.css",
+  "output": "dist/final.css",
   "local-plugins": "true",
   "postcss-cssnext": {
     "browsers": [
