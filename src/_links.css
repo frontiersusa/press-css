@@ -3,4 +3,5 @@
 */
 
 a { color: var(--color-whale-light); }
-a:focus { outline: thin dotted currentColor; }
+a:not(.btn):focus { outline: thin dotted currentColor; }
+    
