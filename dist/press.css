@@ -4689,11 +4689,11 @@ img { max-width: 100%; }
 
 .bg-whitesmoke-light { background-color: #F9F9F9; }
 
-.bg-error { background-color: ;; background-color: #E2363F}
+.bg-error { background-color: ;}
 
-.bg-warn { background-color: ;; background-color: #EDB95E}
+.bg-warn { background-color: ;}
 
-.bg-success { background-color: ;; background-color: #99D161}
+.bg-success { background-color: ;}
 
 .bg-transparent { background-color: transparent; }
 
@@ -4838,6 +4838,95 @@ body {
 
 */
 
+.btn {
+  display: inline-block;
+  border-radius: 0.1875rem;
+  color: white;
+  background-color: #083549;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem
+}
+
+.btn:hover {
+  background-color: #52717F;
+}
+
+/* Sizes */
+
+.btn-sm { padding: 0.25rem 0.5rem; }
+
+.btn-lg { padding: 1rem 2rem; }
+
+/* Colors */
+
+.btn-pewter {
+  background-color: #91B1A7
+}
+
+.btn-pewter:hover {
+  background-color: #B2C8C1;
+}
+
+.btn-seashell {
+  color: #3E3E3F;
+  background-color: #E6E6E6
+}
+
+.btn-seashell:hover {
+  background-color: #CECECE;
+}
+
+.btn-baltic {
+  background-color: #3E3E3F
+}
+
+.btn-baltic:hover {
+  background-color: #616161;
+}
+
+.btn-sunglow {
+  background-color: #FDD230
+}
+
+.btn-sunglow:hover {
+  background-color: #E3BC2B;
+}
+
+.btn-white {
+  color: #3E3E3F;
+  background-color: #fff
+}
+
+.btn-white:hover {
+  background-color: #E6E6E6;
+}
+
+.btn-red {
+  background-color: #E2363F
+}
+
+.btn-red:hover {
+  background-color: #a2262c;
+}
+
+.btn-yellow {
+  color: #3E3E3F;
+  background-color: #EDB95E
+}
+
+.btn-yellow:hover {
+  background-color: #ffd488;
+}
+
+.btn-green {
+  background-color: #99D161
+}
+
+.btn-green:hover {
+  background-color: #7dab4f;
+}
+
 button,
 input[type="submit"]:hover { cursor: pointer; }
 
@@ -4875,11 +4964,11 @@ input[type="submit"]:hover { cursor: pointer; }
 
 .baltic-dark { color: #313132; }
 
-.error { color: #E2363F; }
+.error { color: var(--color-error); }
 
-.success { color: #99D161; }
+.success { color: var(--color-success); }
 
-.warn { color: #EDB95E; }
+.warn { color: var(--color-warn); }
 
 .black { color: black; }
 
@@ -5169,7 +5258,7 @@ select.input-reset::-ms-expand { display: none; }
 
 a { color: #52717F; }
 
-a:focus { outline: thin dotted currentColor; }
+a:not(.btn):focus { outline: thin dotted currentColor; }
 
 ::-moz-selection {
   background-color: #B2C8C1;
