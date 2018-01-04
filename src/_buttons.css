@@ -3,5 +3,59 @@
 
 */
 
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  color: white;
+  background-color: var(--color-whale);
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  &:hover {
+    background-color: var(--color-whale-light);
+  }
+}
+
+/* Sizes */
+.btn-sm { padding: 0.25rem 0.5rem; }
+.btn-lg { padding: 1rem 2rem; }
+
+/* Colors */
+.btn-pewter {
+  background-color: var(--color-pewter);
+  &:hover { background-color: var(--color-pewter-light); }
+}
+.btn-seashell {
+  color: var(--color-baltic);
+  background-color: var(--color-seashell);
+  &:hover { background-color: var(--color-seashell-dark); }
+}
+.btn-baltic {
+  background-color: var(--color-baltic);
+  &:hover { background-color: var(--color-baltic-light); }
+}
+.btn-sunglow {
+  background-color: var(--color-sunglow);
+  &:hover { background-color: var(--color-sunglow-dark); }
+}
+.btn-white {
+  color: var(--color-baltic);
+  background-color: var(--color-white);
+  &:hover { background-color: var(--color-seashell); }
+}
+.btn-red {
+  background-color: var(--color-red);
+  &:hover { background-color: var(--color-red-dark); }
+}
+.btn-yellow {
+  color: var(--color-baltic);
+  background-color: var(--color-yellow);
+  &:hover { background-color: var(--color-yellow-light); }
+}
+.btn-green {
+  background-color: var(--color-green);
+  &:hover { background-color: var(--color-green-dark); }
+}
+
 button,
 input[type="submit"]:hover { cursor: pointer; }
