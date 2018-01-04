@@ -11,9 +11,7 @@
   text-align: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  &:hover {
-    background-color: var(--color-whale-light);
-  }
+  &:hover { background-color: var(--color-whale-light); }
 }
 
 /* Sizes */
