@@ -27,9 +27,14 @@
   --color-whitesmoke: #F5F5F5;
   --color-whitesmoke-light: #F9F9F9;
 
-  --color-error: #E2363F;
-  --color-warn: #EDB95E;
-  --color-success: #99D161;
+  --color-red: #E2363F;
+  --color-red-dark: #a2262c;
+
+  --color-yellow: #EDB95E;
+  --color-yellow-light: #ffd488;
+
+  --color-green: #99D161;
+  --color-green-dark: #7dab4f;
 
   --color-transparent:transparent;
   --color-black: #000;
