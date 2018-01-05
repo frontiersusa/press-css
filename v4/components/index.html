@@ -161,8 +161,8 @@
           <div class="ba bw1 b--sunglow flex flex-column flex-row-lg">
             <div class="flex items-center justify-center flex-auto w50-lg">
               <!-- Main content -->
-              <!-- <div class="pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
-                <label>
+              <div class="pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                <!-- <label>
                   Small Text Input
                   <input class="input-reset dib w100 pa1 mb2 fs1 bw0 br2" type="text" placeholder="Placeholder">
                 </label>
@@ -203,16 +203,38 @@
                       <option value="option-3">Option 3</option>
                     </select>
                   </div>
+                </label> -->
+                <label>
+                  Medium Text Input
+                  <input class="input-text w100" type="text" placeholder="Medium Text Input">
                 </label>
-              </div> -->
-              <label>
-                Medium Text Input
-                <input class="input input-md" type="text" placeholder="Medium Text Input">
-              </label>
-              <label>
-                Large Text Input
-                <input class="input input-lg" type="text" placeholder="Large Text Input">
-              </label>
+                <label>
+                  Large Text Input
+                  <input class="input-text input-lg w100" type="text" placeholder="Large Text Input">
+                </label>
+                <label>
+                  Medium Select Input
+                  <div class="input-select">
+                    <select>
+                      <option selected disabled>Choose Option</option>
+                      <option value="option-1">Option 1</option>
+                      <option value="option-2">Option 2</option>
+                      <option value="option-3">Option 3</option>
+                    </select>
+                  </div>
+                </label>
+                <label>
+                  Large Select Input
+                  <div class="input-select input-lg">
+                    <select>
+                      <option selected disabled>Choose Option</option>
+                      <option value="option-1">Option 1</option>
+                      <option value="option-2">Option 2</option>
+                      <option value="option-3">Option 3</option>
+                    </select>
+                  </div>
+                </label>
+              </div>
             </div>
             <figure class="flex justify-center-lg items-center flex-auto w50-lg hightlight">
               <pre>
@@ -220,11 +242,33 @@
                 <code class="xml pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
                   <label>
                     Medium Text Input
-                    <input class="input input-md" type="text" placeholder="Medium Text Input">
+                    <input class="input-text w100" type="text" placeholder="Medium Text Input">
                   </label>
                   <label>
                     Large Text Input
-                    <input class="input input-lg" type="text" placeholder="Large Text Input">
+                    <input class="input-text input-lg w100" type="text" placeholder="Large Text Input">
+                  </label>
+                  <label>
+                    Medium Select Input
+                    <div class="input-select">
+                      <select>
+                        <option selected disabled>Choose Option</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label>
+                    Large Select Input
+                    <div class="input-select input-lg">
+                      <select>
+                        <option selected disabled>Choose Option</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                      </select>
+                    </div>
                   </label>
                 </code>
               </pre>
@@ -250,9 +294,13 @@
               <div class="pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
                 <form>
                   <fieldset class="bn pa0">
+                    <div class="cf mb2">
+                      <input class="input-text" type="text" placeholder="Email address">
+                      <input class="btn" type="submit" value="Subscribe">
+                    </div>
                     <div class="cf">
-                      <input class="input-reset dib pa3 mb2 bw0 br2" type="text" placeholder="Email address">
-                      <input class="dib bg-pewter dim pt3 pr4 pb3 pl4 tdn white br3 bw0" type="submit" value="Subscribe">
+                      <input class="input-text input-lg" type="text" placeholder="Email address">
+                      <input class="btn btn-lg" type="submit" value="Subscribe">
                     </div>
                   </fieldset>
                 </form>
