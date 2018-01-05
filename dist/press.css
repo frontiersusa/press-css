@@ -4845,7 +4845,8 @@ body {
   background-color: #083549;
   text-align: center;
   text-decoration: none;
-  padding: 0.5rem 1rem
+  padding: 0.5rem 1rem;
+  border: 0
 }
 
 .btn:hover {
