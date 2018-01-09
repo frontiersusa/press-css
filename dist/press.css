@@ -5264,6 +5264,14 @@ input[type="submit"]:hover { cursor: pointer; }
   color: #9F9F9F;
 }
 
+.input-text:-ms-input-placeholder, .input-select select:-ms-input-placeholder {
+  color: #9F9F9F;
+}
+
+.input-text::-ms-input-placeholder, .input-select select::-ms-input-placeholder {
+  color: #9F9F9F;
+}
+
 .input-text:-moz-placeholder, .input-select select:-moz-placeholder {
   color: #9F9F9F;
 }
@@ -5271,14 +5279,6 @@ input[type="submit"]:hover { cursor: pointer; }
 .input-text::-moz-placeholder, .input-select select::-moz-placeholder {
   color: #9F9F9F;
   opacity: 1;
-}
-
-.input-text:-ms-input-placeholder, .input-select select:-ms-input-placeholder {
-  color: #9F9F9F;
-}
-
-.input-text::-ms-input-placeholder, .input-select select::-ms-input-placeholder {
-  color: #9F9F9F;
 }
 
 /* Individual styles */
