@@ -5,5 +5,5 @@
 
 .cursor-auto { cursor: auto; }
 .cursor-pointer { cursor: pointer; }
-.cursor-no { cursor: pointer; }
+.cursor-no { cursor: not-allowed; }
 .cursor-text { cursor: text; }
