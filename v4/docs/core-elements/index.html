@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Press &bull; A framework by Frontiers</title>
+
+    <!-- Development Styles -->
+  	<link rel="stylesheet" href="../../../../dist/press.min.css">
+
+    <!-- Documentation Extras -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="../../dist/styles/docs.v4.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+      <nav class="flex items-center justify-between w100 mw-wrap pt3 pb3 mr-auto ml-auto">
+        <div class="flex items-center">
+          <a class="dib b caps fs4 baltic tdn dim" href="/">Press</a>
+          <div class="dib ml2 white fs1 bg-pewter pt1 pr2 pb1 pl2">v4.0.0 beta</div>
+        </div>
+        <ul class="dib lsn tar pl0 mt0 mb0 fr">
+          <li class="dib"><a class="pt2 pr2 pb2 pl2 link link-pewter" href="/v4">Getting Started</a></li>
+          <li class="dib"><a class="pt2 pr2 pb2 pl2 link link-pewter" href="/v4/docs">Documentation</a></li>
+          <li class="dib"><a class="pt2 pr2 pb2 pl2 link link-pewter" href="/v4/docs/components">Components</a></li>
+          <li class="dib"><a class="pt2 pr2 pb2 pl2 link link-pewter link-disabled cursor-no" href="">Extras</a></li>
+          <li class="dib"><a class="pt2 pr2 pb2 pl2 link link-pewter" href="https://github.com/frontiersusa/press/tree/v4.0">Contribute</a></li>
+        </ul>
+      </nav>
+      <div class="flex flex-column justify-center items-start pt6 pb6 bg-whitesmoke">
+        <div class="w100 mw-wrap pl2 pr2 mr-auto ml-auto">
+          <h1 class="fs8 mb3"># Core Elements</h1>
+          <h2 class="sans-med fs4 mb4">Elements that are core to UI & components.</h2>
+          <div class="w100 bb b--seashell mb2"></div>
+          <ul class="pl0">
+            <li class="dib"><a class="pt2 pr2 pb2 pl2 link link-disabled cursor-no">Links</a></li>
+            <li class="dib"><a class="pt2 pr2 pb2 pl2 link link-disabled cursor-no">Typography</a></li>
+            <li class="dib"><a class="pt2 pr2 pb2 pl2 link link-disabled cursor-no">Buttons</a></li>
+          </ul>
+          <div class="w100 bb b--seashell mb2"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mw-wrap mt5 mr-auto mb5 ml-auto">
+
+      <!-- Links -->
+      <section class="mb6" id="links">
+        <!-- Links Intro -->
+        <div class="mb4" id="links-intro">
+          <h2># Links</h2>
+          <div class="w100 bb b--seashell"></div>
+          <!-- <p>The basic links, in different colors and states.</p> -->
+        </div>
+
+        <!-- Link Colors -->
+        <div class="mb3" id="link-colors">
+          <h3 class="fs4 mb2">Link Colors</h3>
+          <div class="ba bw1 b--sunglow flex flex-column flex-row-lg">
+            <div class="flex items-center justify-center flex-auto w50-lg">
+              <!-- Main content -->
+              <div class="pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg tac">
+                <a class="dib w100 pa1 link" href="#">Navy link (default)</a>
+                <a class="dib w100 pa1 link-pewter" href="#">Pewter link</a>
+                <a class="dib w100 pa1 link-baltic" href="#">Baltic link</a>
+                <a class="dib w100 pa1 link-red" href="#">Danger (error) link</a>
+                <a class="dib w100 pa1 link-yellow" href="#">Yellow (warn) link</a>
+                <a class="dib w100 pa1 link-green" href="#">Green (success) link</a>
+              </div>
+            </div>
+            <figure class="flex justify-center-lg items-center flex-auto w50-lg hightlight">
+              <pre>
+                <!-- Main code -->
+                <code class="xml pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                  <a class="link dim" href="#">Navy link (default)</a>
+                  <a class="link pewter dim" href="#">Pewter link</a>
+                  <a class="link baltic dim" href="#">Baltic link</a>
+                  <a class="link error dim" href="#">Danger/error link</a>
+                  <a class="link success dim" href="#">Success link</a>
+                  <a class="link warn dim" href="#">Warn link</a>
+                </code>
+              </pre>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Typography -->
+      <section class="mb6" id="buttons">
+        <!-- Typography Intro -->
+        <div class="mb4" id="button-intro">
+          <h2># Typography</h2>
+          <div class="w100 bb b--seashell"></div>
+        </div>
+
+        <!-- Typography Sizes -->
+        <div class="mb3" id="button-sizes">
+          <h3 class="fs4 mb2">Type Scale</h3>
+          <div class="ba bw1 b--sunglow flex flex-column flex-row-lg">
+            <div class="flex items-center justify-center flex-auto w50-lg">
+              <!-- Main content -->
+              <div class="pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                <span class="dib w100 fs1">Font size 1</span>
+                <span class="dib w100 fs2">Font size 2</span>
+                <span class="dib w100 fs3">Font size 3</span>
+                <span class="dib w100 fs4">Font size 4</span>
+                <span class="dib w100 fs5">Font size 5</span>
+                <span class="dib w100 fs6">Font size 6</span>
+                <span class="dib w100 fs7">Font size 7</span>
+                <span class="dib w100 fs8">Font size 8</span>
+                <span class="dib w100 fs9">Font size 9</span>
+              </div>
+            </div>
+            <figure class="flex justify-center-lg items-center flex-auto w50-lg hightlight">
+              <pre>
+                <!-- Main code -->
+                <code class="xml pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                  <span class="fs1">Font size 1</span>
+                  <span class="fs2">Font size 2</span>
+                  <span class="fs3">Font size 3</span>
+                  <span class="fs4">Font size 4</span>
+                  <span class="fs5">Font size 5</span>
+                  <span class="fs6">Font size 6</span>
+                  <span class="fs7">Font size 7</span>
+                  <span class="fs8">Font size 8</span>
+                  <span class="fs9">Font size 9</span>
+                </code>
+              </pre>
+            </figure>
+          </div>
+        </div>
+
+        <div class="mb3" id="button-sizes">
+          <h3 class="fs4 mb2">Headers</h3>
+          <div class="ba bw1 b--sunglow flex flex-column flex-row-lg">
+            <div class="flex items-center justify-center flex-auto w50-lg">
+              <!-- Main content -->
+              <div class="pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                <h1 class="dib w100">Header 1</h1>
+                <h2 class="dib w100">Header 2</h2>
+                <h3 class="dib w100">Header 3</h3>
+                <h4 class="dib w100">Header 4</h4>
+                <h5 class="dib w100">Header 5</h5>
+                <h6 class="dib w100">Header 6</h6>
+              </div>
+            </div>
+            <figure class="flex justify-center-lg items-center flex-auto w50-lg hightlight">
+              <pre>
+                <!-- Main code -->
+                <code class="xml pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                  <h1>Header 1</h1>
+                  <h2>Header 2</h2>
+                  <h3>Header 3</h3>
+                  <h4>Header 4</h4>
+                  <h5>Header 5</h5>
+                  <h6>Header 6</h6>
+                </code>
+              </pre>
+            </figure>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Buttons -->
+      <section class="mb6" id="buttons">
+        <!-- Buttons Intro -->
+        <div class="mb4" id="button-intro">
+          <h2># Buttons</h2>
+          <div class="w100 bb b--seashell"></div>
+        </div>
+
+        <!-- Button Sizes -->
+        <div class="mb3" id="button-sizes">
+          <h3 class="fs4 mb2">Button Sizes</h3>
+          <div class="ba bw1 b--sunglow flex flex-column flex-row-lg">
+            <div class="flex items-center justify-center flex-auto w50-lg">
+              <!-- Main content -->
+              <div class="pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                <a class="btn btn-sm" href="#">Small</a>
+                <a class="btn btn-med" href="#">Medium</a>
+                <a class="btn btn-lg" href="#">Large</a>
+                <!-- <a class="dib pt1 pr2 pb1 pl2 fs1 tdn white bg-pewter br3 dim" href="#">Small</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn white bg-pewter br2 dim" href="#">Medium</a>
+                <a class="dib pt3 pr4 pb3 pl4 tdn white bg-pewter br3 dim" href="#">Large</a> -->
+              </div>
+            </div>
+            <figure class="flex justify-center-lg items-center flex-auto w50-lg hightlight">
+              <pre>
+                <!-- Main code -->
+                <code class="xml pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                  <a class="btn btn-sm" href="#">Small</a>
+                  <a class="btn btn-med" href="#">Medium</a>
+                  <a class="btn btn-lg" href="#">Large</a>
+                </code>
+              </pre>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Button Colors -->
+        <div class="mb3" id="button-colors">
+          <h3 class="fs4 mb2">Button Colors</h3>
+          <div class="ba bw1 b--sunglow flex flex-column flex-row-lg">
+            <div class="flex items-center justify-center flex-auto w50-lg">
+              <!-- Main content -->
+              <div class="pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                <!-- <a class="dib pt2 pr3 pb2 pl3 tdn white bg-pewter br2 dim" href="#">Pewter</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn white bg-whale br2 dim" href="#">Whale</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn baltic bg-seashell br2 dim" href="#">Seashell</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn white bg-baltic br2 dim" href="#">Baltic</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn baltic bg-sunglow br2 dim" href="#">Sunglow</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn baltic bg-white br2 dim" href="#">White</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn white bg-error br2 dim" href="#">Error</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn white bg-warn br2 dim" href="#">Warn</a>
+                <a class="dib pt2 pr3 pb2 pl3 tdn white bg-success br2 dim" href="#">Success</a> -->
+                <a class="btn" href="#">Whale</a>
+                <a class="btn btn-pewter" href="#">Pewter</a>
+                <a class="btn btn-seashell" href="#">Seashell</a>
+                <a class="btn btn-baltic" href="#">Baltic</a>
+                <a class="btn btn-sunglow" href="#">Sunglow</a>
+                <a class="btn btn-white" href="#">White</a>
+                <a class="btn btn-red" href="#">Red/Error</a>
+                <a class="btn btn-yellow" href="#">Yellow/Warn</a>
+                <a class="btn btn-green" href="#">Green/Success</a>
+              </div>
+            </div>
+            <figure class="flex justify-center-lg items-center flex-auto w50-lg hightlight">
+              <pre>
+                <!-- Main code -->
+                <code class="xml pt3 pr3 pb3 pl3 pt4-lg pr4-lg pb4-lg pl4-lg">
+                  <a class="btn" href="#">Whale</a>
+                  <a class="btn btn-pewter" href="#">Pewter</a>
+                  <a class="btn btn-seashell" href="#">Seashell</a>
+                  <a class="btn btn-baltic" href="#">Baltic</a>
+                  <a class="btn btn-sunglow" href="#">Sunglow</a>
+                  <a class="btn btn-white" href="#">White</a>
+                  <a class="btn btn-red" href="#">Red/Error</a>
+                  <a class="btn btn-yellow" href="#">Yellow/Warn</a>
+                  <a class="btn btn-green" href="#">Green/Success</a>
+                </code>
+              </pre>
+            </figure>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- Documentation extras -->
+    <script src="../../dist/scripts/docs.v4.min.js"></script>
+
+  </body>
+
+  <footer class="bg-whitesmoke">
+    <nav class="dib w100">
+      <ul class="list-reset tar mw9">
+        <li class="dib"><a class="link pewter dim pt2 pr2 pb2 pl2">Credit &amp; Thanks</a></li>
+        <li class="dib"><a class="link pewter dim pt2 pr2 pb2 pl2" href="/v4">Download</a></li>
+        <li class="dib"><a class="link pewter dim pt2 pr2 pb2 pl2" href="https://frontiersusa.org">Frontiers</></a></li>
+      </ul>
+    </nav>
+  </footer>
+</html>
