@@ -39,6 +39,7 @@
 @import "visibility";
 @import "z-index";
 @import "background-color";
+@import "opacity";
 @import "gradients";
 @import "base";
 @import "border-color";
