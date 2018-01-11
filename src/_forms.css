@@ -18,7 +18,7 @@
 .input-select select {
   display: inline-block;
   outline: 0;
-  border: 0.125rem solid color(var(--color-baltic) a(60%));
+  border: 0.125rem solid var(--color-seashell-dark);
   padding: 0.5rem;
   border-radius: 0.188rem;
   transition: all ease-in-out .1s;
