@@ -13,7 +13,7 @@
   padding: 0.625rem 1.125rem; /* (0.5rem + 0.125rem) (1rem + 0.125rem) */
   border: 0;
   &:hover,
-  &:focus { background-color: var(--color-whale-light); }
+  &:focus { background-color: #006c9c; }
   &:focus {
     outline: 0;
     box-shadow: 0 0 0 2px color(var(--color-whale) a(20%));
@@ -28,7 +28,7 @@
 .btn-pewter {
   background-color: var(--color-pewter);
   &:hover,
-  &:focus { background-color: var(--color-pewter-dark); }
+  &:focus { background-color: #60867a; }
   &:focus { box-shadow: 0 0 0 2px color(var(--color-pewter) a(50%)); }
 }
 .btn-seashell {
@@ -48,7 +48,7 @@
   color: var(--color-baltic);
   background-color: var(--color-sunglow);
   &:hover,
-  &:focus { background-color: var(--color-sunglow-dark); }
+  &:focus { background-color: #ffdb54; }
   &:focus { box-shadow: 0 0 0 2px color(var(--color-sunglow-dark) a(40%)); }
 }
 .btn-white {
