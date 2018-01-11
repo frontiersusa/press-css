@@ -22,14 +22,6 @@ pre.hljs {
   max-height: 45rem;
 }
 
-a:not([href]) {
-  opacity: 0.5;
-  text-decoration: underline;
-}
-a:not([href]):hover {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
 #typography.link {
   margin-right: 20px;
 }
