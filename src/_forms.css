@@ -39,7 +39,6 @@
 /* Individual styles */
 .input-text {}
 .input-select select {
-  width: 100%;
   background-color: white;
   background-position: 99.5%;
   background-repeat: no-repeat;
