@@ -5512,17 +5512,17 @@ h6 { text-transform: uppercase; }
 .ul {
   display: inline;
   background-repeat: repeat-x;
-  background-position: 0 0.9em;
+  background-position: 0 0.85em;
   background-size: 1em 0.2em;
 }
 
 /* Underline types */
 
 .ul-bg {
-  background-position: 0 0.5em;
-  background-size: 1em 0.75em;
-  padding-right: 0.25em;
-  padding-left: 0.05em;
+  background-position: 0 .28em;
+  background-size: 1em .85em;
+  padding-right: .25em;
+  padding-left: .05em;
 }
 
 a.ul {

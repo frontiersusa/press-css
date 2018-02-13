@@ -46,21 +46,23 @@ h6 { text-transform: uppercase; }
 .ul {
   display: inline;
   background-repeat: repeat-x;
-  background-position: 0 0.9em;
+  background-position: 0 0.85em;
   background-size: 1em 0.2em;
 }
 
 /* Underline types */
 .ul-bg {
-  background-position: 0 0.5em;
-  background-size: 1em 0.75em;
-  padding-right: 0.25em;
-  padding-left: 0.05em;
+  background-position: 0 .28em;
+  background-size: 1em .85em;
+  padding-right: .25em;
+  padding-left: .05em;
 }
 a.ul {
   text-decoration: none;
   transition: all ease-in-out .05s;
 }
+
+
 
 /* Underline colors */
 .ul-pewter { background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='116' height='116' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%2391B1A7' fill-rule='evenodd'/%3e%3c/svg%3e"); }
