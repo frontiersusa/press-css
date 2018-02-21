@@ -90,7 +90,7 @@ a.ul-baltic {
 a.ul-seashell {
   &:hover,
   &:focus {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg class='' width='116' height='116' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%23CECECE' fill-rule='evenodd'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg class='' width='116' height='116' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%238f8f8f' fill-rule='evenodd'/%3e%3c/svg%3e");
   }
 }
 .ul-sunglow { background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='116' height='116' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%23FBD057' fill-rule='evenodd'/%3e%3c/svg%3e"); }
