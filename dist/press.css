@@ -5043,11 +5043,11 @@ input[type="submit"]:hover { cursor: pointer; }
 
 .baltic-dark { color: #313132!important; }
 
-.error { color: var(--color-error)!important; }
+.red { color: #E2363F!important; }
 
-.success { color: var(--color-success)!important; }
+.green { color: #99D161!important; }
 
-.warn { color: var(--color-warn)!important; }
+.yellow { color: #EDB95E!important; }
 
 .black { color: black!important; }
 

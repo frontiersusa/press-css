@@ -19,9 +19,9 @@
 .baltic-light { color: var(--color-baltic-light)!important; }
 .baltic-dark { color: var(--color-baltic-dark)!important; }
 
-.error { color: var(--color-error)!important; }
-.success { color: var(--color-success)!important; }
-.warn { color: var(--color-warn)!important; }
+.red { color: var(--color-red)!important; }
+.green { color: var(--color-green)!important; }
+.yellow { color: var(--color-yellow)!important; }
 
 .black { color: black!important; }
 .white { color: white!important; }
