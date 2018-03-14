@@ -5513,6 +5513,7 @@ h6 { text-transform: uppercase; }
   display: inline;
   background-repeat: repeat-x;
   background-size: 100% 15%;
+  background-position: bottom;
 }
 
 /* Underline types */
