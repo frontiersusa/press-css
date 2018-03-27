@@ -4858,7 +4858,7 @@ body {
 
 .shadow-outer-2 { box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, .15); }
 
-.shadow-outer-3 { box-shadow: 0 0rem 2.5rem 0 rgba(0, 0, 0, .15); }
+.shadow-outer-3 { box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, .15); }
 
 /*
   BUTTONS
@@ -5353,7 +5353,7 @@ input[type="submit"]:hover { cursor: pointer; }
 }
 
 .hover-bs-1:hover {
-  box-shadow: 0 0.0625rem 0.625rem 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, .1);
 }
 
 .hover-bs-2 {
@@ -5363,7 +5363,7 @@ input[type="submit"]:hover { cursor: pointer; }
 }
 
 .hover-bs-2:hover {
-  box-shadow: 0 0.1875rem 0.625rem 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, .15);
 }
 
 .hover-bs-3 {
@@ -5373,7 +5373,7 @@ input[type="submit"]:hover { cursor: pointer; }
 }
 
 .hover-bs-3:hover {
-  box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, .15);
 }
 
 /*
