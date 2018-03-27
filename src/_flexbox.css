@@ -20,6 +20,7 @@
 .flex-column-reverse  { flex-direction: column-reverse; }
 .flex-row-reverse { flex-direction: row-reverse; }
 .flex-wrap-reverse { flex-wrap: wrap-reverse; }
+.flex-wrap { flex-wrap: nowrap; }
 
 .items-start    { align-items: flex-start; }
 .items-end      { align-items: flex-end; }
@@ -75,6 +76,7 @@
   .flex-column-reverse-sm  { flex-direction: column-reverse; }
   .flex-row-reverse-sm { flex-direction: row-reverse; }
   .flex-wrap-reverse-sm { flex-wrap: wrap-reverse; }
+  .flex-wrap-sm { flex-wrap: nowrap; }
 
   .items-start-sm { align-items: flex-start; }
   .items-end-sm { align-items: flex-end; }
@@ -130,6 +132,7 @@
   .flex-column-reverse-md  { flex-direction: column-reverse; }
   .flex-row-reverse-md { flex-direction: row-reverse; }
   .flex-wrap-reverse-md { flex-wrap: wrap-reverse; }
+  .flex-wrap-md { flex-wrap: nowrap; }
 
   .items-start-md { align-items: flex-start; }
   .items-end-md { align-items: flex-end; }
@@ -185,6 +188,7 @@
   .flex-column-reverse-lg  { flex-direction: column-reverse; }
   .flex-row-reverse-lg { flex-direction: row-reverse; }
   .flex-wrap-reverse-lg { flex-wrap: wrap-reverse; }
+  .flex-wrap-lg { flex-wrap: nowrap; }
 
   .items-start-lg { align-items: flex-start; }
   .items-end-lg { align-items: flex-end; }
@@ -240,6 +244,7 @@
   .flex-column-reverse-xl  { flex-direction: column-reverse; }
   .flex-row-reverse-xl { flex-direction: row-reverse; }
   .flex-wrap-reverse-xl { flex-wrap: wrap-reverse; }
+  .flex-wrap-xl { flex-wrap: nowrap; }
 
   .items-start-xl { align-items: flex-start; }
   .items-end-xl { align-items: flex-end; }
