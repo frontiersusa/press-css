@@ -5,7 +5,8 @@
 /* Reset to basics */
 .input-text,
 .input-reset,
-.input-select select {
+.input-select select,
+.input-textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -16,7 +17,8 @@
 
 /* Group styles */
 .input-text,
-.input-select select {
+.input-select select,
+.input-textarea {
   display: inline-block;
   outline: 0;
   border: 0.125rem solid var(--color-seashell-dark);

@@ -5319,7 +5319,8 @@ input[type="submit"]:hover { cursor: pointer; }
 
 .input-text,
 .input-reset,
-.input-select select {
+.input-select select,
+.input-textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -5332,7 +5333,8 @@ input[type="submit"]:hover { cursor: pointer; }
 /* Group styles */
 
 .input-text,
-.input-select select {
+.input-select select,
+.input-textarea {
   display: inline-block;
   outline: 0;
   border: 0.125rem solid #CECECE;
@@ -5341,40 +5343,40 @@ input[type="submit"]:hover { cursor: pointer; }
   transition: all ease-in-out 0.1s
 }
 
-.input-text:focus, .input-select select:focus {
+.input-text:focus, .input-select select:focus, .input-textarea:focus {
   box-shadow: 0 0 0 0.125rem rgba(130, 158, 149, 0.35);
   border: 0.125rem solid #829E95;
 }
 
-.input-text::-webkit-input-placeholder, .input-select select::-webkit-input-placeholder {
+.input-text::-webkit-input-placeholder, .input-select select::-webkit-input-placeholder, .input-textarea::-webkit-input-placeholder {
   color: #9f9f9f;
 }
 
-.input-text::-moz-placeholder, .input-select select::-moz-placeholder {
+.input-text::-moz-placeholder, .input-select select::-moz-placeholder, .input-textarea::-moz-placeholder {
   color: #9f9f9f;
 }
 
-.input-text:-ms-input-placeholder, .input-select select:-ms-input-placeholder {
+.input-text:-ms-input-placeholder, .input-select select:-ms-input-placeholder, .input-textarea:-ms-input-placeholder {
   color: #9f9f9f;
 }
 
-.input-text::placeholder, .input-select select::placeholder {
+.input-text::placeholder, .input-select select::placeholder, .input-textarea::placeholder {
   color: #9f9f9f;
 }
 
-.input-text:-ms-input-placeholder, .input-select select:-ms-input-placeholder {
+.input-text:-ms-input-placeholder, .input-select select:-ms-input-placeholder, .input-textarea:-ms-input-placeholder {
   color: #9f9f9f;
 }
 
-.input-text::-ms-input-placeholder, .input-select select::-ms-input-placeholder {
+.input-text::-ms-input-placeholder, .input-select select::-ms-input-placeholder, .input-textarea::-ms-input-placeholder {
   color: #9f9f9f;
 }
 
-.input-text:-moz-placeholder, .input-select select:-moz-placeholder {
+.input-text:-moz-placeholder, .input-select select:-moz-placeholder, .input-textarea:-moz-placeholder {
   color: #9f9f9f;
 }
 
-.input-text::-moz-placeholder, .input-select select::-moz-placeholder {
+.input-text::-moz-placeholder, .input-select select::-moz-placeholder, .input-textarea::-moz-placeholder {
   color: #9f9f9f;
   opacity: 1;
 }
