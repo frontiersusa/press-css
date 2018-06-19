@@ -1,6 +1,5 @@
-/*
-  Forms
-
+/**
+* Forms
 */
 
 /* Reset to basics */
@@ -11,7 +10,9 @@
   -moz-appearance: none;
   appearance: none;
 }
-.input-select select::-ms-expand { display: none; }
+.input-select select::-ms-expand {
+  display: none;
+}
 
 /* Group styles */
 .input-text,
@@ -21,23 +22,30 @@
   border: 0.125rem solid var(--color-seashell-dark);
   padding: 0.5rem;
   border-radius: 0.188rem;
-  transition: all ease-in-out .1s;
+  transition: all ease-in-out 0.1s;
   &:focus {
     box-shadow: 0 0 0 2px color(var(--color-pewter-dark) a(35%));
     border: 0.125rem solid var(--color-pewter-dark);
   }
-  &::placeholder { color: #9F9F9F; }
-  &:-ms-input-placeholder { color: #9F9F9F; }
-  &::-ms-input-placeholder { color: #9F9F9F; }
-  &:-moz-placeholder { color: #9F9F9F; }
+  &::placeholder {
+    color: #9f9f9f;
+  }
+  &:-ms-input-placeholder {
+    color: #9f9f9f;
+  }
+  &::-ms-input-placeholder {
+    color: #9f9f9f;
+  }
+  &:-moz-placeholder {
+    color: #9f9f9f;
+  }
   &::-moz-placeholder {
-    color: #9F9F9F;
+    color: #9f9f9f;
     opacity: 1;
   }
 }
 
 /* Individual styles */
-.input-text {}
 .input-select select {
   background-color: white;
   background-position: 99.5%;
