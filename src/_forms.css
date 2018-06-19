@@ -51,3 +51,65 @@
   padding: 1rem;
   background-position: 98.5%;
 }
+
+/* Checkbox & Radio */
+.input-check,
+.input-radio {
+  position: absolute;
+  visibility: hidden;
+  left: -9999px;
+}
+.input-check + div,
+.input-radio + div {
+  display: inline-block;
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 2px solid #cecece;
+  vertical-align: top;
+}
+.input-check + div {
+  border-radius: 3px;
+}
+.input-radio + div {
+  border-radius: 100%;
+}
+.input-check + div:hover,
+.input-check ~ span:hover,
+.input-radio + div:hover,
+.input-radio ~ span:hover {
+  cursor: pointer;
+}
+.input-check ~ span,
+.input-radio ~ span {
+  user-select: none;
+}
+.input-check:hover + div:after,
+.input-radio:hover + div:after {
+  content: "";
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin: 0.13rem;
+  background-color: lightGray;
+}
+.input-check:hover + div:after {
+  border-radius: 2px;
+}
+.input-radio:hover + div:after {
+  border-radius: 100%;
+}
+.input-check:checked + div:after,
+.input-radio:checked + div:after {
+  content: "";
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin: 0.13rem;
+  background-color: #869e95;
+}
+.input-check:checked + div:after {
+  border-radius: 2px;
+}
+.input-radio:checked + div:after {
+  border-radius: 100%;
+}
