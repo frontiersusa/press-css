@@ -14,9 +14,10 @@
 .input-select select::-ms-expand {
   display: none;
 }
-/* fieldset {
+fieldset {
   border: 0;
-} */
+  padding: 0;
+}
 
 /* Group styles */
 .input-text,
@@ -57,18 +58,19 @@
   background-repeat: no-repeat;
   background-image: url('data:image/svg+xml;utf8,<svg width="25.3125" height="12.65625" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg"><path d="M.188 7.15C.084 7.06 0 6.866 0 6.74v-.246C0 6.22.232 6 .5 6h.248c.14 0 .335.075.432.162L3.5 8.25l2.32-2.088c.1-.09.287-.162.432-.162H6.5c.276 0 .5.23.5.494v.245c0 .136-.087.322-.188.41L3.5 9.987.188 7.148zm0-4.31L3.5 0l3.312 2.84c.1.086.188.272.188.41v.244c0 .265-.224.494-.5.494h-.248c-.145 0-.332-.072-.432-.16L3.5 1.75 1.18 3.827c-.097.087-.293.16-.432.16H.5c-.268 0-.5-.22-.5-.493V3.25c0-.13.084-.322.188-.41z" fill="%2396A3B6" fill-rule="evenodd"/></svg>');
 }
-/* .fieldset-border {
+.fieldset-border {
   border: 0.125rem solid #cecece;
   border-radius: 0.188rem;
 }
-.fieldset-radio {
+.fieldset-radio,
+.fieldset-check {
   padding: 0.75rem;
-  &:label:not(:last-of-type) {
+  & label:not(:last-of-type) {
     border-bottom: 0.125rem solid #cecece;
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
   }
-} */
+}
 
 /* Sizes */
 .input-text.input-lg,
@@ -143,4 +145,29 @@
 }
 .input-radio:checked + div:after {
   border-radius: 100%;
+}
+
+/* Groups */
+.input-prepend {
+  & .btn,
+  &.btn,
+  input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+.input-middle {
+  & .btn,
+  &.btn,
+  input {
+    border-radius: 0;
+  }
+}
+.input-append {
+  & .btn,
+  &.btn,
+  input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
