@@ -5511,29 +5511,32 @@ fieldset {
 /* Groups */
 
 .input-prepend {
-  & .btn,
-  &.btn,
-  input {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
+}
+
+.input-prepend .btn,
+  .input-prepend.btn,
+  .input-prepend input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .input-middle {
-  & .btn,
-  &.btn,
-  input {
-    border-radius: 0;
-  }
+}
+
+.input-middle .btn,
+  .input-middle.btn,
+  .input-middle input {
+  border-radius: 0;
 }
 
 .input-append {
-  & .btn,
-  &.btn,
-  input {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
+}
+
+.input-append .btn,
+  .input-append.btn,
+  .input-append input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /*

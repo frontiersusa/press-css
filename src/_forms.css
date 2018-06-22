@@ -151,7 +151,7 @@ fieldset {
 .input-prepend {
   & .btn,
   &.btn,
-  input {
+  & input {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -159,14 +159,14 @@ fieldset {
 .input-middle {
   & .btn,
   &.btn,
-  input {
+  & input {
     border-radius: 0;
   }
 }
 .input-append {
   & .btn,
   &.btn,
-  input {
+  & input {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
