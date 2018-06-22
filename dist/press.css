@@ -5420,7 +5420,9 @@ input[type="submit"]:hover { cursor: pointer; }
 .input-check,
 .input-radio {
   position: absolute;
-  visibility: hidden;
+  visibility: visible;
+  opacity: 0;
+  pointer-events: none;
   left: -624.9375rem;
 }
 
@@ -5457,7 +5459,9 @@ input[type="submit"]:hover { cursor: pointer; }
 }
 
 .input-check:hover + div:after,
-.input-radio:hover + div:after {
+.input-radio:hover + div:after,
+.input-check:focus + div:after,
+.input-radio:focus + div:after {
   content: "";
   display: inline-block;
   height: 12px;
@@ -5469,11 +5473,13 @@ input[type="submit"]:hover { cursor: pointer; }
   background-color: lightGray;
 }
 
-.input-check:hover + div:after {
+.input-check:hover + div:after,
+.input-check:focus + div:after {
   border-radius: 0.125rem;
 }
 
-.input-radio:hover + div:after {
+.input-radio:hover + div:after,
+.input-radio:focus + div:after {
   border-radius: 100%;
 }
 
@@ -5487,7 +5493,7 @@ input[type="submit"]:hover { cursor: pointer; }
   width: 0.75rem;
   margin: 2.08px;
   margin: 0.13rem;
-  background-color: #869e95;
+  background-color: #869e95 !important;
 }
 
 .input-check:checked + div:after {
