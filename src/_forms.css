@@ -26,7 +26,7 @@ fieldset {
   display: inline-block;
   outline: 0;
   border: 0.125rem solid var(--color-seashell-dark);
-  padding: 0.5rem;
+  padding: 0.425rem 0.75rem;
   border-radius: 0.188rem;
   transition: all ease-in-out 0.1s;
   &:focus {
@@ -75,7 +75,8 @@ fieldset {
 /* Sizes */
 .input-text.input-lg,
 .input-select.input-lg select {
-  padding: 1rem;
+  padding: 0.594rem 1rem;
+  font-size: 1.25rem;
   background-position: 98.5%;
 }
 
@@ -149,18 +150,21 @@ fieldset {
 /* Groups */
 .input-prepend .btn,
 .input-prepend.btn,
-.input-prepend input {
+.input-prepend input,
+.input-prepend .input-select select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 .input-middle .btn,
 .input-middle.btn,
-.input-middle input {
+.input-middle input,
+.input-middle .input-select select {
   border-radius: 0;
 }
 .input-append .btn,
 .input-append.btn,
-.input-append input {
+.input-append input,
+.input-append .input-select select {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
