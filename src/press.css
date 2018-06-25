@@ -56,5 +56,7 @@
 @import "transitions";
 @import "typography";
 @import "headings";
+@import "pointer-events";
+@import "object-fit";
 
 /*@import "deprecations";*/
