@@ -1,5 +1,5 @@
-# PRESS
+# PRESS.CSS
 
-A collection of utility styles for Frontiers properties.
+A CSS framework comprised mostly of utility styles, developed specifically for [Frontiers](https://frontiersusa.org) properties.
 
-[View documentation & examples.](https://www.notion.so/gracetogo/Press-css-Documentation-b98cbe3dc46d4b9d93ea3acfc7c083a3)
+[View v4.0 documentation & examples.](https://www.notion.so/gracetogo/Press-css-Documentation-b98cbe3dc46d4b9d93ea3acfc7c083a3)
