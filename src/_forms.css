@@ -26,7 +26,6 @@ fieldset {
   display: inline-block;
   outline: 0;
   border: 0.125rem solid var(--color-seashell-dark);
-  padding: 0.425rem 0.75rem;
   border-radius: 0.188rem;
   transition: all ease-in-out 0.1s;
   &:focus {
@@ -50,9 +49,14 @@ fieldset {
     opacity: 1;
   }
 }
+.input-text,
+.input-textarea {
+  padding: 0.425rem 0.75rem;
+}
 
 /* Individual styles */
 .input-select select {
+  padding: 0.406rem 0.75rem;
   background-color: white;
   background-position: 99.5%;
   background-repeat: no-repeat;
