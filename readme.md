@@ -2,4 +2,4 @@
 
 A collection of utility styles for Frontiers properties.
 
-[More information and documentation.](http://frontiersdesign.org/)
+[View documentation & examples.](https://www.notion.so/gracetogo/Press-Global-Documentation-ed60adb1d62e47cab5062254191c1d12)
