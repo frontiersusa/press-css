@@ -1,0 +1,16 @@
+/*
+  Object Fit
+
+*/
+
+.of-fill {object-fit: fill;}
+.of-contain {object-fit: contain;}
+.of-cover {object-fit: cover;}
+.of-scale-down {object-fit: scale-down;}
+.of-none {object-fit: none;}
+
+.of-center { object-position: center center; }
+.of-top { object-position: top center; }
+.of-right { object-position: center right; }
+.of-bottom { object-position: bottom center; }
+.of-left { object-position: center left; }
