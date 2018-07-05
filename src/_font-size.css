@@ -4,88 +4,188 @@
 */
 
 :root {
-  --type-scale-1: .88rem; /* 14px */
+  --type-scale-1: 0.88rem; /* 14px */
   --type-scale-2: 1rem; /* 16px */
   --type-scale-3: 1.13rem; /* 18px */
   --type-scale-4: 1.25rem; /* 20px */
   --type-scale-5: 1.5rem; /* 24px */
-  --type-scale-6: 1.750rem; /* 28px */
+  --type-scale-6: 1.75rem; /* 28px */
   --type-scale-7: 2rem; /* 32px */
   --type-scale-8: 2.813rem; /* 45px */
   --type-scale-9: 4rem; /* 64px */
 }
 
-.fsi { font-size: inherit; }
-.fs1 { font-size: var(--type-scale-1); }
-.fs2 { font-size: var(--type-scale-2); }
+.fsi {
+  font-size: inherit;
+}
+.fs1 {
+  font-size: var(--type-scale-1);
+}
+.fs2 {
+  font-size: var(--type-scale-2);
+}
 .fs-lead,
-.fs3 { font-size: var(--type-scale-3); }
-.fs4 { font-size: var(--type-scale-4); }
-.fs5 { font-size: var(--type-scale-5); }
-.fs6 { font-size: var(--type-scale-6); }
-.fs7 { font-size: var(--type-scale-7); }
+.fs3 {
+  font-size: var(--type-scale-3);
+}
+.fs4 {
+  font-size: var(--type-scale-4);
+}
+.fs5 {
+  font-size: var(--type-scale-5);
+}
+.fs6 {
+  font-size: var(--type-scale-6);
+}
+.fs7 {
+  font-size: var(--type-scale-7);
+}
 .fs-subhead,
-.fs8 { font-size: var(--type-scale-8); }
+.fs8 {
+  font-size: var(--type-scale-8);
+}
 .fs-head,
-.fs9 { font-size: var(--type-scale-9); }
+.fs9 {
+  font-size: var(--type-scale-9);
+}
 
 @media (--breakpoint-sm) {
-  .fsi-sm { font-size: inherit; }
-  .fs1-sm { font-size: var(--type-scale-1); }
-  .fs2-sm { font-size: var(--type-scale-2); }
+  .fsi-sm {
+    font-size: inherit;
+  }
+  .fs1-sm {
+    font-size: var(--type-scale-1);
+  }
+  .fs2-sm {
+    font-size: var(--type-scale-2);
+  }
   .fs-lead-sm,
-  .fs3-sm { font-size: var(--type-scale-3); }
-  .fs4-sm { font-size: var(--type-scale-4); }
-  .fs5-sm { font-size: var(--type-scale-5); }
-  .fs6-sm { font-size: var(--type-scale-6); }
-  .fs7-sm { font-size: var(--type-scale-7); }
+  .fs3-sm {
+    font-size: var(--type-scale-3);
+  }
+  .fs4-sm {
+    font-size: var(--type-scale-4);
+  }
+  .fs5-sm {
+    font-size: var(--type-scale-5);
+  }
+  .fs6-sm {
+    font-size: var(--type-scale-6);
+  }
+  .fs7-sm {
+    font-size: var(--type-scale-7);
+  }
   .fs-subhead-sm,
-  .fs8-sm { font-size: var(--type-scale-8); }
+  .fs8-sm {
+    font-size: var(--type-scale-8);
+  }
   .fs-head-sm,
-  .fs9-sm { font-size: var(--type-scale-9); }
+  .fs9-sm {
+    font-size: var(--type-scale-9);
+  }
 }
 @media (--breakpoint-md) {
-  .fsi-md { font-size: inherit; }
-  .fs1-md { font-size: var(--type-scale-1); }
-  .fs2-md { font-size: var(--type-scale-2); }
+  .fsi-md {
+    font-size: inherit;
+  }
+  .fs1-md {
+    font-size: var(--type-scale-1);
+  }
+  .fs2-md {
+    font-size: var(--type-scale-2);
+  }
   .fs-lead-md,
-  .fs3-md { font-size: var(--type-scale-3); }
-  .fs4-md { font-size: var(--type-scale-4); }
-  .fs5-md { font-size: var(--type-scale-5); }
-  .fs6-md { font-size: var(--type-scale-6); }
-  .fs7-md { font-size: var(--type-scale-7); }
+  .fs3-md {
+    font-size: var(--type-scale-3);
+  }
+  .fs4-md {
+    font-size: var(--type-scale-4);
+  }
+  .fs5-md {
+    font-size: var(--type-scale-5);
+  }
+  .fs6-md {
+    font-size: var(--type-scale-6);
+  }
+  .fs7-md {
+    font-size: var(--type-scale-7);
+  }
   .fs-subhead-md,
-  .fs8-md { font-size: var(--type-scale-8); }
+  .fs8-md {
+    font-size: var(--type-scale-8);
+  }
   .fs-head-md,
-  .fs9-md { font-size: var(--type-scale-9); }
+  .fs9-md {
+    font-size: var(--type-scale-9);
+  }
 }
 @media (--breakpoint-lg) {
-  .fsi-lg { font-size: inherit; }
-  .fs1-lg { font-size: var(--type-scale-1); }
-  .fs2-lg { font-size: var(--type-scale-2); }
+  .fsi-lg {
+    font-size: inherit;
+  }
+  .fs1-lg {
+    font-size: var(--type-scale-1);
+  }
+  .fs2-lg {
+    font-size: var(--type-scale-2);
+  }
   .fs-lead-lg,
-  .fs3-lg { font-size: var(--type-scale-3); }
-  .fs4-lg { font-size: var(--type-scale-4); }
-  .fs5-lg { font-size: var(--type-scale-5); }
-  .fs6-lg { font-size: var(--type-scale-6); }
-  .fs7-lg { font-size: var(--type-scale-7); }
+  .fs3-lg {
+    font-size: var(--type-scale-3);
+  }
+  .fs4-lg {
+    font-size: var(--type-scale-4);
+  }
+  .fs5-lg {
+    font-size: var(--type-scale-5);
+  }
+  .fs6-lg {
+    font-size: var(--type-scale-6);
+  }
+  .fs7-lg {
+    font-size: var(--type-scale-7);
+  }
   .fs-subhead-lg,
-  .fs8-lg { font-size: var(--type-scale-8); }
+  .fs8-lg {
+    font-size: var(--type-scale-8);
+  }
   .fs-head-lg,
-  .fs9-lg { font-size: var(--type-scale-9); }
+  .fs9-lg {
+    font-size: var(--type-scale-9);
+  }
 }
 @media (--breakpoint-xl) {
-  .fsi-xl { font-size: inherit; }
-  .fs1-xl { font-size: var(--type-scale-1); }
-  .fs2-xl { font-size: var(--type-scale-2); }
+  .fsi-xl {
+    font-size: inherit;
+  }
+  .fs1-xl {
+    font-size: var(--type-scale-1);
+  }
+  .fs2-xl {
+    font-size: var(--type-scale-2);
+  }
   .fs-lead-xl,
-  .fs3-xl { font-size: var(--type-scale-3); }
-  .fs4-xl { font-size: var(--type-scale-4); }
-  .fs5-xl { font-size: var(--type-scale-5); }
-  .fs6-xl { font-size: var(--type-scale-6); }
-  .fs7-xl { font-size: var(--type-scale-7); }
+  .fs3-xl {
+    font-size: var(--type-scale-3);
+  }
+  .fs4-xl {
+    font-size: var(--type-scale-4);
+  }
+  .fs5-xl {
+    font-size: var(--type-scale-5);
+  }
+  .fs6-xl {
+    font-size: var(--type-scale-6);
+  }
+  .fs7-xl {
+    font-size: var(--type-scale-7);
+  }
   .fs-subhead-xl,
-  .fs8-xl { font-size: var(--type-scale-8); }
+  .fs8-xl {
+    font-size: var(--type-scale-8);
+  }
   .fs-head-xl,
-  .fs9-xl { font-size: var(--type-scale-9); }
+  .fs9-xl {
+    font-size: var(--type-scale-9);
+  }
 }

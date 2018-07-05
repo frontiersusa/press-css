@@ -2,27 +2,57 @@
   Float
 */
 
-.fr { float: right; }
-.fl { float: left; }
-.fn { float: none; }
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.fn {
+  float: none;
+}
 
 @media (--breakpoint-sm) {
-  .fr-sm { float: right; }
-  .fl-sm { float: left; }
-  .fn-sm { float: none; }
+  .fr-sm {
+    float: right;
+  }
+  .fl-sm {
+    float: left;
+  }
+  .fn-sm {
+    float: none;
+  }
 }
 @media (--breakpoint-md) {
-  .fr-md { float: right; }
-  .fl-md { float: left; }
-  .fn-md { float: none; }
+  .fr-md {
+    float: right;
+  }
+  .fl-md {
+    float: left;
+  }
+  .fn-md {
+    float: none;
+  }
 }
 @media (--breakpoint-lg) {
-  .fr-lg { float: right; }
-  .fl-lg { float: left; }
-  .fn-lg { float: none; }
+  .fr-lg {
+    float: right;
+  }
+  .fl-lg {
+    float: left;
+  }
+  .fn-lg {
+    float: none;
+  }
 }
 @media (--breakpoint-xl) {
-  .fr-xl { float: right; }
-  .fl-xl { float: left; }
-  .fn-xl { float: none; }
+  .fr-xl {
+    float: right;
+  }
+  .fl-xl {
+    float: left;
+  }
+  .fn-xl {
+    float: none;
+  }
 }

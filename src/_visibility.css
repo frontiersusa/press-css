@@ -3,27 +3,57 @@
 
 */
 
-.vi { visibility: inherit; }
-.vh { visibility: visible; }
-.vh { visibility: hidden; }
+.vi {
+  visibility: inherit;
+}
+.vh {
+  visibility: visible;
+}
+.vh {
+  visibility: hidden;
+}
 
 @media (--breakpoint-sm) {
-  .vi-sm { visibility: inherit; }
-  .vh-sm { visibility: visible; }
-  .vh-sm { visibility: hidden; }
+  .vi-sm {
+    visibility: inherit;
+  }
+  .vh-sm {
+    visibility: visible;
+  }
+  .vh-sm {
+    visibility: hidden;
+  }
 }
 @media (--breakpoint-md) {
-  .vi-md { visibility: inherit; }
-  .vh-md { visibility: visible; }
-  .vh-md { visibility: hidden; }
+  .vi-md {
+    visibility: inherit;
+  }
+  .vh-md {
+    visibility: visible;
+  }
+  .vh-md {
+    visibility: hidden;
+  }
 }
 @media (--breakpoint-lg) {
-  .vi-lg { visibility: inherit; }
-  .vh-lg { visibility: visible; }
-  .vh-lg { visibility: hidden; }
+  .vi-lg {
+    visibility: inherit;
+  }
+  .vh-lg {
+    visibility: visible;
+  }
+  .vh-lg {
+    visibility: hidden;
+  }
 }
 @media (--breakpoint-xl) {
-  .vi-xl { visibility: inherit; }
-  .vh-xl { visibility: visible; }
-  .vh-xl { visibility: hidden; }
+  .vi-xl {
+    visibility: inherit;
+  }
+  .vh-xl {
+    visibility: visible;
+  }
+  .vh-xl {
+    visibility: hidden;
+  }
 }

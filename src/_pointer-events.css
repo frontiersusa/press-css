@@ -3,23 +3,42 @@
 
 */
 
-
-.pe-auto { pointer-events: auto; }
-.pe-none { pointer-events: none; }
+.pe-auto {
+  pointer-events: auto;
+}
+.pe-none {
+  pointer-events: none;
+}
 
 @media (--breakpoint-sm) {
-  .pe-auto-sm { pointer-events: auto; }
-  .pe-none-sm { pointer-events: none; }
+  .pe-auto-sm {
+    pointer-events: auto;
+  }
+  .pe-none-sm {
+    pointer-events: none;
+  }
 }
 @media (--breakpoint-md) {
-  .pe-auto-md { pointer-events: auto; }
-  .pe-none-md { pointer-events: none; }
+  .pe-auto-md {
+    pointer-events: auto;
+  }
+  .pe-none-md {
+    pointer-events: none;
+  }
 }
 @media (--breakpoint-lg) {
-  .pe-auto-lg { pointer-events: auto; }
-  .pe-none-lg { pointer-events: none; }
+  .pe-auto-lg {
+    pointer-events: auto;
+  }
+  .pe-none-lg {
+    pointer-events: none;
+  }
 }
 @media (--breakpoint-xl) {
-  .pe-auto-xl { pointer-events: auto; }
-  .pe-none-xl { pointer-events: none; }
+  .pe-auto-xl {
+    pointer-events: auto;
+  }
+  .pe-none-xl {
+    pointer-events: none;
+  }
 }

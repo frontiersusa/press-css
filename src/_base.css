@@ -17,7 +17,12 @@ legend,
 pre,
 code,
 a,
-h1,h2,h3,h4,h5,h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
 ul,
 ol,
@@ -39,7 +44,9 @@ input[type="url"],
 .border-box {
   box-sizing: border-box;
 }
-html { height: 100%; }
+html {
+  height: 100%;
+}
 body {
   position: relative;
   height: 100%;

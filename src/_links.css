@@ -2,11 +2,13 @@
    LINKS
 */
 
-a:not(.btn):focus { outline: thin dotted currentColor; }
-a.link-disabled, a.link-disabled:hover {
+a:not(.btn):focus {
+  outline: thin dotted currentColor;
+}
+a.link-disabled,
+a.link-disabled:hover {
   opacity: 0.5;
 }
-
 
 .link:not(.btn) {
   color: var(--color-whale-light);
@@ -16,37 +18,37 @@ a.link-disabled, a.link-disabled:hover {
 }
 .link-pewter:not(.btn) {
   color: var(--color-pewter);
-  &:not(.link-disabled):hover{
+  &:not(.link-disabled):hover {
     color: #398c72;
   }
 }
 .link-sunglow:not(.btn) {
   color: var(--color-sunglow);
-  &:not(.link-disabled):hover{
+  &:not(.link-disabled):hover {
     color: #398c72;
   }
 }
 .link-baltic:not(.btn) {
   color: var(--color-baltic);
-  &:not(.link-disabled):hover{
+  &:not(.link-disabled):hover {
     color: #afafaf;
   }
 }
 .link-red:not(.btn) {
   color: var(--color-red);
-  &:not(.link-disabled):hover{
+  &:not(.link-disabled):hover {
     color: #a5353b;
   }
 }
 .link-green:not(.btn) {
   color: var(--color-green);
-  &:not(.link-disabled):hover{
+  &:not(.link-disabled):hover {
     color: #51a200;
   }
 }
 .link-yellow:not(.btn) {
   color: var(--color-yellow);
-  &:not(.link-disabled):hover{
+  &:not(.link-disabled):hover {
     color: #d08a11;
   }
 }

@@ -4,51 +4,50 @@
 */
 
 :root {
-  --color-pewter: #91B1A7;
-  --color-pewter-light: #B2C8C1;
-  --color-pewter-dark: #829E95;
+  --color-pewter: #91b1a7;
+  --color-pewter-light: #b2c8c1;
+  --color-pewter-dark: #829e95;
 
   --color-whale: #083549;
-  --color-whale-light: #52717F;
+  --color-whale-light: #52717f;
   --color-whale-dark: #032636;
 
-  --color-sunglow: #FDD230;
-  --color-sunglow-light: #FDDF6E;
-  --color-sunglow-dark: #E3BC2B;
+  --color-sunglow: #fdd230;
+  --color-sunglow-light: #fddf6e;
+  --color-sunglow-dark: #e3bc2b;
 
-  --color-baltic: #3E3E3F;
+  --color-baltic: #3e3e3f;
   --color-baltic-light: #616161;
   --color-baltic-dark: #313132;
 
-  --color-seashell: #E6E6E6;
-  --color-seashell-light: #F0F0F0;
-  --color-seashell-dark: #CECECE;
+  --color-seashell: #e6e6e6;
+  --color-seashell-light: #f0f0f0;
+  --color-seashell-dark: #cecece;
 
-  --color-whitesmoke: #F5F5F5;
-  --color-whitesmoke-light: #F9F9F9;
+  --color-whitesmoke: #f5f5f5;
+  --color-whitesmoke-light: #f9f9f9;
 
-  --color-red: #E2363F;
+  --color-red: #e2363f;
   --color-red-dark: #a2262c;
 
-  --color-yellow: #EDB95E;
+  --color-yellow: #edb95e;
   --color-yellow-light: #ffd488;
 
-  --color-green: #99D161;
+  --color-green: #99d161;
   --color-green-dark: #7dab4f;
 
-  --color-transparent:transparent;
+  --color-transparent: transparent;
   --color-black: #000;
-  --color-black-90: rgba(0,0,0,.9);
-  --color-black-75: rgba(0,0,0,.75);
-  --color-black-50: rgba(0,0,0,.5);
-  --color-black-25: rgba(0,0,0,.25);
-  --color-black-10: rgba(0,0,0,.1);
+  --color-black-90: rgba(0, 0, 0, 0.9);
+  --color-black-75: rgba(0, 0, 0, 0.75);
+  --color-black-50: rgba(0, 0, 0, 0.5);
+  --color-black-25: rgba(0, 0, 0, 0.25);
+  --color-black-10: rgba(0, 0, 0, 0.1);
   --color-gray: #adadad;
   --color-white: #fff;
-  --color-white-90: rgba(255,255,255,.9);
-  --color-white-75: rgba(255,255,255,.75);
-  --color-white-50: rgba(255,255,255,.5);
-  --color-white-25: rgba(255,255,255,.25);
-  --color-white-10: rgba(255,255,255,.1);
-
+  --color-white-90: rgba(255, 255, 255, 0.9);
+  --color-white-75: rgba(255, 255, 255, 0.75);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-25: rgba(255, 255, 255, 0.25);
+  --color-white-10: rgba(255, 255, 255, 0.1);
 }

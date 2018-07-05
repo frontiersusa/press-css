@@ -3,17 +3,41 @@
 
 */
 
-.b--seashell { border-color: var(--color-seashell);}
-.b--baltic { border-color: var(--color-baltic); }
-.b--pewter { border-color: var(--color-pewter); }
-.b--whale { border-color: var(--color-whale); }
-.b--sunglow { border-color: var(--color-sunglow); }
+.b--seashell {
+  border-color: var(--color-seashell);
+}
+.b--baltic {
+  border-color: var(--color-baltic);
+}
+.b--pewter {
+  border-color: var(--color-pewter);
+}
+.b--whale {
+  border-color: var(--color-whale);
+}
+.b--sunglow {
+  border-color: var(--color-sunglow);
+}
 
-.bc-seashell { border-color: var(--color-seashell);}
-.bc-baltic { border-color: var(--color-baltic); }
-.bc-pewter { border-color: var(--color-pewter); }
-.bc-whale { border-color: var(--color-whale); }
+.bc-seashell {
+  border-color: var(--color-seashell);
+}
+.bc-baltic {
+  border-color: var(--color-baltic);
+}
+.bc-pewter {
+  border-color: var(--color-pewter);
+}
+.bc-whale {
+  border-color: var(--color-whale);
+}
 
-.b--black { border-color: black; }
-.b--gray { border-color: var(--color-gray); }
-.b--white { border-color: white; }
+.b--black {
+  border-color: black;
+}
+.b--gray {
+  border-color: var(--color-gray);
+}
+.b--white {
+  border-color: white;
+}

@@ -3,72 +3,192 @@
 
 */
 
-.z0 { z-index: 0; }
-.z1 { z-index: 1; }
-.z2 { z-index: 2; }
-.z3 { z-index: 3; }
-.z4 { z-index: 4; }
-.z5 { z-index: 5; }
-.z999 { z-index: 999; }
-.z9999 { z-index: 9999; }
-.z-max { z-index: 2147483647; }
-.z-inherit { z-index: inherit; }
-.z-initial { z-index: initial; }
-.z-unset { z-index: unset; }
+.z0 {
+  z-index: 0;
+}
+.z1 {
+  z-index: 1;
+}
+.z2 {
+  z-index: 2;
+}
+.z3 {
+  z-index: 3;
+}
+.z4 {
+  z-index: 4;
+}
+.z5 {
+  z-index: 5;
+}
+.z999 {
+  z-index: 999;
+}
+.z9999 {
+  z-index: 9999;
+}
+.z-max {
+  z-index: 2147483647;
+}
+.z-inherit {
+  z-index: inherit;
+}
+.z-initial {
+  z-index: initial;
+}
+.z-unset {
+  z-index: unset;
+}
 
 @media (--breakpoint-sm) {
-  .z0-sm { z-index: 0; }
-  .z1-sm { z-index: 1; }
-  .z2-sm { z-index: 2; }
-  .z3-sm { z-index: 3; }
-  .z4-sm { z-index: 4; }
-  .z5-sm { z-index: 5; }
-  .z999-sm { z-index: 999; }
-  .z9999-sm { z-index: 9999; }
-  .z-max-sm { z-index: 2147483647; }
-  .z-inherit-sm { z-index: inherit; }
-  .z-initial-sm { z-index: initial; }
-  .z-unset-sm { z-index: unset; }
+  .z0-sm {
+    z-index: 0;
+  }
+  .z1-sm {
+    z-index: 1;
+  }
+  .z2-sm {
+    z-index: 2;
+  }
+  .z3-sm {
+    z-index: 3;
+  }
+  .z4-sm {
+    z-index: 4;
+  }
+  .z5-sm {
+    z-index: 5;
+  }
+  .z999-sm {
+    z-index: 999;
+  }
+  .z9999-sm {
+    z-index: 9999;
+  }
+  .z-max-sm {
+    z-index: 2147483647;
+  }
+  .z-inherit-sm {
+    z-index: inherit;
+  }
+  .z-initial-sm {
+    z-index: initial;
+  }
+  .z-unset-sm {
+    z-index: unset;
+  }
 }
 @media (--breakpoint-md) {
-  .z0-md { z-index: 0; }
-  .z1-md { z-index: 1; }
-  .z2-md { z-index: 2; }
-  .z3-md { z-index: 3; }
-  .z4-md { z-index: 4; }
-  .z5-md { z-index: 5; }
-  .z999-md { z-index: 999; }
-  .z9999-md { z-index: 9999; }
-  .z-max-md { z-index: 2147483647; }
-  .z-inherit-md { z-index: inherit; }
-  .z-initial-md { z-index: initial; }
-  .z-unset-md { z-index: unset; }
+  .z0-md {
+    z-index: 0;
+  }
+  .z1-md {
+    z-index: 1;
+  }
+  .z2-md {
+    z-index: 2;
+  }
+  .z3-md {
+    z-index: 3;
+  }
+  .z4-md {
+    z-index: 4;
+  }
+  .z5-md {
+    z-index: 5;
+  }
+  .z999-md {
+    z-index: 999;
+  }
+  .z9999-md {
+    z-index: 9999;
+  }
+  .z-max-md {
+    z-index: 2147483647;
+  }
+  .z-inherit-md {
+    z-index: inherit;
+  }
+  .z-initial-md {
+    z-index: initial;
+  }
+  .z-unset-md {
+    z-index: unset;
+  }
 }
 @media (--breakpoint-lg) {
-  .z0-lg { z-index: 0; }
-  .z1-lg { z-index: 1; }
-  .z2-lg { z-index: 2; }
-  .z3-lg { z-index: 3; }
-  .z4-lg { z-index: 4; }
-  .z5-lg { z-index: 5; }
-  .z999-lg { z-index: 999; }
-  .z9999-lg { z-index: 9999; }
-  .z-max-lg { z-index: 2147483647; }
-  .z-inherit-lg { z-index: inherit; }
-  .z-initial-lg { z-index: initial; }
-  .z-unset-lg { z-index: unset; }
+  .z0-lg {
+    z-index: 0;
+  }
+  .z1-lg {
+    z-index: 1;
+  }
+  .z2-lg {
+    z-index: 2;
+  }
+  .z3-lg {
+    z-index: 3;
+  }
+  .z4-lg {
+    z-index: 4;
+  }
+  .z5-lg {
+    z-index: 5;
+  }
+  .z999-lg {
+    z-index: 999;
+  }
+  .z9999-lg {
+    z-index: 9999;
+  }
+  .z-max-lg {
+    z-index: 2147483647;
+  }
+  .z-inherit-lg {
+    z-index: inherit;
+  }
+  .z-initial-lg {
+    z-index: initial;
+  }
+  .z-unset-lg {
+    z-index: unset;
+  }
 }
 @media (--breakpoint-xl) {
-  .z0-xl { z-index: 0; }
-  .z1-xl { z-index: 1; }
-  .z2-xl { z-index: 2; }
-  .z3-xl { z-index: 3; }
-  .z4-xl { z-index: 4; }
-  .z5-xl { z-index: 5; }
-  .z999-xl { z-index: 999; }
-  .z9999-xl { z-index: 9999; }
-  .z-max-xl { z-index: 2147483647; }
-  .z-inherit-xl { z-index: inherit; }
-  .z-initial-xl { z-index: initial; }
-  .z-unset-xl { z-index: unset; }
+  .z0-xl {
+    z-index: 0;
+  }
+  .z1-xl {
+    z-index: 1;
+  }
+  .z2-xl {
+    z-index: 2;
+  }
+  .z3-xl {
+    z-index: 3;
+  }
+  .z4-xl {
+    z-index: 4;
+  }
+  .z5-xl {
+    z-index: 5;
+  }
+  .z999-xl {
+    z-index: 999;
+  }
+  .z9999-xl {
+    z-index: 9999;
+  }
+  .z-max-xl {
+    z-index: 2147483647;
+  }
+  .z-inherit-xl {
+    z-index: inherit;
+  }
+  .z-initial-xl {
+    z-index: initial;
+  }
+  .z-unset-xl {
+    z-index: unset;
+  }
 }

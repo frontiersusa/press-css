@@ -3,5 +3,9 @@
 
 */
 
-.normal { font-weight: normal; }
-.b      { font-weight: bold; }
+.normal {
+  font-weight: normal;
+}
+.b {
+  font-weight: bold;
+}

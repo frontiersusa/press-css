@@ -3,31 +3,69 @@
 
 */
 
-.vam { vertical-align: middle; }
-.vat { vertical-align: top; }
-.vab { vertical-align: bottom; }
-.vabase { vertical-align: baseline; }
+.vam {
+  vertical-align: middle;
+}
+.vat {
+  vertical-align: top;
+}
+.vab {
+  vertical-align: bottom;
+}
+.vabase {
+  vertical-align: baseline;
+}
 
 @media (--breakpoint-sm) {
-  .vam-sm { vertical-align: middle; }
-  .vat-sm { vertical-align: top; }
-  .vab-sm { vertical-align: bottom; }
-  .vabase-sm { vertical-align: baseline; }
+  .vam-sm {
+    vertical-align: middle;
+  }
+  .vat-sm {
+    vertical-align: top;
+  }
+  .vab-sm {
+    vertical-align: bottom;
+  }
+  .vabase-sm {
+    vertical-align: baseline;
+  }
 }
 @media (--breakpoint-md) {
-  .vam-md { vertical-align: middle; }
-  .vat-md { vertical-align: top; }
-  .vab-md { vertical-align: bottom; } 
+  .vam-md {
+    vertical-align: middle;
+  }
+  .vat-md {
+    vertical-align: top;
+  }
+  .vab-md {
+    vertical-align: bottom;
+  }
 }
 @media (--breakpoint-lg) {
-  .vam-lg { vertical-align: middle; }
-  .vat-lg { vertical-align: top; }
-  .vab-lg { vertical-align: bottom; }
-  .vabase-lg { vertical-align: baseline; }
+  .vam-lg {
+    vertical-align: middle;
+  }
+  .vat-lg {
+    vertical-align: top;
+  }
+  .vab-lg {
+    vertical-align: bottom;
+  }
+  .vabase-lg {
+    vertical-align: baseline;
+  }
 }
 @media (--breakpoint-xl) {
-  .vam-xl { vertical-align: middle; }
-  .vat-xl { vertical-align: top; }
-  .vab-xl { vertical-align: bottom; }
-  .vabase-xl { vertical-align: baseline; }
+  .vam-xl {
+    vertical-align: middle;
+  }
+  .vat-xl {
+    vertical-align: top;
+  }
+  .vab-xl {
+    vertical-align: bottom;
+  }
+  .vabase-xl {
+    vertical-align: baseline;
+  }
 }

@@ -3,32 +3,72 @@
 
 */
 
-.tal { text-align: left; }
-.tar { text-align: right; }
-.tac { text-align: center; }
-.taj { text-align: justify; }
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+.tac {
+  text-align: center;
+}
+.taj {
+  text-align: justify;
+}
 
 @media (--breakpoint-sm) {
-  .tal-sm { text-align: left; }
-  .tar-sm { text-align: right; }
-  .tac-sm { text-align: center; }
-  .taj-sm { text-align: justify; }
+  .tal-sm {
+    text-align: left;
+  }
+  .tar-sm {
+    text-align: right;
+  }
+  .tac-sm {
+    text-align: center;
+  }
+  .taj-sm {
+    text-align: justify;
+  }
 }
 @media (--breakpoint-md) {
-  .tal-md { text-align: left; }
-  .tar-md { text-align: right; }
-  .tac-md { text-align: center; }
-  .taj-md { text-align: justify; }
+  .tal-md {
+    text-align: left;
+  }
+  .tar-md {
+    text-align: right;
+  }
+  .tac-md {
+    text-align: center;
+  }
+  .taj-md {
+    text-align: justify;
+  }
 }
 @media (--breakpoint-lg) {
-  .tal-lg { text-align: left; }
-  .tar-lg { text-align: right; }
-  .tac-lg { text-align: center; }
-  .taj-lg { text-align: justify; }
+  .tal-lg {
+    text-align: left;
+  }
+  .tar-lg {
+    text-align: right;
+  }
+  .tac-lg {
+    text-align: center;
+  }
+  .taj-lg {
+    text-align: justify;
+  }
 }
 @media (--breakpoint-xl) {
-  .tal-xl { text-align: left; }
-  .tar-xl { text-align: right; }
-  .tac-xl { text-align: center; }
-  .taj-xl { text-align: justify; }
+  .tal-xl {
+    text-align: left;
+  }
+  .tar-xl {
+    text-align: right;
+  }
+  .tac-xl {
+    text-align: center;
+  }
+  .taj-xl {
+    text-align: justify;
+  }
 }
