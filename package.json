@@ -14,7 +14,8 @@
     "minify": "postcss 'dist/press.css' -u cssnano -o 'dist/press.min.css'",
     "build:css": "postcss 'src/press.css' --dir 'dist'",
     "build": "npm run build:css && npm run minify",
-    "develop": "concurrently --kill-others \"npm run serve\" \"npm run watch\""
+    "develop": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\""
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",
