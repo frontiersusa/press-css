@@ -6,34 +6,34 @@
 /* Avenir */
 @font-face {
   font-family: "Avenir";
-  src: url("../fonts/Avenir-Light.eot?#iefix");
-  src: url("../fonts/Avenir-Light.eot?#iefix") format("eot"),
-    url("../fonts/Avenir-Light.woff2") format("woff2"),
-    url("../fonts/Avenir-Light.woff") format("woff"),
-    url("../fonts/Avenir-Light.ttf") format("truetype"),
-    url("../fonts/Avenir-Light.svg") format("svg");
+  src: url("/../fonts/Avenir-Light.eot?#iefix");
+  src: url("/../fonts/Avenir-Light.eot?#iefix") format("eot"),
+    url("/../fonts/Avenir-Light.woff2") format("woff2"),
+    url("/../fonts/Avenir-Light.woff") format("woff"),
+    url("/../fonts/Avenir-Light.ttf") format("truetype"),
+    url("/../fonts/Avenir-Light.svg") format("svg");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../fonts/Avenir-Medium.eot?#iefix");
-  src: url("../fonts/Avenir-Medium.eot?#iefix") format("eot"),
-    url("../fonts/Avenir-Medium.woff2") format("woff2"),
-    url("../fonts/Avenir-Medium.woff") format("woff"),
-    url("../fonts/Avenir-Medium.ttf") format("truetype"),
-    url("../fonts/Avenir-Medium.svg") format("svg");
+  src: url("/../fonts/Avenir-Medium.eot?#iefix");
+  src: url("/../fonts/Avenir-Medium.eot?#iefix") format("eot"),
+    url("/../fonts/Avenir-Medium.woff2") format("woff2"),
+    url("/../fonts/Avenir-Medium.woff") format("woff"),
+    url("/../fonts/Avenir-Medium.ttf") format("truetype"),
+    url("/../fonts/Avenir-Medium.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../fonts/Avenir-Black.eot?#iefix");
-  src: url("../fonts/Avenir-Black.eot?#iefix") format("eot"),
-    url("../fonts/Avenir-Black.woff2") format("woff2"),
-    url("../fonts/Avenir-Black.woff") format("woff"),
-    url("../fonts/Avenir-Black.ttf") format("truetype"),
-    url("../fonts/Avenir-Black.svg") format("svg");
+  src: url("/../fonts/Avenir-Black.eot?#iefix");
+  src: url("/../fonts/Avenir-Black.eot?#iefix") format("eot"),
+    url("/../fonts/Avenir-Black.woff2") format("woff2"),
+    url("/../fonts/Avenir-Black.woff") format("woff"),
+    url("/../fonts/Avenir-Black.ttf") format("truetype"),
+    url("/../fonts/Avenir-Black.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -41,56 +41,56 @@
 /* Mercury */
 @font-face {
   font-family: "Mercury";
-  src: url("../fonts/MercuryDisplay-Roman.eot?#iefix");
-  src: url("../fonts/MercuryDisplay-Roman.eot?#iefix") format("eot"),
-    url("../fonts/MercuryDisplay-Roman.woff2") format("woff2"),
-    url("../fonts/MercuryDisplay-Roman.woff") format("woff"),
-    url("../fonts/MercuryDisplay-Roman.ttf") format("truetype"),
-    url("../fonts/MercuryDisplay-Roman.svg") format("svg");
+  src: url("/../fonts/MercuryDisplay-Roman.eot?#iefix");
+  src: url("/../fonts/MercuryDisplay-Roman.eot?#iefix") format("eot"),
+    url("/../fonts/MercuryDisplay-Roman.woff2") format("woff2"),
+    url("/../fonts/MercuryDisplay-Roman.woff") format("woff"),
+    url("/../fonts/MercuryDisplay-Roman.ttf") format("truetype"),
+    url("/../fonts/MercuryDisplay-Roman.svg") format("svg");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Mercury";
-  src: url("../fonts/MercuryDisplay-Semibold.eot?#iefix");
-  src: url("../fonts/MercuryDisplay-Semibold.eot?#iefix") format("eot"),
-    url("../fonts/MercuryDisplay-Semibold.woff2") format("woff2"),
-    url("../fonts/MercuryDisplay-Semibold.woff") format("woff"),
-    url("../fonts/MercuryDisplay-Semibold.ttf") format("truetype"),
-    url("../fonts/MercuryDisplay-Semibold.svg") format("svg");
+  src: url("/../fonts/MercuryDisplay-Semibold.eot?#iefix");
+  src: url("/../fonts/MercuryDisplay-Semibold.eot?#iefix") format("eot"),
+    url("/../fonts/MercuryDisplay-Semibold.woff2") format("woff2"),
+    url("/../fonts/MercuryDisplay-Semibold.woff") format("woff"),
+    url("/../fonts/MercuryDisplay-Semibold.ttf") format("truetype"),
+    url("/../fonts/MercuryDisplay-Semibold.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Mercury";
-  src: url("../fonts/MercuryDisplay-Bold.eot?#iefix");
-  src: url("../fonts/MercuryDisplay-Bold.eot?#iefix") format("eot"),
-    url("../fonts/MercuryDisplay-Bold.woff2") format("woff2"),
-    url("../fonts/MercuryDisplay-Bold.woff") format("woff"),
-    url("../fonts/MercuryDisplay-Bold.ttf") format("truetype"),
-    url("../fonts/MercuryDisplay-Bold.svg") format("svg");
+  src: url("/../fonts/MercuryDisplay-Bold.eot?#iefix");
+  src: url("/../fonts/MercuryDisplay-Bold.eot?#iefix") format("eot"),
+    url("/../fonts/MercuryDisplay-Bold.woff2") format("woff2"),
+    url("/../fonts/MercuryDisplay-Bold.woff") format("woff"),
+    url("/../fonts/MercuryDisplay-Bold.ttf") format("truetype"),
+    url("/../fonts/MercuryDisplay-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Mercury";
-  src: url("../fonts/MercuryDisplay-SemIta.eot?#iefix");
-  src: url("../fonts/MercuryDisplay-SemIta.eot?#iefix") format("eot"),
-    url("../fonts/MercuryDisplay-SemIta.woff2") format("woff2"),
-    url("../fonts/MercuryDisplay-SemIta.woff") format("woff"),
-    url("../fonts/MercuryDisplay-SemIta.ttf") format("truetype"),
-    url("../fonts/MercuryDisplay-SemIta.svg") format("svg");
+  src: url("/../fonts/MercuryDisplay-SemIta.eot?#iefix");
+  src: url("/../fonts/MercuryDisplay-SemIta.eot?#iefix") format("eot"),
+    url("/../fonts/MercuryDisplay-SemIta.woff2") format("woff2"),
+    url("/../fonts/MercuryDisplay-SemIta.woff") format("woff"),
+    url("/../fonts/MercuryDisplay-SemIta.ttf") format("truetype"),
+    url("/../fonts/MercuryDisplay-SemIta.svg") format("svg");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Mercury";
-  src: url("../fonts/MercuryDisplay-BolIta.eot?#iefix");
-  src: url("../fonts/MercuryDisplay-BolIta.eot?#iefix") format("eot"),
-    url("../fonts/MercuryDisplay-BolIta.woff2") format("woff2"),
-    url("../fonts/MercuryDisplay-BolIta.woff") format("woff"),
-    url("../fonts/MercuryDisplay-BolIta.ttf") format("truetype"),
-    url("../fonts/MercuryDisplay-BolIta.svg") format("svg");
+  src: url("/../fonts/MercuryDisplay-BolIta.eot?#iefix");
+  src: url("/../fonts/MercuryDisplay-BolIta.eot?#iefix") format("eot"),
+    url("/../fonts/MercuryDisplay-BolIta.woff2") format("woff2"),
+    url("/../fonts/MercuryDisplay-BolIta.woff") format("woff"),
+    url("/../fonts/MercuryDisplay-BolIta.ttf") format("truetype"),
+    url("/../fonts/MercuryDisplay-BolIta.svg") format("svg");
   font-weight: 700;
   font-style: italic;
 }
