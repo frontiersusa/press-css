@@ -67,7 +67,7 @@ fieldset {
   border-radius: 0.188rem;
 }
 
-.field-radio label,
+.fieldset-radio label,
 .fieldset-check label {
   padding: 13px 15px;
   cursor: pointer;

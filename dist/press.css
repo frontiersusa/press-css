@@ -10683,13 +10683,13 @@ fieldset {
   border-radius: 0.188rem;
 }
 
-.field-radio label,
+.fieldset-radio label,
 .fieldset-check label {
   padding: 0.8125rem 0.9375rem;
   cursor: pointer
 }
 
-.field-radio label:hover, .fieldset-check label:hover {
+.fieldset-radio label:hover, .fieldset-check label:hover {
     background-color: whitesmoke;
   }
 
