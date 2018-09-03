@@ -10664,14 +10664,19 @@ fieldset {
   }
 
 .input-text,
+.input-select select {
+  min-height: 2.25rem;
+}
+
+.input-text,
 .input-textarea {
-  padding: 0.425rem 0.75rem;
+  padding: 0.4375rem 0.375rem 0.375rem 0.5625rem;
 }
 
 /* Individual styles */
 
 .input-select select {
-  padding: 0.406rem 0.75rem;
+  padding: 0.4375rem 0.375rem 0.375rem 0.3125rem;
   background-color: white;
   background-position: 99.5%;
   background-repeat: no-repeat;
@@ -10683,13 +10688,13 @@ fieldset {
   border-radius: 0.188rem;
 }
 
-.fieldset-radio label,
-.fieldset-check label {
+.fieldset-radio > label,
+.fieldset-check > label {
   padding: 0.8125rem 0.9375rem;
   cursor: pointer
 }
 
-.fieldset-radio label:hover, .fieldset-check label:hover {
+.fieldset-radio > label:hover, .fieldset-check > label:hover {
     background-color: whitesmoke;
   }
 
@@ -10743,6 +10748,7 @@ fieldset {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-left: 0.4375rem;
 }
 
 .input-check:hover + div:after,
