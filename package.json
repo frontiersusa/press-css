@@ -3,6 +3,7 @@
   "version": "5.0.0",
   "description": "Press is a collection of utility styles for Frontiers properties.",
   "bin": {
+    "hello": "./hello.js",
     "init": "./index.js"
   },
   "repository": {
