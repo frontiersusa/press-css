@@ -16,7 +16,8 @@
     "build:css": "postcss 'src/press.css' --dir 'dist'",
     "build": "npm run build:css && npm run minify",
     "develop": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
-    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\""
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
+    "init": "copyfiles './node_modules/press-css/tailwind.js' './' -f  -E -V"
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",
@@ -32,7 +33,8 @@
     "postcss-map": "^0.8.0",
     "postcss-preset-env": "^5.2.1",
     "postcss-pxtorem": "^4.0.0",
-    "tailwindcss": "^0.7.4"
+    "tailwindcss": "^0.7.4",
+    "copyfiles": "^2.1.0"
   },
   "browserslist": [
     "> 1% in my stats"
