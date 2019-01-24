@@ -2,7 +2,9 @@
   "name": "press-css",
   "version": "5.0.0",
   "description": "Press is a collection of utility styles for Frontiers properties.",
-  "bin": "./index.js",
+  "bin": {
+    "init": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/natedunn/press"
@@ -16,8 +18,7 @@
     "build:css": "postcss 'src/press.css' --dir 'dist'",
     "build": "npm run build:css && npm run minify",
     "develop": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
-    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
-    "init": "copyfiles './node_modules/press-css/tailwind.js' './' -f  -E -V"
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\""
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",
