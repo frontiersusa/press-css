@@ -3,7 +3,6 @@
   "version": "5.0.0",
   "description": "Press is a collection of utility styles for Frontiers properties.",
   "bin": {
-    "hello": "./hello.js",
     "init": "./index.js"
   },
   "repository": {
@@ -18,7 +17,6 @@
     "minify": "postcss 'dist/press.css' -u cssnano -o 'dist/press.min.css'",
     "build:css": "postcss 'src/press.css' --dir 'dist'",
     "build": "npm run build:css && npm run minify",
-    "init": "node ./index.js",
     "develop": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
     "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\""
   },
