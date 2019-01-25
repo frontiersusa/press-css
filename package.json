@@ -2,9 +2,7 @@
   "name": "press-css",
   "version": "5.0.0",
   "description": "Press is a collection of utility styles for Frontiers properties.",
-  "bin": {
-    "init": "./index.js"
-  },
+  "bin": "./index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/natedunn/press"
