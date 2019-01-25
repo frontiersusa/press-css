@@ -9,9 +9,5 @@ function execute(command) {
 }
 
 execute(
-  "npm i -D tailwindcss frontiersusa/press-css#v5.0.0 && npm i -g copyfiles"
-);
-execute('copyfiles "./node_modules/press-css/tailwind.js" "./" -f  -E -V');
-execute(
-  'copyfiles "./node_modules/press-css/src/press-example.css" "./" -f  -E -V'
+  'npm i -D tailwindcss frontiersusa/press-css#v5.0.0 && npm i -g copyfiles && copyfiles "./node_modules/press-css/tailwind.js" "./" -f  -E -V && copyfiles "./node_modules/press-css/src/press-example.css" "./" -f  -E -V'
 );
