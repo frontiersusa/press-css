@@ -1,8 +1,8 @@
 ::-moz-selection {
-  background-color: var(--color-pewter-light);
+  background-color: config("colors.pewter");
   color: white;
 }
 ::selection {
-  background-color: var(--color-pewter-light);
+  background-color: config("colors.pewter");
   color: white;
 }
