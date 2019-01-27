@@ -1,113 +1,16 @@
 /*
-  Typography
-
+* Typography
+*
 */
 
-/* Control */
 body {
-  font-family: "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: config("fonts.sans");
   font-size: 16px;
-  color: var(--color-baltic);
+  color: config("colors.baltic");
   text-rendering: optimizeSpeed;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-h6 {
-  text-transform: uppercase;
-}
 
-/* Utilities */
 .p {
   margin-top: 0;
   margin-bottom: 30px;
-}
-.truncate {
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.indent {
-  text-indent: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.caps {
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-}
-
-/* Underline colors */
-.ul {
-  display: inline;
-  background-repeat: repeat-x;
-  background-size: 100% 15%;
-  background-position: bottom;
-}
-
-/* Underline types */
-.ul-bg {
-  background-size: 100% 85%;
-  padding-right: 0.25em;
-  padding-left: 0.05em;
-}
-.ul-link {
-  text-decoration: none;
-  transition: all ease-in-out 0.05s;
-}
-
-/* Underline colors */
-.ul-pewter {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%2391B1A7' fill-rule='evenodd'/%3e%3c/svg%3e");
-}
-.ul-link.ul-pewter {
-  &:hover,
-  &:focus {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg class='' width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%23398c72' fill-rule='evenodd'/%3e%3c/svg%3e");
-  }
-}
-.ul-whale {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%23083549' fill-rule='evenodd'/%3e%3c/svg%3e");
-}
-.ul-link.ul-whale {
-  &:hover,
-  &:focus {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%2359b0d8' fill-rule='evenodd'/%3e%3c/svg%3e");
-  }
-}
-.ul-baltic {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%233E3E3F' fill-rule='evenodd'/%3e%3c/svg%3e");
-}
-.ul-link.ul-baltic {
-  &:hover,
-  &:focus {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%23afafaf' fill-rule='evenodd'/%3e%3c/svg%3e");
-  }
-}
-.ul-seashell {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%23E6E6E6' fill-rule='evenodd'/%3e%3c/svg%3e");
-}
-.ul-link.ul-seashell {
-  &:hover,
-  &:focus {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%238f8f8f' fill-rule='evenodd'/%3e%3c/svg%3e");
-  }
-}
-.ul-sunglow {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%23FBD057' fill-rule='evenodd'/%3e%3c/svg%3e");
-}
-.ul-link.ul-sunglow {
-  &:hover,
-  &:focus {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='100' height='5' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h116v116H0z' fill='%23d08a11' fill-rule='evenodd'/%3e%3c/svg%3e");
-  }
 }
