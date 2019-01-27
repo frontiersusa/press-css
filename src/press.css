@@ -1,6 +1,7 @@
 @tailwind preflight;
 @tailwind components;
 
+@import "sanitize.css/sanitize.css";
 @import "./_base.css";
 @import "./_buttons.css";
 @import "./_forms.css";
