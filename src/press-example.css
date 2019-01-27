@@ -1,0 +1,13 @@
+/*
+* PRESS CSS
+*/
+
+/* Tailwind: Start */
+@tailwind preflight;
+@tailwind components;
+
+/* Import Press CSS */
+@import "press-css/press.css";
+
+/* Tailwind: End */
+@tailwind utilities;
