@@ -2,58 +2,41 @@
   "name": "press-css",
   "version": "5.0.0",
   "description": "Press is a collection of utility styles for Frontiers properties.",
-  "bin": "./index.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open --port 3000",
+    "build": "parcel build src/press.css",
+    "watch": "parcel watch src/press.css",
+    "clean": "del-cli 'dist/**/*'"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/natedunn/press"
+    "url": "https://github.com/natedunn/press-css"
   },
   "author": "@natedunn",
-  "license": "ISC",
-  "scripts": {
-    "watch": "onchange 'src/*.css' -- npm run build",
-    "serve": "browser-sync start --server --files 'dist/*.css, dist/*.js, index.html' --port '3000'",
-    "minify": "postcss 'dist/press.css' -u cssnano -o 'dist/press.min.css'",
-    "build:css": "postcss 'src/press.css' --dir 'dist'",
-    "build": "npm run build:css && npm run minify",
-    "develop": "concurrently --kill-others \"npm run serve\" \"npm run watch\"",
-    "dev": "concurrently --kill-others \"npm run serve\" \"npm run watch\""
-  },
+  "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "concurrently": "^3.6.0",
-    "cssnano": "^3.10.0",
-    "del-cli": "^0.2.0",
-    "onchange": "^2.5.0",
-    "postcss": "6.0.23",
-    "postcss-cli": "^5.0.0",
-    "postcss-custom-media": "^5.0.1",
+    "del-cli": "^1.1.0",
+    "parcel-bundler": "^1.2.0",
     "postcss-easy-import": "^3.0.0",
-    "postcss-import": "^8.1.2",
-    "postcss-map": "^0.8.0",
-    "postcss-preset-env": "^5.2.1",
-    "postcss-pxtorem": "^4.0.0",
+    "postcss-fixie": "^2.0.0",
+    "postcss-focus": "^4.0.0",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-responsive-type": "^1.0.0",
+    "stylelint": "^9.10.1",
     "tailwindcss": "^0.7.4",
-    "copyfiles": "^2.1.0"
+    "tailwindcss-object-fit": "^1.0.1"
+  },
+  "dependencies": {
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "sanitize.css": "^8.0.0",
+    "tailwind": "^3.0.0"
   },
   "browserslist": [
-    "> 1% in my stats"
-  ],
-  "postcss": {
-    "parser": false,
-    "map": false,
-    "plugins": {
-      "postcss-easy-import": {},
-      "postcss-preset-env": {
-        "stage": 0
-      },
-      "postcss-pxtorem": {
-        "rootValue": 16,
-        "propList": [
-          "*"
-        ],
-        "replace": true,
-        "mediaQuery": false
-      }
-    }
-  }
+    "> 1% in my stats",
+    "ie 10-11"
+  ]
 }
