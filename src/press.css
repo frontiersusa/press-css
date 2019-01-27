@@ -1,7 +1,15 @@
+/*
+* PRESS CSS
+*/
+
+/* Tailwind: Start */
 @tailwind preflight;
 @tailwind components;
 
+/* Dependencies */
 @import "sanitize.css/sanitize.css";
+
+/* Partials */
 @import "./_base.css";
 @import "./_buttons.css";
 @import "./_forms.css";
@@ -12,14 +20,5 @@
 @import "./_selection.css";
 @import "./_typography.css";
 
-.test {
-  @apply text-5xl;
-  font-size: responsive config("textSizes.3xl") config("textSizes.5xl");
-  font-range: config("screens.sm") config("screens.lg");
-}
-
-:ie10plus(.test) {
-  color: config("colors.red");
-}
-
+/* Tailwind: End */
 @tailwind utilities;
