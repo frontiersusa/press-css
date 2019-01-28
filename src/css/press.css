@@ -10,7 +10,6 @@
 @import "sanitize.css/sanitize.css";
 
 /* Partials */
-@import "./_base.css";
 @import "./_buttons.css";
 @import "./_forms.css";
 @import "./_headings.css";
