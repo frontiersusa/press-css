@@ -379,31 +379,13 @@ module.exports = {
       padding: "1rem"
     }),
     require("tailwindcss-object-fit")(["responsive"]),
-    function({ addComponents }) {
-      const buttons = {
-        ".btn": {
-          padding: ".5rem 1rem",
-          borderRadius: ".25rem",
-          fontWeight: "600"
-        },
-        ".btn-blue": {
-          backgroundColor: "#3490dc",
-          color: "#fff",
-          "&:hover": {
-            backgroundColor: "#2779bd"
-          }
-        },
-        ".btn-red": {
-          backgroundColor: "#e3342f",
-          color: "#fff",
-          "&:hover": {
-            backgroundColor: "#cc1f1a"
-          }
-        }
-      };
-
-      addComponents(buttons);
-    }
+    require("./src/js/buttons.js")({
+      gradients: {
+        primary: [colors["blue"], colors["green"]],
+        "purple-blue": [colors["purple"], colors["blue"]]
+      },
+      variants: ["responsive", "hover"]
+    })
   ],
   options: {
     prefix: "",
