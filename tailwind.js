@@ -1,4 +1,6 @@
-let colors = {
+const _ = require("lodash");
+
+let brandColorsV1 = {
   // Brand v1
   "pewter-dark": "#829e95",
   pewter: "#91B1A7",
@@ -24,14 +26,16 @@ let colors = {
   "secondary-light": "#52717f",
   "accent-dark": "#e3bc2b",
   accent: "#FDD230", // Sunglow
-  "accent-light": "#fddf6e",
+  "accent-light": "#fddf6e"
+};
 
-  // Brand v2
+let brandColorsV2 = {
   isle: "#00BB92",
   midnight: "#144660",
-  golden: "#FBD05C",
+  golden: "#FBD05C"
+};
 
-  // Basic
+let basicColors = {
   transparent: "transparent",
   black: "#22292f",
   "grey-darkest": "#3d4852",
@@ -56,6 +60,9 @@ let colors = {
   success: "#f8fcf9",
   info: "#f6faff"
 };
+
+let colors = { ...brandColorsV1, ...basicColors };
+// let colors = brandColorsV1;
 
 module.exports = {
   colors: colors,
