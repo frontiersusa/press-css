@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open --port 3000",
-    "build": "parcel build src/press.css",
-    "watch": "parcel watch src/press.css",
-    "clean": "del-cli 'dist/**/*'"
+    "build": "parcel build src/css/press.css",
+    "watch": "parcel watch src/css/press.css",
+    "clean": "del-cli 'dist/**/*' && del-cli '.cache'"
   },
   "repository": {
     "type": "git",
