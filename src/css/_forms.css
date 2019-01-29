@@ -2,7 +2,23 @@
 * Forms
 */
 
-/* Reset to basics */
+/* Control */
+
+.form-line {
+  @apply flex;
+}
+.form-line .button {
+  @apply flex items-center;
+}
+
+.input {
+  @apply bg-grey-lighter appearance-none border-2 border-grey rounded py-2 px-3 text-grey-darker leading-tight;
+}
+.input:focus {
+  @apply outline-none bg-white border-primary;
+}
+
+/*
 .input-text,
 .input-reset,
 .input-select select,
@@ -17,7 +33,6 @@ fieldset {
   padding: 0;
 }
 
-/* Group styles */
 .input-text,
 .input-select select,
 .input-textarea {
@@ -58,7 +73,7 @@ fieldset {
   padding: 7px 6px 6px 9px;
 }
 
-/* Individual styles */
+
 .input-select select {
   padding: 7px 6px 6px 5px;
   background-color: white;
@@ -80,7 +95,6 @@ fieldset {
   }
 }
 
-/* Sizes */
 .input-text.input-lg,
 .input-select.input-lg select {
   padding: 0.594rem 1rem;
@@ -88,7 +102,6 @@ fieldset {
   background-position: 98.5%;
 }
 
-/* Checkbox & Radio */
 .input-check,
 .input-radio {
   position: absolute;
@@ -156,7 +169,7 @@ fieldset {
 .input-radio:checked + div:after {
   border-radius: 100%;
 }
-/* Groups */
+
 .input-prepend .btn,
 .input-prepend.btn,
 .input-prepend input,
@@ -176,4 +189,4 @@ fieldset {
 .input-append .input-select select {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
+} */
