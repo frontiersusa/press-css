@@ -7,23 +7,95 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Press.css</title>
-    <link rel="stylesheet" href="./src/press.css" />
+    <link rel="stylesheet" href="./src/css/press.css" />
   </head>
   <body>
-      <h1 class="font-sans font-black uppercase w-full ">Press CSS</h1>
-      <h2 class="font-serif w-full">Styles for Frontiers properties</h2>
-      <a class="btn btn-blue" href="https://github.com/frontiersusa/press-css"
-        >Read More</a
-      >
-      <h2>Docs</h2>
+    <main class="max-w-xl mt-12 mr-auto mb-12 ml-auto pr-3 pl-3">
+      <header class="mb-12 border-b-2 pb-12">
+        <div class="mb-4">
+          <h1 class="font-black uppercase w-full mb-2">Press CSS</h1>
+          <h2 class="italic w-full h3">Styles for Frontiers properties</h2>
+        </div>
+        <div class="bg-grey-lighter px-6 py-6">
+          <span class="inline-block mr-2">
+            Scroll to read more or
+          </span>
+          <a class="button inline-block" href="https://github.com/frontiersusa/press-css">
+            Visit Github
+          </span>
+        </div>
+      </header>
+
+      <section class="mb-12">
+        <h3 class="mb-4 font-black">About</h3>
+        <p class="p">
+          <span class="font-bold">Press CSS</span> uses
+          <a class="link-primary font-bold" href="https://github.com/tailwindcss/tailwindcss"
+            >Tailwind CSS</a
+          >
+          underneath the hood to generate styles for Frontiers properties.
+        </p>
+        <p class="p">
+          Please use this page for guidance on Press-specific items, however the
+          rest of the documentation can be found on
+          <a class="link-primary" href="https://tailwindcss.com">Tailwind's website</a>.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h3 class="mb-4 font-black">Installation</h3>
+        <p class="p">
+          Coming later.
+        </p>
+      </section>
+
       <!-- Headings -->
-      <h3>Headings</h3>
-      <h1>Header 1</h1>
-      <h2>Header 2</h2>
-      <h3>Header 3</h3>
-      <h4>Header 4</h4>
-      <h5>Header 5</h5>
-      <h6>Header 6</h6>
-      </ul>
+      <section class="mb-12">
+        <h3 class="mb-4 font-black">Headings</h3>
+        <div class="bg-grey-lighter px-8 py-8">
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+        </div>
+      </section>
+
+      <!-- Tables -->
+      <section class="mb-12">
+
+      </section>
+
+      <!-- Form Examples -->
+      <section class="mb-12">
+        <h3 class="mb-4 font-black">Form Examples</h3>
+        <div class="bg-grey-lighter px-8 py-8">
+          <div class="form-line">
+            <input
+              class="input rounded-r-none"
+              type="text"
+            />
+            <a
+              class="button rounded-l-none"
+              href="javascript:void(0)"
+              >Test Button</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="max-w-xl mr-auto mb-12 ml-auto pr-3 pl-3">
+      <div class="bg-grey-lighter px-6 py-6">
+        <ul class="list-reset">
+          <li class="inline-block mr-4">
+            &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> MIO Frontiers
+          </li>
+          <li class="inline-block">
+            <a href="https://frontiersusalorg">Frontiersusa.org</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
