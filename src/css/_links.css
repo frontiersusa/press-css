@@ -2,25 +2,6 @@
 * Links
 */
 
-/*
-* Apply default link style
-* Ignore elements with .btn class
-*/
-a:not(.button, [class^="link-"]) {
-  @apply text-primary;
-}
-a:not(.button, [class^="link-"]):hover,
-a:not(.button, [class^="link-"]):focus {
-  @apply text-primary-dark;
-}
-
-.link-primary {
-  @apply border-b-2 border-primary color-current no-underline;
-}
-.link-primary:hover {
-  @apply border-secondary;
-}
-
 /* a:not(.btn):focus {
   outline: thin dotted currentColor;
 }
