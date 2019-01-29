@@ -1,8 +1,0 @@
-::-moz-selection {
-  background-color: config("colors.primary");
-  color: white;
-}
-::selection {
-  background-color: config("colors.primary");
-  color: white;
-}

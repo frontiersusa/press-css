@@ -2,21 +2,13 @@
 * PRESS CSS
 */
 
-/* Tailwind: Start */
 @tailwind preflight;
+@import "sanitize.css/sanitize.css";
 @tailwind components;
 
-/* Dependencies */
-@import "sanitize.css/sanitize.css";
-
-/* Partials */
+@import "./_base.css";
 @import "./_buttons.css";
-@import "./_forms.css";
-@import "./_headings.css";
-@import "./_images.css";
+/* @import "./_forms.css";  */
 @import "./_links.css";
-@import "./_selection.css";
-@import "./_typography.css";
 
-/* Tailwind: End */
 @tailwind utilities;
