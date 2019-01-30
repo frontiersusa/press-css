@@ -357,6 +357,14 @@ let opacity = {
 };
 
 /**
+ * Links
+ */
+let links = {
+  primary: [colors["primary"], colors["secondary"]],
+  secondary: [colors["secondary"], colors["primary"]]
+};
+
+/**
  * Buttons
  */
 let buttons = {
@@ -368,23 +376,29 @@ let buttons = {
  * Plugins
  */
 const plugins = [
+  //
   // Press Utilities
-  require("./src/js/typography")(),
-  require("./src/js/forms")(),
-  require("./src/js/links")(),
+  require("./src/utilities/typography")(),
+  require("./src/utilities/forms")(),
+  //
   // Press Components
-  require("./src/js/buttons")({
+  require("./src/components/links")({
+    links: links
+  }),
+  require("./src/components/buttons")({
     buttons: buttons
   }),
+  //
   // Press Dependencies
   require("tailwindcss/plugins/container")({
     center: true,
     padding: "1rem"
   }),
   require("tailwindcss-object-fit")(["responsive"]),
-  require("./src/js/important")()
+  require("./src/variants/important")()
 ];
 
+// Export
 module.exports = {
   colors: colors,
   screens: screens,
