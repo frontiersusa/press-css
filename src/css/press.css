@@ -1,9 +1,0 @@
-/*
-* PRESS CSS
-*/
-
-@tailwind preflight;
-@import "sanitize.css/sanitize.css";
-@tailwind components;
-@import "./_base.css";
-@tailwind utilities;

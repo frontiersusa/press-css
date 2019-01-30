@@ -1,13 +1,9 @@
 /*
-* PRESS CSS
+* Press Example
+* Used to generate test styles.
 */
 
-/* Tailwind: Start */
 @tailwind preflight;
+@import "./base.css";
 @tailwind components;
-
-/* Import Press CSS */
-@import "press-css/press.css";
-
-/* Tailwind: End */
 @tailwind utilities;

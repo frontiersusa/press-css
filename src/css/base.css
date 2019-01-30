@@ -1,7 +1,4 @@
-/*
-* Base
-*
-*/
+@import "sanitize.css/sanitize.css";
 
 /* Typography */
 h1,
@@ -38,11 +35,11 @@ body {
 }
 
 /* Links */
-a:not([class^="button"], [class^="link-"]) {
+a:not([class^="button"], [class^="link"]) {
   @apply text-primary;
 }
-a:not([class^="button"], [class^="link-"]):hover,
-a:not([class^="button"], [class^="link-"]):focus {
+a:not([class^="button"], [class^="link"]):hover,
+a:not([class^="button"], [class^="link"]):focus {
   @apply text-primary-dark;
 }
 
