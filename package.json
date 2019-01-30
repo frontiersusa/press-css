@@ -42,6 +42,7 @@
     "ie 10-11"
   ],
   "release-it": {
+    "use": "pkg.version",
     "npm": {
       "publish": false
     },
