@@ -1,4 +1,4 @@
-module.exports = {
+let config = {
   plugins: [
     require("postcss-import"),
     require("tailwindcss")("./tailwind.js"),
@@ -17,3 +17,5 @@ module.exports = {
     require("postcss-responsive-type")
   ]
 };
+
+module.exports = config;
