@@ -29,7 +29,8 @@
     "postcss-responsive-type": "^1.0.0",
     "stylelint": "^9.10.1",
     "tailwindcss": "^0.7.4",
-    "tailwindcss-object-fit": "^1.0.1"
+    "tailwindcss-object-fit": "^1.0.1",
+    "release-it": "*"
   },
   "dependencies": {
     "postcss-flexbugs-fixes": "^4.1.0",
@@ -39,5 +40,13 @@
   "browserslist": [
     "> 1% in my stats",
     "ie 10-11"
-  ]
+  ],
+  "release-it": {
+    "npm": {
+      "publish": false
+    },
+    "github": {
+      "release": true
+    }
+  }
 }
