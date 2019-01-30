@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open --port 3000",
-    "build": "parcel build src/css/press.css",
-    "watch": "parcel watch src/css/press.css",
+    "build": "parcel build src/css/press.example.css --out-file press.css",
+    "watch": "parcel watch src/css/press.example.css",
     "clean": "del-cli 'dist/**/*' && del-cli '.cache'",
     "deploy": "npm run clean && npm run build && sh deploy.sh"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/natedunn/press-css"
+    "url": "https://github.com/frotniersusa/press-css"
   },
   "author": "@natedunn",
   "license": "MIT",
   "devDependencies": {
     "del-cli": "^1.1.0",
-    "parcel-bundler": "^1.2.0",
+    "parcel-bundler": "^1.11.0",
     "postcss-easy-import": "^3.0.0",
     "postcss-fixie": "^2.0.0",
     "postcss-focus": "^4.0.0",
@@ -31,13 +31,12 @@
     "stylelint": "^9.10.1",
     "tailwindcss": "^0.7.4",
     "tailwindcss-object-fit": "^1.0.1",
-    "release-it": "*"
-  },
-  "dependencies": {
+    "release-it": "*",
     "postcss-flexbugs-fixes": "^4.1.0",
     "sanitize.css": "^8.0.0",
     "tailwind": "^3.0.0"
   },
+  "dependencies": {},
   "browserslist": [
     "> 1% in my stats",
     "ie 10-11"
