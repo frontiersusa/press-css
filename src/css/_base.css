@@ -38,11 +38,11 @@ body {
 }
 
 /* Links */
-a:not(.button, [class^="link-"]) {
+a:not([class^="button"], [class^="link-"]) {
   @apply text-primary;
 }
-a:not(.button, [class^="link-"]):hover,
-a:not(.button, [class^="link-"]):focus {
+a:not([class^="button"], [class^="link-"]):hover,
+a:not([class^="button"], [class^="link-"]):focus {
   @apply text-primary-dark;
 }
 
