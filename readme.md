@@ -4,7 +4,8 @@ Styles for Frontiers properties.
 
 ## Using in other projects
 
-`cd` into your project directory and `npm i frontiersusa/press-css`.
+1. `cd` into your project directory and `npm i frontiersusa/press-css`.
+2. Copy `tailwind.js` to your project's root
 
 ## CSS Support
 
@@ -20,6 +21,9 @@ This section is for maintainers only.
 
 1. Clone this repository
 2. `cd` into the directory and `npm install`
+3. `npm run start` to serve and watch
+
+[Read more](#deployment) about the deployment process.
 
 ### Editing
 
