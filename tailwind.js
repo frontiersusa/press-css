@@ -357,6 +357,14 @@ let opacity = {
 };
 
 /**
+ * Buttons
+ */
+let buttons = {
+  primary: [colors["primary"], colors["primary-dark"]],
+  secondary: [colors["secondary"], colors["secondary-light"]]
+};
+
+/**
  * Plugins
  */
 const plugins = [
@@ -366,11 +374,7 @@ const plugins = [
   require("./src/js/links")(),
   // Press Components
   require("./src/js/buttons")({
-    "comp-buttons": {
-      primary: [colors["blue"], colors["green"]],
-      secondary: [colors["purple"], colors["blue"]]
-    },
-    variants: ["responsive", "hover"]
+    buttons: buttons
   }),
   // Press Dependencies
   require("tailwindcss/plugins/container")({
