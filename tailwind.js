@@ -1,3 +1,11 @@
+const tailwindContainer = require('tailwindcss/plugins/container');
+const tailwindObjectFit = require('tailwindcss-object-fit');
+const pressTypography = require('./src/utilities/typography');
+const pressForms = require('./src/utilities/forms');
+const pressLinks = require('./src/components/links');
+const pressButtons = require('./src/components/buttons');
+const pressImportant = require('./src/variants/important');
+
 /**
  * Colors
  */
@@ -364,24 +372,24 @@ let buttons = {
 const plugins = [
   //
   // Press Utilities
-  require("./src/utilities/typography")(),
-  require("./src/utilities/forms")(),
+  pressTypography(),
+  pressForms(),
   //
   // Press Components
-  require("./src/components/links")({
-    links: links
+  pressLinks({
+    links,
   }),
-  require("./src/components/buttons")({
-    buttons: buttons
+  pressButtons({
+    buttons,
   }),
   //
   // Press Dependencies
-  require("tailwindcss/plugins/container")({
+  tailwindContainer({
     center: true,
-    padding: "1rem"
+    padding: '1rem',
   }),
-  require("tailwindcss-object-fit")(["responsive"]),
-  require("./src/variants/important")()
+  tailwindObjectFit(['responsive']),
+  pressImportant(),
 ];
 
 // Export
