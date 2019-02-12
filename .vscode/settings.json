@@ -1,0 +1,9 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#FDD230",
+    "titleBar.activeForeground": "#000000",
+    "titleBar.inactiveBackground": "#e3bc2b",
+    "titleBar.inactiveForeground": "#000000"
+  },
+  "window.title": "${dirty} ${activeEditorMedium}${separator} 🎨 Press CSS"
+}
