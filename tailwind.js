@@ -1,24 +1,8 @@
 /**
  * Colors
  */
-let brandColorsV1 = {
+let brandColors = {
   // Brand v1
-  "pewter-dark": "#829e95",
-  pewter: "#91B1A7",
-  "pewter-light": "#b2c8c1",
-  "whale-dark": "#032636",
-  whale: "#083549",
-  "whale-light": "#52717f",
-  "sunglow-dark": "#e3bc2b",
-  sunglow: "#FDD230",
-  "sunglow-light": "#fddf6e",
-  "baltic-dark": "#313132",
-  baltic: "#3E3E3F",
-  "baltic-light": "#616161",
-  "seashell-dark": "#cecece",
-  seasehll: "#E6E6E6",
-  "seashell-light": "#f0f0f0",
-
   "primary-dark": "#829e95",
   primary: "#91B1A7", // Pewter
   "primary-light": "#b2c8c1",
@@ -27,7 +11,24 @@ let brandColorsV1 = {
   "secondary-light": "#52717f",
   "accent-dark": "#e3bc2b",
   accent: "#FDD230", // Sunglow
-  "accent-light": "#fddf6e"
+  "accent-light": "#fddf6e",
+  "baltic-dark": "#313132",
+  baltic: "#3E3E3F",
+  "baltic-light": "#616161",
+  "seashell-dark": "#cecece",
+  seashell: "#E6E6E6",
+  "seashell-light": "#f0f0f0"
+  // Deprecated for use above
+  //
+  // "pewter-dark": "#829e95",
+  // pewter: "#91B1A7",
+  // "pewter-light": "#b2c8c1",
+  // "whale-dark": "#032636",
+  // whale: "#083549",
+  // "whale-light": "#52717f",
+  // "sunglow-dark": "#e3bc2b",
+  // sunglow: "#FDD230",
+  // "sunglow-light": "#fddf6e",
 };
 
 let brandColorsV2 = {
@@ -46,23 +47,17 @@ let basicColors = {
   "grey-light": "#dae1e7",
   "grey-lighter": "#f1f5f8",
   "grey-lightest": "#f8fafc",
-  white: "#ffffff",
-  red: "#de0a0a",
-  orange: "#e56000",
-  yellow: "#ffed4a",
-  green: "#059e1c",
-  teal: "#4dc0b5",
-  blue: "#2a86f2",
-  indigo: "#6574cd",
-  purple: "#9561e2",
-  pink: "#f66d9b",
+  white: "#ffffff"
+};
+
+let stateColors = {
   warn: "#fffaf6",
   danger: "#fdf6f6",
   success: "#f8fcf9",
   info: "#f6faff"
 };
 
-let colors = { ...brandColorsV1, ...basicColors };
+let colors = { ...brandColors, ...basicColors, ...stateColors };
 
 /**
  * Spacing
