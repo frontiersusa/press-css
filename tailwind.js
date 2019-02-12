@@ -18,17 +18,6 @@ let brandColors = {
   "seashell-dark": "#cecece",
   seashell: "#E6E6E6",
   "seashell-light": "#f0f0f0"
-  // Deprecated for use above
-  //
-  // "pewter-dark": "#829e95",
-  // pewter: "#91B1A7",
-  // "pewter-light": "#b2c8c1",
-  // "whale-dark": "#032636",
-  // whale: "#083549",
-  // "whale-light": "#52717f",
-  // "sunglow-dark": "#e3bc2b",
-  // sunglow: "#FDD230",
-  // "sunglow-light": "#fddf6e",
 };
 
 let brandColorsV2 = {
