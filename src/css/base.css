@@ -55,7 +55,6 @@ img {
 }
 
 /* Tables */
-
 .table-format {
   @apply scrolling-touch overflow-x-auto;
   & table {
@@ -72,12 +71,6 @@ img {
   }
   & th,
   & td {
-    @apply pt-4 pb-4;
-    &:first-of-type {
-      @apply pt-4 pb-4;
-    }
-    &:last-of-type {
-      @apply pt-4 pr-5 pb-4 pl-3;
-    }
+    @apply pt-4 pb-4 pr-4;
   }
 }
