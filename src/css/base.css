@@ -62,7 +62,7 @@ img {
     @apply w-full border-collapse whitespace-no-wrap;
   }
   & thead {
-    @apply text-left text-grey;
+    @apply text-left text-grey tracking-wide text-sm uppercase;
   }
   & tr {
     @apply table-row ml-4 mr-4 border-b border-grey-light;
