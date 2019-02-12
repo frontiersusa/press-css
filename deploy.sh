@@ -4,5 +4,5 @@ git add .
 git commit -m "Update Browser List"
 
 source .env
-export GITHUB_TOKEN=GITHUB_TOKEN
+export $GITHUB_TOKEN
 release-it
