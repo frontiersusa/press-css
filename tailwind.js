@@ -41,7 +41,8 @@ let basicColors = {
 
 let stateColors = {
   warn: "#fffaf6",
-  danger: "#fdf6f6",
+  danger: "#dc3545",
+  "danger-dark": "#c82333",
   success: "#f8fcf9",
   info: "#f6faff"
 };
@@ -353,7 +354,8 @@ let links = {
  */
 let buttons = {
   primary: [colors["primary"], colors["primary-dark"]],
-  secondary: [colors["secondary"], colors["secondary-light"]]
+  secondary: [colors["secondary"], colors["secondary-light"]],
+  danger: [colors["danger"], colors["danger-dark"]]
 };
 
 /**
