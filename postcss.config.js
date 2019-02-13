@@ -1,21 +1,30 @@
-let config = {
-  plugins: [
-    require("postcss-import"),
-    require("tailwindcss")("./tailwind.js"),
-    require("postcss-preset-env")(),
-    require("postcss-nesting"),
-    require("postcss-pxtorem")({
-      rootValue: 16,
-      propList: ["*"],
-      replace: true,
-      mediaQuery: false
-    }),
-    require("postcss-fixie"),
-    require("postcss-flexbugs-fixes"),
-    require("postcss-font-magician"),
-    require("postcss-focus"),
-    require("postcss-responsive-type")
-  ]
-};
+const postcssImport = require('postcss-import');
+const tailwindcss = require('tailwindcss');
+const postcssPresetEnv = require('postcss-preset-env');
+const postcssNesting = require('postcss-nesting');
+const postcssPxtorem = require('postcss-pxtorem');
+const postcssFixie = require('postcss-fixie');
+const postcssFontMagician = require('postcss-font-magician');
+const postcssFocus = require('postcss-focus');
+const postcssFlexboxFixes = require('postcss-flexbugs-fixes');
+const postcssResponsiveType = require('postcss-responsive-type');
 
-module.exports = config;
+module.exports = {
+  plugins: [
+    postcssImport,
+    tailwindcss('./tailwind.js'),
+    postcssPresetEnv(),
+    postcssNesting,
+    postcssPxtorem({
+      rootValue: 16,
+      propList: ['*'],
+      replace: true,
+      mediaQuery: false,
+    }),
+    postcssFixie,
+    postcssFontMagician,
+    postcssFocus,
+    postcssFlexboxFixes,
+    postcssResponsiveType,
+  ],
+};
