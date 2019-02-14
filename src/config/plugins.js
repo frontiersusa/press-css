@@ -1,10 +1,10 @@
 const tailwindContainer = require('tailwindcss/plugins/container');
 const tailwindObjectFit = require('tailwindcss-object-fit');
-const pressTypography = require('./src/utilities/typography');
-const pressForms = require('./src/utilities/forms');
-const pressLinks = require('./src/components/links');
-const pressButtons = require('./src/components/buttons');
-const pressImportant = require('./src/variants/important');
+const pressTypography = require('../utilities/typography');
+const pressForms = require('../utilities/forms');
+const pressLinks = require('../components/links');
+const pressButtons = require('../components/buttons');
+const pressImportant = require('../variants/important');
 const theme = require('./theme');
 
 module.exports = [
