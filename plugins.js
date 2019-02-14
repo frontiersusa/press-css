@@ -21,9 +21,13 @@ module.exports = [
   }),
   pressButtons({
     buttons: {
-      primary: [theme.colors.primary, theme.colors['primary-dark']],
-      secondary: [theme.colors.secondary, theme.colors['secondary-light']],
-      danger: [theme.colors.danger, theme.colors['danger-dark']],
+      primary: [theme.colors.primary, theme.colors['primary-dark'], 'white'],
+      secondary: [
+        theme.colors.secondary,
+        theme.colors['secondary-light'],
+        'white',
+      ],
+      danger: [theme.colors.danger, theme.colors['danger-dark'], 'white'],
     },
   }),
   // Press Variants

@@ -11,10 +11,10 @@ module.exports = function({ buttons }) {
           },
         },
       },
-      _.map(buttons, ([normalState, hoverState], name) => ({
+      _.map(buttons, ([normalState, hoverState, textColor], name) => ({
         [`.button-${e(name)}`]: {
           'background-color': `${normalState}`,
-          '@apply no-underline text-white py-2 px-3 rounded-full': {},
+          [`@apply no-underline text-${textColor} py-2 px-3 rounded-full`]: {},
           '&:hover': {
             'background-color': `${hoverState}`,
           },
