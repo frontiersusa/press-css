@@ -16,7 +16,8 @@ module.exports = [
     links: {
       primary: [theme.colors.primary, theme.colors.secondary],
       secondary: [theme.colors.secondary, theme.colors['secondary-light']],
-      danger: [theme.colors.danger, theme.colors['danger-dark']],
+      white: [theme.colors.white, theme.colors.primary],
+      danger: [theme.colors.danger, theme.colors['danger-light']],
     },
   }),
   pressButtons({
