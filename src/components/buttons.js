@@ -5,21 +5,26 @@ module.exports = function({ buttons }) {
     const components = [
       {
         '.button': {
-          '@apply bg-primary no-underline text-white py-2 px-3 rounded-full': {},
+          '@apply inline-block bg-primary no-underline text-white py-2 px-3 rounded-full': {},
           '&:hover': {
             '@apply bg-primary-dark': {},
           },
         },
       },
-      _.map(buttons, ([normalState, hoverState, textColor], name) => ({
-        [`.button-${e(name)}`]: {
-          'background-color': `${normalState}`,
-          [`@apply no-underline text-${textColor} py-2 px-3 rounded-full`]: {},
-          '&:hover': {
-            'background-color': `${hoverState}`,
+      _.map(
+        buttons,
+        ([bgColor, bgColorHover, textColor, textColorHover], name) => ({
+          [`.button-${e(name)}`]: {
+            'background-color': `${bgColor}`,
+            [`@apply inline-block no-underline py-2 px-3 rounded-full`]: {},
+            color: textColor,
+            '&:hover': {
+              'background-color': `${bgColorHover}`,
+              color: textColorHover,
+            },
           },
-        },
-      })),
+        })
+      ),
     ];
 
     addComponents(components);
