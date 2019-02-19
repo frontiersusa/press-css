@@ -1,49 +1,40 @@
-const brandColors = {
-  'primary-dark': '#829e95',
-  primary: '#91B1A7', // Pewter
+const colors = {
+  // Primary / 'Pewter'
+  primary: '#91B1A7',
   'primary-light': '#b2c8c1',
-  'secondary-dark': '#032636',
-  secondary: '#083549', // Whale
+  'primary-dark': '#829e95',
+  // Secondary / 'Whale'
+  secondary: '#083549',
   'secondary-light': '#52717f',
-  'accent-dark': '#e3bc2b',
-  accent: '#FDD230', // Sunglow
+  'secondary-dark': '#032636',
+  // Accent / 'Sunglow'
+  accent: '#FDD230',
   'accent-light': '#fddf6e',
-  'baltic-dark': '#313132',
+  'accent-dark': '#e3bc2b',
+  // 'Baltic'
   baltic: '#3E3E3F',
   'baltic-light': '#616161',
-  'seashell-dark': '#cecece',
+  'baltic-dark': '#313132',
+  // Seashell
   seashell: '#E6E6E6',
   'seashell-light': '#f0f0f0',
-  // Brand v2 Test Colors
-  // isle: '#00BB92',
-  // midnight: '#144660',
-  // golden: '#FBD05C',
-};
-
-const basicColors = {
+  'seashell-dark': '#cecece',
+  // Red
+  red: '#FF534E',
+  'red-light': '#FF8783',
+  'red-dark': '#B33A37',
+  // Orange
+  orange: '#FFAE4E',
+  'orange-light': '#FFC683',
+  'orange-dark': '#DA994F',
+  // Gray
+  gray: '#A3A3A3',
+  'gray-light': '#BFBFBF',
+  'gray-dark': '#727272',
+  // Utility
   transparent: 'transparent',
-  black: '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  grey: '#b8c2cc',
-  'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  black: '#000000',
   white: '#ffffff',
-};
-
-const stateColors = {
-  info: '#f6faff',
-  success: '#059e1c',
-  warn: '#fa9f47',
-  danger: '#de0a0a',
-};
-
-const colors = {
-  ...brandColors,
-  ...basicColors,
-  ...stateColors,
 };
 
 module.exports = {
