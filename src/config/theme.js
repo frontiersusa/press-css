@@ -34,11 +34,10 @@ const basicColors = {
 };
 
 const stateColors = {
-  warn: '#fffaf6',
-  danger: '#dc3545',
-  'danger-dark': '#c82333',
-  success: '#f8fcf9',
   info: '#f6faff',
+  success: '#059e1c',
+  warn: '#fa9f47',
+  danger: '#de0a0a',
 };
 
 const colors = {
