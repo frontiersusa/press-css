@@ -17,18 +17,49 @@ module.exports = [
       primary: [theme.colors.primary, theme.colors.secondary],
       secondary: [theme.colors.secondary, theme.colors['secondary-light']],
       white: [theme.colors.white, theme.colors.primary],
-      danger: [theme.colors.danger, theme.colors['danger-light']],
+      red: [theme.colors['red-light'], theme.colors.red],
+      orange: [theme.colors['orange-light'], theme.colors.orange],
+      green: [theme.colors['green-light'], theme.colors.green],
     },
   }),
   pressButtons({
     buttons: {
-      primary: [theme.colors.primary, theme.colors['primary-dark'], 'white'],
+      primary: [
+        theme.colors.primary,
+        theme.colors['primary-dark'],
+        'white',
+        'white',
+      ],
       secondary: [
         theme.colors.secondary,
         theme.colors['secondary-light'],
         'white',
+        'white',
       ],
-      danger: [theme.colors.danger, theme.colors['danger-dark'], 'white'],
+      accent: [
+        theme.colors.accent,
+        theme.colors['accent-light'],
+        theme.colors.baltic,
+        theme.colors.baltic,
+      ],
+      red: [
+        theme.colors.red,
+        theme.colors['red-light'],
+        'white',
+        theme.colors.baltic,
+      ],
+      orange: [
+        theme.colors.orange,
+        theme.colors['orange-light'],
+        'white',
+        theme.colors.baltic,
+      ],
+      green: [
+        theme.colors.green,
+        theme.colors['green-light'],
+        'white',
+        theme.colors.baltic,
+      ],
     },
   }),
   // Press Variants
