@@ -5,6 +5,6 @@ bower_components
 .cache
 .env
 fonts
-# dist/*
-# !dist/press.css
-# !dist/press.map
+dist/*
+!dist/press.css
+!dist/press.map
