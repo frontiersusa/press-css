@@ -1,7 +1,7 @@
 module.exports = {
   appearance: ['responsive'],
   backgroundAttachment: ['responsive'],
-  backgroundColors: ['responsive', 'hover', 'focus'],
+  backgroundColors: ['responsive', 'hover', 'focus', 'important'],
   backgroundPosition: ['responsive'],
   backgroundRepeat: ['responsive'],
   backgroundSize: ['responsive'],
