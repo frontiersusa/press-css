@@ -7,3 +7,8 @@ git commit -m "Update Browser List"
 source .env
 export GITHUB_TOKEN
 release-it
+
+# Complete
+echo -e "Deploying 'docs' directory to 'gh-pages' branch."
+
+git push origin `git subtree split --prefix docs master`:gh-pages --force
