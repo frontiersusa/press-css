@@ -61,10 +61,10 @@ img {
     @apply w-full border-collapse whitespace-no-wrap;
   }
   & thead {
-    @apply text-left text-grey tracking-wide text-sm uppercase;
+    @apply text-left text-gray tracking-wide text-sm uppercase;
   }
   & tr {
-    @apply table-row ml-4 mr-4 border-b border-grey-light;
+    @apply table-row ml-4 mr-4 border-b border-seashell;
   }
   & tbody tr:last-of-type {
     @apply border-b-0;

@@ -10,7 +10,7 @@ module.exports = function() {
       },
       // Inputs
       '.input': {
-        '@apply bg-grey-lighter appearance-none border-2 border-grey rounded py-2 px-3 text-grey-darker leading-tight': {},
+        '@apply bg-seashell-light appearance-none border-2 border-gray rounded py-2 px-3 leading-tight': {},
       },
       '.input:focus': {
         '@apply outline-none bg-white border-primary': {},
