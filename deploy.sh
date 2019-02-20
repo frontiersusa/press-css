@@ -7,6 +7,3 @@ git commit -m "Update Browser List"
 source .env
 export GITHUB_TOKEN
 release-it
-
-# Complete
-echo -e "\e[42mDeploy Script Complete!"

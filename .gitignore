@@ -8,4 +8,3 @@ fonts
 dist/*
 !dist/press.css
 !dist/press.map
-docs/*
