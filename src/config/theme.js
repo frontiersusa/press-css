@@ -124,7 +124,7 @@ module.exports = {
     '4': '4px',
     '8': '8px',
   },
-  borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
+  borderColors: global.Object.assign({ default: colors['gray-light'] }, colors),
   borderRadius: {
     none: '0',
     sm: '.125rem',
