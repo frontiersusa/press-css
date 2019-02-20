@@ -1,0 +1,9 @@
+/*
+* Press Example
+* Used to generate test styles.
+*/
+
+@tailwind preflight;
+@import "./base.css";
+@tailwind components;
+@tailwind utilities;
