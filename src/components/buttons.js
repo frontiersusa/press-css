@@ -7,7 +7,7 @@ module.exports = function({ buttons }) {
         '.button': {
           '@apply inline-block bg-primary no-underline text-white py-2 px-3 rounded-full': {},
           '&:hover': {
-            '@apply bg-primary-dark': {},
+            '@apply bg-primary-dark text-white': {},
           },
         },
       },
