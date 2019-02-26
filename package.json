@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frotniersusa/press-css.git"
+    "url": "git+https://github.com/frontiersusa/press-css.git"
   },
   "author": "@natedunn",
   "license": "MIT",
@@ -58,9 +58,9 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/frotniersusa/press-css/issues"
+    "url": "https://github.com/frontiersusa/press-css/issues"
   },
-  "homepage": "https://github.com/frotniersusa/press-css#readme",
+  "homepage": "https://github.com/frontiersusa/press-css#readme",
   "directories": {
     "doc": "docs"
   },
