@@ -6,9 +6,9 @@
   "scripts": {
     "start": "npm run clean && npm run build:styles && parcel src/index.html --port 1234 -d docs",
     "build": "npm run clean && npm run build:styles && npm run build:docs",
-    "build:styles": "parcel build src/css/index.css --out-file press.css",
+    "build:styles": "parcel build src/css/build.css --out-file press.css",
     "build:docs": "parcel build src/index.html --public-url ./ -d docs",
-    "watch": "parcel watch src/css/index.css --out-file press.css",
+    "watch": "parcel watch src/css/build.css --out-file press.css",
     "clean": "del-cli 'dist/**/*' && del-cli 'docs/**/*' && del-cli '.cache/**/*'",
     "deploy": "npm run clean && npm run build && sh deploy.sh"
   },
