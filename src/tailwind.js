@@ -2,9 +2,7 @@ const plugins = require('./plugins');
 const theme = require('./theme');
 const modules = require('./variants');
 
-// Export
-module.exports = {
-  ...theme,
+const config = Object.assign(theme, {
   modules,
   plugins,
   options: {
@@ -12,4 +10,7 @@ module.exports = {
     important: false,
     separator: ':',
   },
-};
+});
+
+// Export
+module.exports = config;
