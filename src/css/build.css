@@ -4,6 +4,6 @@
 */
 
 @tailwind preflight;
-@import "./base.css";
+@import "./press.css";
 @tailwind components;
 @tailwind utilities;

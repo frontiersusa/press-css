@@ -1,0 +1,11 @@
+body {
+  @apply font-sans text-base text-baltic;
+  text-rendering: optimizeSpeed;
+}
+::-moz-selection,
+::selection {
+  @apply bg-primary-light text-white;
+}
+img {
+  max-width: 100%;
+}
