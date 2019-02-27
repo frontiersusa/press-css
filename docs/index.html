@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Press.css</title>
-    <link rel="stylesheet" href="/css.967bad95.css">
-  <script src="/css.967bad95.js"></script></head>
+    <link rel="stylesheet" href="/build.925c6d32.css">
+  <script src="/build.925c6d32.js"></script></head>
 
   <body>
     <main class="max-w-xl mt-12 mr-auto mb-12 ml-auto pr-3 pl-3">
@@ -121,9 +121,35 @@
       <section class="mb-12">
         <h3 class="mb-4 font-black">Form Examples</h3>
         <div class="bg-seashell-light px-8 py-8">
-          <div class="form-line">
-            <input class="input important:rounded-r-none" type="text">
-            <a class="button rounded rounded-l-none" href="javascript:void(0)">Test Button</a>
+          <div class="bg-white px-8 py-8">
+            <div class="flex mb-4">
+              <input class="input-text important:rounded-r-none" type="text">
+              <a class="button rounded rounded-l-none flex items-center" href="javascript:void(0)">Test Button</a>
+            </div>
+            <label class="input-select mb-4">
+              Select
+              <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </label>
+            <br>
+            <label class="input-check mb-4">
+              <input type="checkbox">
+              Checkbox
+            </label>
+            <br>
+            <fieldset class="border-2 border-seashell-dark rounded py-4 px-4">
+              <label class="input-check mb-4">
+                <input name="radio" type="radio">
+                Choose this option.
+              </label>
+              <br>
+              <label class="input-check">
+                <input name="radio" type="radio">
+                Actually this options is way better.
+              </label>
+            </fieldset>
           </div>
         </div>
       </section>
