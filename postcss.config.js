@@ -12,7 +12,7 @@ const postcssResponsiveType = require('postcss-responsive-type');
 module.exports = {
   plugins: [
     postcssImport,
-    tailwindcss('./src/config/tailwind.js'),
+    tailwindcss('./src/tailwind.js'),
     postcssPresetEnv(),
     postcssNesting,
     postcssPxtorem({
