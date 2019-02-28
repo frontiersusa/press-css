@@ -1,7 +1,0 @@
-a {
-  @apply text-primary;
-}
-a:hover,
-a:focus {
-  @apply text-primary-dark;
-}

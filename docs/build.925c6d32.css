@@ -835,14 +835,6 @@ h5 {
 h6 {
   font-size: 1rem;
 }
-a {
-  color: #91b1a7;
-}
-
-a:hover,
-a:focus {
-  color: #829e95;
-}
 .table-format {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
@@ -1538,6 +1530,7 @@ table {
 }
 
 .link-primary:hover, .link-primary:focus {
+  color: currentColor;
   border-color: #083549;
 }
 
@@ -1549,6 +1542,7 @@ table {
 }
 
 .link-secondary:hover, .link-secondary:focus {
+  color: currentColor;
   border-color: #52717f;
 }
 
@@ -1560,6 +1554,7 @@ table {
 }
 
 .link-white:hover, .link-white:focus {
+  color: currentColor;
   border-color: #91b1a7;
 }
 
@@ -1571,6 +1566,7 @@ table {
 }
 
 .link-red:hover, .link-red:focus {
+  color: currentColor;
   border-color: #b33a37;
 }
 
@@ -1582,6 +1578,7 @@ table {
 }
 
 .link-orange:hover, .link-orange:focus {
+  color: currentColor;
   border-color: #da994f;
 }
 
@@ -1593,6 +1590,7 @@ table {
 }
 
 .link-green:hover, .link-green:focus {
+  color: currentColor;
   border-color: #829e95;
 }
 

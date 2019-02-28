@@ -16,6 +16,7 @@ module.exports = function({ links }) {
           'border-color': `${normalState}`,
           '@apply border-b-2 no-underline color-current': {},
           '&:hover': {
+            '@apply color-current': {},
             'border-color': `${hoverState}`,
           },
         },
