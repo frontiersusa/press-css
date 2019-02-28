@@ -21,10 +21,11 @@
   "devDependencies": {
     "del-cli": "^1.1.0",
     "parcel-bundler": "^1.11.0",
-    "stylelint": "^9.10.1",
-    "tailwindcss": "^0.7.4",
     "release-it": "10.1.0",
-    "sanitize.css": "^8.0.0"
+    "sanitize.css": "^8.0.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-prettier": "^5.0.0",
+    "tailwindcss": "^0.7.4"
   },
   "dependencies": {
     "lodash": "^4.17.11",
@@ -70,5 +71,10 @@
     "tailwind",
     "tailwindcss",
     "frontiers"
-  ]
+  ],
+  "stylelint": {
+    "extends": [
+      "stylelint-config-prettier"
+    ]
+  }
 }
