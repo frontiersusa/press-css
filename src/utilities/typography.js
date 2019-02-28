@@ -26,6 +26,9 @@ module.exports = function() {
       '.h6': {
         'font-size': config('textSizes.base'),
       },
+      '.label': {
+        '@apply inline-block mb-1 font-bold text-xs uppercase tracking-wide': {},
+      },
     };
     addUtilities(newUtilities);
   };
