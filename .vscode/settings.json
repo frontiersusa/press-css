@@ -5,5 +5,8 @@
     "titleBar.inactiveBackground": "#e3bc2b",
     "titleBar.inactiveForeground": "#000000"
   },
-  "window.title": "${dirty} ${activeEditorMedium}${separator} 🎨 Press CSS"
+  "window.title": "${dirty} ${activeEditorMedium}${separator} 🎨 Press CSS",
+  "cSpell.words": [
+    "Frontiersusa"
+  ]
 }
