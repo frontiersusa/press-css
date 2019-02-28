@@ -12,5 +12,4 @@ const config = Object.assign(theme, {
   },
 });
 
-// Export
 module.exports = config;
