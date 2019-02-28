@@ -192,11 +192,6 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/_link.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/_table.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
@@ -207,7 +202,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"sanitize.css/sanitize.css":"../node_modules/sanitize.css/sanitize.css","./_base.css":"css/_base.css","./_form.css":"css/_form.css","./_typography.css":"css/_typography.css","./_link.css":"css/_link.css","./_table.css":"css/_table.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/build.css":[function(require,module,exports) {
+},{"sanitize.css/sanitize.css":"../node_modules/sanitize.css/sanitize.css","./_base.css":"css/_base.css","./_form.css":"css/_form.css","./_typography.css":"css/_typography.css","./_table.css":"css/_table.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/build.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -239,7 +234,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60926" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61560" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
