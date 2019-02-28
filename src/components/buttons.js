@@ -5,7 +5,8 @@ module.exports = function({ buttons }) {
     const components = [
       {
         '.button': {
-          '@apply inline-block bg-primary no-underline text-white py-2 px-3 rounded-full': {},
+          '@apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-primary text-white': {},
+          'min-height': '40px',
           '&:hover': {
             '@apply bg-primary-dark text-white': {},
           },
@@ -16,7 +17,8 @@ module.exports = function({ buttons }) {
         ([bgColor, bgColorHover, textColor, textColorHover], name) => ({
           [`.button-${e(name)}`]: {
             'background-color': `${bgColor}`,
-            [`@apply inline-block no-underline py-2 px-3 rounded-full`]: {},
+            'min-height': '40px',
+            '@apply inline-block no-underline py-2 px-3 rounded-full leading-normal': {},
             color: textColor,
             '&:hover': {
               'background-color': `${bgColorHover}`,
