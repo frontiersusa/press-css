@@ -1,6 +1,6 @@
 {
   "name": "@frontiersusa/press-css",
-  "version": "5.4.2",
+  "version": "5.4.3",
   "description": "Press is a collection of utility styles for Frontiers properties.",
   "main": "index.js",
   "scripts": {
