@@ -10,7 +10,7 @@
     "build:docs": "parcel build src/index.html --public-url ./ -d docs",
     "watch": "parcel watch src/css/build.css --out-file press.css",
     "clean": "del-cli 'dist/**/*' && del-cli 'docs/**/*' && del-cli '.cache/**/*'",
-    "deploy": "npm run clean && npm run build && sh deploy.sh"
+    "release": "npm run clean && npm run build && sh deploy.sh"
   },
   "repository": {
     "type": "git",
