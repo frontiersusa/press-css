@@ -1,0 +1,10 @@
+/*
+* Press Core
+* Import this file and supply the Tailwind imports in project
+*/
+
+/* @import "sanitize.css/sanitize.css"; */
+@import "./_global.css";
+@import "./_form.css";
+@import "./_typography.css";
+@import "./_table.css";

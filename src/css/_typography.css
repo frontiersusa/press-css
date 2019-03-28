@@ -9,7 +9,7 @@ h6 {
   margin: 0;
 }
 h1 {
-  @apply h1;
+  font-size: theme("fontSize.5xl");
 }
 h2 {
   @apply h2;

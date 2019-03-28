@@ -1,5 +1,14 @@
-@import "sanitize.css/sanitize.css";
-@import "./_base.css";
+/*
+* Press (All styles)
+* Used to generate test/docs styles.
+*/
+
+@import "tailwindcss/base";
+
+@import "./_global.css";
 @import "./_form.css";
 @import "./_typography.css";
 @import "./_table.css";
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
