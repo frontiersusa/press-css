@@ -1,30 +1,30 @@
 module.exports = function() {
-  return function({ addUtilities, config }) {
+  return function({ addUtilities, config, theme }) {
     const newUtilities = {
       '.color-current': {
         color: 'currentColor',
       },
       '.p': {
-        'margin-bottom': config('margin.4'),
-        'line-height': config('leading.normal'),
+        'margin-bottom': config('theme.margin.4'),
+        'line-height': config('theme.leading.normal'),
       },
       '.h1': {
-        'font-size': config('textSizes.5xl'),
+        'font-size': config('theme.fontSize.5xl'),
       },
       '.h2': {
-        'font-size': config('textSizes.3xl'),
+        'font-size': config('theme.fontSize.3xl'),
       },
       '.h3': {
-        'font-size': config('textSizes.2xl'),
+        'font-size': config('theme.fontSize.2xl'),
       },
       '.h4': {
-        'font-size': config('textSizes.xl'),
+        'font-size': config('theme.fontSize.xl'),
       },
       '.h5': {
-        'font-size': config('textSizes.lg'),
+        'font-size': config('theme.fontSize.lg'),
       },
       '.h6': {
-        'font-size': config('textSizes.base'),
+        'font-size': config('theme.fontSize.base'),
       },
       '.label': {
         '@apply inline-block mb-1 font-bold text-xs uppercase tracking-wide': {},

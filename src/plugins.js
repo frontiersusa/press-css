@@ -1,4 +1,3 @@
-const tailwindContainer = require('tailwindcss/plugins/container');
 const tailwindObjectFit = require('tailwindcss-object-fit');
 const pressTypography = require('./utilities/typography');
 const pressLinks = require('./components/links');
@@ -60,9 +59,5 @@ module.exports = [
   // Press Variants
   pressImportant(),
   // Press Dependencies
-  tailwindContainer({
-    center: true,
-    padding: '1rem',
-  }),
   tailwindObjectFit(['responsive']),
 ];
