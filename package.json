@@ -4,12 +4,12 @@
   "description": "Press is a collection of utility styles for Frontiers properties.",
   "main": "index.js",
   "scripts": {
-    "start": "npm run clean && npm run build:styles && parcel src/index.html --port 1234 -d docs",
-    "build": "npm run clean && npm run build:styles && npm run build:docs",
-    "build:styles": "parcel build src/css/build.css --out-file press.css",
-    "build:docs": "parcel build src/index.html --public-url ./ -d docs",
-    "watch": "parcel watch src/css/build.css --out-file press.css",
-    "clean": "del-cli 'dist/**/*' && del-cli 'docs/**/*' && del-cli '.cache/**/*'",
+    "start": "npm run clean && npm run build && npm run watch",
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "NODE_ENV=development postcss -c postcss.config.js src/css/press.css -o dist/press.css",
+    "build:prod": "NODE_ENV=production postcss -c postcss.config.js src/css/press.css -o dist/press.min.css",
+    "watch": "onchange 'src/**/*.*' -- npm run build",
+    "clean": "del-cli 'dist/**/*.css' && del-cli '.cache/**/*'",
     "release": "npm run clean && npm run build && sh deploy.sh"
   },
   "repository": {
@@ -20,16 +20,17 @@
   "license": "MIT",
   "devDependencies": {
     "del-cli": "^1.1.0",
-    "parcel-bundler": "^1.11.0",
     "release-it": "10.1.0",
     "sanitize.css": "^8.0.0",
     "stylelint": "^9.10.1",
-    "stylelint-config-prettier": "^5.0.0",
-    "tailwindcss": "^0.7.4"
+    "stylelint-config-prettier": "^5.0.0"
   },
   "dependencies": {
+    "cssnano": "^4.1.10",
+    "components": "^0.1.0",
+    "dotenv": "^7.0.0",
     "lodash": "^4.17.11",
-    "postcss-easy-import": "^3.0.0",
+    "onchange": "^5.2.0",
     "postcss-fixie": "^2.0.0",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-focus": "^4.0.0",
@@ -39,7 +40,6 @@
     "postcss-preset-env": "^6.5.0",
     "postcss-pxtorem": "^4.0.1",
     "postcss-responsive-type": "^1.0.0",
-    "tailwindcss": "^0.7.4",
     "tailwindcss": "^1.0.0-beta.3",
     "tailwindcss-object-fit": "^1.0.1"
   },
@@ -72,10 +72,5 @@
     "tailwind",
     "tailwindcss",
     "frontiers"
-  ],
-  "stylelint": {
-    "extends": [
-      "stylelint-config-prettier"
-    ]
-  }
+  ]
 }
