@@ -38,4 +38,5 @@ module.exports = {
     postcssResponsiveType,
     runCssnanno(env),
   ],
+  map: { inline: false },
 };

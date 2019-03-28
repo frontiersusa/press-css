@@ -7,4 +7,6 @@ bower_components
 fonts
 dist/*
 !dist/press.css
-!dist/press.map
+!dist/press.min.css
+!dist/press.css.map
+!dist/press.min.css.map
