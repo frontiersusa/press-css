@@ -755,6 +755,13 @@ div:empty {
   display: none;
 }
 
+.hide {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+}
+
 /* Reset */
 
 .input-select select::-ms-expand {
@@ -4302,6 +4309,26 @@ h6 {
 }
 
 .opacity-100 {
+  opacity: 1;
+}
+
+.hover\:opacity-0:hover, .hover\:opacity-0:focus {
+  opacity: 0;
+}
+
+.hover\:opacity-25:hover, .hover\:opacity-25:focus {
+  opacity: .25;
+}
+
+.hover\:opacity-50:hover, .hover\:opacity-50:focus {
+  opacity: .5;
+}
+
+.hover\:opacity-75:hover, .hover\:opacity-75:focus {
+  opacity: .75;
+}
+
+.hover\:opacity-100:hover, .hover\:opacity-100:focus {
   opacity: 1;
 }
 
@@ -9174,6 +9201,26 @@ h6 {
     opacity: 1;
   }
 
+  .sm\:hover\:opacity-0:hover, .sm\:focus\:opacity-0:focus {
+    opacity: 0;
+  }
+
+  .sm\:hover\:opacity-25:hover, .sm\:focus\:opacity-25:focus {
+    opacity: .25;
+  }
+
+  .sm\:hover\:opacity-50:hover, .sm\:focus\:opacity-50:focus {
+    opacity: .5;
+  }
+
+  .sm\:hover\:opacity-75:hover, .sm\:focus\:opacity-75:focus {
+    opacity: .75;
+  }
+
+  .sm\:hover\:opacity-100:hover, .sm\:focus\:opacity-100:focus {
+    opacity: 1;
+  }
+
   .sm\:overflow-auto {
     overflow: auto;
   }
@@ -13984,6 +14031,26 @@ h6 {
   }
 
   .md\:opacity-100 {
+    opacity: 1;
+  }
+
+  .md\:hover\:opacity-0:hover, .md\:focus\:opacity-0:focus {
+    opacity: 0;
+  }
+
+  .md\:hover\:opacity-25:hover, .md\:focus\:opacity-25:focus {
+    opacity: .25;
+  }
+
+  .md\:hover\:opacity-50:hover, .md\:focus\:opacity-50:focus {
+    opacity: .5;
+  }
+
+  .md\:hover\:opacity-75:hover, .md\:focus\:opacity-75:focus {
+    opacity: .75;
+  }
+
+  .md\:hover\:opacity-100:hover, .md\:focus\:opacity-100:focus {
     opacity: 1;
   }
 
@@ -18800,6 +18867,26 @@ h6 {
     opacity: 1;
   }
 
+  .lg\:hover\:opacity-0:hover, .lg\:focus\:opacity-0:focus {
+    opacity: 0;
+  }
+
+  .lg\:hover\:opacity-25:hover, .lg\:focus\:opacity-25:focus {
+    opacity: .25;
+  }
+
+  .lg\:hover\:opacity-50:hover, .lg\:focus\:opacity-50:focus {
+    opacity: .5;
+  }
+
+  .lg\:hover\:opacity-75:hover, .lg\:focus\:opacity-75:focus {
+    opacity: .75;
+  }
+
+  .lg\:hover\:opacity-100:hover, .lg\:focus\:opacity-100:focus {
+    opacity: 1;
+  }
+
   .lg\:overflow-auto {
     overflow: auto;
   }
@@ -23610,6 +23697,26 @@ h6 {
   }
 
   .xl\:opacity-100 {
+    opacity: 1;
+  }
+
+  .xl\:hover\:opacity-0:hover, .xl\:focus\:opacity-0:focus {
+    opacity: 0;
+  }
+
+  .xl\:hover\:opacity-25:hover, .xl\:focus\:opacity-25:focus {
+    opacity: .25;
+  }
+
+  .xl\:hover\:opacity-50:hover, .xl\:focus\:opacity-50:focus {
+    opacity: .5;
+  }
+
+  .xl\:hover\:opacity-75:hover, .xl\:focus\:opacity-75:focus {
+    opacity: .75;
+  }
+
+  .xl\:hover\:opacity-100:hover, .xl\:focus\:opacity-100:focus {
     opacity: 1;
   }
 

@@ -12,3 +12,6 @@ img {
 div:empty {
   display: none;
 }
+.hide {
+  @apply h-0 overflow-hidden opacity-0 absolute;
+}
