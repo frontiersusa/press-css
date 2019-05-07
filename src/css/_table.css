@@ -1,5 +1,4 @@
 .table-format {
-  @apply scrolling-touch overflow-x-auto;
   & table {
     @apply w-full border-collapse whitespace-no-wrap;
   }
