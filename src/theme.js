@@ -122,4 +122,11 @@ module.exports = {
     default: theme('colors.gray-light'),
     ...theme('colors'),
   }),
+  inset: {
+    '0': '0',
+    '1': '1rem',
+    '2': '2rem',
+    '3': '3rem',
+    auto: 'auto',
+  },
 };
