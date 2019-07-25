@@ -21,7 +21,7 @@
   "devDependencies": {
     "del-cli": "^1.1.0",
     "prettier": "^1.16.4",
-    "release-it": "10.1.0",
+    "release-it": "^12.3.4",
     "stylelint": "^9.10.1",
     "stylelint-prettier": "^1.0.6"
   },
