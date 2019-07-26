@@ -28,12 +28,13 @@ module.exports = {
     orange: '#FFAE4E',
     'orange-light': '#FFC683',
     'orange-dark': '#DA994F',
-    // Whitesmoke
-    whitesmoke: '#f5f5f5',
     // Gray
     gray: '#A3A3A3',
     'gray-light': '#BFBFBF',
     'gray-dark': '#727272',
+    // Other (grays)
+    whitesmoke: '#f5f5f5',
+    alice: '#f7f9fc',
     // Utility
     transparent: 'transparent',
     black: '#000000',
