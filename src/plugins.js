@@ -60,4 +60,5 @@ module.exports = [
   pressImportant(),
   // Press Dependencies
   tailwindObjectFit(['responsive']),
+  require('tailwindcss-transitions')()
 ];
