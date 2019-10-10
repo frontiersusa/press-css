@@ -754,10 +754,6 @@ img {
   max-width: 100%;
 }
 
-div:empty {
-  display: none;
-}
-
 .hide {
   height: 0;
   overflow: hidden;
