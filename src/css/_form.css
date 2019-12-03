@@ -50,10 +50,11 @@
   & label {
     @apply inline-block py-3 px-3 border-b-2 border-gray-light w-full cursor-pointer select-none;
   }
-  & label:last-of-type {
-    @apply border-0;
-  }
   & label:hover {
     @apply bg-seashell-light;
+  }
+  & > label:last-of-type,
+  & > li:last-of-type label {
+    @apply border-0;
   }
 }

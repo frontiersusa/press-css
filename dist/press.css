@@ -881,12 +881,13 @@ img {
             user-select: none;
   }
 
-.input-check-group label:last-of-type {
-    border-width: 0;
-  }
-
 .input-check-group label:hover, .input-check-group label:focus {
     background-color: #f0f0f0;
+  }
+
+.input-check-group > label:last-of-type,
+  .input-check-group > li:last-of-type label {
+    border-width: 0;
   }
 
 /* Typography */
