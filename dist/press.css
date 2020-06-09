@@ -757,6 +757,31 @@ img {
   border-color: rgba(145, 177, 167, var(--border-opacity));
 }
 
+.input-textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  --bg-opacity: 1;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  border-width: 0.125rem;
+  --border-opacity: 1;
+  border-color: #A3A3A3;
+  border-color: rgba(163, 163, 163, var(--border-opacity));
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  line-height: 1.25;
+}
+
+.input-textarea:focus {
+  --border-opacity: 1;
+  border-color: #91B1A7;
+  border-color: rgba(145, 177, 167, var(--border-opacity));
+}
+
 /* Select */
 
 .input-select {
