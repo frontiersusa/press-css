@@ -11,6 +11,13 @@
   @apply border-primary;
 }
 
+.input-textarea {
+  @apply appearance-none bg-white border-2 border-gray rounded py-2 px-3 leading-tight;
+}
+.input-textarea:focus {
+  @apply border-primary;
+}
+
 /* Select */
 .input-select {
   display: inline-block;
