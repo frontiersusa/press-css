@@ -6,7 +6,7 @@
 @import "tailwindcss/base";
 
 @import "./_global.css";
-@import "./_form.css";
+@import "./_input.css";
 @import "./_typography.css";
 @import "./_table.css";
 
