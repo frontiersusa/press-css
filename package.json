@@ -43,9 +43,10 @@
     "tailwindcss": "^1.8.10"
   },
   "browserslist": [
-    "last 1 version",
+    "last 3 version",
     "> 1%",
-    "IE 10"
+    "IE 10",
+    "IE 11"
   ],
   "release-it": {
     "name": "press-css",
