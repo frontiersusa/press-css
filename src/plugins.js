@@ -1,12 +1,9 @@
-const pressTypography = require('./utilities/typography');
 const pressLinks = require('./components/links');
 const pressButtons = require('./components/buttons');
 const pressImportant = require('./variants/important');
 const theme = require('./theme');
 
 module.exports = [
-  // Press Utilities
-  pressTypography(),
   // Press Components
   pressLinks({
     links: {
