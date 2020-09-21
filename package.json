@@ -45,8 +45,9 @@
     "tailwindcss-transitions": "^2.0.1"
   },
   "browserslist": [
-    "> 1% in my stats",
-    "ie 10-11"
+    "last 1 version",
+    "> 1%",
+    "IE 10"
   ],
   "release-it": {
     "name": "press-css",
