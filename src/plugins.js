@@ -1,4 +1,3 @@
-const tailwindObjectFit = require('tailwindcss-object-fit');
 const pressTypography = require('./utilities/typography');
 const pressLinks = require('./components/links');
 const pressButtons = require('./components/buttons');
@@ -58,7 +57,4 @@ module.exports = [
   }),
   // Press Variants
   pressImportant(),
-  // Press Dependencies
-  tailwindObjectFit(['responsive']),
-  require('tailwindcss-transitions')()
 ];
