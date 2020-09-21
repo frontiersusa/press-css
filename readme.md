@@ -4,14 +4,14 @@ Styles for Frontiers properties.
 
 ## Using in other projects
 
-1. `cd` into your project directory and `npm i @frontiersusa/press-css`.
-2. Copy `tailwind.js` to your project's root or reference it in your project
+1. `cd` into your project directory and `npm install @frontiersusa/press-css`.
+2. Copy `tailwind.config.js` to your project's root or reference it in your project
 
 ## CSS Support
 
-- Official support for >1% of Frontiers USA browser stats.
-- Basic support for IE 10 & 11
-- IE 9 and earlier are not supported
+- Official support for >1% and last 3 of browsers.
+- Basic support for IE 10 & 11.
+- IE 9 and earlier are _not_ supported.
 
 ## Maintaining this repository
 
@@ -35,7 +35,6 @@ This project uses [Tailwindcss](https://github.com/tailwindcss/tailwindcss) to g
 
 Press CSS uses a simple script ([deploy.sh](https://github.com/frontiersusa/press-css/blob/master/deploy.sh)) to deploy to this repository. It does the following:
 
-1. Updates [browserslist-stats.json](https://github.com/frontiersusa/press-css/blob/master/browserslist-stats.json). This will open your browser and ask for access to the Google Analytics account for Frontiers USA.
-2. Bumps the current version using [release-it](https://github.com/webpro/release-it#readme).
-3. Deploys to the repository and creates a new release (done with [release-it](https://github.com/webpro/release-it#readme)).
-4. Deploys `/docs` directory to branch `gh-pages`.
+1. Bumps the current version using [release-it](https://github.com/webpro/release-it#readme).
+2. Deploys to the repository and creates a new release (also with [release-it](https://github.com/webpro/release-it#readme)).
+3. Deploys `/docs` directory to branch `gh-pages`.
