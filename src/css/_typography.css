@@ -1,3 +1,10 @@
+.prose {
+  @apply max-w-none;
+}
+.prose a {
+  @apply link;
+}
+
 @layer utilities {
   .label {
     @apply inline-block mb-1 font-bold text-xs uppercase tracking-wide;
