@@ -1,4 +1,4 @@
-const plugins = require('./plugins');
+
 
 module.exports = {
   purge: false,
@@ -85,11 +85,12 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: ['responsive', 'hover', 'focus', 'important'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'important', 'active'],
     borderRadius: ['responsive', 'important'],
     textColor: ['responsive', 'hover', 'focus', 'important'],
     opacity: ['responsive', 'hover'],
     display: ['responsive', 'important'],
+    padding: ['responsive', 'important']
   },
   plugins: [
     require('@tailwindcss/typography'),
