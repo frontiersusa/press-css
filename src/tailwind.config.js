@@ -2,6 +2,11 @@ const plugins = require('./plugins');
 
 module.exports = {
   purge: false,
+  experimental: 'all',
+  future: {
+    purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+  },
   theme: {
     extend: {
       colors: {
