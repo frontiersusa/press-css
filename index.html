@@ -20,7 +20,7 @@
         <div class="px-6 py-6 bg-seashell-light">
           <span class="inline-block mr-2"> Scroll to read more or </span>
           <a
-            class="inline-block button-primary"
+            class="button button-base button-primary"
             href="https://github.com/frontiersusa/press-css"
           >
             Visit Github
@@ -30,32 +30,41 @@
 
       <section class="mb-12">
         <h3 class="mb-4 font-black">About</h3>
-        <p class="p">
-          <span class="font-bold">Press CSS</span> uses
-          <a
-            class="font-bold link-primary"
-            href="https://github.com/tailwindcss/tailwindcss"
-            >Tailwind CSS</a
-          >
-          underneath the hood to generate styles for Frontiers properties.
-        </p>
-        <p class="p">
-          Please use this page for guidance on Press-specific items, however the
-          rest of the documentation can be found on
-          <a class="link" href="https://tailwindcss.com">Tailwind's website</a>.
-        </p>
+        <div class="prose">
+          <p>
+            <span class="font-bold">Press CSS</span> uses
+            <a
+              class="font-bold link-primary"
+              href="https://github.com/tailwindcss/tailwindcss"
+              >Tailwind CSS</a
+            >
+            underneath the hood to generate styles for Frontiers properties.
+          </p>
+          <p>
+            Please use this page for guidance on Press-specific items, however
+            the rest of the documentation can be found on
+            <a class="link" href="https://tailwindcss.com">Tailwind's website</a
+            >.
+          </p>
+        </div>
       </section>
 
       <!-- Headings -->
       <section class="mb-12">
         <h3 class="mb-4 font-black">Headings</h3>
-        <div class="px-8 py-8 bg-seashell-light">
-          <h1>Header 1</h1>
-          <h2>Header 2</h2>
-          <h3>Header 3</h3>
-          <h4>Header 4</h4>
-          <h5>Header 5</h5>
-          <h6>Header 6</h6>
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+          <div class="px-8 py-8 space-y-2 bg-seashell-light">
+            <h1 class="font-bold h1">Header 1</h1>
+            <h2 class="font-bold h2">Header 2</h2>
+            <h3 class="font-bold h3">Header 3</h3>
+            <h4 class="font-bold h4">Header 4</h4>
+          </div>
+          <div class="px-8 py-8 space-y-2 bg-seashell-light">
+            <h1 class="font-serif font-bold h1">Header 1</h1>
+            <h2 class="font-serif font-bold h2">Header 2</h2>
+            <h3 class="font-serif font-bold h3">Header 3</h3>
+            <h4 class="font-serif font-bold h4">Header 4</h4>
+          </div>
         </div>
       </section>
 
@@ -63,17 +72,14 @@
       <section class="mb-12">
         <h3 class="mb-4 font-black">Links</h3>
         <div class="px-8 py-8 space-x-4 bg-seashell-light">
-          <a class="link-primary text-baltic hover:text-baltic" href="#">
+          <a class="link link-primary" href="#">
             Primary/Default/Success
           </a>
-          <a class="link-secondary text-baltic hover:text-baltic" href="#">
+          <a class="link link-secondary text-baltic hover:text-baltic" href="#">
             Secondary
           </a>
-          <a class="link-red text-red hover:text-red" href="#">
-            Red/Danger
-          </a>
-          <a class="link-orange text-orange hover:text-orange" href="#">
-            Orange/Warn
+          <a class="link link-accent text-baltic hover:text-baltic" href="#">
+            Accent
           </a>
         </div>
       </section>
@@ -81,12 +87,33 @@
       <!-- Buttons -->
       <section class="mb-12">
         <h3 class="mb-4 font-black">Buttons</h3>
-        <div class="px-8 py-8 space-x-4 bg-seashell-light">
-          <button class="button">Primary/Default/Success</button>
-          <button class="button-secondary">Secondary</button>
-          <button class="button-accent">Accent</button>
-          <button class="button-red">Red/Danger</button>
-          <button class="button-orange">Orange/Warn</button>
+        <div class="px-8 py-8 space-y-4 bg-seashell-light">
+          <h4 class="mb-4 font-black">Small</h4>
+          <div class="space-x-2">
+            <button class="btn btn-sm btn-primary">
+              Primary/Default/Success
+            </button>
+            <button class="btn btn-sm btn-secondary">Secondary</button>
+            <button class="btn btn-sm btn-accent">Accent</button>
+          </div>
+          <h4 class="mb-4 font-black">Default</h4>
+          <div class="space-x-2">
+            <button class="btn btn-base btn-primary">
+              Primary/Default/Success
+            </button>
+            <button class="btn btn-base btn-secondary">
+              Secondary
+            </button>
+            <button class="btn btn-base btn-accent">Accent</button>
+          </div>
+          <h4 class="mb-4 font-black">Large</h4>
+          <div class="space-x-2">
+            <button class="btn btn-lg btn-primary">
+              Primary/Default/Success
+            </button>
+            <button class="btn btn-lg btn-secondary">Secondary</button>
+            <button class="btn btn-lg btn-accent">Accent</button>
+          </div>
         </div>
       </section>
 
@@ -152,8 +179,8 @@
                   type="text"
                 />
                 <a
-                  class="rounded button sm:rounded-l-none sm:flex sm:items-center"
-                  href="javascript:void(0)"
+                  class="btn btn-primary btn-base sm:rounded-l-none sm:flex sm:items-center"
+                  href="#"
                   >Test Button</a
                 >
               </div>
