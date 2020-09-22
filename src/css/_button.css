@@ -15,10 +15,10 @@
 }
 
 .btn-primary {
-  @apply text-white bg-primary-dark hover:bg-primary focus:bg-primary focus:outline-none focus:border-primary focus:border-primary-dark focus:shadow-outline-primary active:bg-primary-dark;
+  @apply text-white bg-primary-dark hover:bg-primary focus:bg-primary focus:outline-none focus:border-primary-dark focus:shadow-outline-primary active:bg-primary-dark;
 }
 .btn-secondary {
-  @apply text-white bg-secondary hover:bg-secondary-light focus:bg-secondary-light focus:outline-none focus:border-secondary-light focus:shadow-outline-blue active:bg-secondary;
+  @apply text-white bg-secondary hover:bg-secondary-light focus:bg-secondary-light focus:outline-none focus:border-secondary focus:shadow-outline-blue active:bg-secondary;
 }
 .btn-accent {
   @apply bg-accent hover:bg-accent-light focus:bg-accent-light focus:outline-none focus:border-accent focus:shadow-outline-yellow active:bg-accent;
