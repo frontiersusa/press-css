@@ -27,3 +27,7 @@
     }
   }
 }
+
+.prose a {
+  @apply link link-primary;
+}

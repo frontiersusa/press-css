@@ -1,9 +1,6 @@
 .prose {
   @apply max-w-none;
 }
-.prose a {
-  @apply link;
-}
 
 @layer utilities {
   .label {
