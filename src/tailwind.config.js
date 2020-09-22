@@ -14,6 +14,7 @@ module.exports = {
         primary: '#91B1A7',
         'primary-light': '#b2c8c1',
         'primary-dark': '#829e95',
+        'primary-fade': 'rgba(130, 158, 149, 0.23)',
         // Secondary / 'Whale'
         secondary: '#083549',
         'secondary-light': '#52717f',
@@ -34,6 +35,9 @@ module.exports = {
         whitesmoke: '#f5f5f5',
         alice: '#f7f9fc',
       },
+      boxShadow: {
+        'outline-primary': '0 0 0 .1875rem rgba(130, 158, 149, 0.23)'
+      }
     },
     screens: {
       sm: '576px',

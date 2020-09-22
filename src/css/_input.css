@@ -5,11 +5,11 @@
 
 /* Text */
 .input-text {
-  @apply appearance-none bg-white border-2 border-gray-400 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:shadow-outline-teal;
+  @apply appearance-none bg-white border-2 border-gray-400 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:shadow-outline-primary;
 }
 
 .input-textarea {
-  @apply appearance-none bg-white border-2 border-gray-400 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:shadow-outline-teal;
+  @apply appearance-none bg-white border-2 border-gray-400 rounded py-2 px-3 leading-tight focus:outline-none focus:border-primary focus:shadow-outline-primary;
 }
 
 /* Select */
@@ -17,7 +17,7 @@
   display: inline-block;
 }
 .input-select select {
-  @apply appearance-none w-full bg-white border-2 border-gray-400 rounded py-2 px-3 mr-4 leading-tight cursor-pointer hover:border-primary focus:outline-none focus:border-primary focus:shadow-outline-teal;
+  @apply appearance-none w-full bg-white border-2 border-gray-400 rounded py-2 px-3 mr-4 leading-tight cursor-pointer hover:border-primary focus:outline-none focus:border-primary focus:shadow-outline-primary;
   background-position: 99.5%;
   background-repeat: no-repeat;
   background-image: url('data:image/svg+xml;utf8,<svg width="25.3125" height="12.65625" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg"><path d="M.188 7.15C.084 7.06 0 6.866 0 6.74v-.246C0 6.22.232 6 .5 6h.248c.14 0 .335.075.432.162L3.5 8.25l2.32-2.088c.1-.09.287-.162.432-.162H6.5c.276 0 .5.23.5.494v.245c0 .136-.087.322-.188.41L3.5 9.987.188 7.148zm0-4.31L3.5 0l3.312 2.84c.1.086.188.272.188.41v.244c0 .265-.224.494-.5.494h-.248c-.145 0-.332-.072-.432-.16L3.5 1.75 1.18 3.827c-.097.087-.293.16-.432.16H.5c-.268 0-.5-.22-.5-.493V3.25c0-.13.084-.322.188-.41z" fill="%233e3e3f" fill-rule="evenodd"/></svg>');
@@ -25,30 +25,21 @@
 
 /* Checkbox */
 .input-check {
-  @apply inline-block border-2 border-gray-400 rounded py-2 px-3 mr-4 leading-tight cursor-pointer select-none;
+  @apply inline-block border-2 border-gray-400 rounded py-2 px-3 mr-4 leading-tight cursor-pointer select-none hover:bg-alice hover:border-primary focus:bg-alice focus:border-primary;
   & input {
     @apply mr-2;
-  }
-  &:hover,
-  &:focus {
-    @apply bg-seashell-light border-primary;
   }
 }
 
 /* Check/Radio Group */
+.input-radio-group,
 .input-check-group {
-  @apply border-2 border-gray-400 rounded;
-  &:hover {
-    @apply border-primary;
-  }
+  @apply border-2 border-gray-400 rounded hover:border-primary overflow-hidden;
   & input {
     @apply mr-2;
   }
   & label {
-    @apply inline-block py-3 px-3 border-b-2 border-gray-300 w-full cursor-pointer select-none;
-  }
-  & label:hover {
-    @apply bg-seashell-light;
+    @apply inline-block py-3 px-3 border-b-2 border-gray-300 bg-white w-full cursor-pointer select-none hover:bg-alice;
   }
   & > label:last-of-type,
   & > li:last-of-type label {
