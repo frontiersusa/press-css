@@ -4,11 +4,12 @@
 */
 
 @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @import "./_global.css";
 @import "./_input.css";
+@import "./_link.css";
+@import "./_button.css";
 @import "./_typography.css";
 @import "./_table.css";
-
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";

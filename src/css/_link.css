@@ -1,0 +1,29 @@
+@layer utilities {
+  .link {
+    @apply no-underline;
+    &:hover {
+      @apply underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+    }
+  }
+
+  .link-primary {
+    @apply text-primary;
+    &:hover {
+      @apply text-primary-dark;
+    }
+  }
+  .link-secondary {
+    @apply text-secondary;
+    &:hover {
+      @apply text-secondary-dark;
+    }
+  }
+  .link-accent {
+    @apply text-accent;
+    &:hover {
+      @apply text-accent-dark;
+    }
+  }
+}
