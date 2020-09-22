@@ -1,7 +1,7 @@
 /* Buttons */
 
 .btn {
-  @apply inline-flex items-center border border-transparent font-medium focus:outline-none focus:border-indigo-700  transition ease-in-out duration-150;
+  @apply inline-flex items-center border border-transparent font-medium focus:outline-none transition ease-in-out duration-150;
 }
 
 .btn-sm {
@@ -15,13 +15,13 @@
 }
 
 .btn-primary {
-  @apply text-white bg-primary-dark hover:bg-primary focus:outline-none focus:border-primary focus:shadow-outline-blue active:bg-primary-dark;
+  @apply text-white bg-primary-dark hover:bg-primary focus:bg-primary focus:outline-none focus:border-primary focus:border-primary-dark focus:shadow-outline-primary active:bg-primary-dark;
 }
 .btn-secondary {
-  @apply text-white bg-secondary hover:bg-secondary-light focus:outline-none focus:border-secondary-light focus:shadow-outline-blue active:bg-secondary;
+  @apply text-white bg-secondary hover:bg-secondary-light focus:bg-secondary-light focus:outline-none focus:border-secondary-light focus:shadow-outline-blue active:bg-secondary;
 }
 .btn-accent {
-  @apply bg-accent hover:bg-accent-light focus:outline-none focus:border-accent focus:shadow-outline-yellow active:bg-accent;
+  @apply bg-accent hover:bg-accent-light focus:bg-accent-light focus:outline-none focus:border-accent focus:shadow-outline-yellow active:bg-accent;
 }
 
 /* Deprecated button classes since v5.6.8 */
