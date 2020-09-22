@@ -86,5 +86,9 @@ module.exports = {
     opacity: ['responsive', 'hover'],
     display: ['responsive', 'important'],
   },
-  plugins,
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/ui'),
+    require('./plugins/important'),
+  ],
 };
