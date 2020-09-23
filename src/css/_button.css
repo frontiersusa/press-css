@@ -1,46 +1,48 @@
 /* Buttons */
 
-.btn {
-  @apply inline-flex items-center border border-transparent font-medium focus:outline-none transition ease-in-out duration-150;
-}
-
-.btn-sm {
-  @apply text-xs leading-4 px-2.5 py-1.5 rounded;
-}
-.btn-base {
-  @apply text-sm leading-5 px-4 py-2 rounded-md;
-}
-.btn-lg {
-  @apply text-base leading-5 px-6 py-3 rounded-md;
-}
-
-.btn-primary {
-  @apply text-white bg-primary-dark hover:bg-primary focus:bg-primary focus:outline-none focus:border-primary-dark focus:shadow-outline-primary active:bg-primary-dark;
-}
-.btn-secondary {
-  @apply text-white bg-secondary hover:bg-secondary-light focus:bg-secondary-light focus:outline-none focus:border-secondary focus:shadow-outline-blue active:bg-secondary;
-}
-.btn-accent {
-  @apply bg-accent hover:bg-accent-light focus:bg-accent-light focus:outline-none focus:border-accent focus:shadow-outline-yellow active:bg-accent;
-}
-
-/* Deprecated button classes since v5.6.8 */
-.button {
-  @apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-primary text-white;
-  min-height: "40px";
-  &:hover {
-    @apply bg-primary-dark text-white;
+@layer components {
+  .btn {
+    @apply inline-flex items-center border border-transparent font-medium focus:outline-none transition ease-in-out duration-150;
   }
-}
-.button-primary {
-  @apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-primary text-white hover:bg-primary-dark hover:text-white;
-  min-height: "40px";
-}
-.button-secondary {
-  @apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-secondary text-white hover:bg-secondary-light hover:text-white;
-  min-height: "40px";
-}
-.button-accent {
-  @apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-accent text-baltic hover:bg-accent-dark hover:text-baltic;
-  min-height: "40px";
+
+  .btn-sm {
+    @apply text-xs leading-4 px-2.5 py-1.5 rounded;
+  }
+  .btn-base {
+    @apply text-sm leading-5 px-4 py-2 rounded-md;
+  }
+  .btn-lg {
+    @apply text-base leading-5 px-6 py-3 rounded-md;
+  }
+
+  .btn-primary {
+    @apply text-white bg-primary-dark hover:bg-primary focus:bg-primary focus:outline-none focus:border-primary-dark focus:shadow-outline-primary active:bg-primary-dark;
+  }
+  .btn-secondary {
+    @apply text-white bg-secondary hover:bg-secondary-light focus:bg-secondary-light focus:outline-none focus:border-secondary focus:shadow-outline-blue active:bg-secondary;
+  }
+  .btn-accent {
+    @apply bg-accent hover:bg-accent-light focus:bg-accent-light focus:outline-none focus:border-accent focus:shadow-outline-yellow active:bg-accent;
+  }
+
+  /* Deprecated button classes since v5.6.8 */
+  .button {
+    @apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-primary text-white;
+    min-height: "40px";
+    &:hover {
+      @apply bg-primary-dark text-white;
+    }
+  }
+  .button-primary {
+    @apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-primary text-white hover:bg-primary-dark hover:text-white;
+    min-height: "40px";
+  }
+  .button-secondary {
+    @apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-secondary text-white hover:bg-secondary-light hover:text-white;
+    min-height: "40px";
+  }
+  .button-accent {
+    @apply inline-block no-underline py-2 px-3 rounded-full leading-normal bg-accent text-baltic hover:bg-accent-dark hover:text-baltic;
+    min-height: "40px";
+  }
 }
