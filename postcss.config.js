@@ -2,12 +2,11 @@ require('dotenv').config();
 const purgeConfig = require('./purge.config');
 const { env } = process;
 
-module.exports = function (tailwindConfig) {
-  const twConfig = !env.IS_PRESS_REPO ? tailwindConfig : './src/tailwind.config.js';
+module.exports = function ({ tailwindConfig = './src/tailwind.config.js'}) {
   return {
     plugins: [
       require('postcss-import'),
-      require('tailwindcss')(twConfig),
+      require('tailwindcss')(tailwindConfig),
       // Do NOT run in Press CSS Repo
       ...env.NODE_ENV === 'production' && !env.IS_PRESS_REPO
         ? [require('@fullhuman/postcss-purgecss')(purgeConfig)]
