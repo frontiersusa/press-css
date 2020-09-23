@@ -24,9 +24,9 @@ module.exports = {
       mediaQuery: false,
     }),
     require('postcss-flexbugs-fixes'),
-    // ONLY run in Press CSS Repo
     ...env.NODE_ENV === 'production'
       ? [require('cssnano')]
       : []
   ],
+  map: { inline: false },
 };
