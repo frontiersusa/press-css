@@ -9,7 +9,7 @@
     "build:dev": "NODE_ENV=development postcss -c postcss.config.js src/css/press.css -o dist/press.css",
     "build:prod": "NODE_ENV=production postcss -c postcss.config.js src/css/press.css -o dist/press.min.css",
     "watch": "onchange 'src/**/*.*' -- npm run build",
-    "clean": "del-cli 'dist/**/*.css' && del-cli '.cache/**/*'",
+    "clean": "del-cli 'dist/**/*.css' && del-cli '.cache/**/*' && del-cli 'dist/**/*.map'",
     "release": "npm run clean && npm run build && sh deploy.sh"
   },
   "repository": {
