@@ -91,10 +91,11 @@ module.exports = {
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'important', 'active'],
     borderRadius: ['responsive', 'important'],
-    textColor: ['responsive', 'hover', 'focus', 'important'],
+    textColor: ['responsive', 'hover', 'focus', 'important', 'group-hover'],
     opacity: ['responsive', 'hover'],
     display: ['responsive', 'important'],
-    padding: ['responsive', 'important']
+    padding: ['responsive', 'important'],
+    margin: ['responsive', 'important']
   },
   plugins: [
     require('@tailwindcss/typography'),
