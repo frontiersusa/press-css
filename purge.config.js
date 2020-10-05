@@ -58,6 +58,7 @@ module.exports = {
     /^wp-embed-(.*)?$/,
     /^blocks-gallery-(.*)?$/,
     // end fix
+    /^wp-content(.*)?$/,
     /^flickity.*$/,
     /^gform_fields.*$/
   ],
